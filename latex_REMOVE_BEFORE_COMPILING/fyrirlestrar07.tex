@@ -1,0 +1,746 @@
+\chapter
+{LÍNULEGAR AFLEIÐUJÖFNUR}
+ 
+%\kaflahaus{Línulegar afleiðujöfnur}
+
+
+\section{Línulegir afleiðuvirkjar}
+
+
+\subsection*{Kennimargliðan}
+
+Afleiðujafna af gerðinni
+ $$a_m(t)u\sp{(m)}+a_{m-1}(t)u\sp{(m-1)}+\cdots+a_1(t)u'+a_0(t)u=f(t),
+ $$
+þar sem föllin $a_0,\dots,a_m,f$ eru skilgreind á bili $I\subset \R$,
+er sögð vera {\it línuleg\index{afleiðujafna!línuleg}}, því vinstri
+hliðin skilgreinir línulega vörpun
+\begin{gather*}
+L:C\sp m(I)\to C(I),\\
+Lu(t)=
+a_m(t)u\sp{(m)}(t)+a_{m-1}(t)u\sp{(m-1)}(t)+
+\cdots+a_1(t)u'(t)+a_0(t)u(t),
+\end{gather*}
+ef $a_0,\dots,a_m\in C(I)$.
+Línuleg vörpun af þessari gerð  kallast {\it
+afleiðuvirki\index{afleiðuvirki}\index{virki!afleiðuvirki}}.  
+Við segjum að jafnan sé {\it
+óhliðruð\index{afleiðujafna!óhliðruð}\index{óhliðraður}} ef $f$ er núllfallið.
+Annars segjum við að hún sé {\it
+hliðruð\index{afleiðujafna!hliðruð}\index{hliðraður}}.
+Fyrir sérhvern punkt $t\in I$ fáum við margliðu af einni breytistærð
+$\lambda$,
+ \begin{equation*}
+P(t,\lambda)= a_m(t)\lambda\sp{m}+a_{m-1}(t)\lambda\sp{m-1}+
+\cdots+a_1(t)\lambda+a_0(t).\label{2.1.1}
+ \end{equation*}
+Þessa margliðu köllum við {\it
+kennimargliðu\index{kennimargliða}\index{margliða!kennimargliða}
+\index{afleiðuvirki!kennimargliða}} afleiðuvirkjans $L$.
+
+
+\subsection*{Afleiðuvirkinn $D$}
+
+Til þess að geta reiknað á auðveldan hátt með afleiðuvirkjum er venja að
+skilgreina virkjann $D$ sem $Du=u'$ og síðan veldi $D\sp k$ af $D$ með
+$$
+D\sp 0u=u, \quad D\sp 1u=u', \quad
+D\sp 2u=DDu=u\ddash, \quad \dots \quad D\sp ku= D D\sp
+{k-1}u=u\sp{(k)}. 
+$$
+Afleiðuvirkinn $L$ er síðan  skrifaður með formúlunni
+ \begin{equation*}P(t,D)=a_m(t)D\sp m+\cdots+a_1(t)D+a_0(t).\label{2.1.2}
+ \end{equation*}
+Athugið að í síðasta liðnum höfum við sleppt því að skrifa $D\sp 0$,
+en þetta á að lesa þannig að þegar virkinn $L$ er látinn verka á fallið $u$,
+er margfaldað með $a_0(t)$ í síðasta liðnum.  
+
+Ef allir stuðlarnir $a_j$ eru fastaföll, þá
+segjum við að virkinn hafi {\it fastastuðla\index{fastastuðlar}} og við
+skrifum  þá einungis $P(D)$ í stað $P(t,D)$.  
+Þegar ekki er ljóst í formúlum með tilliti til hvaða breytistærðar er
+verið að deilda, þá tilgreinum  við það með 
+$D_t$, $D_x$, $D_s$, \dots, í stað $D$
+í tákninu fyrir virkjann, þar sem lágvísirinn er táknið fyrir
+breytistærðina. 
+Línulega samantekt tveggja
+afleiðuvirkja $P(t,D)$ og $Q(t,D)$ með tvinntölunum $\alpha$ og
+$\beta$ táknum við með $\alpha P(t,D)+\beta Q(t,D)$.  Þetta er
+virkinn sem skilgreindur er með formúlunni
+$$
+\big(\alpha P(t,D) + \beta Q(t,D)\big)u=
+\alpha P(t,D)u + \beta Q(t,D)u.
+$$
+Samsetningu virkjanna $P(t,D)$ og $Q(t,D)$ táknum við með
+$P(t,D)Q(t,D)$ og er hún skilgreind með
+$$
+\big(P(t,D)Q(t,D)\big)u=
+P(t,D)\big(Q(t,D)u\big).
+$$
+
+
+Sýnt er með dæmum sýnir að almennt
+er $P(t,D)Q(t,D)\neq Q(t,D)P(t,D)$, með öðrum orðum, víxlreglan
+gildir ekki við samsetningu afleiðuvirkja.
+Hins vegar gildir hún ef virkjarnir hafa fastastuðla:
+
+\begin{se}
+Ef $P(D)$ og $Q(D)$ eru línulegir
+afleiðuvirkjar\index{afleiðuvirki!línulegur} með
+fastastuðla\index{afleiðuvirki!með fastastuðla},
+þá er
+ $$P(D)Q(D)=Q(D)P(D).
+ $$
+\end{se}
+
+
+
+Nú skulum við líta á tilvist á lausnum á jaðargildisverkefnum.  Í grein
+6.5 skilgreindum við almennan jaðargildisvirkja með formúlunni
+\begin{equation*}
+\begin{cases}
+B:C^{m-1}[a,b]\to \C^m, \qquad Bu=(B_1u,\dots,B_mu),\\
+B_ju=\sum\limits_{l=1}^m {\alpha}_{jl}u^{(l-1)}(a)
++{\beta}_{jl}u^{(l-1)}(b)=c_j,  &j=1,2,\dots,m.
+\end{cases}\label{2.1.9}
+\end{equation*}
+Við höfum fullkomna lýsingu á því hvenær lausn fæst:
+
+\begin{se}\label{set2.1.6} Látum $I$ vera opið bil sem inniheldur $[a,b]$, $P(t,D)$ vera
+línulegan afleiðuvirkja, $a_m(t)\neq 0$ fyrir
+öll $t\in I$ og $B$ vera almennan jaðargildisvirkja.
+Þá eru eftirfarandi skilyrði jafngild
+\begin{itemize}
+\item[(i)] Jaðargildisverkefnið $P(t,D)u=f(t)$, $Bu=c$,
+hefur ótvírætt ákvarðaða lausn $u\in C^m(I)$ fyrir sérhvert $f\in C(I)$
+og sérhvert $c\in \C^m$.
+\item[(ii)] Jaðargildisverkefnið $P(t,D)u=0$, $Bu=0$,
+hefur einungis núllfallið sem lausn.
+\item[(iii)]  Ef $u_1,\dots,u_m$ er grunnur í ${\cal N}(P(t,D))$, þá er
+$$
+\left|\begin{matrix} B_1u_1 & B_1u_2 & \cdots & B_1u_m\\
+B_2u_1 & B_2u_2 & \cdots & B_2u_m\\
+\vdots & \vdots &\ddots & \vdots \\
+B_mu_1 & B_mu_2 & \cdots & B_mu_m
+\end{matrix}\right|\neq 0.
+$$
+\end{itemize}
+\end{se}
+
+\begin{so}
+Byrjum á því að athuga að (i) er jafngilt:
+\begin{itemize}
+\item[(i)$^\prime$] Jaðargildisverkefnið 
+$P(t,D)u=0$, $Bu=c$,
+hefur ótvírætt ákvarðaða lausn fyrir sérhvert $c\in \C^m$.
+\end{itemize}
+Við sjáum að (i)$\dash$ er sértilfelli af (i).  Til þess að sjá að
+(i)$\dash$ hafi (i) í för með sér,  þá notfærum við okkur að
+fylgisetning \tilv 6.7.7 gefur okkur fall $v$ sem uppfyllir
+$P(t,D)v=f(t)$ án nokkurra hliðarskilyrða.  Samkvæmt (i)$\dash$ er til
+fall $w$ sem uppfyllir $P(t,D)w=0$ og $Bw=c-Bv$.  Nú er ljóst að $u=v+w$
+uppfyllir (i), því 
+$$
+P(t,D)u=P(t,D)v+P(t,D)w=f(t), \qquad Bu=Bv+Bw=c.
+$$
+Lausnin er ótvírætt ákvörðuð, því mismunur tveggja lausna er núllfallið
+samkvæmt (i)$\dash$.
+Nú snúum við okkur að því að sanna að (i)$\dash$, (ii) og (iii) séu
+jafngild. Til þess látum við
+$u_1,\dots,u_m$ vera grunn í núllrúminu og skrifum lausn $u$ á
+$P(t,D)u=0$ sem $u=d_1u_1+\cdots+d_mu_m$, þar sem $d_1,\dots,d_m\in \C$.
+Skilyrðið $Bu=c$ er þá jafngilt jöfnuhneppinu
+\begin{align*}
+\big(B_1u_1)d_1+\cdots+\big(B_1u_m\big)d_m &=c_1,\\
+\big(B_2u_1)d_1+\cdots+\big(B_2u_m\big)d_m &=c_2,\\
+\vdots\qquad\qquad\vdots\qquad\qquad & \vdots \\
+\big(B_mu_1)d_1+\cdots+\big(B_mu_m\big)d_m &=c_m.\\
+\end{align*}
+Við vitum úr línulegri algebru að það er jafngilt að hliðraða jafnan
+hafi lausn fyrir sérhverja hægri hlið, 
+að óhliðraða jafnan hafi aðeins núlllausnina og að
+ákveða stuðlafylkisins sé frábrugðin núlli.  Þetta er nákvæmlega það
+sem skilyrðin (i)$\dash$, (ii) og (iii) segja.
+\end{so}
+
+
+Hugsum okkur nú að við þekkjum grunn $u_1,\dots,u_m$ fyrir núllrúm
+virkjans $P(t,D)$ og eina sérlausn $u_p$  á $P(t,D)u=f$.  Þá er lausnin $u$
+á  (i) af gerðinni $u=d_1u_1+\cdots+d_mu_m+u_p$ þar sem stuðlarnir 
+$d_1,\dots,d_m$ eru lausnir jöfnuhneppisins
+\begin{equation*}
+\left[\begin{matrix} B_1u_1 & B_1u_2 & \cdots & B_1u_m\\
+B_2u_1 & B_2u_2 & \cdots & B_2u_m\\
+\vdots & \vdots &\ddots & \vdots \\
+B_mu_1 & B_mu_2 & \cdots & B_mu_m
+\end{matrix}\right]
+\left[\begin{matrix} d_1\\ d_2\\ \vdots \\ d_m\end{matrix}\right]
+=\left[\begin{matrix} c_1-B_1u_p\\ c_2-B_2u_p\\ \vdots \\ c_m-B_mu_p
+\end{matrix}\right].
+\label{2.1.10}
+\end{equation*}
+
+
+\section{Línulegar jöfnur með fastastuðla\index{afleiðuvirki!með
+fastastuðla}}
+
+\noindent
+Við skulum nú líta á línulega afleiðujöfnu\index{afleiðujafna!línuleg}
+ \begin{equation*}P(D)u = (a_mD^m+\cdots+a_1D+a_0)u
+=f(t), \qquad t\in I,\label{2.2.1}
+ \end{equation*}
+þar sem við gerum ráð fyrir því að stuðlarnir $a_j$ í virkjanum séu
+fastaföll, $a_j\in \C$, og $a_m\neq 0$.
+Kennimargliðan\index{kennimargliða}
+\index{kennimargliða!virkja}\index{margliða!kennimargliða} er þá 
+\begin{equation*}
+P(\lambda)=a_m\lambda^m+\cdots+a_1\lambda+a_0.\label{2.2.2}
+\end{equation*}
+Fyrsta viðfangsefni okkar  er að finna grunn fyrir núllrúmið 
+${\cal N}(P(D))$ og fá 
+þannig framsetningu á almennri lausn\index{afleiðujafna!almenn lausn}
+\index{almenn lausn}
+óhliðruðu\index{afleiðujafna!óhliðruð} jöfnunnar $P(D)u=0$. Við
+byrjum á því að láta afleiðuvirkjana
+$D\sp k$ verka á veldisvísisfallið $e\sp{\alpha t}$, þar sem $\alpha$
+er einhver tvinntala. Þá fæst
+$$
+De^{\alpha t}=\alpha e^{\alpha t},\quad
+D^2e^{\alpha t}=\alpha^2 e^{\alpha t},\quad
+\dots , \quad 
+D^me^{\alpha t}=\alpha^m e^{\alpha t}.
+$$ 
+Þetta gefur okkur síðan 
+\begin{align*}\label{2.2.3}
+P(D)e^{\alpha t}&=(a_mD^m+\cdots+a_1D+a_0)e^{\alpha t} \\
+&=(a_m{\alpha}^m+\cdots+a_1{\alpha}+a_0)e^{\alpha
+t}=P(\alpha)e^{\alpha t}.\nonumber
+\end{align*}
+Ef við veljum $\alpha$ sem eina af núllstöðvum kennimargliðunnar $P$,
+þá sjáum við að $e\sp{\alpha t}$ er lausn á óhliðruðu jöfnunni.
+Undirstöðusetning algebrunnar gefur okkur, að við getum þáttað
+margliðuna $P$ fullkomlega yfir tvinntölurnar og skrifað hana sem
+ \begin{equation*}P(\lambda)=a_m(\lambda-\lambda_1)\sp{m_1}\cdots
+(\lambda-\lambda_\ell)\sp{m_\ell},\label{2.2.4}
+ \end{equation*}
+þar sem $\lambda_1,\dots,\lambda_\ell\in \C$ eru {\it
+núllstöðvarnar\index{núllstöð}\index{margfeldni!núllstöðvar}}
+og $m_1,\dots,m_\ell$ er {\it
+margfeldni\index{margfeldni}\index{núllrúm!margfeldni}} þeirra, $m_1+\cdots+m_\ell=m$.
+Með því að nota þessa framsetningu á kennimargliðunni getum við skrifað
+afleiðuvirkjann sem 
+ \begin{equation*}P(D)=a_m(D-\lambda_1)\sp{m_1}\cdots(D-\lambda_\ell)\sp{m_\ell}.\label{2.2.5}
+ \end{equation*}
+Við fáum nú fullkomna lýsingu á núllrúmi\index{núllrúm} afleiðuvirkja með fastastuðla:
+
+\begin{se}
+Gerum ráð fyrir að $P(D)$ sé línulegur afleiðuvirki af stigi $m$
+með fasta\-stuðla og  að kennimargliðan $P(\lambda)$  hafi $\ell$ ólíkar
+núllstöðvar  
+$\lambda_1,\dots,\lambda_\ell\in \C$ með margfeldnina
+$m_1,\dots,m_\ell$.  Þá mynda 
+föllin
+\begin{gather*}
+e^{\lambda_1t}, te^{\lambda_1t},\dots, t^{m_1-1}e^{\lambda_1t},\\
+e^{\lambda_2t}, te^{\lambda_2t},\dots, t^{m_2-1}e^{\lambda_2t},\\
+\quad \vdots\qquad \vdots \qquad \qquad \vdots\\
+e^{\lambda_\ell t}, te^{\lambda_\ell t},\dots, t^{m_\ell-1}e^{\lambda_\ell t},
+\end{gather*}
+grunn í núllrúmi virkjans $P(D)$ og þar með má skrifa 
+sérhvert stak í núllrúminu sem 
+$$
+q_1(t)e^{\lambda_1t}+\cdots+q_\ell(t)e^{\lambda_\ell t},
+$$
+þar sem $q_j$ eru margliður af stigi $<m_j$, $1\leq j\leq \ell$.
+\end{se}
+
+
+ 
+\section{Euler-jöfnur\index{Euler}\index{Euler!jafna}\index{jafna!Euler}}
+
+\noindent
+Afleiðujafna af gerðinni
+\begin{equation*}
+P(x,D_x)u=
+a_mx^mu^{(m)}+\cdots+a_1xu\dash+a_0u=0,\label{2.3.1}
+\end{equation*}
+þar sem stuðlarnir $a_j$ eru tvinntölur, $a_m\neq 0$ og $u$ er óþekkt
+fall af $x$, nefnist {\it Euler-jafna}.  
+Til þess að fá almenna lýsingu á lausnum jöfnunnar á $\R\setminus\set 0$
+dugir okkur að finna almenna lausn á jákvæða raunásnum, því auðvelt er
+að sannfæra sig um að $v(x)=u(|x|)$ er lausn á $\R\setminus\set 0$ þá og
+því aðeins að $u$ sé lausn á $\set{x\in \R; x>0}$.
+Athugið að veldið á $x$ í
+hverjum lið er það sama og stigið á afleiðunni.  Ef við stingum 
+$u(x)=x^r$ inn í afleiðuvirkjann, þá fæst
+\begin{align*}
+P(x,D_x)u
+&=a_mx^m r(r-1)\cdots(r-m+1)x^{r-m}
++\cdots+a_1xrx^{r-1}+a_0x^r\\
+&=\big(a_m r(r-1)\cdots(r-m+1)+
+\cdots+a_1r+a_0\big)x^r.
+\end{align*}
+Þar með er $u$ lausn þá og því aðeins að $r$ sé núllstöð $m$-ta stigs
+margliðunnar $Q$, sem skilgreind er með formúlunni
+\begin{equation*}
+Q(r)=a_m r(r-1)\cdots(r-m+1)+
+\cdots+a_1r+a_0.\label{2.3.2}
+\end{equation*}
+Lítum fyrst á tilfellið að þessi jafna hafi ólíkar núllstöðvar
+$r_1,\dots, r_m$. 
+Þá er auðvelt að sannfæra sig  um að
+föllin $x^{r_1},\dots,x^{r_m}$ eru línulega óháð og þar
+með er almenn lausn á Euler jöfnu af gerðinni
+\begin{equation*}
+u(x)=c_1x^{r_1}+\cdots+c_mx^{r_m}.\label{2.3.3}
+\end{equation*}
+Nú skulum við athuga tilfellið þegar $Q(r)$ hefur margfaldar
+núllstöðvar.  Þá skilgreinum við fallið $v(t)=u(e^t)$ og sýnum fram á að
+$v$ uppfylli  $Q(D)v=0$.  Við 
+þurfum þá að þekkja sambandið milli afleiða fallanna $u$ og $v$.
+Við höfum
+\begin{align*}
+u(x)&=v(\ln x),\\
+u\dash(x)&=v\dash(\ln x)\cdot \dfrac 1x,\\
+u\ddash(x)&=v\ddash(\ln x)\cdot \dfrac 1{x^2}
+-v\dash(\ln x)\cdot \dfrac 1{x^2} = D(D-1)v(\ln x)\cdot \dfrac 1{x^2}.
+\end{align*}
+Með þrepun fæst síðan að 
+\begin{equation*}
+u^{(k)}(x)=D(D-1)\cdots(D-k+1)v(\ln x)\cdot \dfrac 1{x^k}.
+\label{2.3.4}
+\end{equation*}
+Þetta gefur 
+\begin{align*}
+P(x,D)u(x)&=\sum\limits_{k=0}^m a_kx^ku^{(k)}(x)\\
+&=\sum\limits_{k=0}^m a_kD(D-1)\cdots(D-k+1)v(\ln x)\\
+&=Q(D)v(\ln x).
+\end{align*}
+Þar með er $u$ lausn
+á Euler-jöfnunni þá og því aðeins að $v$ sé lausn á jöfnunni 
+$Q(D)v=0$.  Nú hefur virkinn $Q$ fastastuðla svo við getum beitt 
+setningu 7.2.1:
+
+\begin{se}  Almenn lausn Euler-jöfnunnar á jákvæða raunásnum
+er línuleg samatekt fallanna
+\begin{gather*}
+x^{r_1}, \big(\ln x \big) x^{r_1}, \dots,
+\big(\ln x\big)^{m_1-1}x^{r_1},\\
+x^{r_2}, \big(\ln x\big)x^{r_2}, \dots,
+\big(\ln x \big)^{m_2-1} x^{r_2},\\
+\vdots \qquad \qquad \qquad \vdots \qquad \qquad \qquad \vdots\\ 
+x^{r_\ell}, \big(\ln x \big)x^{r_\ell}, \dots,
+\big(\ln x\big)^{m_\ell-1} x^{r_\ell},
+\end{gather*}
+þar sem $r_1,\dots,r_\ell$ eru ólíkar núllstöðvar  margliðunnar
+$Q$, sem gefin er með (\ref{2.3.2}), og margfeldni þeirra er 
+$m_1,\dots,m_\ell$.
+\end{se}
+
+
+
+\section{Sérlausnir\index{sérlausn}\index{afleiðujafna!sérlausn}}
+
+\noindent
+Algengt er að ástandsjöfnur eðlisfræðilegra kerfa séu af gerðinni
+ $$P(D)u=f
+ $$
+þar sem $P(D)$ er línulegur afleiðuvirki með fastastuðla og $f$ er gefið
+fall á einhverju bili.  Fallið $f$ stendur oft fyrir ytra álag, örvun
+eða krafta, sem á kerfið verka, en lausnin er svörun kerfisins við
+þessu ytra álagi.   Til þess að skilja kerfið er nauðsynlegt að ráða
+yfir fjölbreytilegum aðferðum til þess að reikna út svörunina $u$
+þegar ytra álagið $f$ er gefið.  Í þessari grein ætlum við að líta á
+tilfellið að $f$ sé veldisvísisfall eða hornafall og athuga hvort hægt
+sé að finna sérlausn af sömu gerð.  Í næstu grein munum við hins vegar
+fjalla um almenna aðferð til þess að finna sérlausn fyrir hvaða hægri
+hlið sem er.
+við höfum séð að $P(D)e^{\alpha t}=P(\alpha)e^{\alpha t}$.  Ef
+$\alpha$ er núllstöð
+kennimargliðunnar $P$, þá er veldisvísisfallið $e^{\alpha t}$ lausn á
+óhliðruðu jöfnunni.  Ef aftur á móti $P(\alpha) \neq 0$, þá er
+\begin{equation*}
+P(D)u_p=e^{\alpha t} \qquad\text{ ef } \qquad 
+u_p(t)=\dfrac{e^{\alpha t}}{P(\alpha)}.\label{2.4.1}
+\end{equation*}
+Ef $\alpha\in \R$, $P(i\alpha)\neq 0$ og $P(-i\alpha)\neq 0$, þá fáum
+við með því að nota jöfnur Eulers að
+\begin{equation*}
+P(D)u_p=\cos \alpha t \qquad\text{ ef } \qquad 
+u_p(t)=
+\dfrac{e^{i\alpha t}}{2P(i\alpha)}+
+\dfrac{e^{-i\alpha t}}{2P(-i\alpha)},\label{2.4.2}
+\end{equation*}
+og
+\begin{equation*}
+P(D)u_p=\sin \alpha t \qquad\text{ ef } \qquad 
+u_p(t)=\dfrac{e^{i\alpha t}}{2iP(i\alpha)}
+-\dfrac{e^{-i\alpha t}}{2iP(-i\alpha)}.\label{2.4.3}
+\end{equation*}
+Í því tilfelli að kennimargliðan hefur eingöngu rauntalnastuðla, þá
+verða lausnirnar í þessum tveimur dæmum
+\begin{equation*}
+u_p(t)=\Re \bigg(\dfrac{e^{i{\alpha}t}}{P(i{\alpha})}\bigg), \qquad
+\text{ og } \qquad
+u_p(t)=\Im \bigg(\dfrac{e^{i{\alpha}t}}{P(i{\alpha})}\bigg).\label{2.4.4}
+\end{equation*}
+Ef $\alpha\in \R$, $P(\alpha)\neq 0$ og $P(-\alpha)\neq 0$, þá fáum
+við að 
+\begin{equation*}
+P(D)u_p=\cosh \alpha t \qquad\text{ ef }\qquad
+u_p(t)=\dfrac{e^{\alpha t}}{2P(\alpha)}+\dfrac{e^{-\alpha
+t}}{2P(-\alpha)},\label{2.4.5}
+\end{equation*}
+og
+\begin{equation*}
+P(D)u_p=\sinh \alpha t \qquad\text{ ef }\qquad
+u_p(t)=\dfrac{e^{\alpha t}}{2P(\alpha)}-\dfrac{e^{-\alpha
+t}}{2P(-\alpha)}.\label{2.4.6}
+\end{equation*}
+
+
+\subsection*{Sérlausnir fundnar með virkjareikningi}
+
+Nú skulum við láta afleiðuvirkjann $D-{\alpha}$ verka á margfeldi
+fallanna $v$ og $e^{{\alpha} t}$.  Við fáum þá 
+ \begin{equation*}(D-\alpha)(ve\sp{\alpha t})
+=D(ve\sp{\alpha t})-\alpha ve\sp{\alpha t} = v\dash e\sp{\alpha t}.
+\label{2.4.10}
+ \end{equation*}
+Af þessari formúlu fæst síðan með þrepun
+ \begin{equation*}(D-\alpha)\sp m(ve\sp{\alpha t})= v\sp{(m)} e\sp{\alpha
+t}\qquad m\geq 1.\label{2.4.11}
+ \end{equation*}
+Ef við veljum nú $v(t)=t\sp k$, þá fáum við 
+ \begin{equation*}\label{2.4.12}(D-\alpha)\sp m(t\sp ke\sp{\alpha t})= 
+\begin{cases}
+0, &k<m,\\
+k!e^{\alpha t},& k=m,\\
+k(k-1)\cdots(k-m+1)t^{k-m}e^{\alpha t},& k>m.
+\end{cases}
+ \end{equation*}
+Hugsum okkur nú að $\alpha$ sé núllstöð $P$ af stigi $k$.  Þá er
+unnt að þátta margliðuna $P$ í
+$P(\lambda)=(\lambda-\alpha)^kQ(\lambda)$, þar sem $Q(\lambda)$ er
+margliða af stigi $m-k$ og $Q(\alpha)\neq 0$.  Samkvæmt jöfnunni hér
+að framan  er
+$$
+P(D)(t^ke^{\alpha t}) = Q(D)(D-\alpha)^k(t^ke^{\alpha t})=
+Q(D)(k!e^{\alpha t})=k!Q(\alpha)e^{\alpha t}.
+$$
+Þetta gefur okkur að
+\begin{equation*}
+P(D)u_p=e\sp{\alpha t} \qquad \text{ ef } \qquad
+u_p(t) = \dfrac{t^ke^{\alpha t}}{k!Q(\alpha)}.
+\label{2.4.13}
+\end{equation*}
+Nú skulum við gera ráð fyrir því að
+$i\alpha$ sé núllstöð $P$ af stigi $k$ og að $-i\alpha$ sé núllstöð
+$P$ af stigi $l$.  Þá getum við þáttað $P$ á tvo mismunandi vegu í
+$$
+P(\lambda)= (\lambda-i\alpha)^kQ(\lambda), \qquad
+P(\lambda)= (\lambda+i\alpha)^lR(\lambda),
+$$
+þar sem $Q$ og $R$ eru margliður af stigi $m-k$ og $m-l$, 
+$Q(i\alpha)\neq 0$ og $R(-i\alpha)\neq 0$.   Þetta gefur að
+ \begin{equation*}
+P(D)u_p=\cos \alpha t \qquad\text{ ef } \qquad
+u_p(t)=\dfrac{t^ke^{i\alpha t}}{2(k!)Q(i\alpha)}+
+\dfrac{t^le^{-i\alpha t}}{2(l!)R(-i\alpha)},
+\label{2.4.14}
+ \end{equation*}
+og
+ \begin{equation*}
+P(D)u_p=\sin \alpha t \qquad \text{ ef } \qquad
+u_p(t)=\dfrac{t^ke^{i\alpha t}}{2i(k!)Q(i\alpha)}-
+\dfrac{t^le^{-i\alpha t}}{2i(l!)R(-i\alpha)}.
+\label{2.4.15}
+ \end{equation*}
+
+\section{Green-föll\index{Green-fall}}
+
+\noindent
+Í síðustu grein skoðuðum við nokkrar einfaldar aðferðir til að finna
+sérlausnir á línulegum jöfnum með fastastuðla, þar sem hægri hlið
+jöfnunnar $f(t)$ er veldisvísisfall eða eitthvert skylt fall.  Núna
+ætlum við að kynna okkur almenna aðferð til þess að 
+finna sérlausn á
+ \begin{equation*}P(t,D)u=(a_m(t)D^m+\cdots+a_1(t)D+a_0(t))u=f(t), \qquad
+t\in I,
+\label{2.5.1}
+ \end{equation*}
+þar sem $I$ er eitthvert bil á rauntalnaásnum, föllin $a_0,
+\dots,a_m,f$ eru í $C(I)$ og $a_m(t)\neq 0$ fyrir öll $t\in I$.  
+
+Ef $\tau\in I$ er einhver ótiltekinn punktur, þá segir fylgisetning \tilv 
+6.7.7 að til sé ótvírætt ákvörðuð lausn í $C^m(I)$ á
+upphafs\-gildis\-verk\-efninu 
+ $$P(t,D_t)u=0, \qquad
+u(\tau)=u\dash(\tau)=\cdots=u\sp{(m-2)}(\tau)=0, \quad 
+u\sp{(m-1)}(\tau)=1/a_m({\tau}). 
+ $$
+Við táknum hana með $G(t,\tau)$.  Þar með ákvarðast fallið $G$ af
+skilyrðunum 
+ 
+\begin{gather*}
+P(t,D_t)G(t,\tau)=0,  \qquad t,\tau\in I,\label{2.5.2}\\
+G(\tau,\tau)=\partial_tG(\tau,\tau)=\cdots=
+\partial_t\sp{(m-2)}G(\tau,\tau)=0, \quad
+\partial_t\sp{(m-1)}G(\tau,\tau)=1/a_m({\tau})\label{2.5.3}. 
+\end{gather*}
+ 
+Nú tökum við $a\in I$ og sýnum fram á
+að fallið 
+\begin{equation*}
+u_p(t) = \int_a\sp t G(t,\tau)f(\tau) \, d\tau, \qquad t\in I,\label{2.5.4}
+\end{equation*}
+uppfylli jöfnuna $P(t,D)u=f(t)$, $t\in I$.
+Til þess að ráða við þetta þurfum við að vita að fallið $G(t,\tau)$
+sé heildanlegt með tilliti til $\tau$ og jafnframt hvernig á að deilda
+fall sem gefið er með svona formúlu:
+
+\begin{hs}\label{hs2.5.1}
+Ef $I$ er bil á raunásnum, $a\in I$, $f\in C(I)$ og $g\in
+C(I\times I)$, er samfellt deildanlegt fall af fyrri breytistærðinni,
+þ.e.~${\partial}_tg\in C(I\times I)$,  þá
+er fallið $h$, sem gefið er með formúlunni  
+ $$h(t)=\int_a\sp t g(t, \tau)f(\tau) \, d\tau, \qquad t\in I,
+ $$
+í $C\sp 1(I)$ og afleiða þess er 
+ $$h\dash(t)=g(t,t)f(t)+\int_a\sp t \partial_tg(t,\tau)f(\tau) \, d\tau,
+\qquad t\in I.
+ $$
+\end{hs}
+
+Nú skulum við ganga út frá því að $\partial_t^{j}G\in C(I\times I)$ 
+fyrir $j=0,\dots,m$ og líta
+aftur á fallið $u_p$ sem skilgreint var með (\ref{2.5.4}). 
+Með því að beita hjálparsetningu \ref{hs2.5.1}, fáum við að $u_p\in C\sp
+1(I)$  og
+ $$u_p\dash(t) = G(t,t)f(t)+\int_a\sp t \partial_t G(t,\tau)f(\tau) \, d\tau.
+ $$
+Nú er $G(t,t)=0$ fyrir öll $t\in I$ samkvæmt fyrsta upphafsskilyrðinu
+á $G$, svo við fáum að $u_p\in C\sp 2(I)$ og
+ $$u_p\ddash(t) = \partial_tG(t,t)f(t)
++\int_a\sp t \partial_t^2G(t,\tau)f(\tau) \, d\tau.
+ $$
+Ef $m > 2$ þá er $\partial_tG(t,t)=0$ fyrir öll $t\in I$
+og við getum haldið áfram að deilda fallið $u_p$, þar til við fáum að
+$u_p\in C\sp m(I)$ og  
+ $$
+u_p\sp{(m)}(t) = \partial_t^{m-1}G(t,t)f(t)+\int_a\sp t
+\partial_t^mG(t,\tau)f(\tau) \, d\tau. 
+ $$
+Nú er $\partial_t\sp{m-1}G(t,t)=1/a_m(t)$ fyrir öll $t\in I$.  
+Við tökum saman liði og fáum
+\begin{align*}
+P(t,D_t)u_p(t)&=
+a_m(t)f(t)/a_m(t) +\sum\limits_{j=0}\sp m
+a_j(t)\int_a\sp t \partial_t^jG(t,\tau)f(\tau)\, d\tau=\\
+&=f(t)+\int_a\sp t P(t,D_t)G(t,\tau)f(\tau)\, d\tau=f(t),
+\end{align*}
+því $P(t,D_t)G(t,\tau)=0$ fyrir öll $\tau\in I$. Á jöfnunum fyrir
+afleiður $u_p$ sjáum við að  
+$$u_p(a)=u_p\dash(a)=\cdots=u_p\sp{(m-1)}(a)=0.$$
+ Við getum því tekið saman útreikninga okkar:
+
+\begin{se}
+Látum $I$ vera bil á rauntöluásnum,  $a\in I$ og $P(t,D)$ vera
+línu\-legan afleiðuvirkja á forminu (\ref{2.5.3}) með samfellda stuðla
+og $a_m(t)\neq 0$ fyrir öll $t\in I$. 
+Fyrir sérhvert $f\in C(I)$ er til ótvírætt ákvörðuð lausn $u_p\in
+C\sp m(I)$ á
+upphafsgildisverkefninu 
+ \begin{equation*}P(t,D)u=f(t), \qquad u(a)=u\dash(a)=\cdots=u\sp{(m-1)}(a)=0,\label{2.5.5}
+ \end{equation*}
+og er hún gefin með formúlunni
+\begin{equation*}u_p(t) = \int_a\sp t G(t,\tau)f(\tau) \, d\tau, \qquad t\in I,\label{2.5.6}
+\end{equation*}
+þar sem $G$, er lausnin á  upphafsgildisverkefninu
+ \begin{gather*}
+P(t,D_t)G(t,\tau)=0,  \qquad t,\tau\in I,\label{2.5.7}\\
+G(\tau,\tau)=\partial_tG(\tau,\tau)=\cdots=
+\partial_t\sp{(m-2)}G(\tau,\tau)=0, \quad
+\partial_t\sp{(m-1)}G(\tau,\tau)=1/a_m({\tau})\label{2.5.8}. 
+\end{gather*}
+ Fallið $G(t,\tau)$ er $m$-sinnum samfellt deildanlegt fall af $t$
+fyrir sérhvert $\tau\in I$ og 
+$\partial_t^jG\in C(I\times I)$ fyrir $j=0,\dots,m$. 
+\end{se}
+
+
+
+\begin{sk} Fallið $G(t,\tau)$ í síðustu setningu kallast {\it
+Green-fall\index{Green-fall}\index{Green-fall!fyrir
+upphafsgildisverkefni}}
+virkjans $P(t,D)$.
+ Við tölum einnig um {\it fall Greens}.
+\end{sk}
+
+Mjög auðvelt er að ákvarða Green-fallið fyrir línulegan 
+afleiðuvirkja með fasta\-stuðla:
+
+\begin{fs}  Gerum ráð fyrir að 
+$P(D)=a_mD\sp m+\cdots+a_1D+a_0$ sé línulegur afleiðuvirki með
+fastastuðla.  Látum $g\in C\sp{\infty}(\R)$ vera fallið sem uppfyllir
+ \begin{equation*}P(D)g=0, \quad g(0)=g\dash(0)=\cdots=g^{(m-2)}(0)=0, \quad
+g^{(m-1)}(0)=1/a_m.\label{2.5.9}
+ \end{equation*}
+Þá er $G(t,\tau)=g(t-\tau)$  Green-fall virkjans $P(D)$.
+\end{fs}
+
+
+\section{Wronski-fylkið\index{Wronski-fylki} og
+Wronski-ákveðan\index{Wronski-ákveða}}
+
+\noindent
+Nú skulum við láta $G(t,\tau)$ tákna Green-fallið sem lýst er í
+setningu 7.5.2 og jafnframt gera ráð fyrir því að $u_1,\dots, u_m$ sé
+grunnur í ${\cal N}(P(t,D))$.  Fyrst $G(t,\tau)$ er lausn á óhliðruðu
+jöfnunni   $P(t,D_t)G(t,\tau)=0$
+fyrir sérhvert  $\tau\in I$, þá getum við skrifað
+$G(t,\tau)$ sem línulega samantekt af grunnföllunum með stuðlum sem
+eru háðir $\tau$,
+$$
+G(t,\tau)=c_1(\tau)u_1(t)+\cdots+c_m(\tau)u_m(t), \qquad t,\tau\in I.
+$$
+Stuðlaföllin $c_1,\dots,c_m$ ákvarðast síðan af upphafsskilyrðunum,
+\begin{align*}
+G(\tau,\tau) &= c_1(\tau)u_1(\tau)+\cdots+c_m(\tau)u_m(\tau)=0,\\
+\partial_tG(\tau,\tau) &= c_1(\tau)u_1\dash(\tau)+
+\cdots+c_m(\tau)u_m\dash(\tau)=0,\\
+&\qquad\vdots\qquad\qquad\vdots\qquad\qquad\vdots\\
+\partial_t\sp{m-2}G(\tau,\tau) &= c_1(\tau)u_1\sp{(m-2)}(\tau)+
+\cdots+c_m(\tau)u_m\sp{(m-2)}(\tau)=0,\\
+\partial_t\sp{m-1}G(\tau,\tau) &= c_1(\tau)u_1\sp{(m-1)}(\tau)+
+\cdots+c_m(\tau)u_m\sp{(m-1)}(\tau)=1/a_m({\tau}).
+\end{align*}
+Á fylkjaformi verður þetta jöfnuhneppi
+ \begin{equation*}V(\tau)c(\tau)=a_m({\tau})^{-1}e_m,\label{2.6.1}
+ \end{equation*}
+þar sem $V\in C(I,\C\sp{m\times m})$ er fylkjafallið
+ \begin{equation*}V(\tau)=V(u_1,\dots,u_m)(\tau)=
+\left[\begin{matrix}
+u_1(\tau)&\dots&u_m(\tau)\\
+u_1\dash(\tau)&\dots&u_m\dash(\tau)\\
+\vdots&\ddots&\vdots\\
+u_1\sp{(m-1)}(\tau)&\dots&u_m\sp{(m-1)}(\tau)
+\end{matrix}\right]
+\label{2.6.2}
+ \end{equation*}
+en $c(\tau)=[c_1(\tau),\dots,c_m(\tau)]^t$ og $e_m=[0,\dots,0,1]^t$.
+
+\begin{sk}
+Látum $I$ vera bil á $\R$ og $u_1,\dots,u_m$ vera $m-1$ sinnum
+deildanleg föll á $I$.  Þá nefnist fylkjagilda fallið
+$V=V(u_1,\dots,u_m)$, sem skilgreint er með (\ref{2.6.2}),  {\it Wronski-fylki}
+fallanna $u_1,\dots, u_m$.  Ákveða þess kallast {\it Wronski-ákveða}
+fallanna $u_1,\dots, u_m$ og hana táknum við með 
+$W=W(u_1,\dots,u_m)$.
+\end{sk}
+
+Ef við þekkjum Wronski-ákveðuna af $m$ lausnum á afleiðujöfnu í einum
+punkti, þá getum við reiknað hana út með því að leysa fyrsta stigs
+afleiðujöfnu: 
+
+\begin{se}\label{set2.6.2}
+Látum
+$P(t,D)=a_m(t)D\sp m+\cdots+a_1(t)D+a_0(t)$ vera afleiðuvirkja með
+samfellda stuðla, $u_1,\dots,u_m$ vera lausnir á óhliðruðu jöfnunni
+$P(t,D)u=0$ og táknum  Wronski-ákveðu þeirra með $W(t)$.  Þá
+uppfyllir $W$ fyrsta stigs afleiðujöfnuna
+\begin{equation*}a_m(t) W\dash+a_{m-1}(t)W=0 \label{2.6.3}
+\end{equation*}
+og þar með gildir formúlan
+ \begin{equation*}W(t)=W(a)\exp\bigg(-\int_a\sp t\dfrac{a_{m-1}(\tau)}{a_m(\tau)}\,
+d\tau\bigg) \label{2.6.4}
+ \end{equation*}
+fyrir öll $a$ og $t$ á bili $J$ þar sem $a_m$ er núllstöðvalaust.
+\end{se}
+
+Sönnunin er tekin fyrir í grein \tilv 7.7.
+Formúluna fyrir Wronski-ákveðuna má nota á ýmsa vegu:
+
+\begin{se}
+  Látum $u_1,\dots,u_m$ vera lausnir á óhliðruðu jöfnunni
+$P(t,D)u=0$, þar sem $P(t,D)$ er sami virkinn og í setningu
+\ref{set2.6.2}, og gerum ráð fyrir að $a_m$ sé núllstöðvalaust á opnu bili
+$J\subset I$.  Þá eru eftirfarandi skilyrði jafngild:
+
+\item{(i)}  Föllin $u_1,\dots,u_m$ eru línulega óháð á bilinu $J$.
+
+\item{(ii)} $W(u_1,\dots,u_m)(t)\neq 0$ fyrir sérhvert $t\in J$.
+
+\item{(iii)} $W(u_1,\dots,u_m)(a)\neq 0$ fyrir eitthvert $a\in J$.
+
+\item{(iv)}  Dálkvigrarnir í Wronski-fylkinu $V(u_1,\dots,u_m)(t)$  eru
+línulega óháðir fyrir sérhvert $t\in J$.
+
+\item{(v)}  Dálkvigrarnir í Wronski-fylkinu $V(u_1,\dots,u_m)(a)$  eru
+línulega óháðir fyrir eitthvert $a\in J$.
+\end{se}
+
+Nú skulum við rifja það upp að $n\times n$ fylki $A$ hefur andhverfu
+þá og því aðeins að $\det A\neq 0$.  Andhverfuna er hægt að reikna út
+á ýmsa vegu, en til er formúla fyrir henni,
+ \begin{equation*}A\sp{[-1]}=\dfrac 1{\det A}B\sp t,\label{2.6.7}
+ \end{equation*}
+þar sem $B=(b_{jk})_{j,k=1}\sp n$ táknar fylgiþáttafylki $A$, sem 
+er $n\times n$ fylkið með stökin
+ \begin{equation*}b_{jk}=(-1)\sp{j+k}\det A_{jk},\label{2.6.8}
+ \end{equation*}
+þar sem $A_{jk}$ er $(n-1)\times (n-1)$ fylkið, sem fæst með því að
+fella niður línu númer $j$ og dálk númer $k$ í fylkinu $A$, og $B\sp
+t$ er fylkið $B$ bylt, þar sem víxlað er á línum og dálkum í $B$.
+Við höfum nú bætt miklu við þekkingu okkar á Green-föllum:
+
+
+\begin{se}\label{set2.6.4}
+Látum $I$ vera bil á $\R$ og $P(t,D)=a_m(t)D\sp m+\cdots+a_1(t)D+a_0(t)$
+vera afleiðuvirkja með
+samfellda stuðla á $I$ og $u_1,\dots,u_m$ vera grunn í ${\cal N}(P(t,D))$. 
+Green-fallið sem lýst er í setningu 7.5.2
+er gefið með formúlunni
+ \begin{equation*}G(t,\tau)=c_1(\tau)u_1(t)+\cdots+c_m(\tau)u_m(t), \qquad t,\tau\in I,
+\label{2.6.9}
+ \end{equation*}
+þar sem vigurinn $a_m({\tau})(c_1(\tau),\dots,c_m(\tau))$ myndar aftasta dálkinn
+í andhverfu Wronski-fylkisins $V(u_1,\dots,u_m)(\tau)$,
+ \begin{equation*}c_j(\tau)=(-1)^{m+j} \dfrac{\det V_{mj}(u_1,\dots,u_m)(\tau)}
+{a_m({\tau})W(u_1,\dots, u_m)(\tau)},
+\label{2.6.10}
+ \end{equation*}
+þar sem $V_{mj}(u_1,\dots,u_m)(\tau)$ táknar $(m-1)\times (m-1)$
+fylkið sem fæst með því að fella niður neðstu línuna og dálk númer
+$j$ í $V(u_1,\dots,u_m)(\tau)$.    Ef $f\in
+C(I)$, þá hefur upphafsgildisverkefnið (7.5.5) lausnina $u_p\in C\sp
+m(I)$  sem
+gefin er með
+ \begin{equation*}u_p(t)=v_1(t)u_1(t)+\cdots+v_m(t)u_m(t), \qquad t\in I,\label{2.6.11}
+ \end{equation*}
+þar sem stuðlaföllin $v_j$ eru gefin með formúlunni
+ \begin{equation*}v_j(t)=\int_a\sp t c_j(\tau)f(\tau) \, d\tau.\label{2.6.12}
+ \end{equation*}
+\end{se}
+
+
+Við fáum nú beina formúlu fyrir Green-falli annars stigs virkja:
+
+\begin{fs} Látum $P(t,D)=a_2(t)D^2+a_1(t)D+a_0(t)$ vera annars stigs
+afleiðuvirkja á bilinu $I$ með samfellda stuðla og $a_2(t)\neq 0$ fyrir
+öll $t\in I$. Gerum nú ráð fyrir að $u_1$ og $u_2$ séu línulega óháðar 
+lausnir á óhliðruðu jöfnunni $P(t,D)u=0$.  Þá er 
+\begin{equation*}
+G(t,\tau) 
+=a_2(\tau)^{-1}
+\left|\begin{matrix}
+u_1(\tau) & u_1(t)\\
+u_2(\tau) & u_2(t)
+\end{matrix}\right|\bigg /
+\left|\begin{matrix}
+u_1(\tau) & u_2({\tau})\\
+u_1\dash(\tau) & u_2\dash({\tau})
+\end{matrix}\right|.
+\label{2.6.13}
+\end{equation*}
+\end{fs}

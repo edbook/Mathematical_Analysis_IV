@@ -1,0 +1,672 @@
+\chapter
+{UNDIRSTÖÐUATRIÐI UM AFLEIÐUJÖFNUR}
+
+
+
+
+\section{Skilgreiningar á nokkrum hugtökum}
+
+\subsection*{Venjulegar afleiðujöfnur}
+
+{\it Afleiðujafna\index{afleiðujafna}} er  jafna sem lýsir
+sambandi milli fallgilda óþekkts falls og gilda á einstökum 
+afleiðum þess.  Ef óþekkta fallið er háð einni breytistærð, 
+þá kallast jafnan {\it venjuleg afleiðujafna,
+\index{afleiðujafna!venjuleg}\index{venjuleg afleiðujafna}} 
+en ef það er háð fleiri en einni breytistærð, þá
+kallast hún {\it hlutafleiðujafna\index{hlutafleiðujafna}}.  
+Venjulega afleiðujöfnu er alltaf hægt að umrita yfir í jafngilda jöfnu
+af gerðinni
+\begin{equation*}
+F(t,u,u',u\ddash,\dots,u\sp{(m)})=0 \label{1.1.1}
+\end{equation*}
+þar sem við hugsum okkur að $t$ sé breytistærð, sem tekur gildi í
+einhverju hlutmengi $A$ af $\R$ og að $u$ sé óþekkt fall sem skilgreint er
+á $A$ og tekur gildi í $\R$, $\C$ eða jafnvel $\R^m$.  
+Úrlausn jöfnunnar felst í því að finna opið bil $I\subset A$ og
+öll föll $u$ þannig að vigurinn
+ \begin{equation*}(t,u(t),u\dash(t),\dots,u\sp{(m)}(t))\label{1.1.2}
+ \end{equation*}
+sé í skilgreiningarmengi fallsins $F$ og uppfylli jöfnuna
+ \begin{equation*}F(t,u(t),u'(t),u\ddash(t),\dots,u\sp{(m)}(t))=0,
+ \qquad t\in I.\label{1.1.3}
+ \end{equation*}
+Við  segjum  þá að fallið $u$ sé lausn á jöfnunni (\ref{1.1.1}).
+{\it Stig\index{stig}\index{afleiðujafna!stig}}
+afleiðujöfnu\index{stig!afleiðujöfnu} er hæsta stig á afleiðu, sem
+kemur fyrir í jöfnunni.  
+Við segjum að $m$-ta stigs afleiðujafnan (\ref{1.1.1}) sé á 
+{\it staðalformi\index{staðalform}\index{afleiðujafna!staðalform}}
+þegar hún hefur verið umrituð yfir í jafngilda jöfnu af taginu
+ \begin{equation*}u\sp{(m)}=G(t,u,u',\dots,u\sp{(m-1)}).\label{1.1.4}
+ \end{equation*}
+
+\subsection*{Línulegar afleiðujöfnur}
+
+Afleiðujafna af gerðinni 
+ \begin{equation*}a_m(t)u\sp{(m)}+a_{m-1}(t)u\sp{(m-1)}+\cdots+a_1(t)u'+a_0(t)u=f(t),
+\label{1.1.5}
+ \end{equation*}
+þar sem föllin $a_0,\dots,a_m,f$ eru skilgreind á bili $I\subset \R$,
+er sögð vera {\it línuleg\index{afleiðujafna!línuleg}\index{línuleg
+afleiðujafna}}.  Ástæðan
+fyrir nafngiftinni er, að vinstri hliðin skilgreinir línulega vörpun
+\begin{gather*}
+L:C\sp m(I)\to C(I),\\
+Lu(t)=
+a_m(t)u\sp{(m)}(t)+a_{m-1}(t)u\sp{(m-1)}(t)+
+\cdots+a_1(t)u'(t)+a_0(t)u(t),
+\end{gather*}
+ef $a_0,\dots,a_m\in C(I)$.
+Hér táknar $C^m(I)$ línulegt rúm allra $m$ sinnum samfellt deildanlegra
+falla á $I$ og $C(I)$ táknar rúm allra samfelldra falla á $I$.  
+Við segjum að línulega jafna  sé {\it
+óhliðruð\index{afleiðujafna!óhliðruð}\index{óhliðraður}} ef $f$ er núllfallið.
+Annars segjum við að hún sé {\it
+hliðruð\index{afleiðujafna!hliðruð}\index{hliðraður}}.  
+
+\subsection*{Hlutafleiðujöfnur}
+
+Erfitt er að lýsa hlutafleiðujöfnum 
+með almennum hætti eins, en sem dæmi um hlutafleiðujöfnur
+getum við tekið
+\begin{alignat*}{2}
+&\partial_xu+i\partial_yu=0,& \qquad
+&\text{({\it
+Cauchy--Riemann--jafna\index{Cauchy--Riemann!jafna}
+\index{jafna!Cauchy--Riemann}})},\\
+&\partial_x\sp 2u+\partial_y\sp 2u=0,&\qquad
+&\text{({\it Laplace--jafna\index{Laplace!jafna}\index{jafna!Laplace}})},\\
+&\partial_tu-\kappa(\partial_x\sp 2u+\partial_y\sp 2u+\partial_z\sp
+2u)=f(x,y,z,t),& \qquad
+&\text{({\it varmaleiðnijafna\index{varmaleiðnijafna}})},\\
+&\partial_t^2u-c^2(\partial_x\sp 2u+\partial_y\sp 2u+\partial_z\sp
+2u)=f(x,y,z,t),& \qquad
+&\text{({\it bylgjujafna\index{bylgjujafna}})}.
+\end{alignat*}
+
+\subsection*{Tilvist og ótvíræðni lausna}
+
+Það eru margvíslegar spurningar sem menn leita svara við þegar
+afleiðujöfnur eru leystar.  Eðlilega fjallar fyrsta spurningin um
+tilvist á lausn.  Ef henni er svarað játandi er eðlilegt að spyrja
+næst með hvaða skilyrðum lausn sé ótvírætt ákvörðuð og síðan
+hvernig ákvarða megi lausnir  og finna nálganir á þeim.
+Til þess að útskýra þetta skulum við líta á
+einföldustu afleiðujöfnu sem hugsast getur
+$$u'=0.$$
+Við vitum að öll fastaföll, $u(t)=c$, $t\in\R$, uppfylla þessa jöfnu
+og að sérhver lausn er fastafall.
+Spurningunni um tilvist er því svarað játandi, en spurningunni um ótvíræðni
+er svarað neitandi, því  við höfum óendanlega margar lausnir.  Lítum á
+aðeins flóknara dæmi, nefnilega jöfnuna
+\begin{equation*}u'=f, \label{1.1.6}
+\end{equation*}
+þar sem við hugsum okkur að fallið $f$ sé samfellt á bilinu $I\subset
+\R$.  Undirstöðusetning stærðfræðigreiningarinnar segir okkur að
+sérhvert stofnfall $f$ sé lausn.  Jafnframt vitum við að mismunur
+tveggja stofnfalla er fastafall og því er sérhver lausn af gerðinni
+ \begin{equation*}
+ u(t)=b+\int_a\sp t f(\tau) \, d\tau, \qquad t,a\in I.\label{1.1.7}
+ \end{equation*}
+Ef við setjum nú það skilyrði að lausnin eigi að taka ákveðið gildi $b$ 
+í punktinum $a\in I$, 
+ \begin{equation*}u'=f(t), \qquad u(a)=b,\label{1.1.8}
+ \end{equation*}
+þá gefur undirstöðusetning stærðfræðigreiningarinnar að til er 
+ótvírætt ákvörðuð lausn og hún er sett fram með formúlunni hér að framan.
+
+\section{Fyrsta stigs jöfnur}  
+
+
+\subsection*{Línulegar jöfnur}
+
+Fyrsta stigs línuleg afleiðujafna er af gerðinni
+ \begin{equation*}a_1(t)u'+a_0(t)u=f(t).\label{1.2.1}
+ \end{equation*}\index{afleiðujafna!línuleg fyrsta stigs}
+\index{línuleg fyrsta stigs afleiðujafna}
+Við skulum rifja upp aðferðina til að leysa þessa jöfnu í  því tilfelli
+að stuðlarnir eru samfelld föll á einhverju bili $I$ og að $a_1(t)\neq
+0$ fyrir öll $t\in I$. Með því að deila í gegnum jöfnuna með $a_1(t)$,
+þá getum við gert ráð fyrir því að $a_1$ sé fastafallið $1$ og við ætlum
+því að leysa
+ $$u'+a_0(t)u=f(t).
+ $$
+Aðferðin gengur út á
+að skilgreina $A$ sem eitthvert stofnfall $a_0$,
+ $$A(t)=c+\int_a^t a_0({\tau})\, d{\tau}, \qquad t,a\in I, 
+ $$ 
+og athuga að ef $u$ er lausn, þá gildir
+ $$\dfrac d{dt} (e\sp{A(t)}u(t))=e\sp{A(t)}(u'(t)+a_0(t)u(t))=e\sp{A(t)}f(t).
+ $$
+Af þessari jöfnu leiðir síðan að 
+ $$e\sp{A(t)}u=C+\int_a^t e\sp{A({\tau})}f({\tau}) \, d{\tau},
+ $$
+og þar með fæst almenna lausnarformúlan
+ $$u(t)=e\sp{-A(t)}(C+\int_a^t e\sp{A({\tau})}f({\tau}) \, d{\tau}),
+ $$
+þar sem $C$ er einhver fasti.  Þessi útreikningur okkar sýnir að
+sérhver lausn á jöfnunni hlýtur að vera af þessari gerð. Nú er hins
+vegar lauflétt að sýna að þetta er lausn, með því að stinga þessari 
+formúlu inn í
+afleiðujöfnuna.  Verkefnið 
+ $$u'+a_0(t)u=f(t), \qquad u(a)=b,
+ $$
+hefur ótvírætt ákvarðaða lausn og hún er fundin  með því að velja
+stofnfallið $A$ þannig að $A(a)=0$ og $C=b$,
+ \begin{equation*}
+u(t)=e\sp{-A(t)}(b+\int_a\sp t e\sp{A(\tau)}f(\tau) \, d\tau), 
+\qquad A(t)=\int_a\sp t a_0(\tau) \, d\tau.\label{1.2.2}
+ \end{equation*}
+
+\subsection*{Aðskiljanlegar jöfnur}
+
+Við segjum að fyrsta stigs afleiðujafna $u'=f(t,u)$ sé
+{\it aðskiljanleg\index{afleiðujafna!aðskiljanleg}\index{aðskiljanleg
+afleiðujafna}} ef hægt er að
+rita fallið $f$ sem kvóta af gerðinni $f(t,x)=g(t)/h(x)$.
+Til þess að leysa jöfnuna, þá skrifum við hana
+sem  $h(u)u'=g(t)$ og heildum síðan
+$$ \int h(u(t))u'(t) \, dt = c+\int g(t)\, dt, $$
+þar sem $c$ er heildunarfasti.  Ef við viljum síðan leysa verkefnið
+$$ u'=f(t,u), \qquad u(a)=b, $$
+þá  veljum við stofnfall $H$ fyrir
+$h$ og heildum
+ \begin{equation*}H(u(t))-H(b)= \int_b\sp{u(t)} h(x) \, dx =
+\int_a\sp t h(u({\tau}))u'({\tau}) \, d{\tau} = 
+\int_a\sp t g(\tau) \, d\tau.\label{1.2.3}
+ \end{equation*}
+Ef til er grennd um punktinn $b$ þar sem fallið $H$ hefur andhverfu,
+þá getum við skrifað lausnina sem
+ \begin{equation*}u(t) = H\sp{[-1]}\left( H(b)+G(t)\right), \qquad G(t)=\int_a\sp t
+g(\tau)\, d\tau. \label{1.2.4}
+ \end{equation*}
+Í útreikningum á venjulegum dæmum borgar sig yfirleitt ekki að reikna
+út formúlu fyrir $H\sp {[-1]}$ og stinga síðan gildinu $H(b)+G(t)$
+inn í þá formúlu eins og lýst er hér.  Þess í stað er betra að
+leysa $u(t)$ úr jöfnunni $H(u(t))-H(b)=G(t)$.
+
+\section{Afleiðujöfnuhneppi}\label{grein1.3}
+
+\noindent
+{\it Afleiðujöfnuhneppi\index{afleiðujöfnuhneppi}} er safn af jöfnum sem
+lýsa sambandi milli gilda
+óþekktra falla og gilda á einstökum afleiðum þeirra.  Ef óþekktu föllin eru
+háð einni breytistærð, þá kallast það {\it
+venjulegt\index{afleiðujöfnuhneppi!venjulegt} afleiðujöfnuhneppi},
+en það kallast {\it
+hlutafleiðujöfnuhneppi\index{hlutafleiðujöfnuhneppi}} ef þau eru háð fleiri en
+einni breytistærð.  Venjulegt afleiðujöfnuhneppi er alltaf hægt að
+umrita yfir í jöfnur af gerðinni
+\begin{equation*}
+F_j(t,u_1,\dots,u_k,u_1\dash,\dots,u_k\dash,\dots,
+u_1^{(m)},\dots,u_k^{(m)})=0, \qquad j=1,\dots,l,
+\label{1.3.1}
+\end{equation*}
+þar sem $t$ táknar breytistærðina, $u_1,\dots,u_k$ eru óþekktu föllin og
+föllin $F_1,\dots,F_l$  taka gildi í $\R$ eða $\C$.  Til þess að einfalda
+ritháttinn, þá skilgreinum við vigurgildu föllin $u=(u_1,\dots,u_k)$ og
+$F=(F_1,\dots,F_l)$. Þá eru jöfnurnar jafngildar vigurjöfnunni
+$F(t,u,u\dash,\dots,u^{(m)})=0$
+sem hefur sama útlit.
+
+
+\subsection*{Staðalform hneppa}
+
+Við segjum að hneppið sé á {\it
+staðalformi\index{staðalform}}\index{afleiðujöfnuhneppi!staðalform}
+, ef fjöldi jafna og fjöldi
+óþekktra falla er sá sami og það er af gerðinni
+$$
+u^{(m)}=G(t,u,u\dash,\dots,u^{(m-1)}).
+$$
+Mikilvægustu hneppin sem við fáumst við eru
+fyrsta stigs venjuleg afleiðujöfnuhneppi á staðalformi
+$$
+u\dash =G(t,u).
+$$
+Ef við skrifum upp hnitaföllin fyrir þetta hneppi, þá  fáum við jöfnurnar
+\begin{align*}
+u_1\dash&= G_1(t, u_1,\dots, u_m),\\
+u_2\dash&= G_2(t, u_1,\dots, u_m),\\
+&\quad \vdots\\
+u_m\dash&= G_m(t, u_1,\dots, u_m),
+\end{align*}
+þar sem $G_j:\Omega\to\R$,  $\Omega\subset \R\times\R^m$ eða
+$G_j:\Omega\to\C$,  $\Omega\subset \R\times\C^m$ eftir því hvort við
+viljum að lausnin taki rauntölugildi eða tvinntölugildi.
+Föllin $u=(u_1,\dots,u_m)$ og $G=(G_1,\dots,G_m)$
+taka gildi í vigurrúminu $\R\sp m$ eða $\C\sp m$, eftir því hvort við
+hugsum okkur að lausnirnar eigi að taka rauntölugildi eða
+tvinntölugildi.
+
+
+\subsection*{Línuleg afleiðujöfnuhneppi}
+
+Við segjum að fyrsta stigs jöfnuhneppi sé {\it
+línulegt\index{afleiðujöfnuhneppi!línulegt}\index{línulegt
+afleiðujöfnuhneppi}} ef fallið
+$G$ er af gerðinni 
+ $$G(t,x)=A(t)x+f(t),
+ $$
+þar sem $A(t)$ er $m\times m$ fylki og $f(t)$ er $m$--vigur.
+Ef við skrifum upp hnitin þá verður hneppið
+\begin{align*}
+u_1\dash&=a_{11}(t)u_1+\cdots+a_{1m}(t)u_m+f_1(t),\\
+u_2\dash&=a_{21}(t)u_1+\cdots+a_{2m}(t)u_m+f_2(t),\\
+&\qquad \qquad \vdots\qquad \qquad \qquad \qquad \vdots\\
+u_m\dash&=a_{m1}(t)u_1+\cdots+a_{mm}(t)u_m+f_m(t).
+\end{align*}
+Hér eru föllin $a_{jk}(t)$ stökin í fylkinu $A(t)$.
+Við segjum að hneppið sé {\it
+óhliðrað\index{afleiðujöfnuhneppi!óhliðrað}\index{línulegt
+afleiðujöfnuhneppi!óhliðrað}}
+ef $f$ er núllfallið og við segjum  að það sé {\it
+hliðrað\index{afleiðujöfnuhneppi!hliðrað}\index{línulegt
+afleiðujöfnuhneppi!hliðrað}}  annars.
+
+
+\subsection*{Jöfnur af hærri stigum og jafngild hneppi}
+
+Lítum nú á venjulega $m$--ta stigs afleiðujöfnu á staðalformi
+\begin{equation*}v\sp{(m)}=G(t,v,v\dash,\dots,v\sp{(m-1)}).\label{1.3.2}
+\end{equation*}
+Ef við skilgreinum vigurfallið $u=(u_1,\dots,u_m)$ með
+$$u_1=v, \quad u_2=v\dash,\dots, \quad  u_m=v\sp{(m-1)},
+$$ þá uppfyllir $u$
+jöfnuhneppið
+ \begin{equation*}
+u_1\dash = u_2, \quad
+u_2\dash = u_3, \quad\dots \quad
+u_{m-1}\dash = u_m, \quad
+u_m\dash =G(t, u_1,\dots,u_m). 
+\label{1.3.3}
+ \end{equation*}
+Jafnan og jöfnuhneppið eru jafngild í þeim skilningi
+að sérhver lausn $v$ á  gefur lausn
+$u=(v,v\dash,\dots,v\sp{(m-1)})$ á hneppinu og sérhver lausn $u$ á
+hneppinu  gefur lausnina $v=u_1$ á jöfnunni.  Þessi einfalda staðreynd
+er mikilvæg, því einfalt reynist  að sanna tilvist á lausnum á fyrsta
+stigs jöfnuhneppum á staðalformi.  Þá niðurstöðu er síðan hægt að nota
+til að sanna tilvist á lausnum á jöfnum af stigi stærra en $1$.  
+
+Línulega afleiðujafnan
+ $$a_m(t)v^{(m)}+\cdots+a_1(t)v\dash+ a_0(t)v=g(t)
+ $$
+er greinilega jafngild línulega hneppinu
+\begin{gather*}\label{1.3.4}
+u_1\dash = u_2,\qquad  u_2\dash = u_3, \qquad \dots, \quad
+u_{m-1}\dash = u_m\\
+u_m\dash
+=-(a_0(t)/a_m(t))u_1-\cdots-(a_{m-1}(t)/a_m(t))u_m+g(t)/a_m(t),\nonumber 
+\end{gather*}
+ef $a_m(t)\neq 0$ fyrir öll $t\in I$.
+Fylkið $A$ og vigurinn $f$ verða þá 
+\begin{equation*}A=\left[\begin{matrix}
+0&1&\dots&0\\
+0&0&\dots&0\\
+\vdots&\vdots&\ddots&\vdots\\
+0&0&\dots&1\\
+-a_0/a_m&-a_1/a_m&\dots&-a_{m-1}/a_m
+\end{matrix}\right],
+\qquad
+f=\left[\begin{matrix}
+0\\
+0\\
+\vdots\\
+0\\
+g/a_m
+\end{matrix}\right].\label{1.3.5}
+\end{equation*}
+ 
+\section{Upphafsgildisverkefni\index{upphafsgildisverkefni}}
+
+\noindent
+Oft hafa menn áhuga á að finna lausnir á afleiðujöfnum og
+afleiðujöfnuhneppum sem uppfylla einhverja ákveðna eiginleika.  {\it
+Upphafsgildisverkefni}  snúast um að leysa afleiðujöfnuhneppi með því
+hliðarskilyrði að lausnin og einhverjar afleiður hennar taki fyrirfram
+gefin gildi í ákveðnum punkti.   Upphafsgildisverkefni fyrir fyrsta
+stigs hneppi af staðalformi er til dæmis verkefnið
+\begin{equation*}
+u\dash=f(t,u), \quad t\in I, \qquad u(a)=b.
+\label{1.4.1}
+\end{equation*}
+Hér er átt við að finna eigi lausn $u=(u_1,\dots,u_m)$ á jöfnunni á
+bilinu $I$, sem tekur gildið $b=(b_1,\dots,b_m)$ í punktinum $a\in I$.
+Upphafsgildisverkefni fyrir $m$-ta stigs línulega jöfnu er af gerðinni
+\begin{equation*}
+\begin{cases} a_m(t)v^{(m)}+\cdots+a_1(t)v\dash+a_0(t)v=g(t), & t\in I,\\
+v(a)=b_0, \quad v\dash(a)=b_1, \quad \dots \quad  v^{(m-1)}(a)=b_{m-1}.&
+\end{cases}
+\label{1.4.2}
+\end{equation*}
+Ef $a_m(t)\neq 0$ fyrir öll $t\in I$, þá getum við deilt í gegnum
+jöfnuna með $a_m(t)$ og umskrifað hana síðan yfir í jafngilt $m\times m$
+línulegt jöfnuhneppi með óþekkta vigurfallið
+$u=(v,v\dash,\dots,v^{(m-1)})$. 
+
+
+\section{Jaðargildisverkefni}
+
+
+\noindent
+{\it Jaðargildisverkefni\index{jaðargildisverkefni}}  snúast um að leysa jöfnu
+$$u^{(m)}=f(t,u,u\dash,\dots,u^{(m-1)})$$  
+af stigi $m$ á takmörkuðu bili
+$I=[a,b]$ með skilyrðum á 
+$$
+u(a), \ u'(a),\dots,  \ u^{(m-1)}(a)\qquad \text{ og } 
+\qquad  u(b), \ u(b),\dots, \ u^{(m-1)}(b).
+$$  
+Þessi skilyrði eru venjulega sett fram þannig að ákveðnar línulegar
+samantektir af þessum fallgildum eigi að taka fyrirfram gefin gildi.
+Fyrir annars stigs jöfnu geta {\it
+jaðarskilyrðin\index{jaðargildisskilyrði}} til dæmis verið
+$$
+u(a)=0, \qquad u\dash(b)=0.
+$$
+{\it Lotubundin\index{jaðargildisskilyrði!lotubundin}\index{lotubundin
+jaðarskilyrði}} jaðarskilyrði eru af gerðinni
+$$
+u(a)=u(b), \qquad u\dash(a)=u\dash(b).
+$$
+Almenn línuleg jaðarskilyrði fyrir annars stigs jöfnu eru 
+\begin{align*}
+B_1u&={\alpha}_{11}u(a)+{\alpha}_{12}u\dash(a)
+    +{\beta}_{11}u(b)+{\beta}_{12}u\dash(b)=c_1\\
+B_2u&={\alpha}_{21}u(a)+{\alpha}_{22}u\dash(a)
+    +{\beta}_{21}u(b)+{\beta}_{22}u\dash(b)=c_2,
+\end{align*}
+þar sem stuðlarnir ${\alpha}_{jk}$, ${\beta}_{jk}$, $c_{j}$ eru gefnir
+fyrir $j,k=1,2$.  Almenn línuleg jaðarskilyrði fyrir $m$-ta stigs  jöfnu
+eru af gerðinni
+$$
+B_ju=\sum\limits_{l=1}^m \big({\alpha}_{jl}u^{(l-1)}(a)
++{\beta}_{jl}u^{(l-1)}(b)\big)=c_j, \qquad j=1,2,\dots,m.
+$$
+Við lítum á $B_j$ sem línulega vörpun $C^{m-1}[a,b]\to \C$ 
+og skilgreinum {\it
+jaðargildisvirkja\index{jaðargildisvirki}\index{virki}\index{virki!jaðargildis}}  
+$B:C^{m-1}[a,b]\to \C^m$ með formúlunni
+$Bu=(B_1u,\dots,B_mu)$.  Almennt jaðargildisverkefni fyrir $m$-ta stigs
+línulega jöfnu er að leysa
+\begin{equation*}
+\begin{cases}
+a_m(t)u^{(m)}+\cdots+a_1(t)u\dash+a_0(t)u=f(t),  &t\in ]a,b[\\
+Bu=c, \qquad B_ju=\sum\limits_{l=1}^m \big({\alpha}_{jl}u^{(l-1)}(a)
++{\beta}_{jl}u^{(l-1)}(b)\big), 
+\end{cases} \label{1.5.1}
+\end{equation*} 
+fyrir gefið fall $f\in C[a,b]$ og gefinn vigur $c\in \C^m$.  Athugið að
+upphafsskilyrðin í (\ref{1.4.2}) eru dæmi um almenn línuleg 
+jaðarskilyrði, þar
+sem við setjum ${\beta}_{jl}=0$ fyrir öll $j$ og $l$, ${\alpha}_{jl}=1$
+ef $j=l$ og ${\alpha}_{jl}=0$ ef $j\neq l$. 
+Ef bilið $I$
+er ótakmarkað geta verið skilyrði á markgildin 
+$$
+\lim_{x\to\pm\infty}u(x), \qquad 
+\lim_{x\to \pm\infty}u\dash(x),\quad \dots 
+$$
+eftir því sem við á.  Þessi skilyrði geta verið sams konar línulegar 
+samantektir og við höfum verið að lýsa.
+
+
+
+\section{Tilvist og ótvíræðni lausna á afleiðujöfnum}
+
+\noindent
+Í þessari grein ætlum við að fjalla um
+tilvist á lausn á upphafsgildisverkefninu
+ \begin{equation*}u\dash=f(t,u),  \qquad u(a)=b,\label{1.7.1}
+ \end{equation*}
+þar sem fallið $f\in C(\Omega,\R^m)$ er skilgreint á einhverju
+hlutmengi $\Omega$ í 
+$\R\times \R^m$, $a$ er gefin rauntala, $b$ er gefinn vigur og
+$(a,b)\in \Omega$.  Tilfellið að $f$ taki gildi í tvinntölurúminu
+$\C^m$ og  að $\Omega$ sé hlutmengi í  $\R\times \C^m$ fæst síðan með
+því að líta á $\C^m$ sem vigurrúmið $\R^{2m}$.  Ef við ætlumst til þess að
+lausnin $u$ hafi samfellda afleiðu, þá þurfum við auðvitað að gera
+ráð fyrir því að fallið $f$ sé samfellt.
+
+\begin{se}\tx{Peano\index{Peano}\index{setning!Peano}}  
+Gerum ráð fyrir að $\Omega$ sé grennd um punktinn $(a,b)\in
+\R\times\R^m$ og að $f\in C(\Omega,\R^m)$.  Þá
+er til opið bil $I$ sem inniheldur punktinn $a$ og fall $u:I\to \R^m$,
+þannig að $(t,u(t))\in \Omega$,  
+$u\dash(t)=f(t,u(t))$ fyrir öll $t\in I$ og $u(a)=b$. 
+\end{se}
+
+
+
+Setning Peano er of erfið til þess að við getum átt við að sanna hana
+hér, en fróðlegt er að vita hvað hún segir. Við munum hins vegar
+sanna tvær tilvistarsetningar, sem kenndar eru við Picard.  Í þeim
+gefum við okkur meiri forsendur um fallið $f$, en að það sé bara
+samfellt, og þær tryggja að lausnin
+verði ótvírætt ákvörðuð.  Setning Peano segir okkur
+einungis að til sé lausn en hún segir ekkert um það hvort lausnin er
+ótvírætt ákvörðuð.  
+
+
+\begin{sy}\label{syn1.7.2}
+\hfill Athugum upphafsgildisverkefnið
+$u\dash=3u^{2/3}$, $u(0)=0$.  Fyrir 
+
+
+\vfigura{fig013} {}
+\noindent sérhvert $\alpha>0$ fáum við
+lausnina $u_\alpha$, sem skilgreind er með
+ $$
+ u_\alpha(t)=\begin{cases}
+(t+\alpha)^3, &t<-\alpha,\\
+0, &-\alpha\leq t<\alpha,\\
+(t-\alpha)^3, &\alpha\leq t.
+\end{cases}
+ $$
+Þetta dæmi sýnir okkur að til
+þess að fá ótvírætt ákvarðaða lausn þurfum við að setja einhver
+strangari skilyrði á $f$ en samfelldni.
+\end{sy}
+
+\begin{sk}{\tx{Lipschitz--skilyrði}}
+Látum  $f:\Omega\to\R^m$ vera fall, þar sem  $\Omega\subset \R\times
+\R^m$  og $A\subset \Omega$.
+Ef til er fasti $C$ þannig að 
+ \begin{equation*}|f(t,x)-f(t,y)|\leq C|x-y|,\qquad (t,x), (t,y)\in
+ A,\label{1.7.2} 
+ \end{equation*}
+þá segjum við að $f$ uppfylli {\it
+Lipschitz--skilyrði\index{Lipschitz--skilyrði}} í menginu $A$.
+\end{sk}
+
+\begin{sy}\label{syn1.7.4} (i) Ef jöfnuhneppið er línulegt, $f(t,x)=A(t)x+g(t)$,
+$A\in C(I,\C^{m\times m})$ og $g\in C(I,\C^m)$, þá uppfyllir $f$
+Lipschitz--skilyrði í $J\times \C^m$ fyrir sérhvert lokað og
+takmarkað hlutbil $J\subset I$. Þetta sést á því að 
+ $$|f(t,x)-f(t,y)|=|A(t)(x-y)|
+\leq \sum\limits_{j,k=1}^m |a_{jk}(t)||x-y|\leq C|x-y|,
+ $$
+þar sem $C=\sup\sum\limits_{j,k=1}^m |a_{jk}(t)|$ 
+og efra markið er tekið yfir öll $t\in J$.
+
+\smallskip
+(ii)  Látum $f\in C^{1}(\Omega,\R^m)$ og gerum ráð fyrir að $\Omega$ sé
+þannig að fyrir sérhvert par af 
+punktum $(t,x), (t,y)$ í $\Omega$  liggi línustrikið milli þeirra í $\Omega$.
+Línustrikið  samanstendur af öllum punktum $(t,\tau x+(1-\tau)y)$,
+$\tau\in [0,1]$. Látum nú $A$ vera lokað og takmarkað hlutmengi af
+$\Omega$, sem hefur þann eiginleika að fyrir sérhvert par af punktum
+$(t,x), (t,y)$ í $A$ liggur línustrikið á milli þeirra í $A$.  Þá er
+\begin{align*}
+|f(t,x)-f(t,y)|&=|\int_0\sp 1\dfrac d{d\tau}f(t,(1-\tau)y+\tau x) \,
+d\tau|\\
+&=|\int_0\sp 1 \sum\limits_{j=1}\sp m
+\partial_{x_j}f(t,(1-\tau)y+\tau x)
+(x_j-y_j) \, d\tau|\\
+&\leq \sup\limits_{(\tau,\xi)\in A} 
+\sum\limits_{j=1}\sp m |\partial_{x_j}f(\tau,\xi)||x-y|,
+\end{align*}
+
+\noindent
+og þar með uppfyllir $f$ Lipschitz--skilyrði í $A$.
+
+\smallskip
+(iii)  Lítum nú á fallið $f(t,x)=x\sp 2$, með $\Omega=\R\times \R$.
+Það uppfyllir  $$|f(t,x)-f(t,y)|=|x+y||x-y|, 
+ $$
+en þetta gefur okkur að $f$ uppfylli ekki Lipschitz--skilyrði í $\Omega$, því
+þátturinn $x+y$ er ekki takmarkaður.  Ef við látum hins vegar
+$[\alpha,\beta]$ 
+vera takmarkað bil og veljum $A=\R\times [\alpha,\beta]$, þá
+uppfyllir fallið $f$ Lipschitz--skilyrði í $A$ og við getum valið
+fastann $C$ sem 
+$C=2(|\alpha|+|\beta|)$.  
+
+\smallskip
+(iv) Fallið $f(t,x)=3x\sp{2/3}$, í sýnidæmi \ref{syn1.7.2}, er samfellt, en
+uppfyllir ekki
+Lipschitz--skilyrði í neinni grennd um $0$, því
+$|f(t,x)-f(t,0)|=x\sp{2/3}=x\sp{-1/3}|x-0|$ og $x\sp{-1/3}\to \infty$ ef
+$x\to 0$.  
+\end{sy}
+
+Nú kemur í ljós að Lipschitz--skilyrði tryggir að lausnin verður
+ótvírætt ákvörð\-uð:
+
+\begin{se}\label{set1.7.5}{\tx{Picard; víðfeðm
+útgáfa}\index{Picard--setningin}\index{Picard--setningin!víðfeðm
+útgáfa}\index{setning!Picard}}
+Látum $I\subset \R$ vera opið bil, $a\in I$, $b\in \R\sp m$,
+$f\in C(I\times \R\sp m,\R\sp m)$ og gerum ráð fyrir að $f$ uppfylli
+Lipschitz--skilyrði í $J\times \R\sp m$ fyrir sérhvert lokað og
+takmarkað hlutbil $J$ í $I$. Þá er til ótvírætt ákvörðuð lausn 
+$u\in C\sp 1(I,\R\sp m)$ á upphafsgildisverkefninu
+ $$u\dash=f(t,u), \qquad u(a)=b.
+ $$
+\end{se}
+
+Þessi setning er önnur tveggja tilvistarsetninga sem við sönnum í
+næstu grein.  Eins og fram hefur komið kallast hún
+venjulega {\it víðfeðm} útgáfa af tilvistarsetningu fyrir
+fyrsta stigs hneppi. Ástæðan fyrir nafngiftinni er, að við fáum
+lausn á bili sem inniheldur öll $t$--gildi þar sem hægri hlið
+jöfnunnar er skilgreind.
+Tökum nú fyrir 
+tvær mikilvægustu afleiðingar setningarinnar.  Í sýnidæmi
+\ref{syn1.7.4}
+sáum við að forsendurnar í setningu \ref{set1.7.5} eru uppfylltar fyrir línuleg
+jöfnuhneppi með samfellda stuðla.  Við lítum á vigurrúmið $\C^m$ yfir
+tvinntölurnar sem $2m$ víða rúmið $\R^{2m}$ yfir rauntölurnar og fáum: 
+
+\begin{fs}
+Látum $I\subset \R$ vera opið bil, $a\in I$, $b\in \C\sp m$,
+$A\in C(I,\C\sp{m\times m})$ og $f\in C(I,\C\sp m)$. Þá er til
+ótvírætt ákvörðuð lausn  
+$u\in C\sp 1(I,\C\sp m)$ á upphafsgildisverkefninu
+ \begin{equation*}u\dash=A(t)u+f(t) \qquad u(a)=b.\label{1.7.3}
+ \end{equation*}
+\end{fs}
+
+Með umskrift á upphafsgildisverkefni fyrir $m$-ta stigs afleiðujöfnu
+yfir í jafngilt hneppi fáum við:
+
+\begin{fs}
+Látum $I\subset \R$ vera opið bil, $a\in I$,
+$b_0,\dots,b_{m-1} \in \C$, $a_0,\dots,a_m, g\in C(I)$ og $a_m(t)\neq 0$
+fyrir öll $t\in I$.
+Þá er til ótvírætt ákvörðuð lausn  
+$u\in C\sp m(I)$ á upphafsgildisverkefninu
+\begin{gather*}
+a_m(t)u\sp {(m)}+\cdots+a_1(t)u\dash+a_0(t)u=g(t),\\
+u(a)=b_0, u\dash(a)=b_1,\dots, u\sp{(m-1)}(a)=b_{m-1}.
+\end{gather*}
+\end{fs}
+
+Nú setjum við fram aðra útgáfu sem venjulega
+kallast {\it staðbundin} útgáfa af tilvistarsetningu fyrir fyrsta
+stigs hneppi:
+
+
+\begin{se}\label{set1.7.8}{\tx{Picard; staðbundin
+útgáfa\index{Picard--setningin}\index{Picard--setningin!staðbundin
+útgáfa}}\index{setning!Picard}}
+Látum $\Omega$ vera opið hlutmengi í $\R\times \R\sp{m}$,
+$a\in \R$, $b\in \R\sp m$,
+$(a,b)\in \Omega$  og $f\in C(\Omega,\R\sp m)$. Gerum ráð fyrir að
+til sé grennd $U$ um punktinn $(a,b)$ innihaldin í $\Omega$ og að
+fallið $f$ uppfylli Lipschitz--skilyrði í $U$.  Þá
+er til opið bil $I$ á $\R$ sem inniheldur $a$ og ótvírætt ákvörðuð lausn
+$u\in C\sp 1(I, \R^m)$ á upphafsgildisverkefninu 
+ $$u\dash=f(t,u), \qquad u(a)=b.
+ $$
+\end{se}
+
+Ástæðan fyrir því að þessi setning kallast {\it staðbundin}  útgáfa
+af tilvistarsetningunni fyrir fyrsta stigs afleiðujöfnuhneppi er sú,
+að hún segir okkur einungis að til sé bil $I$ þar sem lausnin er til.
+Í sönnuninni, sem við tökum fyrir í næstu grein, 
+kemur fram hvernig bilið $I$ er háð
+$U$,  Lipschitz--fasta fallsins $f$ og upphafsgildinu $b$.  
+
+\begin{sy}  Við skulum taka eitt dæmi til þess að sjá hvernig 
+skilgreiningarsvæði
+lausnarinnar er háð upphafsgildinu $b$ og líta á verkefnið $u'=u\sp
+2$, $u(a)=b$, þar sem $b$ er jákvæð rauntala.  Lausnin er fallið
+ $$u(t)=\dfrac b{1-b(t-a)}, \qquad t\in I=]-\infty,a+1/b[.
+ $$
+Maður skyldi ætla að óreyndu, að svona einföld jafna hefði lausn, sem
+skilgreind er á öllum rauntalnaásnum, en svo er greinilega ekki.
+Skilgreiningarsvæðið minnkar eftir því sem upphafsgildið 
+stækkar.   Athugið að engu að síður hefur verkefnið lausn í grennd
+um $a$ fyrir sérhvert val á $(a,b)$.  Við sáum í sýnidæmi
+\ref{syn1.7.4} (iii) uppfyllir skilyrðin í staðbundnu útgáfu Picard
+setningarinnar, en ekki þeirrar víðfeðmu.  
+\end{sy}
+
+Aðferðin sem beitt er í sönnuninni á  þessum setningum er kennd
+við franska stærðfræðinginn Émile Picard.  Eins og áður hefur verið
+sagt framkvæmum við hana í smáatriðum í næstu grein.
+Auðvelt er að skilja meginhugmyndina í sönnuninni á víðfeðmu útgáfunni
+af Picard--setningunni og skulum við líta á hana núna.
+
+ Við athugum fyrst, að 
+\begin{equation*}u\in C\sp 1(I,\R\sp m), \quad u\dash=f(t,u),\quad t\in I, \quad
+u(a)=b \label{1.7.4}
+ \end{equation*}
+er jafngilt því að
+ \begin{equation*}
+u\in C(I,\R\sp m),\quad 
+u(t)=b+\int_a\sp t f(\tau,u(\tau))\, d\tau, \qquad t\in I.\label{1.7.5} 
+ \end{equation*}
+Okkur dugir því að sanna að til sé ótvírætt ákvarðað fall $u\in
+C(I,\R\sp m)$ sem uppfyllir heildisjöfnuna (\ref{1.7.5}). 
+Tilvistin er fengin með því að skilgreina runu $\set{ u_n}$ af föllum í
+$C(I,\R\sp m)$ með formúlunni
+ \begin{equation*}u_0(t)=b, \qquad 
+u_n(t)=b+\int_a\sp t f(\tau,u_{n-1}(\tau))\, d\tau, \qquad t\in
+I,\label{1.7.6} 
+ \end{equation*}
+og sýna síðan að þessi fallaruna sé samleitin að markfalli $u$.
+Ekki er nóg að sýna að runan $\set{u_n(t)}$ stefni á $u(t)$  í sérhverjum
+punkti heldur þurfum við að sanna að $\set{u_n}$ sé samleitin í
+{\it jöfnum mæli\index{samleitni!í jöfnum mæli}} 
+á sérhverju lokuðu og takmörkuðu hlutbili $J$ af
+$I$.  Að því fengnu gefa niðurstöðurnar í grein 3.5 að 
+markfallið $u$ er í $C(I,\R\sp m)$. 
+Lipschitz skilyrðið gefur að 
+ $$|f(t,u_n(t))-f(t,u(t))|\leq C|u_n(t)-u(t)|, \qquad t\in J,
+ $$
+og þar með að runan $f(t,u_n(t))$ stefnir á markfallið $f(t,u(t))$
+í jöfnum mæli á $J$.  Þá  megum við skipta á heildi og markgildi og
+við fáum það sem sanna á,
+\begin{multline*}
+u(t)= \lim\limits_{n\to +\infty} u_n(t) =
+b+\lim\limits_{n\to +\infty} \int_a\sp t f(\tau,u_{n-1}(\tau)) \, d\tau =\\
+=
+b+\int_a\sp t \lim\limits_{n\to +\infty} f(\tau,u_{n-1}(\tau)) \, d\tau =
+b+ \int_a\sp t f(\tau,u(\tau)) \, d\tau.
+\end{multline*}
+Tökum nú tvö dæmi, sem sýna hvers er að vænta um
+samleitni rununnar $\set{u_n}$. 

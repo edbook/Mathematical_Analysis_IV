@@ -1,0 +1,2577 @@
+
+\chapter{TVINNTÖLUR} 
+
+\section{Talnakerfin}
+
+\subsection*{Náttúrlegar tölur}
+
+Tölurnar $1,2,3,4,\dots$ mynda mengi náttúrlegra talna sem við táknum
+með $\N$.   Á þessu mengi höfum við skilgreindar tvær aðgerðir, {\it
+samlagningu} og {\it margföldun}, þannig
+að fyrir sérhvert par $(a,b)$ af náttúrlegum tölum $a$ og $b$ er
+úthlutað nákvæmlega einni tölu $a+b$ sem nefnist {\it summa} $a$ og
+$b$ og annarri tölu $ab$ sem nefnist {\it margfeldi} $a$ og $b$.
+Við táknum margfeldið einnig með $a\cdot b$.
+Um þessar aðgerðir gilda nokkrar reiknireglur
+
+\begin{center}
+\begin{tabular}{ll}
+$(a+b)+c=a+(b+c)$&{\it tengiregla fyrir samlagningu}\\
+$(ab)c=a(bc)$&{\it tengiregla fyrir margföldun}\\
+$a+b=b+a$ &{\it víxlregla fyrir samlagningu} \\
+$ab=ba$ &{\it víxlregla fyrir margföldun} \\
+$a(b+c)=ab+ac$&{\it dreifiregla}\\
+$1a=a$ &{\it $1$ er margföldunarhlutleysa}\\
+\end{tabular}
+\end{center}
+ 
+Við höfum {\it röðun} þannig að um sérhverjar tvær tölur $a$ og $b$
+gildir eitt af þrennu: {\it $a$ er minni en $b$}, táknað $a<b$, {\it
+$a$ er jafnt og $b$}, táknað $a=b$ eða {\it $a$ er stærra en $b$},
+táknað $a>b$.  Þetta er skilgreint þannig að $a$ er sagt vera {\it minna en} $b$, ef til er
+náttúrleg tala $c$ þannig að $a+c=b$, og $a$ er sagt vera {\it stærra
+en} $b$,  ef $b$ er minni en $a$.  
+
+
+Um röðun {\it náttúrlegra talna} gilda tvær mikilvægar reglur 
+\begin{center}
+\begin{tabular}{ll}
+ef $a<b$ þá er $a+c<b+c$&{\it röðun er óbreytt við samlagningu}\\
+ef $a<b$ þá er $ac<bc$&{\it röðun er óbreytt við margföldun}\\
+\end{tabular}
+\end{center}
+
+Ef $a<b$ og $a+c=b$, þá nefnist talan $c$ {\it mismunur } $b$ og $a$,
+táknað $c=b-a$. Aðgerðin að finna 
+mismun nefnist {\it frádráttur}.
+
+Náttúrleg tala $a\in \N$ er sögð vera {\it deilanleg } með tölunni
+$b\in \N$ ef til er $c\in \N$ þannig að $a=bc$.  Allar tölur $a$ eru
+deilanlegar með $1$ og sjálfri sér, því $a=1\cdot a$.  Þær nátturlegu
+tölur $\geq 2$  sem  aðeins eru deilanlegar með $1$ og sjálfri sér 
+nefnast {\it frumtölur} ({\it prímtölur}).  Fyrstu frumtölurnar eru
+$$
+2,3,5,7,11,13,17,19,23,29,\dots
+$$
+Sérhverja náttúrlega tölu $a\geq 2$ má skrifa sem margfeldi frumtalna
+$$
+a=p_1p_2p_3\cdots p_m
+$$
+þar sem sumar frumtölur $p_j$ geta verið endurteknar og í þessari
+framsetningu hafa frumtölurnar sjálfar aðeins einn þátt.  Sem dæmi
+getum við tekið
+$$
+7=7, \quad 24=2\cdot 2\cdot 2\cdot 3=2^3\cdot 3, \quad  250=2\cdot 5\cdot
+5\cdot 5=2\cdot 5^3.
+$$
+Þáttun á náttúrlegum tölum í frumtölur nefnist {\it frumþáttun}.
+
+Til þess að gera okkur mynd af náttúrlegu tölunum þurfum við fyrst að
+bæta {\it núlli} $0$ við talnakerfið.  Við setjum $\N_0=\N\cup\{0\}$
+og útvíkkum reikniaðgerðirnar.  Allar reiknireglurnar gilda áfram og
+við fáum eina reglu til viðbótar:
+\begin{center}
+\begin{tabular}{ll}
+$0+a=a+0=a$ &{\it $0$ er samlagningarhlutleysa}\\
+\end{tabular}
+\end{center}
+Fyrri röðurnareglan gildir áfram en sú síðari aðeins ef $c\neq 0$.
+
+\setlength{\unitlength}{1cm}
+\begin{center}
+\begin{picture}(12,1)
+        \thicklines
+        \put(0,0){\vector(1,0){11}}
+        \multiput(5,-0.1)(1,0){5}{\line(0,1){0.2}}
+        \put(5,-0.2){\makebox(0,0)[t]{$0$}}
+        \put(6,-0.2){\makebox(0,0)[t]{$1$}}
+        \put(7,-0.2){\makebox(0,0)[t]{$2$}}
+        \put(8,-0.2){\makebox(0,0)[t]{$3$}}
+        \put(9,-0.2){\makebox(0,0)[t]{$4$}}
+        \put(10,-0.4){\makebox(0,0)[t]{$\dots$}}
+        \put(11,-0.2){\makebox(0,0)[t]{$\N$}}
+\end{picture}
+\end{center}
+
+\bigskip\noindent
+Til þess að gera okkur mynd af náttúrlegu tölunum
+veljum við okkur viðmiðunarpunkt á beinni línu og  setjum $0$ í hann.  Síðan
+veljum við einingarlengd á línunni  og mörkum punkt til hægri við $0$ í 
+einingarfjarlægð og táknum hann með $1$.  Síðan eru haldið áfram 
+eins og myndin sýnir.  Þá höfum við að $a<b$ ef og aðeins ef $b$ er 
+hægra megin við $a$ á talnalínunni.  Nú er hægt að lýsa
+reikningsaðgerðunum  á $\N_0$ sem  færslum á talnalínunni.  
+
+
+\subsection*{Heilar tölur}
+
+Reikningur með náttúrlegar tölur er ófullkominn meðal annars vegna
+þess að ekki er alltaf hægt að framkvæma {\it frádrátt}  þ.e.a.s.~að finna
+náttúrlega tölu $x$ þannig að $a=b+x$.  Þetta er aðeins hægt ef $a>b$.
+Talan $x$ nefnist þá mismunur $a$ og $b$ og er táknuð með $a-b$.
+
+Til þess að ráða bót á þessu er talnakerfið stækkað þannig að bætt er
+við tölunni $0$, sem nefnist {\it núll}, og síðan er bætt við tölunum
+$-1,-2,-3,-4,\dots$.  Þetta stækkaða kerfi nefnist {\it heilar tölur}
+ og er táknað með $\Z$.  
+
+
+Á $\Z$ er skilgreind samlagning og margföldun.  Um þessar aðgerðir
+gilda sömu reglur og fyrir náttúrlegar tölur.  
+Að auki höfum við 
+að sérhver tala á sér samlagningarandhverfu, en það þýðir að fyrir
+sérhvert $a\in \Z$ er til $b\in \Z$, sem nefnist {\it
+samlagningar\-andhverfa} tölunnar $a$,  þannig að $a+b=0$.
+Samlagningarandhverfan er táknuð með $-a$.    
+
+Við gerum okkur einnig mynd af heilum tölum með því að marka þær á
+talnalínu.  
+
+\setlength{\unitlength}{1cm}
+\begin{center}
+\begin{picture}(12,1)
+        \thicklines
+        \put(0,0){\vector(1,0){12}}
+        \multiput(1,-0.1)(1,0){9}{\line(0,1){0.2}}
+        \put(1,-0.2){\makebox(0,0)[t]{$-4$}}
+        \put(2,-0.2){\makebox(0,0)[t]{$-3$}}
+        \put(3,-0.2){\makebox(0,0)[t]{$-2$}}
+        \put(4,-0.2){\makebox(0,0)[t]{$-1$}}
+        \put(5,-0.2){\makebox(0,0)[t]{$0$}}
+        \put(6,-0.2){\makebox(0,0)[t]{$1$}}
+        \put(7,-0.2){\makebox(0,0)[t]{$2$}}
+        \put(8,-0.2){\makebox(0,0)[t]{$3$}}
+        \put(9,-0.2){\makebox(0,0)[t]{$4$}}
+        \put(10,-0.4){\makebox(0,0)[t]{$\dots$}}
+        \put(11,-0.2){\makebox(0,0)[t]{$\Z$}}
+\end{picture}
+\end{center}
+
+\subsection*{Ræðar tölur}
+
+Deiling er ófullkomin aðgerð í heilu tölunum.  Til þess að 
+bæta úr því er talnakerfið stækkað með því að innleiða ræðar tölur. 
+{\it Ræðar tölur}  samanstanda af öllum brotum $\dfrac pq$ þar sem $p$ og
+$q$ eru heilar tölur og $q\neq 0$.   Við táknum brot einnig með
+$p/q$ og $p:q$.  
+
+Tvö brot $\dfrac pq$ og $\dfrac
+rs$ skilgreina sömu ræðu töluna ef til er heiltala $t\neq 0$ þannig að
+$r=tp$ og $s=tq$ eða $p=tr$ og $q=ts$.  Þannig er til dæmis
+$$
+\dfrac 13=\dfrac 26=\dfrac {-2}{-6}=\dfrac 39=\dfrac{-3}{-9}=\cdots.
+$$
+Á ræðum tölum höfum við tvær reikningsaðgerðir samlagningu og
+margföldun.  Þær eru skilgreindar með brotunum
+$$
+\dfrac pq+\dfrac rs=\dfrac{ps+qr}{qs}, \qquad \dfrac pq\cdot \dfrac
+rs=\dfrac{pr}{qs}.
+$$
+Við hugsum okkur að heilu tölurnar séu hlutmengi í ræðu tölunum,
+$\Z\subset \Q$ með því að gera ekki greinarmun á heilu tölunni $n$ 
+og ræðu tölunni  $\dfrac n1$.   
+Núll $0$ er samlagningarhlutleysa, $a+0=a$ fyrir öll $a\in \Q$,
+og $1$ er  margföldunarhlutleysa, $1\cdot a=a\cdot 1=a$ fyrir öll $a\in \Q$.
+
+
+Við fáum nákvæmlega sömu reiknireglur fyrir ræðar tölur og fyrir
+heilar  tölur en til viðbótar kemur að sérhver ræð tala $a\neq 0$ á sér
+margföldunarandhverfu, sem við táknum með $a^{-1}$.  Ef $a=\dfrac pq$
+þar sem $p\neq 0$ og $q\neq 0$ eru heiltölur, þá er $a^{-1}=\dfrac
+qp$.   
+
+
+Hægt er að úthluta sérhverri ræðri tölu punkti á talnalínunni,
+þannig að sérhver jákvæð ræð tala svari til lengdar á striki.  Með
+þessu er hægt  að túlka reikningsaðgerðirnar sem færslur á
+talnalínunni.  Það er töluvert mál að útfæra þetta í smáatriðum, en
+þið þekkið þetta efni öll úr grunn- og framhaldsskóla.
+
+
+\subsection*{Rauntölur}
+
+Það er eðlilegt að spyrja sig hvort sérhver punktur á talnalínunni 
+sé gefinn með ræðri tölu.  Það er jafngilt því að spyrja hvort sérhver
+lengd á striki sé gefin með ræðri tölu.  Forn-Grikkir hugsuðu mikið um
+þetta vandamál og sáu að svarið við spurningunni er neikvætt.  Regla
+Pýþagórasar segir okkur að langhlið $c$ í rétthyrndum þríhyrningi með
+skammhliðar af lengd $1$ uppfyllir $c^2=2$.  Það er síðan einfalt að
+sýna fram á að ekki er hægt að skrifa $c$ sem ræða tölu.  Þessi tala
+er venjulega nefnd kvaðratrótin af $2$ og er táknuð með $\sqrt 2$.
+
+Rauntölurnar $\R$ eru upp fundnar til þess meðal annars að leysa úr
+þeim vandræðum að geta ekki tjáð lengdir á strikum og ferlum 
+í rúmfræði með ræðum tölum.   Við lítum á talnakerfið $\Q$ sem punkta
+á  talnalínunni
+og stækkum það þannig að til sérhvers punkts á línunni svari tala $a$
+og látum $\R$ tákna mengi allra slíkra talna.  Aðgerðirnar 
+samlagning og margföldun eru síðan skilgreindar með sams konar færslum
+og fyrir ræðar tölur.  Þetta er raunar ekki einfalt að gera í
+smáatriðum.  
+
+\setlength{\unitlength}{1cm}
+\begin{center}
+\begin{picture}(12,1)
+        \thicklines
+        \put(0,0){\vector(1,0){12}}
+        \multiput(1,-0.1)(1,0){9}{\line(0,1){0.2}}
+        \put(1,-0.2){\makebox(0,0)[t]{$-4$}}
+        \put(2,-0.2){\makebox(0,0)[t]{$-3$}}
+        \put(3,-0.2){\makebox(0,0)[t]{$-2$}}
+        \put(4,-0.2){\makebox(0,0)[t]{$-1$}}
+        \put(5,-0.2){\makebox(0,0)[t]{$0$}}
+        \put(6,-0.2){\makebox(0,0)[t]{$1$}}
+        \put(7,-0.2){\makebox(0,0)[t]{$2$}}
+        \put(8,-0.2){\makebox(0,0)[t]{$3$}}
+        \put(9,-0.2){\makebox(0,0)[t]{$4$}}
+        \put(10,-0.4){\makebox(0,0)[t]{$\dots$}}
+        \put(11,-0.2){\makebox(0,0)[t]{$\R$}}
+        \put(6.414,-0.25){\makebox(0,0)[t]{$\sqrt 2 $}}
+        \put(8.1516,-0.3){\makebox(0,0)[tl]{$\pi$}}
+        \put(6.414,-0.1){\line(0,1){0.2}}
+        \put(8.1516,-0.1){\line(0,1){0.2}}
+\end{picture}
+\end{center}
+
+\bigskip\bigskip
+Sérhver rauntala sem ekki er ræð tala nefnist {\it óræð tala}.
+Ekki er neitt sérstakt tákn notað fyrir  mengi óræðra talna í
+stærðfræðinni, svo  það er oftast táknað $\R\setminus \Q$.
+
+Rauntölurnar uppfylla allar sömu reiknireglur of ræðar tölur,
+ þannig að  fyrir rauntölur $a$, $b$ og $c$ höfum við
+\begin{center}
+\begin{tabular}{ll}
+$(a+b)+c=a+(b+c)$&{\it tengiregla fyrir samlagningu}\\
+$(ab)c=a(bc)$&{\it tengiregla fyrir margföldun}\\
+$a+b=b+a$ &{\it víxlegra fyrir samlagningu} \\
+$ab=ba$ &{\it víxlegra fyrir margföldun} \\
+$a(b+c)=ab+ac$&{\it dreifiregla}\\
+$a+0=a$& {\it $0$ er samlagningarhlutleysa}\\
+$1a=a$ &{\it $1$ er margföldunarhlutleysa}\\
+\end{tabular}
+\end{center}
+ 
+Sérhver rauntala $a$ á sér samlagningarandhverfu sem er ótvírætt
+ákvörðuð og við táknum hana með $-a$ og sérhver rauntala $a\neq 0$ á
+sér margföldunarandhverfu $a^{-1}$ sem er ótvírætt ákvörðuð.  Við
+athugum að $a^{-1}=1/a$.
+
+Við höfum röðun $<$ á $\R$ sem er þannig að um sérhverjar tvær tölur 
+$a$ og $b$ gildir eitt af þrennu $a<b$, $a=b$ eða $b<a$.  Við skrifum
+einnig $a>b$ ef $b<a$.  Við höfum eftirtaldar reglur um röðun
+rauntalna  
+
+\begin{center}
+\begin{tabular}{ll}
+ef $a<b$ og $b<c$, þá er $a<c$ &{\it röðun er gegnvirk}\\ 
+ef $a<b$ þá er $a+c<b+c$&{\it röðun er óbreytt við samlagningu}\\
+ef $a<b$ og $c>0$, þá er $ac<bc$&{\it röðun er óbreytt við
+margföldun}\\ 
+&{\it með jákvæðri tölu}\\
+ef $a<b$ og $c<0$, þá er $bc<ac$&{\it röðun er viðsnúin við
+margföldun}\\
+& {\it með neikvæðri tölu}\\
+\end{tabular}
+\end{center}
+
+Við höfum líka {\it hlutröðun $ \leq $} á $\R$.  Við skrifum 
+$a\leq b$ og segjum að $a$ {\it sé minni eða jafnt} $b$, ef
+$a<b$ eða $a=b$.   Eins skrifum við $a\geq b$ og segjum að 
+{\it $a$ sé stærri eða jafnt $b$} ef $a>b$ eða $a=b$.  
+
+Ef $a,b\in \R$ og $a<b$,  þá skilgreinum við mismunandi bil.
+\begin{center}
+\begin{tabular}{ll}
+$]a,b[=\{x\in \R\,;\, a<x<b\}$ \qquad  &{\it opið bil}\\
+$[a,b]=\{x\in \R\,;\, a\leq x\leq b\}$ \qquad  &{\it lokað bil}\\
+$[a,b[=\{x\in \R\,;\, a\leq x<b\}$ \qquad  &{\it hálf-opið bil}\\
+$]a,b]=\{x\in \R\,;\, a<x\leq b\}$ \qquad  &{\it hálf-opið bil}\\
+$]-\infty,a[=\{x\in \R\,;\, x<a\}$ \qquad  &{\it opin vinstri hálflína}\\
+$]-\infty,a]=\{x\in \R\,;\, x\leq a\}$ \qquad  &{\it lokuð vinstri hálflína}\\
+$]a,\infty[=\{x\in \R\,;\, x>a\}$ \qquad  &{\it opin hægri hálflína}\\
+$[a,\infty[=\{x\in \R\,;\, x\geq a\}$ \qquad  &{\it lokuð hægri hálflína}\\
+$]-\infty,\infty[=\R$\qquad &{\it öll rauntalnalínan}\\
+$[a,a]$\qquad &{\it eins punkts bil}
+\end{tabular}
+\end{center}
+Stundum er skrifað $(a,b)$ í stað $]a,b[$,  $(a,b]$ í stað
+$]a,b]$ o.s.frv.
+
+Á sérhverju opnu bili eru óendanlega margar ræðar tölur og óendanlega
+margar óræðar tölur.
+
+Fyrir sérhvert $x\in \R$ skilgreinum við {\it tölugildið} af
+$x$ með 
+$$
+|x|=\begin{cases}
+x &x\geq 0, \\
+-x &x <0. 
+\end{cases}
+$$ 
+Talan $|x|$ mælir fjarlægð milli  $0$ og $x$ á talnalínunni.
+Ef gefnar eru tvær rauntölur $x$ og $y$, þá mælir 
+$|x-y|$ fjarlægðina á milli þeirra.  Ef $a$ og $\varepsilon$ eru rauntölur og
+$\varepsilon>0$, þá er
+$$
+\{x\in \R\,;\,  |x-a|<\varepsilon\}=(a-\varepsilon,a+\varepsilon)
+$$
+opið bil með miðju í $a$ og þvermálið $2\varepsilon$.
+
+
+\subsection*{Takmarkanir rauntalnakerfisins}
+
+Við höfum séð að öll talnakerfin $\N$, $\Z$ og $\Q$ hafa sínar
+takmarkanir og það sama á við um rauntölurnar $\R$.  Í mengi
+náttúrlegra talna er frádráttur ófullkomin aðgerð. Í mengi heilla
+talna er deiling ófullkomin aðgerð.  Ræðu tölurnar duga ekki til þess
+að lýsa lengdum á strikum og ferlum sem koma fyrir í rúmfræðinni.
+
+Við vitum að rauntala í öðru veldi er alltaf stærri eða jöfn núlli 
+svo jafnan $x^2+1=0$ getur ekki haft lausn.  Sama er að segja um 
+annars stigs jöfnuna $ax^2+bx+c=0$, $a\neq 0$. Hún hefur enga lausn
+ef $D=b^2-4ac<0$.   Það er auðvelt að skrifa niður dæmi um margliður
+sem hafa engar núllstöðvar í $\R$, en stig þeirra þarf að vera slétt
+tala, því margliður af oddatölustigi hafa alltaf núllstöð.  
+
+Nú er eðlilegt að spyrja, hvort hægt sé að stækka rauntalnakerfið
+yfir  í stærra mengi
+þannig að innan þess mengis sé hægt að finna lausn á annars stigs
+jöfnunni $x^2+1=0$ og hvort slíkt talnakerfi gefi af sér lausnir 
+á fleiri jöfnum sem ekki eru leysanlegar í $\R$.
+
+Ímyndum  okkur nú augnablik að til sé talnakerfi sem inniheldur rauntölurnar
+sem hlutmengi og að þar sé stak $i$ sem uppfyllir $i^2=-1$.
+Þá er $i$ að sjálfsögðu ekki rauntala.   Við gefum okkur að allar
+reiknireglur fyrir rauntölur gildi áfram.  Víxlreglan fyrir margföldun
+segir okkur þá að $ia=ai$ fyrir allar rauntölur $a$.
+Tökum nú rauntölur $a$, $b$, $c$ og  $d$ og athugum hvað reiknireglurnar
+segja um  summu og margfeldi talnanna $a+ib$ og $c+id$,
+$$
+(a+ib)+(c+id)=a+(c+ib)+id=(a+c)+i(b+d)
+$$
+og 
+\begin{align*}
+(a+ib)(c+id)&=ac+ibc+aid+ibid \\
+&=ac+ibc+ iad+i^2 bd 
+=(ac-bd)+i(ad+bc). 
+\end{align*}
+Þessar tvær formúlur gefa okkur forskrift að því hvernig leggja á saman
+og margfalda saman tölur af gerðinni $a+ib$ þannig að út komi tölur af
+sömu gerð.  
+
+
+\section{Tvinntalnaplanið}
+
+Nú snúum við okkur að spurningunni um það  hvort hægt sé að skilgreina
+útvíkkun  á $\R$ þar sem til er tala $i$ sem uppfyllir $i^2=-1$.
+Það kemur í ljós að slíkt kerfi er til og að sérhverja tölu í því má
+skrifa sem $a+ib$ þar sem $a$ og $b$ eru rauntölur.
+
+
+\subsection*{Skilgreining á tvinntölum}
+
+
+\vfigura{siiibmynd0101}{{\small Mynd: Hnit punkts í plani}}  
+Lítum nú á mengi allra vigra í plani.  Sérhver vigur hefur hnit
+$(a,b)\in \R^2$ sem segja okkur hvar lokapunktur vigurs er staðsettur ef
+upphafspunktur hans er settur í upphafspunkt hnitakerfisins.
+Á mengi allra vigra höfum við tvær aðgerðir, samlagningu og margföldun
+með tölu.  Samlagningunni er lýst með hnitum, 
+$$(a,b)+(c,d)=(a+c,b+d).
+$$  
+og margfeldi tölunnar $a$ og vigursins $(c,d)$ er
+$$
+a(c,d)=(ac,ad).
+$$ 
+Við skilgreinum nú margföldun á $\R^2$ með hliðsjón af formúlunni sem við
+uppgötvuðum hér að framan, 
+$$
+(a,b)(c,d)=(ac-bd,ad+bc).
+$$
+
+
+Talnaplanið $\R^2$ með venjulegri samlagningu og þessari margföldun
+nefnist {\it tvinntölur } og er táknað með $\C$.  Nú er auðvelt að
+sannfæra  sig um að víxl-, tengi- og dreifireglur gildi um
+þessa margföldun
+\begin{center}
+\begin{tabular}{ll}
+$\big((a,b)+(c,d)\big)+(e,f)=(a,b)+\big((c,d)+(e,f)\big)$
+&{\it tengiregla fyrir samlagningu}\\
+$\big((a,b)(c,d)\big)(e,f)=(a,b)\big((c,d)(e,f)\big)$
+&{\it tengiregla fyrir margföldun}\\
+$(a,b)+(c,d)=(c,d)+(a,b)$ 
+&{\it víxlregla fyrir samlagningu} \\
+$(a,b)(c,d)=(c,d)(a,b)$ 
+&{\it víxlregla fyrir margföldun} \\
+$(a,b)\big((c,d)+(e,f)\big) =(a,b)(c,d)+(a,b)(e,f)$
+&{\it dreifiregla}\\
+$(a,b)+(0,0)=(a,b)$
+&{\it $(0,0)$ er samlagningarhlutleysa}\\
+$(1,0)(a,b)=(a,b)$
+&{\it $(1,0)$ er margföldunarhlutleysa}\\
+\end{tabular}
+\end{center}
+
+
+Ljóst er að $(-a,-b)$ er samlagningarandhverfa $(a,b)$.  Við athugum að
+jafnan $(a,b)(a,-b)=(a^2+b^2,0)$ segir okkur að talan
+$(a,b)\neq (0,0)$ eigi sér margföldunarandhverfuna
+$$(\dfrac a{a^2+b^2},\dfrac{-b}{a^2+b^2}).
+$$  
+
+Við tökum eftir  að 
+$$
+(a,0)(c,d)=(ac,ad)=a(c,d).
+$$
+sem segir okkur að margföldun með
+vigrinum $(a,0)$ sé það sama og margföldun með tölunni $a$.
+Eins sjáum við að vigrar af gerðinni $(a,0)$ haga sér eins 
+og rauntölur því 
+$$
+(a,0)+(b,0)=(a+b,0) \qquad \text{ og } \qquad 
+(a,0)(b,0)=(ab,0).
+$$
+Í mengi tvinntalna gerum við því ekki greinarmun á rauntölunni $a$ og
+vigrinum $(a,0)$ og lítum á lárétta hnitaásinn
+$\{(x,0)\in\R^2\,;\, x\in \R\}$ sem rauntalnalínuna $\R$.
+Við skrifum þá sérstaklega $1$ í stað $(1,0)$ og $0$ í stað 
+$(0,0)$
+
+Lítum nú á vigurinn $(0,1)$ sem við táknum með $i$.  
+Um hann gildir 
+$$
+i^2=(0,1)^2=(0,1)(0,1)=(-1,0)=-1.
+$$
+Sérhvern vigur $(a,b)$ má skrifa sem samantekt $(a,b)=a(1,0)+b(0,1)$
+Við skrifum $a$ og $b$ í stað $(a,0)$ og $(b,0)$ og erum þar með
+komin með framsetninguna
+$$
+(a,b)=(a,0)(1,0)+(b,0)(0,1)=a+ib.
+$$ 
+
+
+\subsection*{Veldareglur}
+
+Ef $z$ er tvinntala þá getum við skilgreint heiltöluveldi þannig
+að $z^0=1$, $z^1=z$, og $z^n=z\cdots z$ þar sem allir þættirnir eru
+eins og fjöldi þeirra er $n\geq 2$.  Fyrir $z\neq 0$ eru
+neikvæðu veldin skilgreind
+þannig að $z^{-1}$ er margföldunarandhverfan af $z$ og fyrir neikvæð 
+$n$ er $z^n=(z^{-1})^{|n|}$.  Með þessu fást sömu veldareglur og gilda
+um rauntölur  
+\begin{align*}
+z^n\cdot z^m&=z^{n+m}\\
+\dfrac {z^n}{z^m}&=z^{n-m}\\
+z^n\cdot w^n&=(zw)^n\\
+(z^n)^m&=z^{nm}
+\end{align*}
+
+\subsection*{Tvíliðureglan}
+
+
+Okkar gamli kunningi, tvíliðureglan, er eins fyrir tvinntölur og
+rauntölur,
+$$
+(a+b)^n=\sum_{k=0}^n\binom nk a^kb^{n-k}
+$$
+þar sem {\it tvíliðustuðlarnir} eru gefnir með 
+$$
+\binom nk=\dfrac{n(n-1)\cdots(n-k+1)}{k!}=\dfrac{n!}{(n-k)!k!},
+$$
+fyrir $n=0,1,2,3,\dots$ og $k=0,\dots,n$.   Við köllum þennan stuðul
+$n$ {\it yfir} $k$ og sjáum beint frá formúlunni að tvíliðustuðlarnir
+ eru samhverfir í þeim skilningi að
+$$
+\binom nk=\binom n{n-k}.
+$$
+Tvíliðustuðlarnir uppfylla 
+$$
+\binom n0=\binom nn=1
+$$
+fyrir $n=0,1,2,\dots$ og rakningarformúluna
+$$
+\binom nk=\binom{n-1}{k-1}+\binom{n-1}k, 
+$$
+fyrir $n=2,3,4,\dots$ og $k=1,2,\dots,n-1$.
+Þessari rakningu er best lýst í  þríhyrningi Pascals, en línurnar í
+honum geyma alla tvíliðurstuðlana.  Fyrstu $7$ línurnar, 
+$n=0,\dots,6$, í honum eru
+
+\begin{center}
+\begin{tabular}{cccccccccccccc}
+& & & & & & 1 & & & & & & & \\
+& & & & & 1 & & 1 \\
+& & & & 1 & & 2 & & 1 \\
+& & & 1 & & 3 & & 3 & & 1 \\
+& & 1 & & 4 & & 6 & & 4 & & 1 \\
+& 1 & & 5 & & 10 & & 10 & & 5 & & 1\\
+1 & & 6 & & 15 & & 20 & & 15 & & 6 & & 1
+\end{tabular}
+\end{center}
+
+
+
+
+\subsection*{Raunhluti, þverhluti og samok}
+
+Sérhverja tvinntölu $z$ má rita sem $z=x+iy$ þar sem $x$ og
+$y$ eru rauntölur. Talan $x$ nefnist þá {\it raunhluti} tölunnar 
+$z$ og talan $y$ nefnist {\it þverhluti } hennar.       Við táknum
+raunhlutann með $\Re z$ og þverhlutann með $\Im z$.
+
+Tvinntala $z$ er sögð vera {\it rauntala} 
+ef $\Im z=0$ og hún er sögð vera {\it hrein
+þvertala} ef $\Re z=0$.  
+
+Ef $z\in \C$, $x=\Re z$ og $y=\Im z$, þá nefnist talan
+$\bar z=x-iy$
+{\it samok} tölunnar $z$.  
+Athugið að $\bar z$ er spegilmynd $z$ í raunásnum og því er
+$\bar{\bar z}=z$.  
+Við höfum nokkrar reiknireglur
+um samok
+\begin{align*}
+z\bar z&=(x+iy)(x-iy)=x^2+y^2  \\
+z+\bar z&=2x=2\, \Re \, z, \\
+z-\bar z&=2iy=2i\Im \, z.\\  
+\overline{z+w} &= \bar z+ \bar w \\
+\overline{z-w} &= \bar z- \bar w \\
+\overline{zw} &= \bar z\cdot \bar w \\
+\overline{z/w} &= \bar z/ \bar w \\
+ |\bar z|&=|z| 
+\end{align*}
+Við höfum að $z$ er rauntala þá og því aðeins að $z=\bar z$ og að $z$
+er hrein þvertala þá og því aðeins að $z=-\bar z$.
+
+\subsection*{Lengd og stefnuhorn}
+
+
+\vfigura{siiibmynd0102}{}  
+Ef $z\in \C$, $x=\Re z$ og $y=\Im z$, þá nefnist talan
+$$
+|z|=\sqrt{x^ 2+y^2},
+$$
+{\it lengd}, {\it tölugildi } eða {\it algildi } tvinntölunnar
+$z$.  
+Ef $\theta\in \R$ og hægt er að skrifa tvinntöluna $z$ 
+á forminu $$
+z=|z|(\cos \theta +i\sin \theta),
+$$
+þá nefnist talan $\theta$ {\it stefnuhorn} eða 
+{\it horngildi } tvinntölunnar $z$ og stærðtáknið í hægri hliðinni
+nefnist {\it pólform tvinntölunnar $z$}.
+Hornaföllin $\cos$ og $\sin$ eru lotubundin með lotuna 
+$2\pi$ og því eru allar tölur af gerðinni $\theta+2\pi k$
+með $k\in \Z$ einnig stefnuhorn fyrir $z$.  
+Raðtvenndin $(|z|,\theta)$ er nefnd {\it pólhnit}
+eða {\it skauthnit} tölunnar $z$.
+
+Við höfum að $$
+\tan \theta=\dfrac{\sin\theta}{\cos\theta}
+=\dfrac{r\sin\theta}{r\cos\theta}=\dfrac yx
+$$
+og af því leiðir að hornið er gefið með formúlunni
+$$
+\theta(z)=\arctan\bigg(\dfrac yx\bigg).
+$$
+Athugið að það eru miklar takmarkanir á þessri formúlu, því hún gildir
+aðeins fyrir $x>0$, því fallið $\arctan$ gefur okkur gildi á bilinu
+$]-\tfrac 12 \pi,\tfrac 12 \pi[$.  
+
+Nú skulum við leiða út formúlu fyrir stefnuhorni tvinntölunnar 
+$z$ sem gefur okkur samfellt fall af $z$ á $\C\setminus \R_-$ sem
+tekur gildi á bilinu $]-\pi,\pi[$. Þetta er gert úr frá formúlunni
+fyrir tangens af hálfu horni,
+\begin{align*}
+\tan(\tfrac 12\theta)&=\dfrac{\sin(\tfrac 12\theta)}{\cos(\tfrac
+12\theta)} = \dfrac{2\sin(\tfrac 12\theta)\cos(\tfrac 12\theta)}
+{2\cos^2(\tfrac 12\theta)}=\dfrac{\sin \theta}{1+\cos\theta}  \\
+&=\dfrac{|z|\sin \theta}{|z|+|z|\cos\theta}=\dfrac y{|z|+x}.
+\end{align*}
+Formúlan sem við endum með er
+$$
+\theta(z)=2\arctan\bigg(\dfrac y{|z|+x}\bigg).
+$$
+Þetta fall sem gefur okkur horngildið af tvinntölunni
+$z\in \C\setminus \R_-$  á bilinu $]-\pi,\pi[$
+nefnist {\it höfuðgrein hornsins} og er það táknað með
+$\Arg \, z$
+
+Við höfum nokkrar reiknireglur um lengd tvinntalna,
+\begin{align*}
+  z\bar z&=(x+iy)(x-iy)=x^2+y^2=|z|^2,\\
+|\bar z|&=|z|,\\
+|zw|&=|z||w|.
+\end{align*}
+Fyrsta jafnan  gefur okkur 
+formúlu fyrir margföldunarandhverfunni
+$$
+z^{-1}=\dfrac 1z=\dfrac{x-iy}{x^2+y^2}=\dfrac{\bar z}{|z|^2}, \qquad z\neq 0.
+$$
+
+\subsection*{Fjarlægð milli punkta}
+
+Fjarlægð milli tveggja punkta $z=x+iy$ og $w=u+iv$ er gefin með
+$$
+|z-w|=\sqrt{(x-u)^2+(y-v)^2}.
+$$
+Ef $\alpha$ og $\beta$ eru tvinntölur og $\alpha\neq
+\beta$, þá er 
+$$\{z\in \C\,;\, |z-\alpha|=|z-\beta|\}
+$$ mengi allra punkta
+$z$ í $\C$ sem eru í sömu fjarlægð frá báðum punktum $\alpha$ og
+$\beta$.  Það er augljóst að miðpunktur striksins $\frac
+12(\alpha+\beta)$ milli $\alpha$ og $\beta$ er í fjarlægðinni
+$\frac 12|\alpha-\beta|$ frá báðum punktum.  Ef við drögum línuna 
+gegnum miðpunktinn sem
+liggur hornrétt á strikið, þá fáum við mengi allra punkta sem eru í
+sömu fjarlægð frá $\alpha$ og $\beta$.
+
+\bigskip\hrule\bigskip
+
+\begin{sy}  Ákvarðið mengi allra punkta $z=x+iy$ sem uppfylla
+
+\smallskip
+{\bf a)} \ $|z-1|=|z+2|$, \qquad {\bf b)} \ $|z+1+i|=|z-1-i|$
+
+
+\medskip
+{\it Lausn}: \ (a) Hér lítum við á mengi allra punkta 
+sem eru í sömu fjarlægð frá $\alpha=1$ og $\beta=-2$.  Miðpunktur
+striksins á milli þeirra er $m=\tfrac 12(1-2)=-\tfrac 12$ og línan
+gegnum hann hornrétt á strikið er gefin með jöfnunni $x=\Re z=-\tfrac
+12$.
+
+
+Þá má líka komast að þessari niðurstöðu með því að líta á
+eftirfarandi jafngildu jöfnur:
+\begin{align*}
+|z-1|&=|z+2| \\
+|z-1|^2&=|z+2|^2 \\
+(z-1)(\bar z-1)&=(z+2)(\bar z+2) \\
+|z|^2-z-\bar z+1&=|z|^2+2z+2\bar z+4\\
+-3(z+\bar z)&=3\\
+-6\Re z&=3\\
+\Re z&=x=-\tfrac 12
+\end{align*} 
+Þetta segir okkur að mengið samanstandi  af öllum punktum 
+í $z$-plani sem uppfylla $\Re z=-\tfrac 12$.
+
+\smallskip\noindent
+(b) Í þessu tilfelli eru punktarnir $\alpha=-1-i$ og $\beta=1+i$.
+Miðpunkturinn á strikinu á milli þeirra er $0$.  Þeir liggja
+greinilega báðir á línunni sem gefin er með jöfnunni $y=x$. Jafnan
+fyrir línuna sem er hornrétt á hana og liggur gegnum $0$ er
+$y=-x$.
+
+Leysum þetta líka með algebru eins og í fyrri lið dæmisins.
+Við höfum jafngildar jöfnur:
+\begin{align*}
+|z+1+i|&=|z-1-i| \\
+|z+1+i|^2&=|z-1-i|^2 \\
+(z+(1+i))(\bar z+(1-i))&=(z-(1+i))(\bar
+z-(1-i)) \\
+|z|^2+(1-i)z+(1+i)\bar z+2&=|z|^2-(1-i)z-(1+i)\bar z+2\\
+2((1-i)z+(1+i)\bar z)&=0\\
+\Re ((1-i)z)&=x+y=0
+\end{align*} 
+Þetta er lína sem gefin er í $xy$-hnitakerfi með jöfnunni
+$y=-x$.
+\end{sy}
+
+\bigskip\hrule\bigskip
+
+\subsection*{Innfeldi og krossfeldi}
+
+{\it Innfeldi\index{innfeldi}} tveggja vigra\index{innfeldi!vigra}
+$z=(x,y)$ og $w=(u,v)$ er 
+skilgreint sem rauntalan $z\boldcdot w=xu+yv$.
+Ef við lítum á $z$ og $w$ sem tvinntölur og skrifum
+$z=x+iy=r(\cos\alpha+i\sin \alpha)$ og
+$w=u+iv=s(\cos\beta+i\sin\beta)$, þá fáum við formúluna
+$$
+\Re\big(z\bar w\big)=\Re\big(\bar z w\big)
+=\tfrac 12\big(z\bar w+\bar z w\big)=xu+yv=(x,y)\cdot(u,v)=rs\cos(\alpha-\beta).
+$$
+Þverhluti þessarar stærðar er {\it krossfeldi\index{krossfeldi}} $z$ og $w$, 
+$$
+\Im(\bar z w\big)=-\Im\big(z\bar w)=xv-yu=\left|\begin{matrix}
+ x&u  \\
+ y&v 
+\end{matrix}\right|=-rs\sin(\alpha-\beta)
+$$
+en tölugildi\index{tvinntala!tölugildi}\index{tölugildi}
+\index{tölugildi!tvinntölu} þess $|\Im\big(z\bar w)|$ er flatarmál
+samsíðungsins, sem tölurnar $z$ og $w$ spanna.  
+
+
+\subsection*{Jafna línu og jafna hrings}
+
+{\it Bein lína} í $\C$\index{bein lína í $\C$} er gefin sem mengi allra punkta $(x,y)$
+sem uppfylla jöfnu af gerðinni
+$$
+ax+by+c=0.
+$$
+Við getum greinilega snúið þessu yfir í jöfnuna 
+$$
+2\Re\big( \bar {\beta} z\big)+c=\bar {\beta} z+{\beta}\bar z+c=0,
+$$
+þar sem ${\beta}=\frac 12(a+ib)$.  Tvinntalan ${\beta}$ er hornrétt á
+línuna og $i{\beta}$ er í stefnu hennar. 
+
+
+{\it Hringur } í $\C$ \index{hringur í $\C$}með miðju $m$ og geisla $r$ er mengi allra
+punkta $z$ sem eru í fjarlægðinni $r$ frá $m$,
+$|z-m|=r$. Við getum greinilega tjáð þessa jöfnu með jafngildum hætti,
+ $$|z-m|^2-r^2=(z-m)(\bar z-\bar m)-r^2=|z|^2-\bar
+mz-m\bar z +|m|^2-r^2=0.
+ $$
+Við getum auðveldlega flokkað öll mengi sem gefin eru með jöfnu af
+gerðinni
+ \begin{equation}\alpha|z|^2+\overline \beta z+\beta\overline z +\gamma=0,
+ \end{equation}
+þar sem $\alpha$ og $\gamma$ eru rauntölur og $\beta$ er tvinntala.
+Tilfellin eru:
+
+\noindent
+(i) {\it Lína}:  $\alpha=0$, $\beta\neq 0$.
+
+\noindent
+(ii) {\it Hringur}:  $\alpha\neq 0$,
+$|\beta|^2-{\alpha}\gamma>0$.  Ef miðjan er  $m$ og 
+geislinn  $r$, þá er 
+$$m=-\beta/\alpha\qquad \text{ og } \qquad
+r=\sqrt{|\beta|^2-\alpha\gamma}\, /|\alpha|.
+$$
+
+\noindent
+(iii)  {\it Einn punktur}: $\alpha\neq 0$ og
+$|\beta|^2-\alpha\gamma=0$.   Punkturinn er
+$m=-\beta/\alpha$. 
+
+\noindent
+(iv) {\it Tóma mengið}:  $\alpha\neq 0$,
+$|\beta|^2-\alpha\gamma<0$ eða $\alpha=0$, $\beta=0$,
+$\gamma\neq 0$.  
+
+\noindent
+(v) {\it Allt planið $\C$}:  $\alpha=\beta=\gamma=0$.
+
+
+\subsection*{Einingarhringurinn}
+
+Einingarhringurinn $\T$ er hringurinn með miðju í $0$
+og geislann $1$.  Hann samanstendur af öllum tvinntölum 
+með tölugildi $1$.  Sérhvert $z$ í $\T$  má því skrifa
+á forminu  $z=\cos \alpha+i\sin \alpha$. 
+Tökum nú aðra slíka tölu 
+$w=\cos \beta+i\sin \beta$ og 
+margföldum saman
+\begin{align*}
+zw&=(\cos \alpha +i\sin \alpha)(\cos \beta+i\sin \beta) \\
+&=(\cos\alpha\cos\beta-\sin\alpha\sin\beta)+i(\sin\alpha\cos\beta+\cos
+\alpha\sin\beta)\\
+&=\cos(\alpha+\beta)+i\sin(\alpha+\beta). 
+\end{align*}
+Í síðustu jöfnunni notuðum við samlagningarformúlur fyrir $\cos$ og
+$\sin$
+\begin{align*}
+\cos(\alpha-\beta) &=\cos \alpha \cos \beta +\sin \alpha \sin \beta \\
+\cos(\alpha+\beta) &=\cos \alpha \cos \beta -\sin \alpha \sin \beta \\
+\sin(\alpha+\beta) &=\sin \alpha \cos \beta + \cos \alpha \sin \beta \\
+\sin(\alpha-\beta) &=\sin \alpha \cos \beta - \cos \alpha \sin \beta \\
+\end{align*}
+Af  formúlunni fyrir margfeldi leiðir regla sem kennd er 
+við de Movire
+$$
+\big(\cos\theta+i\sin\theta\big)^n
+=\cos(n\theta)+i\sin(n\theta).
+$$
+
+\subsection*{Rúmfræðileg túlkun á margföldun}
+
+Látum nú $z$ og $w$ vera tvær tvinntölur með lengdir 
+$|z|$ og $|w|$ og stefnuhornin $\alpha$ og $\beta$.
+Þá fáum við
+$$
+zw=|z||w|\big(\cos(\alpha+\beta)+i\sin(\alpha+\beta)\big).
+$$
+sem segir okkur að lengd margfeldisins sé 
+margfeldi lengda $z$ og $w$ og  
+að stefnuhorn margfeldisins sé summa stefnuhorna $z$  og $w$.
+
+Ef nú $u\in \T$ er tala á einingarhringnum með stefnuhornið
+$\beta$, þá er $uz$ snúningur á $z$ um hornið $\beta$.
+
+
+\subsection*{Þríhyrningsójafnan}
+
+Tökum tvær tvinntölur $z$ og $w$ og reiknum smávegis
+\begin{align*}
+|z+w|^2&=(z+w)(\overline{z+w})=(z+w)(\bar z+\bar w)  \\
+ &=z\bar z+z\bar w+w\bar z+w\bar w\\
+&=|z|^2+z\bar w+\overline{z\bar w}+|w|^2\\
+&=|z|^2+2\Re(z\bar w)+|w|^2
+\end{align*}
+Athugum nú að
+$$
+|\Re z|\leq |z| \qquad \text{ og } \qquad 
+|\Im z|\leq |z|
+$$
+Af fyrri ójöfnunni  leiðir að
+$$
+|z+w|^2\leq |z|^2+2|z||w|+|w|^2=(|z|+|w|)^2.
+$$
+Ef við tökum kvaðratrót beggja vegna ójöfnumerkisins, þá fáum við
+{\it þríhyrningsójöfnuna}
+$$
+|z+w|\leq |z|+|w|
+$$
+Ef henni er beitt á liðina $z-w$ og $w$ í stað $z$ og $w$, þá fáum við
+$|z|=|(z-w)+w|\leq |z-w|+|w|$, svo $|z|-|w|\leq |z-w|$.
+Ef við skiptum á hlutverkum $z$ og $w$, þá fæst
+$|w|-|z|\leq |w-z|=|z-w|$. Þessar tvær ójöfnu gefa okkur
+annað afbrigði af þríhyrningsójöfnunni
+$$
+||z|-|w||\leq |z-w|.
+$$
+
+\section{Rætur}
+
+Látum nú $w$ vera gefna tvinntölu og $n\geq 2$ vera náttúrlega tölu.
+Tvinntalan $z$ kallast þá  {\it $n$-ta  rót} tvinntölunnar $w$ ef hún
+uppfyllir jöfnuna $z^n=w$
+
+\subsection*{Einingarrætur}
+
+Lítum á jöfnuna $z^n=1$, þar sem $n\geq 2$ er náttúrleg tala.
+Lausnir hennar nefnast {\it $n$-tu einingarrætur} eða {\it $n$-tu
+rætur af einum}. 
+Ef $z$ er lausn, þá er $1=|z^n|=|z|^n$ sem segir okkur
+að $|z|=1$ og að við getum skrifað $z=\cos \theta+i\sin \theta$.
+Regla de Moivres segir nú að 
+$$
+\cos (n\theta)+i\sin(n\theta)=(\cos \theta+i\sin \theta)^n=z^n=1
+$$
+Talan $1$ hefur horngildi $2\pi k$ þar sem  $k\in \Z$ getur verið
+hvaða tala sem er 
+og þessi jafna segir okkur því að 
+$n\theta$ sé heiltölumargfeldi af $2\pi$ og þar með eru möguleg
+horngildi
+$$
+\theta=2\pi k/n, \qquad k\in \Z.
+$$
+Ef tvær heiltölur $k_1$ og $k_2$ hafa sama afgang við heiltöludeilingu
+með $n$, þá er $\cos(2\pi k_1/n)=\cos(2\pi k_2/n)$
+og $\sin(2\pi k_1/n)=\sin(2\pi k_2/n)$.  Þetta gefur okkur að 
+jafnan $z^n=1$ hefur $n$ ólíkar lausnir $u_0,\dots,u_{n-1}$, 
+sem nefnast {\it $n$-tu rætur af $1$} og eru gefnar með formúlunni
+$$
+u_k=\cos(2\pi k/n)+i\sin(2\pi k/n), \qquad k=0,1,2,\dots,n-1.
+$$
+Þessar tölur eru allar á einingarhringnum.  Athugið 
+að $u_0=1$,  $u_k=u_1^k$ fyrir $k=0,\dots,n-1$,  og að 
+þær raða sér í hornin á reglulegum $n$-hyrningi, þar sem tvíhyrningur 
+er strikið $[-1,1]$.
+\begin{center}
+\figura{siiibmynd0103}{Mynd: Einingarrætur}
+\end{center}
+
+
+\subsection*{Útreikningur á $n$-tu rótum}
+
+Látum nú $w=s(\cos\alpha+i\sin \alpha)$ vera gefna tvinntölu
+af lengd $s\geq 0$ og með stefnuhornið $\alpha$
+og leitum að lausnum á jöfnunni $z^n=w$.  Ef $z$ er slík lausn
+og $u$ er $n$-ta einingarrót, þá er $(zu)^n=z^nu^n=z^n=w$ og því er 
+$zu$ einnig lausn.  Nú eru einingarræturnar $n$ talsins og þetta segir
+okkur að um leið og við finnum eina lausn $z_0$ þá fáum við $n$ ólíkar
+lausnir $z_0u$ með því að stinga inn öllum mögulegum $n$-tu rótum
+fyrir $u$.  
+Látum nú $z_0$ vera tvinntöluna, sem gefin er með formúlunni
+$$
+z_0=s^{\frac 1n}\big(\cos(\alpha/n)+i\sin(\alpha/n)\big)
+$$ 
+og færum hana síðan í $n$-ta veldi,
+\begin{align*}
+z_0^n &=\big(s^{\frac 1n}\big)^n\big(\cos(\alpha/n)+i\sin(\alpha/n)\big)^n \\
+ & =s\big(\cos(n\alpha/n)+i\sin(n\alpha/n)\big)=w
+\end{align*}
+Þar með erum við komin með formúlu fyrir einni  lausn. 
+Með því að nota formúluna fyrir $n$-tu einingarrótunum, þá
+fáum við upptalningu á öllum lausnum jöfnunnar
+$z^n=w=\varrho(\cos\alpha+i\sin \alpha)$,
+$$
+z_k=\varrho^{\frac 1n}\big(\cos((\alpha+2\pi k)/n)+i\sin((\alpha+2\pi
+k)/n)\big), \qquad k=0,\dots,n-1.
+$$
+Þessari formúlu má lýsa þannig að $n$-tu ræturnar eru fundnar þannig að
+fyrst er fundin ein rót $z_0$.  Henni er snúið um hornið $2\pi/n$ 
+með því að  margfalda með 
+$u_1$ yfir í $z_1=u_1z_0$.  Næst er $z_1$ snúið um hornið $2\pi/n$
+í $z_2=u_1z_1$ og þannig er haldið áfram þar til $n$ ólíkar rætur eru
+fundnar.
+
+
+\subsection*{Ferningsrætur}
+
+
+
+Ef $w$ er tvinntala og $z$ uppfyllir $z^2=w$, þá er $z$ sögð vera
+{\it ferningsrót} eða {\it kvaðratrót } tölunnar $w$.
+Munið að ef $w$ er jákvæð rauntala, þá táknar $\sqrt w$ alltaf jákvæðu
+rauntöluna  töluna sem uppfyllir $(\sqrt w)^2=\alpha$.  
+Að sjálfsögðu er $\sqrt 0=0$.
+
+
+Ef $w\neq 0$ er tvinntala og $w$ er ekki jákvæð rauntala, þá 
+er hefur $\sqrt w$ enga staðlaða merkingu.  Við vitum bara að 
+$w$ hefur tvær  ferningsrætur  $z_0$ og $z_1$.  Ef við skrifum 
+$w=s(\cos \alpha+i\sin\alpha)$, þá gefa reikningar okkar hér að framan
+að við getum við tekið
+$$
+z_0=\sqrt{s}(\cos(\alpha/2)+i\sin (\alpha/2))
+$$
+og
+$$
+z_1=\sqrt{s}(\cos(\alpha/2+\pi)+i\sin (\alpha/2+\pi))=-z_0.
+$$  
+Nú ætlum við að leiða út formúlu fyrir ferningsrótum  
+$w=u+iv$, sem er sett fram með raunhluta $u$ og þverhluta $v$, en ekki
+lengd og stefnuhorni.  Við takmörkum okkur við
+tölur $w$ sem liggja ekki á neikvæða raunásnum $\R_-=\{x\in \R\,;\,
+x\leq 0\}$.  Skrifum  rótina sem $z_0=z=x+iy$ og veljum $z_0$ sem þá
+rót sem hefur $x>0$.  
+
+
+Þá er $z^2=x^2-y^2+2ixy=u+iv=w$.  Með því að bera saman
+raun- og þverhluta í þessari jöfnu, þá fáum við tvær
+formúlur  $x^2-y^2=u$ og $2xy=v$.  Formúlan $|w|=|z^2|=|w|^2=x^2+y^2$
+gefur okkur eina jöfnu til viðbótar og við getum leyst út $x^2$ og
+$y^2$, 
+$$
+\begin{cases}
+x^2+y^2=|w|,\\
+x^2-y^2=u,
+\end{cases}\qquad
+\begin{cases}
+x^2=\tfrac 12(|w|+u),\\
+y^2=\tfrac 12(|w|-u).
+\end{cases}\qquad
+$$
+Við gáfum okkur að $x>0$ og því  er formerkið á $y$ 
+það sama og formerkið á $v=2xy$.   
+{\it Formerkisfallið} $\sign$ er skilgreint með
+$$
+\sign(t)=
+\begin{cases}
+1, &t>0,\\
+0, &t=0,\\
+-1,&t<0.
+\end{cases}
+$$
+Ef $v\neq 0$, þá  gefur þessi  formúla okkur kost á að  við 
+skrifa lausina á einföldu formi
+\begin{align*}
+z&=\sqrt{\tfrac 12(|w|+u)}+i\, \sign(v)\, \sqrt{\tfrac 12(|w|-u)}\\
+&=\sqrt{\tfrac 12(|w|+\Re w)}+i\, \sign(\Im w)\, \sqrt{\tfrac
+12(|w|-\Re w)}.
+\end{align*}
+Ef $v=0$ og $u>0$, þá er $w=u$ og við fáum jákvæðu rótina
+$z=\sqrt w$ út úr þessari formúlu.
+
+
+\begin{sy} \label{sy:raetur} Reiknum út formúlur fyrir $\cos(\pi/8)$
+og $\sin(\pi/8)$ með því að notfæra okkur að
+formúluna fyrir kvaðratrót tvinntölu og þá staðreynd
+að $\cos(\pi/4)=\sqrt 2/2=\sin(\pi/4)$.  
+
+\smallskip\noindent
+{\it Lausn}: \ Talan $z=\cos(\pi/8)+i\sin(\pi/8)$ er
+ferningsrótin af tölunni $w=\cos(\pi/4)+i\sin(\pi/4)$
+sem gefin er með formúlunni hér að framan.  Við höfum því
+$$
+z=\sqrt{\dfrac 12(1+\sqrt 2/2)}+i\sqrt{\dfrac 12(1-
+\sqrt 2/2)}=\dfrac 12(\sqrt{2+\sqrt 2}+i\sqrt{2-\sqrt 2}).
+$$
+Þar með er 
+$$
+\cos(\pi/8)=\dfrac 12\sqrt{2+\sqrt 2}\qquad \text{ og } \qquad
+\sin(\pi/8)=\dfrac 12\sqrt{2-\sqrt 2}.
+$$
+\end{sy}
+
+
+\section{Margliður}
+
+Við getum skilgreint margliður með tvinntölustuðlum á nákvæmlega sama
+hátt og fyrr, en það eru stærðtákn af gerðinni
+$$
+P(z)=a_nz^n+a_{n-1}z^{n-1}+\cdots+a_1z+a_0.
+$$
+þar sem $a_0,\dots,a_n$ eru tvinntölur og $z$ er breyta sem tekur
+gildi í tvinntölunum.  Við getum litið á $P$ sem fall sem skilgreint
+er á $\C$ og tekur gildi í $\C$.  {\it Núllmargliðan} er margliðan sem
+hefur alla stuðla $a_j=0$.  Við táknum hana með $0$.
+Stig margliðunnar $P\neq 0$ er skilgreint eins og áður sem stærsta 
+heiltala $j$ þannig að $a_j\neq 0$.  
+
+
+Margliðudeiling er alveg eins fyrir margliður með tvinntölustuðla og
+margliður með rauntölustuðla.  Ef $P$ er margliða  og 
+$Q$ er margliða af stigi $m$, þá eru til margliða  $R$ af stigi minna en $m$
+og margliða $S$, þannig að
+$$
+P(z)=Q(z)S(z)+R(z)
+$$ 
+Margliðan $R$ nefnist þá {\it leif} eða {\it afgangur við deilingu á
+$P$ með $Q$} og $S$ nefnist {\it kvóti $P$ og $Q$}.  Við segjum að 
+{\it $Q$ deili $P$} eða að {\it $Q$ gangi upp í $P$} ef $R$ er
+núllmargliðan.  
+
+Ef $\alpha\in \C$, þá er $z-\alpha$ fyrsta stigs margliða og við fáum
+að leifin við deilingu á $P(z)$ með $(z-\alpha)$ verður fastamargliðan
+$P(\alpha)$,
+$$
+P(z)=(z-\alpha)S(z)+P(\alpha).
+$$
+Tvinntalan $\alpha$ er sögð vera {\it núllstöð} eða {\it rót}
+margliðunnar $P$ ef $P(\alpha)=0$.   Við höfum nú {\it  þáttaregluna}.
+
+\begin{se}  Margliða $P$ af stigi $\geq 1$ hefur núllstöð $\alpha$
+þá og því aðeins að $z-\alpha$ gangi upp í $P$.
+\end{se}
+
+
+\subsection*{Núllstöðvar annars stigs margliðu}
+
+Nú viljum við leysa jöfnuna  $az^2+bz+c=0$ og ganga út frá því 
+að  stuðlarnir $a$, $b$ og $c$ séu tvinntölur og að $a\neq 0$.
+Þetta er gert nánast eins og fyrir rauntölur, en niðurstaðan verður
+almennari. 
+Fyrsta verkið er að deila báðum hliðum með $a$ og fá þannig jafngilda
+jöfnu  $z^2+Bz+C=0$, þar sem $B=b/a$ og $C=c/a$.  Næsta skref er að
+líta á tvo fyrstu liðina $z^2+Bz$ og skrifa þá sem ferning að viðbættum
+fasta.  Með orðinu ferningur er átt við fyrsta stigs stærðtákni
+í öðru veldi, $(z+\alpha)^2$.  Ferningsreglan fyrir fyrir summu segir
+að $(z+\alpha)^2=z^2+2\alpha z+\alpha^2$.  Því er 
+$$
+0=z^2+Bz+C=(z+\dfrac B2)^2-\dfrac {B^2}4+C.
+$$
+Þetta segir okkur að upphaflega jafnan jafngildi
+$$
+0=(az^2+bz+c)/a=\bigg(z+\dfrac {b}{2a}\bigg)^2-\dfrac{b^2}{4a^2}+\dfrac ca.
+$$
+Með því að draga töluna $-b^2/(4a^2)+c/a$ frá báðum hliðum, þá fáum við
+jafngilda jöfnu
+$$
+\bigg(z+\dfrac {b}{2a}\bigg)^2=\dfrac{b^2}{4a^2}-\dfrac ca=\dfrac{b^2-4ac}{4a^2}.
+$$
+Tvinntalan  $D=b^2-4ac$ nefnist {\it aðgreinir} eða {\it aðskilja }
+jöfnunnar. Ef $D\neq 0$, þá hefur $D$ tvær kvaðratrætur.  
+Látum $\sqrt D$ tákna aðra þeirra.  Þá er hin jöfn
+$-\sqrt D$ og við fáum tvær ólíkar lausnir 
+$$
+z_1=\dfrac{-b+\sqrt D}{2a} \qquad\text {og} \qquad
+z_2=\dfrac{-b-\sqrt D}{2a}.
+$$
+Ef $D=0$, fæst ein lausn
+$$
+z=\dfrac{-b}{2a}.
+$$
+Ef $D$ er rauntala og $D<0$ þá getum við valið $\sqrt D=i\sqrt{|D|}$
+og lausnarformúlan verður
+$$
+z_1=\dfrac{-b+i\sqrt{ |D|}}{2a} \qquad\text {og} \qquad
+z_2=\dfrac{-b-i\sqrt{|D|}}{2a}.
+$$
+
+\subsection*{Undirstöðusetning algebrunnar}
+
+Við byrjuðum á því að innleiða tvinntölurnar með það fyrir augum að
+geta leyst jöfnur sem hafa engar rauntölulausnir og lögðum upp með það
+að finna lausn á jöfnunni $z^2+1=0$.  Það er því ekki hægt að
+segja annað en að útvíkkun talnakerfisins frá rauntölum yfir í
+tvinntölur sé vel heppnuð:
+ 
+\begin{se} \  ({\it Undirstöðusetning
+algebrunnar})   Sérhver margliða af stigi $\geq 1$
+með tvinntölustuðlum hefur  núllstöð í $\C$.  
+\end{se}
+
+\bigskip
+Sönnunin á undirstöðusetningunni  kemur síðar í námskeiðinu, en við 
+skulum taka hana  trúanlega  og athuga nokkrar merkilegar
+afleiðingar hennar.   
+
+
+Segjum nú að $P$  sé margliða af stigi $m\geq 1$
+og að $\alpha_1$ sé núllstöð hennar.  Við getum þá skrifað
+$$
+P(z)=(z-\alpha_1)Q_1(z)
+$$
+samkvæmt þáttareglunni.  Þá er $Q_1$ af stigi $m-1$ og 
+samkvæmt meginsetningunni hefur $Q_1$
+núllstöð $\alpha_2$ ef $m\geq 2$. Við þáttum $Q_1$ með $z-\alpha_2$ og fáum þannig
+$$
+P(z)=(z-\alpha_1)(z-\alpha_2)Q_2(z)
+$$ þar sem $Q_2$ er margliða af stigi
+$m-2$.  Þessu er unnt að halda áfram þar til við endum með fullkomna
+þáttun á $P$ í fyrsta stigs liði
+$$
+P(z)=A(z-\alpha_1)(z-\alpha_2)\cdots(z-\alpha_m)
+$$
+þar sem $\alpha_1,\dots,\alpha_m$ er upptalning á öllum núllstöðvum $P$
+með hugsanlegum endurtekningum og $A\neq 0$ er stuðullinn í veldið
+$z^m$ í margliðunni $P$.
+
+Ef $\alpha$ er núllstöð margliðu $P$ og hægt er að þátta $P$
+í $P(z)=(z-\alpha)^jQ(z)$ þar sem $Q$ er margliða og $Q(\alpha)\neq 0$
+þá segjum við að $\alpha$ sé {\it $j$-föld núllstöð $P$} og köllum töluna
+$j$ {\it margfeldni núllstöðvarinnar $\alpha$ í $P$}.  Ef $P$ er af
+stigi $m$ og $\beta_1,\dots,\beta_k$ er upptalning á ólíkum
+núllstöðvum margliðunnar $P$ og þær hafa margfeldni $m_1,\dots,m_k$,
+þá getum við skrifað 
+$$
+P(z)=A(z-\beta_1)^{m_1}\cdots(z-\beta_k)^{m_k}
+$$
+og 
+$$
+m=m_1+\cdots+m_k.
+$$
+
+
+\subsection*{Margliður með rauntölustuðla}
+
+Við lítum allaf á rauntölurnar sem hluta af tvinntölunum og því er
+sérhver margliða með rauntölustuðla jafnframt margliða með
+tvinntölustuðla.  Meginsetning algebrunnar á því við um þessar
+margliður einnig. Hugsum okkur nú að  $P(z)$ sé margliða af stigi
+$m\geq 1$ með rauntölustuðla $a_0,\dots,a_m$ og að $\alpha\in \C$ sé
+núllstöð hennar og gerum ráð fyrir að $\alpha$ sé ekki rauntala.  
+Með því að beita reiknireglunum fyrir samok og þá sérstaklega að 
+$\bar a_j=a_j$, þá fáum við
+\begin{equation*}
+0=P(\alpha)=\overline{P(\alpha)}
+=\overline{\sum_{k=0}^ma_k\alpha^k} =\sum_{k=0}^m \overline{a_k}\overline{\alpha^k}
+=\sum_{k=0}^m a_k (\overline{\alpha})^k=P(\bar\alpha)
+\end{equation*}
+Við höfum því sýnt að $\bar \alpha$ er einnig núllstöð $P$. 
+Við getum því þáttað út $(z-\alpha)(z-\bar \alpha)$
+Athugum að 
+$$
+(z-\alpha)(z-\bar\alpha)=
+z^2-(\alpha+\bar\alpha)z+\alpha\bar\alpha
+=z^2-2(\Re\, \alpha)z+|\alpha|^2
+$$
+Nú beitum við þáttareglunni og sjáum að í þessu tilfelli fæst 
+þáttun á $P(z)$ í tvær rauntalnamargliður
+$$
+P(z)=\big(z^2-2(\Re\, \alpha)z+|\alpha|^2\big)Q(z).
+$$
+
+
+
+\subsection*{Afleiður af margliðum}
+
+Tvíliðustuðlarnir eru dálítið fyrirferðarmiklir í útskrift svo við
+skulum tákna $n$ yfir $k$ með $c_{n,k}$.  Við fáum þá 
+$$
+(z+h)^n=z^n+nz^{n-1}h+c_{n,2}z^{n-2}h^2+\cdots+c_{n,n-2}z^{n-2}h^2+nzh^{n-1}+h^n.
+$$
+Við fáum því formúluna
+$$
+\dfrac{(z+h)^n-z^n}h=nz^{n-1}+c_{n,2}z^{n-2}h+\cdots+nzh^{n-2}+h^{n-1}.
+$$
+Nú látum við $h\to 0$ og fáum
+$$\lim_{h\to 0}\bigg(
+\dfrac{(z+h)^n-z^n}h\bigg)=nz^{n-1}.
+$$
+Við skilgreinum afleiðuna af einliðunni $z\mapsto z^n$ sem fallið
+$z\mapsto nz^{n-1}$ fyrir $n=0,1,2,\dots$ og almennt skilgreinum við 
+afleiðu af margliðu $P(z)=\sum_{n=0}^ma_nz^n$ með
+$$
+P'(z)=\lim_{h\to 0}\dfrac{P(z+h)-P(z)}h=\sum_{n=0}^mna_nz^{n-1}.
+$$
+Það er enginn vandi  að sýna fram á að venjulegu reiknireglurnar
+ fyrir afleiður gildi,
+$$
+(P+Q)'(z)=P'(z)+Q'(z)
+$$
+og 
+$$ 
+(PQ)'(z)=P'(z)Q(z)+P(z)Q'(z).
+$$
+
+\section{Ræð föll}
+
+{\it Rætt fall} er kvóti tveggja margliða $R=P/Q$. Það er
+skilgreint í öllum punktum $z\in \C$  þar sem $Q(z)\neq 0$.
+Við skilgreinum afleiðuna af $R$ með hliðstæðum hætti og fyrir
+margliður og fáum venjulega reiknireglu
+$$
+R'(z)=\lim_{h\to
+0}\dfrac{R(z+h)-R(z)}h=\dfrac{P'(z)Q(z)-P(z)Q'(z)}{Q(z)^2}.
+$$
+
+
+\subsection*{Stofnbrotaliðun\index{stofnbrotaliðun}}
+
+\noindent
+Ef $P$ og $Q$ eru margliður, $Q\neq 0$ og $\stig P\geq \stig Q$, 
+þá getum við alltaf
+framkvæmt deilingu með afgangi og fengið að
+$$
+R(z)=\dfrac {P(z)}{Q(z)}=P_1(z)+\dfrac {P_2(z)}{Q(z)}
+$$ 
+þar sem $P_1$ og $P_2$ eru margliður,  $\stig P_1=\stig P-\stig Q$ 
+og $\stig P_2<\stig Q$.  
+
+Nú ætlum við að líta á rætt fall  $R=P/Q$ þar sem  $P$ og $Q$ 
+eru margliður og $\stig P < \stig Q$.  Þá er 
+alltaf hægt að liða ræða fallið
+í stofnbrot\index{stofnbrot}.  Við gerum fyrst ráð fyrir því að
+að allar núllstöðvar $Q$ séu einfaldar.  Þá getum við
+skrifað
+ \begin{equation*}Q(z)= a(z-\alpha_1)\cdots(z-\alpha_m), \qquad z\in \C,
+\label{4.4.1}
+ \end{equation*}
+þar sem $\alpha_1,\dots,\alpha_m$ eru hinar ólíku núllstöðvar $Q$.
+Stofnbrotaliðun $R$ er þá einfaldlega
+ \begin{equation*}R(z) = \dfrac {A_1}{z-\alpha_1}+\cdots+\dfrac {A_m}{z-\alpha_m}.
+\label{4.4.2}
+ \end{equation*}
+Við munum sanna þessa formúlu í kafla 4.
+Nú þarf að reikna stuðlana $A_1,\dots,A_m$ út.  Við athugum að
+ $$\lim\limits_{z\to\alpha_1} (z-\alpha_1)R(z) = A_1
++\lim\limits_{z\to\alpha_1}
+(z-{\alpha}_1)\bigg(
+\dfrac {A_2}{z-\alpha_2}+\cdots+\dfrac {A_m}{z-\alpha_m}
+\bigg)=A_1.
+ $$
+{Á} hinn bóginn er $Q(\alpha_1)=0$, svo
+ $$\lim\limits_{z\to\alpha_1}(z-\alpha_1)R(z) =
+\lim\limits_{z\to
+\alpha_1}\dfrac{(z-\alpha_1)P(z)}{Q(z)-Q(\alpha_1)}=
+\dfrac{P(\alpha_1)}{Q\dash(\alpha_1)}.
+ $$
+Ef við meðhöndlum hinar núllstöðvarnar með sama hætti, þá fáum við
+formúluna
+ \begin{equation*}A_j=\dfrac{P(\alpha_j)}{Q\dash(\alpha_j)}.
+\label{4.4.3}
+ \end{equation*}
+Við notum nú þáttunina á $Q$ í fyrsta stigs liði til þess að 
+reikna út afleiðuna af $Q$ í ${\alpha}_j$,
+ \begin{equation*}Q\dash(\alpha_j)=a\prod_{\substack{k=1\\ k\neq
+ j}}^m
+(\alpha_j-\alpha_k).
+\label{4.4.4}
+ \end{equation*}
+Þessi formúla segir okkur að $Q'(\alpha_j)$ sé fundið með því að
+taka þáttunina á $Q$ í fyrsta stigs liði, deila út þættinum
+$z-\alpha_j$ og stinga síðan inn $\alpha_j$ fyrir $z$.
+Í sumum tilfellum getur verið einfaldast að nota þessa formúlu til
+þess að reikna út gildin á afleiðum margliðunnar $Q$ í núllstöðvunum.
+
+
+\begin{sy} Reiknum út stofnbrotaliðun á ræða fallinu
+$$
+R(z)=\dfrac{1}{z^3-3z^2+4z-2}.
+$$
+{\it Lausn}: \  Við verðum að byrja á því að ákvarða fullkomna þáttun
+á margliðunni $Q(z)=z^3-3z^2+4z-2$.  Með ágiskun finnum við að
+$\alpha_1=1$ er
+núllstöð.  Það gefur okkur þáttunina $Q(z)=(z-1)(z^2-2z+2)$.  Við
+finnum síðan hinar núllstöðvarnar $\alpha_2=1+i$ og $\alpha_3=1-i$ með
+því að stinga inn í lausnarformúluna fyrir annars stigs jöfnu.  Þáttun
+á $Q(z)$ í fyrsta stigs þætti er 
+$$
+Q(z)=(z-1)(z-1-i)(z-1+i).
+$$
+Afleiðan verður því 
+$$
+Q'(z)=(z-1-i)(z-1+i)+(z-1)(z-1+i)+(z-1)(z-1-i).
+$$
+Gildin sem við sækjumst eftir eru
+$$
+Q'(1)=1, \qquad Q'(1+i)=i(2i)=-2 \quad \text{ og } \quad
+Q'(1-i)=-i(-2i)=-2.
+$$
+Stofnbrotaliðunin er því
+$$
+R(z)=\dfrac 1{z-1}+\dfrac {-1/2}{z-1-i}+\dfrac {-1/2}{z-1+i}
+$$
+Margliðan $Q$ hefur rauntölustuðla, svo það getur verið eðlilegt að
+skrifa stofnbrotaliðunina með nefnurum sem eru annars stigs og 
+óþáttanlegar yfir rauntölurnar.  Þá leggjum við saman tvo síðustu
+liðina í þessari formúlu og fáum
+$$
+R(z)=\dfrac 1{z-1}+\dfrac {-z+1}{z^2-2z+2}.
+$$
+\end{sy}
+
+
+
+\begin{sy}  Reiknið út stofnbrotaliðun ræða fallsins
+$$
+R(z)=\dfrac {120}{(z^2+1)(z^2+4)(z^2+9)}.
+$$
+{\it Lausn}: \ Við vitum að  hægt er að skrifa
+ $$\dfrac {120}{(z^2+1)(z^2+4)(z^2+9)}=
+\dfrac {Az+B}{z^2+1} +\dfrac {Cz+D}{z^2+4}+\dfrac {Ez+F}{z^2+9}
+ $$
+Þar sem stuðlarnir $A,B,C,D,E$ og $F$ eru rauntölur.
+Til þess að ákvarða $A$ og $B$ margföldum við gegnum jöfnuna með
+$z^2+1$ og setjum síðan $s=i$. Þá fæst
+ $$\dfrac {120}{(i^2+4)(i^2+9)}= Ai+B, 
+\quad 5=Ai+B, \quad A=0, \quad B=5.
+ $$
+Næst margföldum við jöfnuna með $z^2+4$ og setum síðan $z=2i$.  Þá
+fæst
+ $$\dfrac {120}{((2i)^2+1)((2i)^2+9)}= 2Ci+D, 
+\quad -8=2Ci+D, \quad C=0, \quad D=-8.
+ $$
+Að lokum margföldum við í gegnum jöfnuna með $z^2+9$ og setjum síðan
+$s=3i$.   Það gefur
+ $$\dfrac {120}{((3i)^2+1)((3i)^2+4)}= 3Ei+F, 
+\quad 3=3Ei+F, \quad E=0, \quad F=3.
+ $$
+Niðurstaðan verður því 
+ $$\dfrac {120}{(z^2+1)(z^2+4)(z^2+9)}=
+\dfrac {5}{z^2+1} -\dfrac {8}{z^2+4}+\dfrac{3}{z^2+9}.
+ $$
+\end{sy}
+
+\bigskip\hrule\bigskip
+
+Gerum nú ráð fyrir að $Q$ hafi ólíkar núllstöðvar
+$\alpha_1,\dots,\alpha_k$ af stigi $m_1,\dots,m_k$,
+og $\stig Q=m=m_1+\cdots+m_k$.  Við getum þáttað
+út núllstöðina $\alpha_j$ með því að skrifa
+$Q(z)=(z-\alpha_j)^{m_j}q_j(z)$, 
+þar sem $q_j$ er margliða af stigi $m-m_j$ og $q_j(\alpha_j)\neq 0$.
+Stofnbrotaliðunin verður nú af gerðinni 
+\begin{align}
+\dfrac{P(z)}{Q(z)}&=
+\dfrac{A_{11}}{(z-\alpha_1)}+\cdots+\dfrac{A_{m_11}}{(z-\alpha_1)^{m_1}}
+\label{4.4.5}\\\
+&+\dfrac{A_{12}}{(z-\alpha_2)}+\cdots+\dfrac{A_{m_22}}{(z-\alpha_2)^{m_2}}\nonumber\\
+&\qquad \vdots\qquad\qquad\vdots\qquad \qquad \vdots\nonumber\\
+&+\dfrac{A_{1k}}{(z-\alpha_k)}+\cdots+\dfrac{A_{m_kk}}{(z-\alpha_k)^{m_k}}\nonumber
+\end{align}
+þar sem stuðlarnir eru gefnir með formúlunni
+$$ A_{lj}=\left.\dfrac 1{(m_j-l)!}
+\bigg(\dfrac {d}{dz}\bigg)^{m_j-l}\bigg(
+\dfrac{P(z)}{q_j(z)}\bigg)\right|_{z=\alpha_j}.
+$$
+Þessa formúlu munum við sanna  síðar, en  það er fínt að æfa
+sig í því að nota hana.
+
+\bigskip\hrule\bigskip
+
+\begin{sy}  Liðið ræða fallið
+ $$\dfrac {P(z)}{Q(z)}=\dfrac{z^2}{(z^2+1)^2}=\dfrac{z^2}{(z-i)^2(z+i)^2}.
+ $$
+í stofnbrot.
+
+\smallskip\noindent
+{\it Lausn}: \ 
+Margliðan $Q$ hefur núllstöðvarnar $\alpha_1=i$ og $\alpha_2=-i$ og eru
+þær báðar af stigi 2.  Við höfum
+\begin{gather*}
+q_1(z)=(z+i)^2, \qquad \dfrac{P(i)}{q_1(i)}= \dfrac 14,\\
+\dfrac d{dz}\bigg(\dfrac{z^2}{(z+i)^2}\bigg)= \dfrac
+{2z(z+i)^2-z^22(z+i)}{(z+i)^4},\\
+\left.\dfrac d{dz}\bigg(\dfrac{P(z)}{q_1(z)}\bigg)\right|_{z=i}
+=\dfrac{-i}4,\\
+q_2(z)=(z-i)^2, \qquad \dfrac{P(-i)}{q_2(-i)}= \dfrac 14,\\
+\dfrac d{dz}\bigg(\dfrac{z^2}{(z-i)^2}\bigg)= \dfrac
+{2z(z-i)^2-z^22(z-i)}{(z-i)^4},\\
+\left.\dfrac d{dz}\bigg(\dfrac{P(z)}{q_2(z)}\bigg)\right|_{z=-i}
+=\dfrac{i}4.
+\end{gather*}
+ Svarið verður því 
+ $$\dfrac{z^2}{(z^2+1)^2}=
+\dfrac{-i/4}{(z-i)}+\dfrac{1/4}{(z-i)^2} +
+\dfrac {i/4}{(z+i)}+\dfrac{1/4}{(z+i)^2}.
+ $$
+\end{sy}
+
+\section{Veldisvísisfallið og skyld föll}
+
+Við höfum séð hvernig skilgreiningarmengi margliða 
+er útvíkkað frá því að vera rauntalnaásinn $\R$ yfir í það að
+vera  allt tvinntalnaplanið $\C$.  Þetta er hægt að gera á eðlilegan
+máta fyrir mörg föll sem skilgreind eru á hlutmengjum á
+rauntalnalínunni þannig að þau fái náttúrlegt skilgeiningarsvæði í 
+$\C$.
+
+
+\subsection*{Framlenging á veldisvísisfallinu}
+
+Veldisvísisfallið $\exp:\R\to \R$ er andhverfa náttúrlega lograns
+sem skilgreindur  er með heildinu
+$$
+\ln x=\int_1^x\dfrac {dt}t, \qquad x>0.
+$$
+Talan $e$ er skilgreind með $e=\exp(1)$.   Nú útvíkkum við
+skilgreiningarsvæði $\exp$ þannig að það verði allt $\C$ með
+formúlunni
+$$
+\exp(z)=e^x(\cos y+i\sin y), \qquad z=x+iy\in \C, \quad x,y\in \R
+$$
+Við skrifum $e^z=\exp z$ fyrir $z\in \C$.
+
+Fyrst hornaföllin $\cos $ og $\sin $ eru lotubundin með lotuna $2\pi$,
+þá fáum við beint út frá skilgreiningunni á veldisvísisfallinu að það
+er lotubundið með lotuna $2\pi i$,
+$$
+e^{z+2\pi k i}=e^z, \qquad k\in \Z.
+$$
+
+\subsection*{Jöfnur Eulers}
+
+Stingum nú hreinni þvertölu $i\theta$ þar sem $\theta\in \R$ inn í
+veldisvísisfallið $e^{i\theta}=(\cos\theta+i\sin\theta)\in \T$.  Þetta
+segir okkur að vörpunin $\theta\mapsto e^{i\theta}$ varpi
+rauntalnalínunni á einingarhringinn.  
+Stillum nú upp tveimur jöfnum
+\begin{align*}
+e^{i\theta}&=\cos\theta+i\sin\theta\\
+e^{-i\theta}&=\cos\theta-i\sin\theta
+\end{align*}
+Tökum nú summu af hægri hliðum og vinstri hliðum.
+Þá fæst $e^{i\theta}+e^{-i\theta}=2\cos \theta$. Tökum síðan
+mismun af því sama. Þá fæst 
+$e^{i\theta}-e^{-i\theta}=2i\sin \theta$.
+Út úr þessu fæst samband milli
+veldisvísisfallsins og hornafallanna sem nefnt er {\it jöfnur Eulers},
+$$
+\cos\theta=\dfrac{e^{i\theta}+e^{-i\theta}}2,\qquad \text{ og } \qquad
+\sin\theta=\dfrac{e^{i\theta}-e^{-i\theta}}{2i}.
+$$
+
+\subsection*{Samlagningarformúla veldisvísisfallsins}
+
+Munum að veldisvísisfallið $\exp: \R\to \R$,  $x\mapsto e^x$, uppfyllir
+regluna $e^{a+b}=e^ae^b$ fyrir allar rauntölur $a$ og $b$.  
+Hún er nefnd {\it samlagningarformúla } eða {\it samlagningarregla}
+veldisvísisfallsins.
+Nú  skulum við taka tvær tvinntölur $z=x+iy$ og $w=u+iv$ og sjá hvernig
+þessi regla alhæfist þegar við erum búin að framlengja
+skilgreiningarsvæði veldisvísisfallsins yfir í allt tvinntalnaplanið
+$\C$,
+\begin{align*}
+e^ze^w &=e^x(\cos y+i\sin y)e^u(\cos v+i\sin v) \\
+ & =(e^xe^u)(\cos y+i\sin y)(\cos v+i\sin v) \\
+ & =e^{x+u}(\cos(y+v)+i\sin (y+v))\\
+ & =e^{(x+u)+i(y+v)}=e^{z+w}.
+\end{align*}
+Við höfum því að samlagningarformúlan gildir áfram
+$$
+e^{z+w}=e^ze^w, \qquad z,w\in \C.
+$$
+
+
+Reglurnar um reikning með samoka tvinntölum gefa
+okkur
+$$\overline{e^z}=e^{\overline z},\qquad z\in \C,
+$$
+og síðan
+ $$|e^z|^2=e^z\overline{e^{z}}=e^ze^{\overline z}=e^{x+iy}e^{x-iy}=e^{2x}
+ $$
+Þar með er
+ $$|e^z|=e^{\Re z}, \qquad z\in \C,
+ $$
+og sérstaklega gildir 
+$$
+|e^{iy}|=1, \qquad y\in \R.
+$$
+Af þessu leiðir  að veldisvísisfallið hefur enga
+núllstöð\index{veldisvísisfallið!núllstöð}
+$e^z=e^xe^{iy}$ og  hvorugur þátturinn í hægri hliðinni getur verið
+núll.  Við sjáum einnig að veldisvísisfallið varpar lóðréttu línunni
+sem gefin er með jöfnunni 
+$x=\Re z=a$ í $z$-plani á hringinn sem gefinn er með jöfnununni 
+$|w|=e^a$ í $w$-plani og það varpar
+láréttu línunni sem gefin er með jöfnunni  $y=\Im z=b$ á hálflínuna
+út frá $0$ með stefnuvigur $e^{ib}$.  
+
+\figura {fig0318}{Mynd: Veldisvísisfallið}
+
+
+
+\subsection*{Framlenging á hornaföllum og breiðbogaföllum}
+
+Um leið og við höfum framlengt veldisvísisfallið
+yfir á allt tvinntalnaplanið, þá framlengjast  hornaföllin 
+sjálfkrafa yfir á allt planið með Euler formúlunum,
+$$
+\cos z =\dfrac{e^{iz}+e^{-iz}}2, \qquad \text{ og } \qquad 
+\sin z =\dfrac{e^{iz}-e^{-iz}}{2i} 
+$$
+og sama er að segja um breiðbogaföllin
+$$
+\cosh z =\dfrac{e^{z}+e^{-z}}2 \qquad \text{ og } \qquad  
+\sinh z =\dfrac{e^{z}-e^{-z}}{2}.
+$$
+Tilsvarandi tangens- og kótangens-föll eru skilgreind þar sem
+nefnararnir eru frábrugðnir $0$
+$$
+\tan z=\dfrac {\sin z}{\cos z}, \quad
+\cot z=\dfrac {\cos z}{\sin z}, \quad
+\tanh z=\dfrac {\sinh z}{\cosh z} \quad \text{ og } \quad
+\coth z=\dfrac {\cosh z}{\sinh z}. \quad
+$$
+Gömlu góðu reglurnar gilda áfram, eins og til dæmis
+$$
+\cos^2z+\sin^2z=1  \qquad \text{ og } \qquad \cosh^2z-\sinh^2z=1,
+$$
+sem gilda um öll $z\in \C$.  Sama er að segja um allar
+samlagningarformúlurnar fyrir hornaföll og breiðbogaföll til dæmis
+$$
+\cos(z-w)=\cos z\cos w+\sin z\sin w, \qquad z,w\in \C.
+$$
+Nú kemur líka í ljós samband milli  hornafallanna og breiðboga 
+fallanna, því
+$$
+\cosh z=\cos(iz) \qquad \text{  og } \qquad \sinh z=-i \sin(iz)
+$$
+gildir um öll $z\in \Z$.
+
+
+\begin{sy} Sýnið að engar núllstöðvar bætast
+við þegar skilgreiningarsvæði $\cos$ er útvíkkað frá $\R$ yfir á $\C$.
+
+\smallskip\noindent
+{\it Lausn}:\  Núllstöðvar $\cos$ uppfylla $\tfrac
+12(e^{iz}+e^{-iz})=0$.  Ef við margföldum í gegnum þessa jöfnu með
+$2e^{iz}$, þá fáum við jafngilda jöfnu
+$$
+e^{2iz}=-1=e^{i\pi}.
+$$
+Lausnir þessarar jöfnu eru
+$2iz=i{\pi}+i2n{\pi}$, $n\in \Z$ og þar með fáum við að
+$$
+z=\tfrac 12 {\pi}+n{\pi}, \qquad n\in \Z,
+$$
+eru einu núllstöðvar $\cos$ og að þær liggja allar á
+rauntalnalínunni.   Fallið $\cos$ hefur því engar núllstöðvar í
+$\C\setminus \R$. 
+\end{sy}
+
+
+\bigskip\hrule\bigskip
+
+
+\begin{sy}  Sýnið að 
+$$
+\cos(x+iy)=\cos x\cosh y-i\sin x\sinh y.
+$$
+gildi um allar rauntölur $x$ og $y$.
+
+\smallskip\noindent
+{\it Lausn}:  Við beitum samlagningarformúlu $\cos$,
+$$
+\cos(x+iy)=\cos x\cos(iy)-\sin x\sin (iy).
+$$
+Nú er
+\begin{gather*}
+\cos(iy)=\tfrac 12\big(e^{i(iy)}+e^{-i(iy)}\big)=
+\tfrac 12 \big(e^{-y}+e^y\big)=\cosh y,\\
+\sin(iy)=\tfrac 1{2i}\big(e^{i(iy)}-e^{-i(iy)}\big)=
+\tfrac {-i} 2\big(e^{-y}-e^y\big)=i\sinh y.
+\end{gather*}
+Þar með er
+$$
+\cos(x+iy)=\cos x\cosh y-i\sin x\sinh y.
+$$
+\end{sy}
+
+
+\section{Varpanir á tvinntöluplaninu\index{tvinntöluplan}}
+
+\noindent
+Í þessum kafla ætlum við að fjalla um föll $f:X\to \C$, sem skilgreind
+eru á hlutmengi $X$ í $\C$ og taka gildi í $\C$.  Til þess að einfalda
+útreikninga okkar, þá skiptum við frjálslega milli tvinntalnaritháttar og
+vigurritháttar á punktum $z\in X$.  Þannig skrifum við
+$$
+z=x+iy=re^{i{\theta}}=(x,y)=\left[\begin{matrix} x\\ y\end{matrix}\right]
+$$ 
+og segjum að $z$ hafi {\it
+raunhlutann\index{raunhluti}\index{tvinntala!raunhluti}} $x$, {\it
+þverhlutann\index{þverhluti}\index{tvinntala!þverhluti}} $y$,
+{\it lengdina\index{lengd}\index{tvinntala!lengd}} $r$ og {\it
+horngildið\index{horngildi}\index{tvinntala!horngildi}}
+${\theta}$.  Hér er $x+iy$ tvinntöluframsetning\index{lengd!tvinntölu}
+á  $z$ í rétthyrndum hnitum\index{rétthyrnd hnit}, $re^{i{\theta}}$
+framsetning í pólhnitum\index{pólhnit}, $(x,y)$ er
+línu\-vigur\-fram\-setning á $z$  og $\left[\begin{matrix} x\\
+y\end{matrix}\right]$ er dálk\-vigur\-fram\-setning á $z$. Með þessu
+erum við að líta framhjá þeim greinarmun sem gerður er á 
+vigrunum $(1,0)$ og $(0,1)$ annars vegar og
+tvinntölunum\index{tvinntala}  
+$1$ og $i$ hins vegar.
+Fallgildið $f(z)$ skrifum við ýmist sem $f(x+iy)$ eða $f(x,y)$.
+
+
+Nú skulum við líta á fall $f:X\to \C$ sem skilgreint er á einhverju
+hlutmengi $X$ í $\C$ með gildi í $\C$.  Við getum skrifað það sem
+$f=u+iv$, þar sem $u=\Re f$ er raunhluti $f$ og $v=\Im f$ er þverhluti
+$f$. Við horfum oft framhjá þeim greinarmun sem gerður er á $\R^2$ og
+$\C$ og skrifum þá vigra ýmist sem línu- eða dálkvigra.  Þannig getum
+við skrifað
+$$
+f(z)=u(z)+iv(z)=(u(x,y), v(x,y))=
+\left[\begin{matrix} u(x,y) \\ v(x,y)\end{matrix}\right], \quad
+z=x+iy=(x,y).
+$$
+
+
+\subsection*{Línulegar varpanir}
+
+Við skulum  byrja á því að skoða {\it  línulegar
+varpanir\index{línuleg vörpun}\index{vörpun}\index{vörpun!línuleg}}, en það eru
+föll af gerðinni $L:\C\to \C$ sem uppfylla
+$$
+L(z+w)=L(z)+L(w) \qquad z,w\in \C
+$$
+og
+$$
+L(cz)=cL(z), \qquad z\in \C, \quad c\in \R.
+$$
+Ef við lítum á $L$ sem vörpun $\R^2\to \R^2$, þá vitum við að hægt er að
+skrifa hana sem
+\begin{equation*}
+(x,y)\mapsto (ax+by, cx+dy),
+\end{equation*}
+þar sem $a$, $b$,  $c$ og $d$ eru rauntölur.  Við getum líka lýst
+vörpuninni $L$ með fylkjamargföldun sem 
+\begin{equation*}
+\left[\begin{matrix} x\\ y\end{matrix} \right]\mapsto
+\left[\begin{matrix} a & b\\ c & d\end{matrix} \right]
+\left[\begin{matrix} x\\ y\end{matrix} \right].
+\end{equation*}
+Þá nefnist $2\times 2$ fylkið sem hér stendur 
+{\it fylki vörpunarinnar $L$ miðað við staðalgrunninn á $\R^2$}
+
+Nú skulum við snúa þessum framsetningum yfir í tvinntalnaframsetningu.
+Eins og við höfum áður rifjað upp þá svarar
+tvinntalan $1$ til vigursins  $(1,0)$ og tvinntalan $i$ svarar til
+vigursins $(0,1)$.  Við skrifum því $L(1)$ í stað $L(1,0)$ og $L(i)$ í
+stað $L(0,1)$.  Við fáum þá $L(1)=(a,c)=a+ic$ og
+$L(i)=(b,d)=b+id$ og þar með
+$$
+L(z)=L(x+iy)=xL(1)+yL(i).
+$$
+Nú notfærum við okkur að $x=(z+\bar z)/2$ og $y=-i(z-\bar
+z)/2$ og fáum formúluna
+\begin{equation*}
+L(z)=Az+B\bar z,
+\end{equation*}
+þar sem
+\begin{align*}
+A=\tfrac 12\big(L(1)-iL(i)\big)
+=\tfrac 12\big((a+ic)-i(b+id)\big),\\
+B=\tfrac 12\big(L(1)+iL(i)\big)
+=\tfrac 12\big((a+ic)+i(b+id)\big).
+\end{align*}
+Niðurstaða útreikninga okkar er:
+
+\begin{se}  Sérhverja línulega vörpun $L:\C\to\C$
+má setja fram sem $L(z)=Az+B\bar z$, þar sem stuðlarnir
+$A$ og $B$ eru tvinntölur.  Ef 
+$$
+\left[\begin{matrix} a & b\\ c & d\end{matrix} \right]
+$$
+er fylki $L$ miðað við staðalgrunninn á $\R^2$, þá er
+$$
+A=\tfrac 12((a+d)+i(c-b)) \qquad \text{ og } \qquad
+B= \tfrac 12((a-d)+i(c+b))
+$$
+\end{se}
+
+
+Hugsum okkur næst að við þekkjum stuðlana  $A$ og $B$ og
+að við viljum ákvarða stuðlana $a$, $b$, $c$ og $d$ í 
+fylki vörpunarinnar út frá þeim. Sambandið þarna á milli er
+einfalt, því
+\begin{align*}
+a&=\Re\big(L(1)\big)=\Re\big(A+B\big), \\
+b&=\Re\big(L(i)\big)=\Re\big(i(A-B)\big)=-\Im\big(A-B\big),\\
+c&=\Im\big(L(1)\big)=\Im\big(A+B\big),\\
+d&=\Im\big(L(i)\big)=\Im\big(i(A-B)\big)=\Re\big(A-B\big).
+\end{align*}
+Í tvinnfallagreiningu þarf oft að gera greinarmun á {\it
+$\R$-línulegum\index{vörpun!$\R$-línuleg}\index{$\R$-línuleg vörpun}}
+vörpunum, en það eru nákvæmlega þær línulegu varpanir sem við höfum
+verið að fjalla um, og {\it $\C$-línulegum\index{$\C$-línuleg
+vörpun}\index{vörpun!$\C$-línuleg}} vörpunum, en þær uppfylla
+\begin{equation*}
+L(z+w)=L(z)+L(w) \quad \text{ og } \quad 
+L(cz)=cL(z), \quad z,w\in \C, \quad c\in \C.
+\end{equation*}
+
+
+Það er greinilegt að sérhver $\C$-línuleg vörpun er $\R$-línuleg, því ef
+seinna skilyrðið gildir um sérhverja tvinntölu, þá gildir það sérstaklega um
+sérhverja rauntölu.  Það er einnig augljóst að sérhver vörpun af
+gerðinni $L(z)=Az$ þar sem $A$ er gefin tvinntala er $\C$-línuleg.
+
+
+Hugsum okkur nú að $L$ sé $\C$-línuleg og skrifum
+$L(z)=Az+B\bar z$ eins og lýst er hér að framan.  Þá er 
+$L(i)=iL(1)$ og því er 
+$$
+B=\tfrac 12\big(L(1)+iL(i)\big)= \tfrac 12\big(L(1)+i^2L(1)\big)=0,
+$$
+svo $L(z)=Az$.  Niðustaðan er því 
+
+\begin{se} Sérhver $\C$-línuleg vörpun $L:\C\to \C$ er af gerðinni
+$$
+L(z)=Az, \qquad z\in \C,
+$$
+þar sem $A$ er tvinntala.
+\end{se}
+
+\bigskip\hrule\bigskip
+
+\begin{sy}  Finnið nauðsynleg og nægjanleg skilyrði, sem tvinntölurnar
+$A$ og $B$ verða að uppfylla til þess að línulega vörpunin
+$L:\C\to\C$,  sem skilgreind er með $L(z)=Az+B\bar z$, $z\in \C$,
+sé gagntæk.  
+
+\smallskip\noindent
+{\it Lausn}: \ 
+Við skulum skrifa $A={\alpha}+i{\beta}$ og
+$B={\gamma}+i{\delta}$, þar sem ${\alpha}$, ${\beta}$, ${\gamma}$ og
+${\delta}$ eru rauntölur.  Þá er
+\begin{align*}
+L(z)&=Az+B\overline z= ({\alpha}+i{\beta})(x+iy)+({\gamma}+i{\delta})(x-iy)\\
+&=({\alpha}+{\gamma})x+(-{\beta}+{\delta})y+
+i({\beta}+{\delta})x+i({\alpha}-{\gamma})y.
+\end{align*}
+Fylki vörpunarinnar $L$ miðað við staðalgrunninn
+$\big(\left[\begin{matrix}1 \\ 0\end{matrix}\right],
+\left[\begin{matrix}0 \\ 1\end{matrix}\right]\big)$ í
+$\R^2$ er því
+$$
+\left[\begin{matrix} ({\alpha}+{\gamma}) & (-{\beta}+{\delta})\\
+({\beta}+{\delta}) & ({\alpha}-{\gamma})\end{matrix}\right],
+$$
+og ákveða þess er 
+$$
+({\alpha}+{\gamma})({\alpha}-{\gamma})
+      -(-{\beta}+{\delta})({\beta}+{\delta})
+={\alpha}^2-{\gamma}^2+{\beta}^2-{\delta}^2=|A|^2-|B|^2.
+$$
+Vörpunin $L$ er gagntæk þá og því aðeins að ákveðan sé $\neq 0$, svo svarið
+verður:  Vörpunin  $L$ er gagntæk þá og því aðeins að  $|A|\neq |B|$.
+\end{sy}
+
+\subsection*{Myndræn framsetning á vörpunum}
+
+Til þess að lýsa hegðun raungildra falla á myndrænan hátt, þá teiknum
+við upp gröf þeirra.  Graf tvinngilda fallsins $f:X\to \C$, 
+$X\subseteq \C$, er hlutmengið í $\C^2$ sem skilgreint er með
+$$
+\graf f=\set{(z,f(z))\in \C^2; z\in X}.
+$$
+Nú er $\C^2$ fjórvítt rúm yfir $\R$, en rúmskynjun flestra manna
+takmarkast við þrjár víddir, svo við getum ekki teiknað upp myndir  af
+gröfum tvinnfalla.  Við getum vissulega teiknað upp gröf raungildu
+fallanna $\Re f$ og $\Im f$ í þrívíðu rúmi og gert okkur hugmynd 
+um $\graf f$ út frá þeim, en það hefur takmarkaða þýðingu.  
+Til þess að lýsa tvinnföllum á myndrænan hátt er því oft brugðið á það
+ráð að skoða hvernig þau færa til punktana í $\C$ og lýsa á mynd
+afstöðunni millli $z$ og $f(z)$. Vert er að geta þess að í þessu
+samhengi eru orðin {\it vörpun}, {\it færsla}, {\it ummyndun}
+o.fl.~oft notuð sem samheiti fyrir orðið fall.
+Við skulum nú taka nokkur dæmi um þetta
+
+
+
+Vörpun $\C\to \C$ af gerðinni $z\mapsto z+a$, þar sem 
+$a\in \C$ nefnist {\it hliðrun\index{hliðrun}\index{vörpun!hliðrun}}.
+Vörpun af gerðinni $z\mapsto az$, nefnist
+{\it snúningur\index{snúningur}\index{vörpun!snúningur}}, ef $a\in
+\C$ og  $|a|=1$, hún nefnist {\it
+stríkkun\index{stríkun}\index{vörpun!stríkkun}} ef $a\in
+\R$ og $|a|>1$ og {\it herping\index{herping}\index{vörpun!herping}}, ef  
+$a\in \R$ og $|a|<1$, en almennt nefnist hún
+{\it snústríkkun\index{snústríkkun}\index{vörpun!snústríkkun}} ef $a\in \C\setminus\set{0}$.
+Vörpunin $\C\setminus\set 0 \to \C\setminus\set 0$, 
+$z\mapsto 1/z$ nefnist {\it
+umhverfing\index{umhverfing}\index{vörpun!umhverfing}}.
+
+\bigskip
+\figura {fig0312}{}
+
+
+\subsection*{Brotnar línulegar varpanir}
+
+Hliðranir, snústríkkanir og umhverfing eru hluti af almennum flokki
+varpana, en fall af gerðinni 
+ $$f(z)=\dfrac{az+b}{cz+d}, \qquad ad-bc\neq 0, \quad a,b,c,d\in \C,
+ $$
+kallast {\it brotin línuleg vörpun\index{brotin línuleg
+vörpun}\index{vörpun!brotin línuleg}},
+{\it brotin línuleg færsla\index{brotin línuleg færsla}}
+eða {\it Möbiusarvörpun\index{Möbiusarvörpun}}.  Við
+sjáum að $f(z)$  er skilgreint fyrir öll $z\in \C$,  ef $c=0$, en fyrir
+öll $z\neq -d/c$, ef $c\neq 0$.  
+Eðlilegt er að útvíkka
+skilgreningarsvæði með því að bæta einum punkti, {\it
+óendanleikapunkti\index{óendanleikapunktur}}   $\infty$, 
+við planið $\C$ og skilgreina þannig {\it útvíkkaða talnaplanið}
+$$
+\widehat \C=\C\cup \{\infty\}.
+$$
+Þá getum við litið á $f$ sem vörpun
+ $$f:\widehat \C \to \widehat \C
+ $$
+með því að setja
+\begin{gather*}
+f(\infty)=\infty, \qquad \text{ ef } \quad c=0, \qquad \text{ en }\\
+f(-d/c)=\infty \quad \text{ og } \quad f(\infty)=\lim_{|z|\to+\infty}f(z)=a/c, \qquad
+\text{ ef } \quad c\neq 0.
+\end{gather*}
+Með þessari viðbót verður $f$ gagntæk vörpun.  
+Andhverfuna $f^{[-1]}$ er létt að
+reikna út, því
+ $$w=\dfrac{az+b}{cz+d} \qquad \Leftrightarrow \qquad
+z=\dfrac{dw-b}{-cw+a}
+ $$
+og það  segir okkur að varpanirnar 
+$$
+f^{[-1]}(w)=\dfrac{dw-b}{-cw+a}.
+$$
+Ef við stillum stuðlum vörpunarinnar $f$ upp í fylkið
+$$
+\left[\begin{matrix} a&b\\c&d\end{matrix}\right]
+$$
+þá eru stuðlar andhverfunnar $f^{[-1]}$ lesnir út úr andhverfa fylkinu 
+ $$\left[\begin{matrix} a&b\\c&d\end{matrix}\right]^{-1}=
+\dfrac 1{ad-bc}\left[\begin{matrix} d&-b\\-c&a\end{matrix}\right].
+ $$
+Athugið að ákveðan $ad-bc$ styttist þegar brotið er myndað.
+
+Ef $f_1$ og $f_2$ eru tvær brotnar línulegar varpanir, þá er 
+samskeyting þeirra $f_3$, $f_1\circ f_2=f_3$,
+einnig brotin línuleg vörpun.  Ef
+$$
+f_1(z)=\dfrac{a_1z+b_1}{c_1z+d_1} \quad \text{ og } \quad
+f_2(z)=\dfrac{a_2z+b_2}{c_2z+d_2},
+\quad \text{ þá er  } \quad 
+f_3(z)=\dfrac{a_3z+b_3}{c_3z+d_3},
+$$
+þar sem stuðlarnir $a_3,b_3,c_3$ og $d_3$ fást með fylkjamargföldun,
+$$
+\left[\begin{matrix} a_1&b_1\\c_1&d_1\end{matrix}\right]
+\left[\begin{matrix} a_2&b_2\\c_2&d_2\end{matrix}\right]
+=
+\left[\begin{matrix} a_3&b_3\\c_3&d_3\end{matrix}\right].
+$$
+
+Það er ljóst að hliðranir, snústríkkanir og umhvernig eru brotnar
+línulegar varpanir og þar af leiðandi eru allar samskeytingar af 
+vörpunum af þessum þremur mismunandi gerðum einnig brotnar
+línulegar varpanir. 
+
+Í ljós kemur að 
+  sérhver brotin línuleg vörpun er samskeyting af
+hliðrunum\index{vörpun!hliðrun}\index{hliðrun}, snústríkkunum
+og umhverfingu.  Til þess að sjá þetta athugum við fyrst tilfellið
+$c=0$, en þá er
+ $$f(z)=\frac adz+\frac bd,
+ $$
+samsett  úr snústríkkun og hliðrun.  Ef $c\neq 0$, þá getum við
+skrifað
+ $$f(z)= \dfrac{az+b}{cz+d}=\dfrac 1c\cdot \dfrac{az+b}{z+d/c}=
+\dfrac 1c\cdot \dfrac{a(z+d/c)-ad/c+b}{z+d/c}=
+\dfrac ac+\dfrac{-ad/c+b}{cz+d}, 
+ $$
+og sjáum að $f$ er samsett  úr snústríkkun, 
+$$
+z\mapsto cz=z_1,
+$$
+hliðrun 
+$$z_1\mapsto z_1+d=cz+d=z_2,
+$$ 
+umhverfingu 
+$$z_2\mapsto 1/z_2 = \dfrac 1{cz+d}=z_3,
+$$
+snústríkkun 
+$$
+z_3\mapsto (-ad/c+b)z_3=\dfrac{-ad/c+b}{cz+d}=z_4
+$$ 
+og hliðrun
+$$
+z_4\mapsto z_4+a/c=a/c+\dfrac{-ad/c+b}{cz+d}.
+$$
+
+
+\subsection*{Fastapunktar}
+
+Ef $F:M\to M$ er vörpun á einhverju mengi $M$, þá nefnist 
+$p\in M$ {\it fastapunktur} vörpunarinnar $F$ ef $F(p)=p$.
+Allir punktar í $M$ eru fastapunktar {\it samsemdarvörpunarinnar}
+$x\mapsto x$.
+
+Nú látum við $M$ vera útvíkkaða talnaplanið $\widehat \C$ og $f$ vera
+brotna línulega vörpun á $\widehat \C$, sem gefin er með
+$$
+f(z)=\dfrac{az+b}{cz+d}, \qquad ad-bc\neq 0, \qquad z\in \C.
+$$
+Ef $c=0$, þá er $f(\infty)=\infty$ svo punkturinn $\infty$ er
+fastapunktur í þessu tilfelli.  Gerum nú ráð fyrir að $p\in \C$ sé
+fastapunktur. Þá fullnægir $p$ jöfnunni
+$$
+\dfrac ad p+\dfrac bd=p 
+$$
+sem jafngildir 
+$$
+(a-d)p=-b.
+$$
+Ef $a=d$, þá er $f$ vörpunin $z\mapsto z+b/d$, en þessi vörpun hefur
+fastapunkt aðeins ef $b=0$ og  þá er hún samsemdarvörpunin.
+Ef $a\neq d$, þá fæst nákvæmlega einn fastapunktur til viðbótar við
+$\infty$ og hann er gefinn með
+$$
+p=\dfrac {-b}{a-d}.
+$$
+Þá höfum við afgreitt tilfellið $c=0$.  Gerum því ráð fyrir að $c\neq
+0$.  Þá eru $\infty$ og $-d/c$ ekki fastapunktar, svo fastapunktarnir
+$p$ uppfylla 
+$$
+\dfrac{ap+b}{cp+d}=p,
+$$
+sem jafngildir því að $p$ uppfylli annars stigs jöfnu,
+$$
+cp^2+(d-a)p-b=0.
+$$
+Hún hefur í mesta lagi tvær lausnir.  Niðurstaða okkar er því:
+
+\begin{se}\label{se:fastapunktar}
+Brotin línuleg vörpun, sem er ekki samsemdarvörpunin $z\mapsto z$,
+hefur í mesta lagi tvo fastapunkta. 
+\end{se}
+
+\subsection*{Þriggja punkta reglan}
+
+Látum nú $z_1$, $z_2$ og $z_3$ vera þrjá ólíka punkta í $\C$ og lítum
+á brotnu línulegu vörpunina
+$$
+f(z)=\dfrac{(z-z_1)}{(z-z_3)}\cdot \dfrac{(z_2-z_3)}{(z_2-z_1)}.
+$$
+Við fáum þá að $f(z_1)=0$, $f(z_2)=1$ og $f(z_3)=\infty$.   Það er
+hægt að alhæfa skilgreininguna þannig að einn punktanna $z_1$, $z_2$
+eða $z_3$ megi vera $\infty$.  Þá tökum við bara markgildi $|z_j|\to
++\infty$ í hægri hliðinni.    
+
+Ef $z_1=\infty$, þá skilgreinum við
+$$
+f(z)=\lim_{|\tilde z_1|\to+\infty}
+\dfrac{(z-\tilde z_1)}{(z-z_3)}\cdot \dfrac{(z_2-z_3)}{(z_2-\tilde
+z_1)}
+=\dfrac {(z_2-z_3)}{(z-z_3)}.
+$$
+Það er ljóst að hægri hliðin skilgreinir vörpun með
+$f(\infty)=0$, $f(z_2)=1$ og $f(z_3)=\infty$.
+Ef $z_2=\infty$, þá setjum við 
+$$
+f(z)=\lim_{|\tilde z_2|\to+\infty}
+\dfrac{(z-z_1)}{(z-z_3)}\cdot \dfrac{(\tilde z_2-z_3)}{(\tilde z_2-
+z_1)}
+=\dfrac {(z-z_1)}{(z-z_3)}.
+$$
+og út kemur vörpun sem uppfyllir $f(z_1)=0$, $f(\infty)=1$ og
+$f(z_3)=\infty$.  Ef við viljum að $z_3=\infty$, þá setjum við
+$$
+f(z)=\lim_{|\tilde z_3|\to+\infty}
+\dfrac{(z-z_1)}{(z-\tilde z_3)}\cdot \dfrac{( z_2-\tilde z_3)}{(z_2-
+z_1)}
+=\dfrac {(z-z_1)}{(z_2-z_1)}.
+$$
+og við höfum $f(z_1)=0$, $f(z_2)=1$ og $f(\infty)=\infty$.
+
+
+Látum nú $z_1$, $z_2$ og $z_3$ vera ólíka punkta í $\widehat \C$ og
+setjum
+$$
+f(z)=\dfrac{(z-z_1)}{(z-z_3)}\cdot \dfrac{(z_2-z_3)}{(z_2-z_1)}.
+$$
+Niðurstaðan af því að taka markgildin þrjú hér að framan er sú að við
+eigum að skipta  út svigum sem innihalda $z_j$ og tölunni $1$,
+ef $z_j=\infty$.  Í öllum tilfellum varpast $z_1$ á $0$, $z_2$ á 
+$1$ og $z_3$ á $\infty$.
+
+Nú skulum við breyta til og taka einhverja þrjá ólíka punkta $w_1$,
+$w_2$ og $w_3$ í $\widehat \C$  í staðinn fyrir punktana $0$, $1$ 
+og $\infty$ og spyrja okkur hvernig við finnum brotna línulega vörpun
+sem uppfyllir $f(z_1)=w_1$, $f(z_2)=w_2$ og $f(z_3)=w_3$.  
+
+Þetta er leyst þannig að við finnum fyrst tvær brotnar línulegar
+varpanir $F$ og $G$ með forskriftinni hér að framan sem uppfylla
+$F(w_1)=0$, $F(w_2)=1$, $F(w_3)=\infty$, $G(z_1)=0$, $G(z_2)=1$ og 
+$G(z_3)=\infty$.  Þá uppfyllir samskeytingin
+$$
+f(z)=F^{-1}\circ G(z)
+$$
+skilyrðin $f(z_1)=w_1$, $f(z_2)=w_2$ og $f(z_3)=w_3$.  
+
+Hugsum okkur nú að $g$ sé önnur brotin línuleg vörpun 
+sem uppfyllir $g(z_1)=w_1$, $g(z_2)=w_2$ og $g(z_3)=w_3$.
+Þá hefur vörpunin $f^{-1}\circ g(z)$ þrjá fastapunkta
+$z_1$, $z_2$ og $z_3$.   Setning \ref{se:fastapunktar} segir nú að 
+$f^{-1}\circ g(z)=z$ fyrir öll $z\in \widehat \C$ og þar með
+er $f(z)=g(z)$ fyrir öll $z\in \widehat \C$.  Niðurstaðan er því:
+
+\begin{se}\label{se:thrir_punktar} {\rm ({\it Þriggja punkta reglan})} 
+\  Ef gefnir eru þrír ólíkir punktar $z_1$, $z_2$ og $z_3$ í $\widehat
+\C$ og þrír ólíkir punktar $w_1$, $w_2$ og $w_3$ í $\widehat \C$,
+þá er til nákvæmlega ein brotin línuleg vörpun $f$ sem varpar
+$z_1$ á $w_1$, $z_2$ á $w_2$ og $z_3$ á $w_3$.  Hún er gefin með
+formúlunni $f=F^{-1}\circ G$ þar sem 
+$$
+F(w)=\dfrac{(w-w_1)}{(w-w_3)}\cdot \dfrac{(w_2-w_3)}{(w_2-w_1)}
+\quad \text{ og } \quad 
+G(z)=\dfrac{(z-z_1)}{(z-z_3)}\cdot \dfrac{(z_2-z_3)}{(z_2-z_1)}.
+$$
+Þetta má einnig orða þannig að fallgildin $w=f(z)$ eru leyst úr úr
+jöfnunni
+$$
+\dfrac{(w-w_1)}{(w-w_3)}\cdot \dfrac{(w_2-w_3)}{(w_2-w_1)}
+=
+\dfrac{(z-z_1)}{(z-z_3)}\cdot \dfrac{(z_2-z_3)}{(z_2-z_1)}.
+$$
+Þessi stærðtákn á að túlka þannig að ef $z_j=\infty$ eða
+$w_k=\infty$ kemur fyrir innan einhverra sviga, þá á að skipta
+þættinum sem inniheldur $z_j$ eða $w_k$ út
+fyrir töluna $1$.
+\end{se}
+
+\subsection*{Myndir af línum og hringum}
+
+Ein  leið til þess að setja tvinngild föll
+$f:X\to \C$ fram á myndrænan hátt
+er að líta á þau sem varpanir sem taka punkta í einu afriti af
+tvinntöluplaninu $\C$ yfir í annað afrit.  Þá er $X$ teiknað upp í
+$z$-plani og myndmengið $Y=\set{w=f(z); z\in X}$ 
+teiknað upp í $w$-plani og síðan er sýnt
+hvernig $f$ varpar punktum $z\in X$ á punkta $w=f(z)\in Y$.
+Oft er litið á einhverja fjölskyldu af ferlum í $X$ og sýnt hvernig hún
+varpast yfir í $Y$. 
+
+
+\figura {fig0313}{Mynd: Varpanir}
+
+
+\smallskip\noindent
+{\it Hliðrun\index{hliðrun}}  $z\mapsto z+a$ varpar línu gegnum punktinn $m$ með
+þvervigur ${\beta}$  á línuna gegnum $m+a$ með þvervigur ${\beta}$ og
+hún varpar hring með miðju $m$ og geislann $r$ á hring með miðju $m+a$
+og geislann $r$.
+
+
+
+\figura {fig0314}{Mynd: Hliðrun}
+
+
+\smallskip\noindent
+{\it Snústríkkun\index{snústríkkun}\index{vörpun!snústríkkun}}
+$z\mapsto az$, $a\in \C\setminus \set 0$, varpar línu gegnum
+punktinn $m$ með þvervigur ${\beta}$  á línuna gegnum $am$ með
+þvervigur $a{\beta}$. Til þess að sjá þetta athugum við að jafna
+línunnar er af gerðinni $\bar {\beta} z+{\beta}\bar z+c=0$ og ef við
+stingum $z=w/a$, þar sem $w=az$ er myndpunktur $z$, inn í þessa
+jöfnu, þá sjáum við að $w$ verður að uppfylla
+$(\bar {\beta}/a) w+({\beta}/\bar a)\bar w+c=0$ og þar með
+$\bar a\bar {\beta} w+a{\beta}\bar w+c|a|^2=0$.  
+Snústríkkun varpar hring með miðju í $m$ og geislann $r$ á hring með
+miðju í $am$ og geislann $|a|r$.
+
+
+\figura {fig0315}{Mynd: Snústríkkun}
+
+
+\smallskip\noindent
+{\it Umhverfing\index{umhverfing}\index{vörpun!umhverfing}} er gefin
+með $z\mapsto 1/z$, $0\to {\infty}$, ${\infty}\to 0$.  Til þess að
+sjá hvernig hún varpar hringum og línum, þá lítum við á mengi allra
+punkta $z$ sem gefnir eru með formúlunni
+\begin{equation}
+{\alpha}|z|^2+\bar {\beta} z+{\beta}\bar z +{\gamma}=0,
+\label{4.1.11}
+\end{equation}
+en við höfum lýst öllum þeim mengjum sem svona jafna skilgreinir.
+Við stingum myndpunktinum  $w$, en hann uppfyllir $z=1/w$, inn 
+í þessa jöfnu og fáum að hann verður að uppfylla
+\begin{equation}
+{\gamma}|w|^2+{\beta}w+\bar {\beta}\bar w +{\alpha}=0.
+\label{4.1.12}
+\end{equation}
+Ef (\ref{4.1.11}) er jafna línu gegnum $0$ með þvervigur ${\beta}$, þá er
+${\alpha}={\gamma}=0$ og við fáum að $w$ liggur á línu gegnum $0$ með
+þvervigur $\bar {\beta}$.  Ef (\ref{4.1.11}) er jafna línu sem fer ekki gegnum
+$0$ og hefur þvervigur ${\beta}$, þá er ${\alpha}=0$ og ${\gamma}\neq
+0$.  Við fáum því að myndmengið er hringur með miðju $m=-\bar
+{\beta}/{\gamma}$  og geislann $r=|{\beta}|/|{\gamma}|$.
+
+
+
+
+\figura {fig0316}{Mynd: Umhverfing af línu.}
+
+
+\figura {fig0316a}{Mynd: Umhverfing af línu.}
+
+\noindent
+Ef (\ref{4.1.11}) er jafna hrings gegnum $0$, þá er ${\alpha}\neq 0$,
+${\gamma}=0$, miðjan er $m=-{\beta}/{\alpha}$ og geislinn 
+er $r=|{\beta}|/|{\alpha}|$.  Athugum að punkturinn $-2{\beta}/{\alpha}$
+er á hringnum og því er myndmengi hans línan með þvervigur
+$\bar {\beta}$ gegnum punktinn
+$-{\alpha}/2{\beta}=-{\alpha}\bar{\beta}/2|{\beta}|^2$.
+Ef (\ref{4.1.11}) er jafna hrings, sem inniheldur ekki $0$, þá er
+${\alpha}\neq 0$, ${\gamma}\neq 0$, miðjan er
+$m=-{\beta}/{\alpha}$ og geislinn er
+$r=\sqrt{|{\beta}|^2-{\alpha}{\gamma}}\, /|{\alpha}|$.  Myndmengið er hringur
+með miðju $-\bar {\beta}/{\gamma}$ og  geislann
+$\sqrt{|{\beta}|^2-{\alpha}{\gamma}}\, /|{\gamma}|$.
+ 
+\vskip 0.5truecm
+
+\figura {fig0317}{Mynd: Umhverfing af hring.}
+
+\figura {fig0317a}{Mynd: Umhverfing af hring.}
+
+
+Eins og við höfum séð, þá er sérhver brotin línuleg vörpun samsett úr
+hliðrunum, snústríkkunum og umhverfingu, svo niðurstaða útreikninga
+okkar er:
+ 
+
+\begin{se}  Sérhver brotin línuleg vörpun\index{brotin línuleg vörpun}
+\index{brotin línuleg færsla} varpar hring í $\C$ á hring eða
+línu og hún varpar línu á hring eða línu.
+\end{se}
+
+
+\bigskip\hrule \bigskip
+
+\begin{sy}  \ Sýnið að sérhver brotin línuleg vörpun af gerðinni
+$$
+z\mapsto u\dfrac{z-a}{1-\bar az}, \qquad |u|=1,\quad |a|<1,
+$$
+varpi einingarhringnum $\T$ á sjálfan sig og einingarskífunni $\D$
+á sjálfa sig.
+
+\bigskip\noindent
+{\it Lausn:} \   Ef $z$ er á einingarhringnum þá er $|z|=|\bar z|=z\bar
+z=1$ og við fáum því
+$$
+|w|=\dfrac{|z-a|}{|z\bar z-\bar az|}=\dfrac{|z-a|}{|z(\bar z-\bar a)|}
+=\dfrac{|z-a|}{|z||(\bar z-\bar a)|}
+=\dfrac{|z-a|}{|z-a|}=1
+$$
+Vörpunin varpar punktinum $a\in \D$ á  $0\in \D$ og af því leiðir að 
+allir punktar í einingarskífunni lendi í $\D$. 
+\end{sy}
+
+
+\begin{sy}   Sýnið að sérhver brotin línuleg vörpun
+sem varpar efra hálfplaninu $\{z\in \C\,;\, \Im z>0\}$ á sjálft sig,
+sé af gerðinni
+$$
+z\mapsto w=\dfrac{az+b}{cz+d}, \qquad a,b,c,d\in \R, \quad ad-bc>0.
+$$
+{\it Lausn:} \ Gerum fyrst ráð fyrir að $f$ sé vörpun af þessari gerð
+og sýnum að hún varpi efra hálfplaninu á sjálft sig.  Fyrst allir
+stuðlarnir eru rauntölur, þá gildir
+\begin{align*}
+\Im w&=\dfrac 1{2i}(w-\bar w)=
+\dfrac 1{2i}\bigg(\dfrac{az+b}{cz+d}-\dfrac{a\bar z+b}{c\bar z+d}\bigg)\\
+&=\dfrac 1{2i}\bigg(\dfrac{(az+b)(c\bar z+d)-(a\bar z+b)(cz+d)}
+{|c\bar z+d|^2}\bigg)\\
+&=\dfrac 1{2i}\bigg(\dfrac{ac|z|^2+adz+bc\bar z+bd-ac|z|^2-bcz-ad
+\bar z-bd)}
+{|c\bar z+d|^2}\bigg)\\
+&=\dfrac 1{2i}\bigg(\dfrac{(ad-bc)(z-\bar z)}
+{|c\bar z+d|^2}\bigg)=\dfrac{\Im z(ad-bc)}
+{|c\bar z+d|^2}.
+\end{align*}
+Fyrst $ad-bc>0$, þá er $\Im w>0$ ef og aðeins ef $\Im z>0$.  Þar með
+varpar $f$ efra hálfplaninu á sjálft sig.
+
+\smallskip
+Gerum nú ráð fyrir að $f(z)=(az+b)/(cz+d)$ sé brotin línuleg vörpun,
+þar sem $a,b,c,d\in \C$, $ad-bc\neq 0$, og að $f$ varpi efra
+hálfplaninu á sjálft sig. Við þurfum að sanna að  alltaf sé
+hægt að velja alla stuðlana í $\R$ og að  $ad-bc>0$.
+
+\smallskip
+Fyrst $f$ varpar efra hálfplaninu á sjálft sig, þá er
+$$
+\Im f(x)=\lim_{y\to 0+}f(x+iy)\geq 0, \qquad \text{ ef } x\in \R
+\ \text{og } \ cx+d\neq 0.
+$$ 
+Fyrst $f$ er gagntæk og  varpar efra hálfplaninu á sjálft sig,
+þá getur $\Im f(x)>0$ ekki gilt og því er
+$f(x)\in \R$ þá og því aðeins að $x\in \R$ og $cx+d\neq 0$.  
+Nú þurfum við að sanna að
+af þessu leiði að alltaf megi velja $a,b,c$ og $d$ í $\R$.
+
+Ef $c=0$, þá getum við sett $a/d$ og $b/d$ í stað $a$ og $b$ og þar
+með  valið $d=1$.  Þá er $b=f(0)\in \R$ og $a=f(1)-b\in \R$.  Ef hins vegar
+$c\neq 0$, þá getum við sett $a/c$, $b/c$ og $d/c$ í stað $a$, $b$ og
+$d$ og þar með gert ráð fyrir að $c=1$.  Þá er 
+$$
+a=\lim_{x\to +\infty}\dfrac{ax+b}{x+d}=\lim_{x\to
++\infty}\dfrac{a+b/x}{1+d/x}\in \R.
+$$
+Nú veljum við tvær tölur $t_1,t_2\in \R\setminus\{a\}$ þannig að 
+$t_2=t_1+1$.  Látum $x_1,x_2\in \R$ vera þannig að
+$f(x_1)=t_1$ og $f(x_2)=t_2$.  Þá gilda jöfnurnar
+$ax_1+b=t_1(x_1+d)$ og $ax_2+b=t_2(x_2+d)$ og af þeim leiðir
+að $d=a(x_2-x_1)+t_1x_1-t_2x_2\in \R$.  Að lokum fáum við að
+$b=t_1(x_1+d)-ax_1 \in \R$.
+
+Í útreikningi okkar hér í byrjun sönnuðum  við að
+$a,b,c,d\in \R$ hefur í för með sér jöfnuna
+$\Im w = \Im f(z)=\Im z(ad-bc)/|cz+d|^2$. Nú varpar 
+$f$ efra hálfplaninu  á sjálft sig og af því drögum við 
+þá ályktun að  $ad-bc>0$.
+\end{sy}
+
+
+\vfill\eject
+
+\aefing
+
+\daemi Finnið allar lausnir jöfnunnar $(3+4i)^2 - 2(x-iy) = x+iy$
+með $x,y\in \R$.
+
+\daemi Finnið allar lausnir jöfnunanr 
+$\big(\frac{1+i}{1-i}\big)^2 + \frac{1}{x+iy} = 1+i$
+með $x,y\in \R$.
+
+\daemi Teiknið alla punkta $z=x+iy$ sem uppfylla eftirfarandi skilyrði.
+
+
+\begin{tabular}{lll}
+a) \ \  $|z|<2$ & b) \ \ $|z-3|=2$ &c) \ \  $|z-2+i|<1$ \\
+d) \ \  $|z+1|\geq |z|$ & e) \ \  $|z+1| = |z-i|$
+\end{tabular}
+
+\daemi Sannið að 
+$$
+\binom nk=\binom{n-1}{k-1}+\binom{n-1}k, 
+$$
+fyrir $n=2,3,4,\dots$ og $k=1,2,\dots,n-1$.
+
+
+\daemi Notið reiknivél til þess að finna horngildi talnanna
+$-1+2i$, $-1-3i$ og  $3-4i$ í radíönum og í gráðum.
+
+\daemi Hvert er mengi allra punkta $z=x+iy$ í $\C$ með $x,y\in \R$
+sem uppfylla $|z|+x=0$?
+
+
+\daemi Skrifið eftirfarandi tölur á pólformi $r(\cos \theta+i\sin
+\theta)$. 
+
+\smallskip
+\begin{tabular}{lll}
+a) \ \  $(1+\sqrt{3}\cdot i)^2$ &
+b) \ \  $\frac{1+i}{1-i}$ &
+c) \ \ $(2+3i)(1-2i)$ \\
+\end{tabular}
+
+\daemi Sýnið að $\overline {z+w}=\bar z+\bar w$ og
+$\overline{zw}=\bar z\cdot \bar w$.
+
+\daemi Sýnið að $z + \overline z = 2\Re(z)$.
+
+\daemi Sýnið að $|\Re\, z|\leq|z|$ og $|\Im\, z|\leq|z|$.
+
+\daemi Teiknið upp mengi allra punkta $z=x+iy$ í $\C$ sem uppfylla:
+
+\smallskip
+\begin{tabular}{ll}
+a)  $|z-i|=|z+1|$,
+&b) $|z-2i|=|z-4-2i|$,\\
+c) $\Re\big(z+1/z\big)={\alpha}x$, ${\alpha}>1$,
+&d) $\Im\big(z+1/z\big)={\alpha} y$, ${\alpha}<1$.\\ 
+\end{tabular}
+
+\daemi Notið tvinntalnareikning til þess að reikna út flatarmál 
+þríhyrningsins með hornpunkta $1+i$, $3+4i$ og $-2-2i$.
+
+\daemi Hvaða línur eru gefnar með jöfnunum: 
+
+a) \ \ $z-\bar z=0$ og   b)\ \ $z+\bar z=0$?
+
+\daemi  Hvaða línur eru gefnar með jöfnunum:
+\\
+a)\ \ $(1+i)z+(1-i)\bar z=0$  og \ b) \ $(1-i)z+(1+i)\bar z=0$?  
+\\
+Teiknið þær í tvinntalnaplaninu
+
+\daemi   Hvaða hringur er gefinn með jöfnunni 
+$|z|^2+(1-i)z+(1+i)\bar z=0$? \\ Teiknið hann í tvinntalnaplaninu.
+
+\daemi Finnið jöfnu línunnar sem gengur gegnum punktana $1+2i$ 
+og  $3-4i$ skrifið hana á forminu $\bar \beta z+\beta\bar z+\gamma=0$.
+
+\daemi Sýnið að mengi allra punkta sem uppfylla jöfnuna
+ \begin{equation*}\alpha|z|^2+\overline \beta z+\beta\overline z +\gamma=0,
+ \end{equation*}
+þar sem $\alpha$ og $\gamma$ eru rauntölur og $\beta$ er tvinntala,
+sé hringur þá og því aðeins að $\alpha\neq 0$ og 
+$|\beta|^2-{\alpha}\gamma>0$.   Sýnið jafnframt að miðja hringsins
+$m$ og 
+geislinn  $r$ séu gefin með
+$$m=-\beta/\alpha\qquad \text{ og } \qquad
+r=\sqrt{|\beta|^2-\alpha\gamma}\, /|\alpha|.
+$$
+
+\daemi ({\it Speglun í línu}) \ Látum $\ell=\set
+{z\in \C;  \bar {\beta}z+{\beta}\bar
+z+c=0}$ vera beina línu í $\C$ og gerum ráð fyrir að $z_1$ og
+$z_2$ séu tveir punktar í $\C$, sem uppfylla 
+$$
+\bar {\beta} z_1+{\beta}\bar z_2+c=0.
+$$
+Sýnið að $z_1$ og $z_2$ séu spegilmyndir hvor annars í línunni $\ell$.
+
+\daemi ({\it Speglun í hring}) \ Látum $H=\set{z\in \C; |z-a|=r}$ vera hringinn með miðju í
+$a$ og geislann $r$.  Við segjum að tveir punktar $z_1$ og $z_2$ séu
+spegilmyndir hvor annars í hringnum $H$, ef þeir liggja á sömu
+hálflínunni út frá punktinum $a$ og margfeldi fjarlægða þeirra frá $a$
+er $r^2$.  Sýnið að $z_1$ og $z_2$ uppfylli jöfnuna
+$$
+(z_1-a)\overline{(z_2-a)}=z_1\overline z_2-\overline a z_1+a\overline
+z_2 +|a|^2=r^2.
+$$
+
+\daemi Notið reglu De Moivre og tvíliðuregluna 
+til þess að tákna:
+
+\smallskip\noindent
+(a) \ 
+$\cos(3\theta)$  
+og $\sin (3\theta)$ með  $\cos\theta$ og $\sin \theta$.
+
+
+\smallskip\noindent
+(b) \ $\cos(4\theta)$  
+og $\sin (4\theta)$ með  $\cos\theta$ og $\sin \theta$.
+
+\smallskip\noindent
+(c) \ $\cos(5\theta)$  
+og $\sin (5\theta)$ með  $\cos\theta$ og $\sin \theta$.
+
+
+
+\daemi Hvenær gilda jafnaðarmerki í þríhyrningsójöfnunum  
+$|z+w| \leq  |z| + |w|$
+og $||z|-|w||\leq |z-w|$?
+
+
+\daemi Finnið allar þriðju rætur af $-1$.
+
+\daemi Finnið allar þriðju rætur af $i$.
+
+\daemi Finnið allar þriðju rætur af tölunni $-2-2i$.
+
+\daemi Finnið allar fjórðu rætur af $i$.
+
+\daemi Finnið allar fimmtu rætur af $-32$.
+
+
+\daemi Sýnið með útreikningi að formúlan
+$$
+z=\sqrt{\tfrac 12(|w|+\Re w)}+i\, \sign(\Im w)\, \sqrt{\tfrac
+12(|w|-\Re w)}
+$$
+gefi ferningsrót af tvinntölunni $w$, ef gert er ráð fyrir að 
+$w$ liggi ekki á neikvæða raunásnum.
+
+
+\daemi Notið formúluna í sýnidæmi \ref{sy:raetur}
+til þess að reikna út $\cos(\pi/16)$ og $\sin( \pi/16)$.
+Finnið formúlu fyrir $\cos(\pi/2^n)$ fyrir $n\geq 2$ og sannið hana með
+þrepun.
+
+\daemi Notið þá staðreynd að $\cos(\pi/6)=\sqrt 3/2$ og formúluna fyrir ferningsrót
+til þess að finna formúlu fyrir $\cos(\pi/12)$ og $\sin( \pi/12)$.
+Hver verður síðan formúlan fyrir $\cos(\pi/(3\cdot 2^n))$ fyrir
+$n=1,2,3,\dots$? 
+
+\daemi Finnið allar núllstöðvar margliðanna 
+
+
+
+\begin{tabular}{ll}
+a) $z^2-2z+8$ ,
+&b) $z^2-(1+2i)z-1+i$,\\
+c) $z^2-4z+3+iz-i$,
+&d) $z^4 - 2z^2 + 4=0$.\\ 
+\end{tabular}
+
+
+\daemi Finnið stofnbrotaliðun á ræðu föllunum:
+
+\begin{tabular}{lll}
+a) $\dfrac{5z+1}{z^3+z^2-2z}$, 
+&b) $\dfrac{3iz+(7+2i)}{(z^2+1)(z+2)}$,
+&c) $\dfrac{6z+7}{4z^2+13z+3}$,\\
+d) $\dfrac{z^2}{(z^2+1)^2}$,
+&e) $\dfrac {3z}{(z-1)(z+1)^2}$,
+&f) $\dfrac{1}{z^3-2z^2+z}$,\\
+g) $\dfrac{2z^6}{(z^3+1)(z^2-1)}$.\\
+\end{tabular}
+
+\daemi Ákvarðið allar fjórðu rætur af $-1$.  Notið síðan ræturnar til
+þess að fullþátta  margliðuna $z^4+1$  og liðið að lokum
+ ræða fallið $z^2/(z^4+1)$ í stofnbrot.
+
+
+\daemi Ákvarðið allar sjöttu  rætur af $-1$.  Notið síðan ræturnar til
+þess að fullþátta  margliðuna $z^6+1$ og  liðið að lokum  ræða fallið
+$z^4/(z^6+1)$ í stofnbrot.
+
+\daemi Finnið allar sjöttu rætur af $64$, finnið fullkomna þáttun á
+margliðunni $z^6-64$ í fyrsta stigs liði og notið þáttunina til þess
+að finna stofnbrotaliðun á ræða fallinu $z^3/(z^6-64)$.
+
+
+\daemi Skrifið $e^z=u+iv$, þar sem:
+
+
+\smallskip\noindent
+\begin{tabular}{llllll}
+ a)$z=1+\tfrac 14i\pi$, 
+&b) $z=2+i\pi$,
+&c) $\tfrac16(1-i)\pi$.
+\end{tabular}
+
+\daemi Látum $z=x+iy$. Finnið raunhluta og þverhluta eftirtalinna
+stærða sem fall af $x$ og $y$:
+
+\smallskip\noindent
+\begin{tabular}{llllll}
+ a)$e^{z^2}$, 
+&b) $e^{1/z}$,
+&c) $\cos z^2$,
+&d) $\tan z$, 
+&e) $\sinh z^2$,
+&f) $\tanh z$.\\
+\end{tabular}
+
+
+\daemi Notið skilgreininguna á framlengingu hornafallanna $\cos $ og $\sin $ til
+þess að sýna að jafnan $\cos^2z+\sin^2z=1$ gildir fyrir öll $z\in \C$. 
+
+\daemi Notið skilgreininguna á breiðbogaföllunum til þess að sýna
+að  jafnan $\cosh^2 z-\sinh^2 z=1$ gildir fyrir öll $z\in \C$.
+
+
+\daemi Finnið núllstöðvar og lotur\index{lota} fallanna
+
+\smallskip\noindent
+\begin{tabular}{llllll}
+ a) $\cos z$, 
+&b) $\sin z$,
+&c) $\tan z$,
+&d) $\cosh z$, 
+&e) $\sinh z$,
+&f) $\tanh z$.\\
+\end{tabular}
+
+\daemi Látum $z=x+iy\in \C$.  Sýnið  að
+
+\smallskip\noindent
+a)  \ $\sin z=\sin x\cosh y+i\cos x \sinh y$,\\
+b) $|\cos z|^2=\cosh^2y-\sin^2 x$,\\
+c)  $|\sin z|^2=\cosh^2y-\cos^2 x$.\\
+
+
+
+\daemi Sýnið að fyrir allar tvinntölur $z$ og $w$ gildi:
+
+\smallskip\noindent
+a)  $\cos(z-w)=\cos z\cos w+\sin z \sin w$,\\
+b)  $\cosh(z+w)=\cosh z\cosh w+\sinh z \sinh w$,\\
+c)  $\sin(z+w)=\sin z\cos w+\cos z \sin w$,\\
+d)  $\sinh(z+w)=\sinh z\cosh w+\cosh z \sinh w$,\\
+
+
+\daemi Ákvarðið fastapunkta varpananna:
+
+\smallskip
+\begin{tabular}{lll}
+a)\ $f(z)=\dfrac{z-i}{z+i}$  &
+b)\ $f(z)=\dfrac{3z+4}{2z-1}$  &
+c)\ $f(z)=z^4$  \\
+d)\ $f(z)=z^2-1$&
+e)\ $f(z)=\dfrac{z+1}{z}$  &
+f)\ $f(z)=\dfrac{z}{z+i}$
+\end{tabular}
+
+
+\daemi Ákvarðið allar brotnar línulega varpanir $f$ sem hafa eftirtalda
+eiginleika:
+
+\smallskip
+a) \ $f$ hefur aðeins einn fastapunkt $0$.
+
+\smallskip
+b) \ $f$ hefur aðeins einn fastapunkt $\infty$.
+
+\smallskip
+c) \ $f$ hefur tvo fastapunkta $1$ og $-1$
+
+\smallskip
+d) \ $f$ hefur tvo fastapunkta $0$ og $1$
+
+\smallskip
+e) \ $f$ hefur tvo fastapunkta $0$ og $\infty$.
+
+\daemi  Ákvarðið brotna línulega vörpun  sem varpar $1$ á $0$,
+$i$ á $1$ og $-1$ á $\infty$.  Punktarnir $1$, $i$ og $-1$ eru allir á
+einingarhringnum $\T$.  Hvert er myndmengi hans?  Hvert er myndmengi 
+einingarskífunnar $\D=\{z\in \C\,;\, |z|<1\}$?
+
+\daemi  Ákvarðið brotna línulega vörpun  sem varpar $i$ á $-i$,
+$-1$ á $0$ og $-i$ á $i$.  Punktarnir $i$, $-1$ og $-i$ eru allir á
+einingarhringnum $\T$.  Hvert er myndmengi hans?  Hvert er myndmengi 
+einingarskífunnar $\D=\{z\in \C\,;\, |z|<1\}$?
+
+
+\daemi  Ákvarðið brotna línulega vörpun  sem varpar $-i$ á $0$,
+$1$ á $i$ og $i$ á $\infty$.  Punktarnir $-i$, $1$ og $i$ eru allir á
+einingarhringnum $\T$.  Hvert er myndmengi hans?  Hvert er myndmengi 
+einingarskífunnar $\D=\{z\in \C\,;\, |z|<1\}$?
+
+\daemi Ákvarðið myndir eftirtalinna varpana af einingarhringnum $\T=\set{z\in \C; 
+|z|=1}$ og einingarskífunni $\D=\set{z\in \C;  |z|<1}$:
+
+\smallskip
+\begin{tabular}{lll}
+a)\ $z\mapsto \dfrac{z-i}{z+i}$,  &
+b)\ $z\mapsto \dfrac{z-1}{z+1}$,  &
+c)\ $z\mapsto \dfrac{z-1/2}{z+2}$.
+\end{tabular}
+
+\daemi Finnið allar brotnar línulegar varpanir sem varpa jákvæða
+raunásnum $\R_+=\{x\in \R\,;\, x\geq 0\}$ á sjálfan sig.
+
+\daemi Finnið allar brotnar línulegar varpanir sem varpa opna jákvæða 
+raunásnum $\R_+^*=\{x\in \R\,;\, x>0\}$ á sjálfan sig.
+
+

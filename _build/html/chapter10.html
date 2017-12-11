@@ -1,0 +1,1258 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>10. LAPLACE–UMMYNDUN &mdash; Stærðfræðigreining III 2017</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon_2.ico"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Stærðfræðigreining III 2017" href="index.html"/>
+        <link rel="next" title="Orðaskrá" href="ordaskra.html"/>
+        <link rel="prev" title="9. LÍNULEG AFLEIÐUJÖFNUHNEPPI" href="chapter09.html"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="../../resizegg.js"></script>
+     
+
+	<!-- hoverrole.py css code -->
+	<style type="text/css">
+		a.tooltip {outline:none; border-bottom: thin dotted; background: #ffeedd}
+		a.tooltip strong {line-height:30px;}
+		a.tooltip:hover {text-decoration:none;} 
+		a.tooltip span {
+		    z-index:10;display:none; padding:14px 20px;
+		    margin-top:-30px; margin-left:12px;
+		    width:310px; line-height:16px;
+		}
+		a.tooltip:hover span{
+		    display:inline; position:absolute; color:#111;
+		    border:1px solid #DCA; background:#fffAF0;}
+		.callout {z-index:20;position:absolute;top:30px;border:0;left:-12px;}
+		    
+		/*CSS3*/
+		a.tooltip span
+		{
+		    border-radius:4px;
+		    box-shadow: 5px 5px 8px #CCC;
+		}
+	</style>
+
+     
+
+    
+    <!-- ADD YOUR GOOGLE ANALYTICS TRACKING CODE HERE-->
+    <script>
+  		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  		ga('create', 'UA-UA-78633732-3', 'auto');
+  		ga('send', 'pageview');
+
+	</script>
+
+    <script>top.scrolldepth_tags = []; </script>
+
+     
+
+
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+
+        
+          <a href="index.html" class="icon icon-home"> Stærðfræðigreining III
+        
+
+        
+          
+          <img src="_static/hi_horiz_raunvisindadeild.png" class="logo" />
+        
+        </a>
+
+        
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Leit" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+          
+          
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="chapter01.html">1. TVINNTÖLUR</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="chapter01.html#talnakerfin">1.1. Talnakerfin</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chapter01.html#rauntolur">1.1.1. Rauntölur</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter01.html#takmarkanir-rauntalnakerfisins">1.1.2. Takmarkanir rauntalnakerfisins</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chapter01.html#tvinntalnaplani">1.2. Tvinntalnaplanið</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chapter01.html#skilgreining-a-tvinntolum">1.2.1. Skilgreining á tvinntölum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter01.html#veldareglur">1.2.2. Veldareglur</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter01.html#tviliureglan">1.2.3. Tvíliðureglan</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter01.html#raunhluti-verhluti-og-samok">1.2.4. Raunhluti, þverhluti og samok</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter01.html#lengd-og-stefnuhorn">1.2.5. Lengd og stefnuhorn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter01.html#fjarlaeg-milli-punkta">1.2.6. Fjarlægð milli punkta</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter01.html#innfeldi-og-krossfeldi">1.2.7. Innfeldi og krossfeldi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter01.html#jafna-linu-og-jafna-hrings">1.2.8. Jafna línu og jafna hrings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter01.html#einingarhringurinn">1.2.9. Einingarhringurinn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter01.html#rumfraeileg-tulkun-a-margfoldun">1.2.10. Rúmfræðileg túlkun á margföldun</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter01.html#rihyrningsojafnan">1.2.11. Þríhyrningsójafnan</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chapter01.html#raetur">1.3. Rætur</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chapter01.html#einingarraetur">1.3.1. Einingarrætur</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter01.html#utreikningur-a-tu-rotum">1.3.2. Útreikningur á <span class="math">\(n\)</span>-tu rótum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter01.html#ferningsraetur">1.3.3. Ferningsrætur</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chapter01.html#margliur">1.4. Margliður</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chapter01.html#attaregla">1.4.1. Þáttaregla</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter01.html#setning">1.4.1.1. Setning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="chapter01.html#nullstovar-annars-stigs-margliu">1.4.2. Núllstöðvar annars stigs margliðu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter01.html#undirstousetning-algebrunnar">1.4.3. Undirstöðusetning algebrunnar</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter01.html#id1">1.4.3.1. Setning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="chapter01.html#margliur-me-rauntolustula">1.4.4. Margliður með rauntölustuðla</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter01.html#afleiur-af-marglium">1.4.5. Afleiður af margliðum</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chapter01.html#rae-foll">1.5. Ræð föll</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chapter01.html#stofnbrotaliun">1.5.1. Stofnbrotaliðun</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter01.html#einfaldar-nullstovar">1.5.1.1. Einfaldar núllstöðvar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter01.html#margfaldar-nullstovar">1.5.1.2. Margfaldar núllstöðvar</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chapter01.html#veldisvisisfalli-og-skyld-foll">1.6. Veldisvísisfallið og skyld föll</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chapter01.html#framlenging-a-veldisvisisfallinu">1.6.1. Framlenging á veldisvísisfallinu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter01.html#jofnur-eulers">1.6.2. Jöfnur Eulers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter01.html#samlagningarformula-veldisvisisfallsins">1.6.3. Samlagningarformúla veldisvísisfallsins</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter01.html#framlenging-a-hornafollum-og-breibogafollum">1.6.4. Framlenging á hornaföllum og breiðbogaföllum</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chapter01.html#varpanir-a-tvinntoluplaninu">1.7. Varpanir á tvinntöluplaninu</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chapter01.html#linulegar-varpanir">1.7.1. Línulegar varpanir</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter01.html#id3">1.7.1.1. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter01.html#id4">1.7.1.2. Setning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="chapter01.html#myndraen-framsetning-a-vorpunum">1.7.2. Myndræn framsetning á vörpunum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter01.html#brotnar-linulegar-varpanir">1.7.3. Brotnar línulegar varpanir</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter01.html#fastapunktar">1.7.4. Fastapunktar</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter01.html#se-fastapunktar">1.7.4.1. Setning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="chapter01.html#riggja-punkta-reglan">1.7.5. Þriggja punkta reglan</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter01.html#se-thrir-punktar">1.7.5.1. Setning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="chapter01.html#myndir-af-linum-og-hringum">1.7.6. Myndir af línum og hringum</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter01.html#id7">1.7.6.1. Setning</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="chapter02.html">2. FÁGUÐ FÖLL</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="chapter02.html#markgildi-og-samfelld-foll">2.1. Markgildi og samfelld föll</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chapter02.html#skifur-og-hringir">2.1.1. Skífur og hringir</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter02.html#opin-og-loku-mengi">2.1.2. Opin og lokuð mengi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter02.html#markgildi">2.1.3. Markgildi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter02.html#samfelldni">2.1.4. Samfelldni</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter02.html#rithattur-fyrir-hlutafleiur">2.1.5. Ritháttur fyrir hlutafleiður</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter02.html#samfellt-deildanleg-foll">2.1.6. Samfellt deildanleg föll</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chapter02.html#id1">2.2. Fáguð föll</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chapter02.html#deildanleg-foll">2.2.1. <span class="math">\({{\mathbb  C}}\)</span>-deildanleg föll</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter02.html#skilgreining">2.2.1.1. Skilgreining</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter02.html#setning">2.2.1.2. Setning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="chapter02.html#reiknireglur-fyrir-afleiur">2.2.2. Reiknireglur fyrir <span class="math">\({{\mathbb  C}}\)</span>-afleiður</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter02.html#id2">2.2.2.1. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter02.html#fylgisetning">2.2.2.2. Fylgisetning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter02.html#synidaemi">2.2.2.3. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter02.html#id3">2.2.2.4. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter02.html#id4">2.2.2.5. Fylgisetning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="chapter02.html#cauchy-riemann-jofnur">2.2.3. Cauchy-Riemann-jöfnur</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter02.html#id5">2.2.3.1. Setning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="chapter02.html#wirtinger-afleiur">2.2.4. Wirtinger-afleiður</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter02.html#id6">2.2.4.1. Skilgreining</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter02.html#id7">2.2.4.2. Setning</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chapter02.html#samleitnar-veldarair">2.3. Samleitnar veldaraðir</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chapter02.html#id8">2.3.1. Samleitnar veldaraðir</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter02.html#id9">2.3.1.1. Skilgreining</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter02.html#id10">2.3.1.2. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter02.html#id11">2.3.1.3. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter02.html#id12">2.3.1.4. Fylgisetning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter02.html#id13">2.3.1.5. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter02.html#id14">2.3.1.6. Fylgisetning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter02.html#id15">2.3.1.7. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter02.html#id16">2.3.1.8. Skilgreining</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chapter02.html#veldaro-veldisvisisfallsins">2.4. Veldaröð veldisvísisfallsins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter02.html#lograr-raetur-og-horn">2.5. Lograr, rætur og horn</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chapter02.html#id17">2.5.1. Lograr, rætur og horn</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter02.html#id18">2.5.1.1. Skilgreining</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter02.html#id19">2.5.1.2. Setning</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="chapter03.html">3. CAUCHY-SETNINGIN OG CAUCHY-FORMÚLAN</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="chapter03.html#vegheildun">3.1. Vegheildun</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chapter03.html#ferlar-og-vegir">3.1.1. Ferlar og vegir</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter03.html#lengd-vega">3.1.2. Lengd vega</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter03.html#heildi-me-tilliti-til-bogalengdar">3.1.3. Heildi með tilliti til bogalengdar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter03.html#vegheildi">3.1.4. Vegheildi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter03.html#heildi-yfir-ofugan-veg">3.1.5. Heildi yfir öfugan veg</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter03.html#mat-a-heildum">3.1.6. Mat á heildum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter03.html#heildi-yfir-linustrik-og-hringboga">3.1.7. Heildi yfir línustrik og hringboga</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter03.html#stofnfoll">3.1.8. Stofnföll</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter03.html#setning">3.1.8.1. Setning</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chapter03.html#green-setningin">3.2. Green-setningin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter03.html#id1">3.3. Cauchy-setningin og Cauchy-formúlan</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chapter03.html#cauchy-setningin">3.3.1. Cauchy-setningin</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter03.html#id2">3.3.1.1. Setning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="chapter03.html#stjornusvaei">3.3.2. Stjörnusvæði</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter03.html#skilgreining">3.3.2.1. Skilgreining</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter03.html#id3">3.3.2.2. Setning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="chapter03.html#cauchy-formulan">3.3.3. Cauchy-formúlan</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter03.html#id4">3.3.3.1. Setning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="chapter03.html#mealgildissetning">3.3.4. Meðalgildissetning</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter03.html#id5">3.3.4.1. Setning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="chapter03.html#utreikningur-a-heildum">3.3.5. Útreikningur á heildum</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter03.html#id6">3.3.5.1. Setning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="chapter03.html#heildi-yfir-hring">3.3.6. Heildi yfir hring</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter03.html#heildi-yfir-rauntalnalinuna">3.3.7. Heildi yfir rauntalnalínuna</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chapter03.html#cauchy-formulan-fyrir-afleiur">3.4. Cauchy-formúlan fyrir afleiður</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chapter03.html#id7">3.4.1. Cauchy-formúlan fyrir afleiður</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter03.html#id8">3.4.1.1. Setning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="chapter03.html#cauchy-ojofnur">3.4.2. Cauchy-ójöfnur</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter03.html#fylgisetning">3.4.2.1. Fylgisetning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="chapter03.html#setning-morera">3.4.3. Setning Morera</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter03.html#id9">3.4.3.1. Setning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="chapter03.html#setning-liouville">3.4.4. Setning Liouville</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter03.html#id10">3.4.4.1. Setning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="chapter03.html#undirstousetning-algebrunnar">3.4.5. Undirstöðusetning algebrunnar</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter03.html#id11">3.4.5.1. Setning</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chapter03.html#samleitni-i-jofnum-maeli">3.5. Samleitni í jöfnum mæli</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chapter03.html#skilgreiningar-og-einfaldar-afleiingar-eirra">3.5.1. Skilgreiningar og einfaldar afleiðingar þeirra</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter03.html#id12">3.5.1.1. Skilgreining</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter03.html#synidaemi">3.5.1.2. Sýnidæmi</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="chapter03.html#samleitniprof-weierstrass">3.5.2. Samleitnipróf Weierstrass</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter03.html#id13">3.5.2.1. Setning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="chapter03.html#setning-abels">3.5.3. Setning Abels</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter03.html#id14">3.5.3.1. Setning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="chapter03.html#samleitni-i-jofnum-maeli-og-samfelldni">3.5.4. Samleitni í jöfnum mæli og samfelldni</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter03.html#id15">3.5.4.1. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter03.html#id16">3.5.4.2. Fylgisetning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="chapter03.html#samleitni-i-jofnum-maeli-og-heildun">3.5.5. Samleitni í jöfnum mæli og heildun</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter03.html#id17">3.5.5.1. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter03.html#id18">3.5.5.2. Fylgisetning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter03.html#id19">3.5.5.3. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter03.html#id20">3.5.5.4. Setning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="chapter03.html#samleitni-i-jofnum-maeli-og-deildun">3.5.6. Samleitni í jöfnum mæli og deildun</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter03.html#id21">3.5.6.1. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter03.html#id22">3.5.6.2. Fylgisetning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter03.html#id23">3.5.6.3. Fylgisetning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="chapter03.html#runur-af-faguum-follum">3.5.7. Runur af fáguðum föllum</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter03.html#id24">3.5.7.1. Setning</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chapter03.html#samleitnar-veldarair">3.6. Samleitnar veldaraðir</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chapter03.html#liun-i-veldaro">3.6.1. Liðun í veldaröð</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter03.html#id25">3.6.1.1. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter03.html#id26">3.6.1.2. Skilgreining</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="chapter03.html#nullstovar-fagara-falla">3.6.2. Núllstöðvar fágaðra falla</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter03.html#id27">3.6.2.1. Skilgreining</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter03.html#id28">3.6.2.2. Setning</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chapter03.html#samsemdarsetningin">3.7. Samsemdarsetningin</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chapter03.html#id29">3.7.1. Samsemdarsetningin</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter03.html#id30">3.7.1.1. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter03.html#id31">3.7.1.2. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter03.html#id32">3.7.1.3. Setning</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chapter03.html#hagildislogmali">3.8. Hágildislögmálið</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chapter03.html#id33">3.8.1. Hágildislögmálið</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter03.html#id34">3.8.1.1. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter03.html#id35">3.8.1.2. Setning</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chapter03.html#vafningstolur-vega">3.9. Vafningstölur vega</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chapter03.html#id36">3.9.1. Vafningstölur vega</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter03.html#id37">3.9.1.1. Skilgreining</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter03.html#id38">3.9.1.2. Setning</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chapter03.html#einfaldlega-samanhangandi-svaei">3.10. Einfaldlega samanhangandi svæði</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chapter03.html#id39">3.10.1. Einfaldlega samanhangandi svæði</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter03.html#id40">3.10.1.1. Skilgreining</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter03.html#id41">3.10.1.2. Setning</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="chapter04.html">4. LEIFAREIKNINGUR</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="chapter04.html#samleitnar-laurent-rair">4.1. Samleitnar Laurent-raðir</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chapter04.html#hringkragar">4.1.1. Hringkragar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter04.html#laurent-setningin">4.1.2. Laurent-setningin</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter04.html#setning">4.1.2.1. Setning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="chapter04.html#laurent-rair">4.1.3. Laurent-raðir</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter04.html#skilgreining">4.1.3.1. Skilgreining</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chapter04.html#einangrair-serstoupunktar">4.2. Einangraðir sérstöðupunktar</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chapter04.html#einangrair-punktar-og-dreif-mengi">4.2.1. Einangraðir punktar og dreifð mengi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter04.html#hofuhluti-og-leif">4.2.2. Höfuðhluti og leif</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter04.html#id1">4.2.2.1. Skilgreining</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="chapter04.html#afmaanlegir-serstoupunktar">4.2.3. Afmáanlegir sérstöðupunktar</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter04.html#id2">4.2.3.1. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter04.html#id3">4.2.3.2. Setning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="chapter04.html#skaut">4.2.4. Skaut</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter04.html#id4">4.2.4.1. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter04.html#id5">4.2.4.2. Setning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="chapter04.html#stofnbrotaliun">4.2.5. Stofnbrotaliðun</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter04.html#verulegir-serstoupunktar">4.2.6. Verulegir sérstöðupunktar</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter04.html#id6">4.2.6.1. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter04.html#id7">4.2.6.2. Setning</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chapter04.html#leifasetning">4.3. Leifasetning</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chapter04.html#id8">4.3.1. Leifasetning</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter04.html#id9">4.3.1.1. Setning</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chapter04.html#utreikningur-a-leifum">4.4. Útreikningur á leifum</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chapter04.html#cauchy-formula-og-leifasetning">4.4.1. Cauchy-formúla og leifasetning</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter04.html#leif-i-einfoldu-skauti">4.4.2. Leif í einföldu skauti</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter04.html#leif-i-skauti-af-stigi">4.4.3. Leif í skauti af stigi <span class="math">\(m&gt;1\)</span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter04.html#cauchy-formula-fyrir-afleiur-og-leifasetning">4.4.4. Cauchy-formúla fyrir afleiður og leifasetning</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter04.html#leif-af-kvota-tveggja-falla">4.4.5. Leif af kvóta tveggja falla</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter04.html#stofnbrotaliun-og-leifasetning">4.4.6. Stofnbrotaliðun og leifasetning</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter04.html#leifar-reiknaar-ut-fra-stulum-i-veldaroum">4.4.7. Leifar reiknaðar út frá stuðlum í veldaröðum</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chapter04.html#heildi-yfir-einingarhringinn">4.5. Heildi yfir einingarhringinn</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter04.html#heildi-yfir-raunasinn">4.6. Heildi yfir raunásinn</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chapter04.html#heildi-af-raeum-follum-yfir-raunasinn">4.6.1. Heildi af ræðum föllum yfir raunásinn</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter04.html#id10">4.6.1.1. Setning</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chapter04.html#leifareikningur-og-fourierummyndun">4.7. Leifareikningur og Fourier–ummyndun</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chapter04.html#fourier-myndir-reiknaar-me-leifareikningi">4.7.1. Fourier-myndir reiknaðar með leifareikningi.</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter04.html#hjalparsetning">4.7.1.1. Hjálparsetning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter04.html#id11">4.7.1.2. Setning</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="chapter05.html">5. ÞÝÐ FÖLL OG FÁGAÐAR VARPANIR</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="chapter05.html#y-foll">5.1. Þýð föll</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chapter05.html#laplace-virki-laplace-jafna-og-y-foll">5.1.1. Laplace-virki, Laplace-jafna og þýð föll</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter05.html#skilgreining">5.1.1.1. Skilgreining</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="chapter05.html#wirtinger-afleiuvirkjarnir">5.1.2. Wirtinger-afleiðuvirkjarnir</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter05.html#tengsl-vi-fagu-foll">5.1.3. Tengsl við fáguð föll</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter05.html#setning">5.1.3.1. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter05.html#id1">5.1.3.2. Setning</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chapter05.html#hagnytingar-i-straumfraei">5.2. Hagnýtingar í straumfræði</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chapter05.html#id2">5.2.1. Hagnýtingar í straumfræði</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter05.html#synidaemi">5.2.1.1. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter05.html#id3">5.2.1.2. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter05.html#id4">5.2.1.3. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter05.html#id5">5.2.1.4. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter05.html#id6">5.2.1.5. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter05.html#id7">5.2.1.6. Sýnidæmi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="chapter06.html">6. UNDIRSTÖÐUATRIÐI UM AFLEIÐUJÖFNUR</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="chapter06.html#skilgreiningar-a-nokkrum-hugtokum">6.1. Skilgreiningar á nokkrum hugtökum</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chapter06.html#venjulegar-afleiujofnur">6.1.1. Venjulegar afleiðujöfnur</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter06.html#linulegar-afleiujofnur">6.1.2. Línulegar afleiðujöfnur</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter06.html#hlutafleiujofnur">6.1.3. Hlutafleiðujöfnur</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter06.html#tilvist-og-otviraeni-lausna">6.1.4. Tilvist og ótvíræðni lausna</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chapter06.html#fyrsta-stigs-jofnur">6.2. Fyrsta stigs jöfnur</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chapter06.html#linulegar-jofnur">6.2.1. Línulegar jöfnur</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter06.html#askiljanlegar-jofnur">6.2.2. Aðskiljanlegar jöfnur</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chapter06.html#afleiujofnuhneppi">6.3. Afleiðujöfnuhneppi</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chapter06.html#staalform-hneppa">6.3.1. Staðalform hneppa</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter06.html#linuleg-afleiujofnuhneppi">6.3.2. Línuleg afleiðujöfnuhneppi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter06.html#jofnur-af-haerri-stigum-og-jafngild-hneppi">6.3.3. Jöfnur af hærri stigum og jafngild hneppi</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chapter06.html#upphafsgildisverkefni">6.4. Upphafsgildisverkefni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter06.html#jaargildisverkefni">6.5. Jaðargildisverkefni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter06.html#tilvist-og-otviraeni-lausna-a-afleiujofnum">6.6. Tilvist og ótvíræðni lausna á afleiðujöfnum</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chapter06.html#id1">6.6.1. Tilvist og ótvíræðni lausna á afleiðujöfnum</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter06.html#setning">6.6.1.1. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter06.html#synidaemi">6.6.1.2. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter06.html#skilgreining">6.6.1.3. Skilgreining</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter06.html#id2">6.6.1.4. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter06.html#id3">6.6.1.5. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter06.html#fylgisetning">6.6.1.6. Fylgisetning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter06.html#id4">6.6.1.7. Fylgisetning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter06.html#id5">6.6.1.8. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter06.html#id6">6.6.1.9. Sýnidæmi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="chapter07.html">7. LÍNULEGAR AFLEIÐUJÖFNUR</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="chapter07.html#linulegir-afleiuvirkjar">7.1. Línulegir afleiðuvirkjar</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chapter07.html#kennimarglian">7.1.1. Kennimargliðan</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter07.html#afleiuvirkinn">7.1.2. Afleiðuvirkinn <span class="math">\(D\)</span></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter07.html#setning">7.1.2.1. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter07.html#id1">7.1.2.2. Setning</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chapter07.html#linulegar-jofnur-me-fastastula">7.2. Línulegar jöfnur með fastastuðla</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chapter07.html#id2">7.2.1. Línulegar jöfnur með fastastuðla</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter07.html#id3">7.2.1.1. Setning</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chapter07.html#euler-jofnur">7.3. Euler-jöfnur</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chapter07.html#id4">7.3.1. Euler-jöfnur</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter07.html#id5">7.3.1.1. Setning</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chapter07.html#serlausnir">7.4. Sérlausnir</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chapter07.html#serlausnir-fundnar-me-virkjareikningi">7.4.1. Sérlausnir fundnar með virkjareikningi</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chapter07.html#green-foll">7.5. Green-föll</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chapter07.html#id6">7.5.1. Green-föll</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter07.html#hjalparsetning">7.5.1.1. Hjálparsetning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter07.html#id7">7.5.1.2. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter07.html#skilgreining">7.5.1.3. Skilgreining</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter07.html#fylgisetning">7.5.1.4. Fylgisetning</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chapter07.html#wronski-fylki-og-wronski-akvean">7.6. Wronski-fylkið og Wronski-ákveðan</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chapter07.html#id8">7.6.1. Wronski-fylkið og Wronski-ákveðan</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter07.html#id9">7.6.1.1. Skilgreining</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter07.html#id10">7.6.1.2. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter07.html#id11">7.6.1.3. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter07.html#id12">7.6.1.4. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter07.html#id13">7.6.1.5. Fylgisetning</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="chapter08.html">8. VELDARAÐALAUSNIR Á AFLEIÐUJÖFNUM</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="chapter08.html#raunfagu-foll">8.1. Raunfáguð föll</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chapter08.html#raunfagu-foll-og-fagaar-utvikkanir">8.1.1. Raunfáguð föll og fágaðar útvíkkanir</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter08.html#skilgreining">8.1.1.1. Skilgreining</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="chapter08.html#agerir-a-veldaroum">8.1.2. Aðgerðir á veldaröðum</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chapter08.html#raalausnir-umhverfis-venjulega-punkta">8.2. Raðalausnir umhverfis venjulega punkta</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chapter08.html#nokkur-daemi-um-veldaraalausnir">8.2.1. Nokkur dæmi um veldaraðalausnir</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter08.html#einangrair-serstoupunktar">8.2.2. Einangraðir sérstöðupunktar</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter08.html#id1">8.2.2.1. Skilgreining</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter08.html#id2">8.2.2.2. Skilgreining</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="chapter08.html#venjulegir-punktar">8.2.3. Venjulegir punktar</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter08.html#id3">8.2.3.1. Skilgreining</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter08.html#setning">8.2.3.2. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter08.html#synidaemi">8.2.3.3. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter08.html#id4">8.2.3.4. Sýnidæmi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chapter08.html#falli">8.3. <span class="math">\(\Gamma\)</span>–fallið</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter08.html#afer-frobeniusar">8.4. Aðferð Frobeniusar</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chapter08.html#reglulegir-serstoupunktar">8.4.1. Reglulegir sérstöðupunktar</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter08.html#id5">8.4.1.1. Skilgreining</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter08.html#id6">8.4.1.2. Skilgreining</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="chapter08.html#utfaersla-a-afer-forbeniusar">8.4.2. Útfærsla á aðferð Forbeniusar</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter08.html#id7">8.4.2.1. Skilgreining</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter08.html#id8">8.4.2.2. Setning</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chapter08.html#besseljafnan">8.5. Bessel–jafnan</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chapter08.html#id9">8.5.1. Bessel–jafnan</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter08.html#id10">8.5.1.1. Skilgreining</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter08.html#id11">8.5.1.2. Skilgreining</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter08.html#id12">8.5.1.3. Skilgreining</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="chapter09.html">9. LÍNULEG AFLEIÐUJÖFNUHNEPPI</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="chapter09.html#tilvist-og-otviraeni-lausna">9.1. Tilvist og ótvíræðni lausna</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chapter09.html#id1">9.1.1. Tilvist og ótvíræðni lausna</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter09.html#skilgreining">9.1.1.1. Skilgreining</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter09.html#setning">9.1.1.2. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter09.html#id2">9.1.1.3. Setning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="chapter09.html#jofnur-af-haerri-stigum-og-jafngild-hneppi">9.1.2. Jöfnur af hærri stigum og jafngild hneppi</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter09.html#id3">9.1.2.1. Setning</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chapter09.html#hneppi-me-fastastula">9.2. Hneppi með fastastuðla</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chapter09.html#id4">9.2.1. Hneppi með fastastuðla</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter09.html#hjalparsetning">9.2.1.1. Hjálparsetning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter09.html#id5">9.2.1.2. Setning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="chapter09.html#urlausn-me-gefinn-eiginvigragrunn">9.2.2. Úrlausn með gefinn eiginvigragrunn</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter09.html#id6">9.2.2.1. Setning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="chapter09.html#annars-stigs-hneppi">9.2.3. Annars stigs hneppi</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chapter09.html#grunnfylki">9.3. Grunnfylki</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chapter09.html#id7">9.3.1. Grunnfylki</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter09.html#id8">9.3.1.1. Hjálparsetning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter09.html#id9">9.3.1.2. Skilgreining</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter09.html#id10">9.3.1.3. Setning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="chapter09.html#upphafsgildisverkefni-fyrir-grunnfylki">9.3.2. Upphafsgildisverkefni fyrir grunnfylki</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter09.html#id11">9.3.2.1. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter09.html#id12">9.3.2.2. Setning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="chapter09.html#id13">9.3.3. Hneppi með fastastuðla</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chapter09.html#fylkjamargliur-og-fylkjaveldarair">9.4. Fylkjamargliður og fylkjaveldaraðir</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chapter09.html#samleitnar-fylkjarunur">9.4.1. Samleitnar fylkjarunur</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter09.html#id14">9.4.1.1. Skilgreining</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="chapter09.html#fylkjastaall">9.4.2. Fylkjastaðall</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter09.html#id15">9.4.2.1. Skilgreining</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter09.html#id16">9.4.2.2. Setning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="chapter09.html#samleitnar-fylkjarair">9.4.3. Samleitnar fylkjaraðir</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter09.html#id17">9.4.3.1. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter09.html#fylgisetning">9.4.3.2. Fylgisetning</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chapter09.html#veldisvisisfylki">9.5. Veldisvísisfylkið</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chapter09.html#id18">9.5.1. Veldisvísisfylkið</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter09.html#id19">9.5.1.1. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter09.html#id20">9.5.1.2. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter09.html#id21">9.5.1.3. Fylgisetning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter09.html#id22">9.5.1.4. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter09.html#id23">9.5.1.5. Setning</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chapter09.html#cayleyhamiltonsetningin">9.6. Cayley–Hamilton–setningin</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chapter09.html#id24">9.6.1. Cayley–Hamilton–setningin</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter09.html#id25">9.6.1.1. Skilgreining</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chapter09.html#id26">9.6.1.2. Setning</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chapter09.html#newton-margliur">9.7. Newton-margliður</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="chapter09.html#bruunarverkefni">9.7.1. Brúunarverkefni</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter09.html#urlausn-a-bruunarverkefninu">9.7.2. Úrlausn á brúunarverkefninu</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter09.html#id27">9.7.2.1. Setning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="chapter09.html#id28">9.7.3. Newton-margliður</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chapter09.html#id29">9.7.4. Veldisvísisfylkið</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chapter09.html#synidaemi">9.7.4.1. Sýnidæmi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">10. LAPLACE–UMMYNDUN</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#skilgreiningar-og-reiknireglur">10.1. Skilgreiningar og reiknireglur</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">10.1.1. Skilgreiningar og reiknireglur</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#skilgreining">10.1.1.1. Skilgreining</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#setning">10.1.1.2. Setning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#nokkur-mikilvaeg-daemi">10.1.2. Nokkur mikilvæg dæmi</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id2">10.1.2.1. Setning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#laplace-ummyndun-er-eintaek-vorpun">10.1.3. Laplace-ummyndun er eintæk vörpun</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#set-10-1-2">10.1.3.1. Setning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#heaviside-falli">10.1.4. Heaviside-fallið</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id4">10.1.4.1. Setning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#laplace-ummyndun-af-vigur-og-fylkjagildum-vorpunum">10.1.5. Laplace-ummyndun af vigur- og fylkjagildum vörpunum</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#upphafsgildisverkefni">10.2. Upphafsgildisverkefni</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id5">10.2.1. Upphafsgildisverkefni</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id6">10.2.1.1. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id7">10.2.1.2. Setning</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#greenfalli-og-foldun">10.3. Green–fallið og földun</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id8">10.3.1. Green–fallið og földun</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id9">10.3.1.1. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#fylgisetning">10.3.1.2. Fylgisetning</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="ordaskra.html">Orðaskrá</a></li>
+</ul>
+
+          
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">Stærðfræðigreining III</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>10. LAPLACE–UMMYNDUN</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/chapter10.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="laplaceummyndun">
+<h1>10. LAPLACE–UMMYNDUN<a class="headerlink" href="#laplaceummyndun" title="Varanlegur hlekkur á titilinn">¶</a></h1>
+<div class="section" id="skilgreiningar-og-reiknireglur">
+<h2>10.1. Skilgreiningar og reiknireglur<a class="headerlink" href="#skilgreiningar-og-reiknireglur" title="Varanlegur hlekkur á titilinn">¶</a></h2>
+<div class="section" id="id1">
+<h3>10.1.1. Skilgreiningar og reiknireglur<a class="headerlink" href="#id1" title="Varanlegur hlekkur á titilinn">¶</a></h3>
+<p>Látum <span class="math">\(f\)</span> vera fall sem skilgreint er á
+<span class="math">\({{\mathbb  R}}_+=\{t\in {{\mathbb  R}}; t\geq 0\}\)</span> með gildi í
+<span class="math">\({{\mathbb  C}}\)</span> og gerum ráð fyrir að <span class="math">\(f\)</span> sé heildanlegt á
+sérhverju lokuðu og takmörkuðu bili <span class="math">\([0,b]\)</span>.</p>
+<p><em>Laplace–mynd</em> <span class="math">\(f\)</span>, sem við táknum með <span class="math">\({{\cal L}}f\)</span> eða
+<span class="math">\({{\cal L}}\{f\}\)</span>, er skilgreind með formúlunni</p>
+<div class="math">
+\[{{\cal L}}f(s)=\int_0^ \infty e^{-st}f(t)\, dt.\]</div>
+<p>Skilgreiningarmengi fallsins <span class="math">\({{\cal L}}f\)</span> samanstendur af öllum
+tvinntölum <span class="math">\(s\)</span> þannig að heildið í hægri hliðinni sé samleitið.</p>
+<p><em>Laplace-ummyndun</em> er vörpunin <span class="math">\({{\cal L}}\)</span> sem úthlutar falli
+<span class="math">\(f\)</span> Laplace-mynd sinni <span class="math">\({{\cal L}}f\)</span>.</p>
+<div class="section" id="skilgreining">
+<h4>10.1.1.1. Skilgreining<a class="headerlink" href="#skilgreining" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<p>Við segjum að fallið <span class="math">\(f:{{\mathbb  R}}_+\to {{\mathbb  C}}\)</span> sé af
+<a href="http://www.stae.is/os/leita/exponential_type." class="tooltip" target="_blank">veldisvísisgerð<span>en: <i>exponential type.</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> ef til eru jákvæðir fastar
+<span class="math">\(M\)</span> og <span class="math">\(c\)</span> þannig að</p>
+<div class="math">
+\[|f(t)|\leq Me^{c t}, \qquad t\in {{\mathbb  R}}_+.\]</div>
+<hr class="docutils" />
+<p>Ef <span class="math">\(f\)</span> er heildanlegt á sérhverju takmörkuðu bili <span class="math">\([0,b]\)</span> og
+uppfyllir ójöfnuna, þá er <span class="math">\({{\cal L}}f\)</span> skilgreint fyrir öll
+<span class="math">\(s\in {{\mathbb  C}}\)</span> með <span class="math">\({{\operatorname{Re\, }}}s &gt;c\)</span>. Við fáum að auki vaxtartakmarkanir á <span class="math">\({{\cal L}}f\)</span>,</p>
+<div class="math">
+\[\begin{split}|{{\cal L}}f(s) |\leq \int_0^\infty e^{-{{\operatorname{Re\, }}}st} Me^{c t} \, dt =
+ \dfrac M{{{\operatorname{Re\, }}}\,  s-c}, \qquad {{\operatorname{Re\, }}}\,  s&gt;c.\end{split}\]</div>
+<p>Það er augljóst að Laplace-ummyndun er línuleg vörpun, en það þýðir að</p>
+<div class="math">
+\[{{\cal L}}\{\alpha f+\beta g\}(s)=\alpha{{\cal L}}\{f\}(s)+\beta{{\cal L}}\{g\}(s)\]</div>
+<p>ef <span class="math">\(f\)</span> og <span class="math">\(g\)</span> eru föll af veldisvísisgerð, <span class="math">\(\alpha\)</span>
+og <span class="math">\(\beta\)</span> eru tvinntölur og <span class="math">\(s\in {{\mathbb  C}}\)</span> liggur í
+skilgreiningarmengi fallanna <span class="math">\({{\cal L}}\{f\}\)</span> og
+<span class="math">\({{\cal L}}\{g\}\)</span>.</p>
+<p>Við þurfum að leiða út nokkrar reiknireglur fyrir Laplace-ummyndun. Sú
+fyrsta segir okkur að Laplace-myndir falla af veldisvísisgerð séu fáguð
+föll og hún segir okkur einnig að afleiður af Laplace-myndum af slíkum
+föllum séu einnig Laplace myndir:</p>
+</div>
+<div class="section" id="setning">
+<h4>10.1.1.2. Setning<a class="headerlink" href="#setning" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<p>Látum <span class="math">\(f:{{\mathbb  R}}_+\to {{\mathbb  C}}\)</span> vera fall sem er
+heildanlegt á sérhverju bili <span class="math">\([0,b]\)</span> til eru jákvæðir fastar
+<span class="math">\(M\)</span> og <span class="math">\(c\)</span> þannig að
+<span class="math">\(|f(t)|\leq Me^{c t}, t\in {{\mathbb  R}}_+\)</span>.</p>
+<p>Þá er <span class="math">\({{\cal L}}f\)</span> fágað á menginu
+<span class="math">\(\{s\in {{\mathbb  C}};{{\operatorname{Re\, }}}s&gt;c\}\)</span> og</p>
+<div class="math">
+\[\begin{split}\dfrac{d^k}{ds^k}{{\cal L}}\{f\}(s)=
+ (-1)^k{{\cal L}}\{t^kf(t)\}(s), \qquad {{\operatorname{Re\, }}}s&gt;c.\end{split}\]</div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="nokkur-mikilvaeg-daemi">
+<h3>10.1.2. Nokkur mikilvæg dæmi<a class="headerlink" href="#nokkur-mikilvaeg-daemi" title="Varanlegur hlekkur á titilinn">¶</a></h3>
+<p>Reiknum nú út nokkrar Laplace-myndir:</p>
+<p>Ef <span class="math">\(\alpha\in {{\mathbb  R}}\)</span> og <span class="math">\(\alpha&gt;-1\)</span>, þá er</p>
+<div class="math">
+\[\begin{split}\begin{aligned}
+ {{\cal L}}\{t^\alpha\}(s)
+ &amp;=\int_0^\infty e^{-st}t^\alpha \, dt =
+ \dfrac 1{s^{\alpha+1}} \int_0^\infty e^{-st}(st)^\alpha \, s dt \\
+ &amp;=
+ \dfrac 1{s^{\alpha+1}} \int_0^\infty e^{-\tau}\tau^\alpha \,  d\tau =
+ \dfrac {\Gamma(\alpha+1)}{s^{\alpha+1}}.\end{aligned}\end{split}\]</div>
+<p>Ef <span class="math">\({\alpha}\)</span> er heiltala, þá verður þessi formúla</p>
+<div class="math">
+\[{{\cal L}}\{t^\alpha\}(s)
+ =\dfrac {\alpha!}{s^{\alpha+1}}.\]</div>
+<p>Fyrir sérhvert <span class="math">\(\alpha\in {{\mathbb  C}}\)</span> gildir</p>
+<div class="math">
+\[{{\cal L}}\{e^{\alpha t}\}(s)=
+ \int_0^{\infty}e^{-st}e^{\alpha t}\, dt =
+ \int_0^{\infty}e^{-(s-\alpha)t}\, dt =
+ \left[\dfrac {-e^{-(s-\alpha)t}} {s-\alpha}\right]_0^{\infty}=
+ \dfrac 1{s-\alpha},\]</div>
+<p>og í framhaldi af þessu fáum við</p>
+<div class="math">
+\[\begin{split}\begin{aligned}
+ {{\cal L}}\{\cos\beta t\}(s) &amp;=
+ \frac 12 {{\cal L}}\{e^{i\beta t}\}(s) +\frac 12{{\cal L}}\{e^{-i\beta t}\}(s)\\
+ &amp;=\frac 12\left[\dfrac 1{s-i\beta}+\dfrac 1{s+i\beta}\right]
+ =\dfrac s{s^2+\beta^2},\\
+ {{\cal L}}\{\sin\beta t\}(s) &amp;=
+ \frac 1{2i}{{\cal L}}\{e^{i\beta t}\}(s) -\frac 1{2i}{{\cal L}}\{e^{-i\beta t}\}(s)\\
+ &amp;=\frac 1{2i}\left[\dfrac 1{s-i\beta}-\dfrac 1{s+i\beta}\right]
+ =\dfrac {\beta}{s^2+\beta^2},\\
+ {{\cal L}}\{\cosh \beta t\}(s) &amp;=
+ \frac 12 {{\cal L}}\{e^{\beta t}\}(s) +\frac 12{{\cal L}}\{e^{-\beta t}\}(s)\\
+ &amp;=\frac 12\left[\dfrac 1{s-\beta}+\dfrac 1{s+\beta}\right]
+ =\dfrac s{s^2-\beta^2},\\
+ {{\cal L}}\{\sinh \beta t\}(s) &amp;=
+ \frac 1{2}{{\cal L}}\{e^{\beta t}\}(s) -\frac 1{2}{{\cal L}}\{e^{-i\beta t}\}(s)\\
+ &amp;=\frac 1{2}\left[\dfrac 1{s-\beta}-\dfrac 1{s+\beta}\right]
+ =\dfrac \beta{s^2-\beta^2}.\end{aligned}\end{split}\]</div>
+<p>Við höfum almenna reiknireglu:</p>
+<div class="section" id="id2">
+<h4>10.1.2.1. Setning<a class="headerlink" href="#id2" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<p><span class="math">\({{\cal L}}\{e^{\alpha t}f\}(s) = {{\cal L}}\{f\}(s-\alpha)\)</span>.</p>
+<hr class="docutils" />
+<p>Útreikninga okkar hér að framan getum við nú tekið saman í litla töflu:</p>
+<div class="math">
+\[\begin{split}\begin{aligned}
+ {{\cal L}}\{e^{\alpha t}t^{\beta}\}(s)
+ &amp;=\dfrac{\Gamma(\beta+1)}{(s-\alpha)^{\beta+1}},\\
+ {{\cal L}}\{e^{\alpha t}\cos \beta t\}(s)
+ &amp;=\dfrac{s-\alpha}{(s-\alpha)^2+\beta^2},\\
+ {{\cal L}}\{e^{\alpha t}\sin \beta t\}(s)
+ &amp;=\dfrac{\beta}{(s-\alpha)^2+\beta^2},\\
+ {{\cal L}}\{e^{\alpha t}\cosh \beta t\}(s)
+ &amp;=\dfrac{s-\alpha}{(s-\alpha)^2-\beta^2},\\
+ {{\cal L}}\{e^{\alpha t}\sinh \beta t\}(s)
+ &amp;=\dfrac{\beta}{(s-\alpha)^2-\beta^2}.\end{aligned}\end{split}\]</div>
+</div>
+</div>
+<div class="section" id="laplace-ummyndun-er-eintaek-vorpun">
+<h3>10.1.3. Laplace-ummyndun er eintæk vörpun<a class="headerlink" href="#laplace-ummyndun-er-eintaek-vorpun" title="Varanlegur hlekkur á titilinn">¶</a></h3>
+<div class="section" id="set-10-1-2">
+<span id="id3"></span><h4>10.1.3.1. Setning<a class="headerlink" href="#set-10-1-2" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<p>Gerum ráð fyrir að föllin <span class="math">\(f,g\in C({{\mathbb  R}}_+)\)</span> séu bæði af
+veldisvísisgerð og að til sé fasti <span class="math">\(c\)</span> þannig að</p>
+<div class="math">
+\[{{\cal L}}f(s)={{\cal L}}g(s), \qquad s\in {{\mathbb  C}}, \quad {{\operatorname{Re\, }}}s\geq c.\]</div>
+<p>Þá er <span class="math">\(f(t)=g(t)\)</span> fyrir öll <span class="math">\(t\in {{\mathbb  R}}_+\)</span>.</p>
+<hr class="docutils" />
+<p>Þessa setningu má einnig orða þannig að Laplace-ummyndun er eintæk
+vörpun á mengi allra samfelldra falla af veldisvísisgerð.</p>
+<p>Ef við sjáum
+að eitthvert fall <span class="math">\(F(s)\)</span> er Laplace-mynd af samfelldu falli
+<span class="math">\(f\)</span>, þá segir setningin okkur að <span class="math">\(f\)</span> er ótvírætt ákvarðað og
+við köllum þá <span class="math">\(f\)</span> <em>andhverfa Laplace-mynd</em> af fallinu <span class="math">\(F\)</span> og
+skrifum <span class="math">\(f(t)={{\cal L}}^{-1}\{F\}(t)\)</span>.</p>
+</div>
+</div>
+<div class="section" id="heaviside-falli">
+<h3>10.1.4. Heaviside-fallið<a class="headerlink" href="#heaviside-falli" title="Varanlegur hlekkur á titilinn">¶</a></h3>
+<p>Fallið <span class="math">\(H:{{\mathbb  R}}\to {{\mathbb  R}}\)</span>, sem skilgreint er með</p>
+<div class="math">
+\[\begin{split}H(t)=\begin{cases} 1, &amp;t\geq 0,\\ 0, &amp; t&lt;0,\end{cases}\end{split}\]</div>
+<p>kallast <em>Heaviside–fall</em>. Athugum að hliðrun
+þess <span class="math">\(H_a(t)=H(t-a)\)</span> uppfyllir</p>
+<div class="math">
+\[\begin{split}H_a(t)=\begin{cases} 1, &amp;t\geq a,\\ 0, &amp; t&lt;a,\end{cases}\end{split}\]</div>
+<p>og því er Laplace-mynd þess</p>
+<div class="math">
+\[\begin{split}{{\cal L}}H_a(s)= \int_a^{\infty} e^{-st}\, dt= \dfrac{e^{-as}} s, \qquad a&gt;0.\end{split}\]</div>
+<p>Við fáum reyndar almenna reiknireglu:</p>
+<div class="section" id="id4">
+<h4>10.1.4.1. Setning<a class="headerlink" href="#id4" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<p>Látum <span class="math">\(f:{{\mathbb  R}}_+\to {{\mathbb  C}}\)</span> vera fall af
+veldisvísisgerð. Þá gildir um sérhvert <span class="math">\(a\geq 0\)</span> að</p>
+<div class="math">
+\[{{\cal L}}\{H(t-a)f(t-a)\}(s) = e^{-as}{{\cal L}}\{f\}(s).\]</div>
+<p>þar sem fallið <span class="math">\(t\mapsto H(t-a)f(t-a)\)</span> tekur gildið <span class="math">\(0\)</span>
+fyrir öll <span class="math">\(t&lt;a\)</span>.</p>
+</div>
+</div>
+<div class="section" id="laplace-ummyndun-af-vigur-og-fylkjagildum-vorpunum">
+<h3>10.1.5. Laplace-ummyndun af vigur- og fylkjagildum vörpunum<a class="headerlink" href="#laplace-ummyndun-af-vigur-og-fylkjagildum-vorpunum" title="Varanlegur hlekkur á titilinn">¶</a></h3>
+<p>Ef <span class="math">\(u=(u_1,\dots,u_m): {{\mathbb  R}}_+\to {{\mathbb  C}}^m\)</span> er
+vigurgilt fall á jákvæða raunásnum, þá skilgreinum við Laplace-mynd
+<span class="math">\(u\)</span> með því að taka Laplace-mynd af hnitaföllunum,</p>
+<div class="math">
+\[{{\cal L}}u(s)=({{\cal L}}u_1,\dots,{{\cal L}}u_m).\]</div>
+<p>Við förum eins að við að skilgreina Laplace-mynd af
+<span class="math">\(p\times m\)</span>-fylkjagildu falli <span class="math">\(U=(u_{jk})_{j,k=1}^{p,m}\)</span>,
+þar sem við skilgreinum <span class="math">\({{\cal L}}U(s)\)</span> sem <span class="math">\(p\times m\)</span>
+fylkjagilda fallið</p>
+<div class="math">
+\[{{\cal L}}U(s)=({{\cal L}}u_{jk}(s))_{j,k=1}^{p,m}.\]</div>
+<p>Ef <span class="math">\(A\)</span> er <span class="math">\(p\times m\)</span> fylki, þá er</p>
+<div class="math">
+\[{{\cal L}}\{Au\}(s)=A{{\cal L}}u(s).\]</div>
+<p>Þessa reglu sönnum við með því að líta á <span class="math">\(v=Au\)</span>,
+<span class="math">\(v_j=a_{j1}u_1+\cdots+a_{jm}u_m\)</span> og notfæra okkur að
+Laplace-ummyndunin er línuleg vörpun. Það gefur okkur
+<span class="math">\({{\cal L}}v_j(s)=a_{j1}{{\cal L}}u_1(s)+\cdots+a_{jm}{{\cal L}}u_m(s)\)</span>.
+Vinstri hliðin í þessari jöfnu er þáttur númer <span class="math">\(j\)</span> í vinstri hlið
+jöfnunnar, en hægri hliðin er þáttur númer <span class="math">\(j\)</span> í hægri hlið
+hennar.</p>
+<p>Ef hins <span class="math">\(A\)</span> er eitthvert <span class="math">\(q\times p\)</span> fylki, þá fæst reglan</p>
+<div class="math">
+\[{{\cal L}}\{AU\}(s)=A{{\cal L}}U(s).\]</div>
+</div>
+<div id='scrolled_to_subsection_2' > <script> top.scrolldepth_tags.push('#scrolled_to_subsection_2'); </script></div>
+<div class="section" id="upphafsgildisverkefni">
+<h2>10.2. Upphafsgildisverkefni<a class="headerlink" href="#upphafsgildisverkefni" title="Varanlegur hlekkur á titilinn">¶</a></h2>
+<div class="section" id="id5">
+<h3>10.2.1. Upphafsgildisverkefni<a class="headerlink" href="#id5" title="Varanlegur hlekkur á titilinn">¶</a></h3>
+<p>Nú skulum við snúa okkur að kjarna málsins, en það er að taka fall
+<span class="math">\(f\in C^ 1({{\mathbb  R}}_+)\)</span> af veldisvísisgerð og reikna út heildið</p>
+<div class="math">
+\[\begin{split}\begin{aligned}
+ \int_0^ b e^{-st}f{{^{\prime}}}(t)\, dt &amp;=
+ \left[e^{-st}f(t)\right]_0^ b+
+ \int_0^ b se^{-st}f(t)\, dt \\
+ &amp;=
+ s\int_0^ b e^{-st}f(t)\, dt -f(0)+e^{-sb}f(b).\end{aligned}\end{split}\]</div>
+<p>Ef <span class="math">\({{\operatorname{Re\, }}}s\)</span> er nógu stórt, þá getum við látið
+<span class="math">\(b\to \infty\)</span> og fáum því</p>
+<div class="math">
+\[{{\cal L}}\{f{{^{\prime}}}\}(s)=s{{\cal L}}\{f\}(s)-f(0).\]</div>
+<p>Ef við gerum ráð fyrir að <span class="math">\(f\in C^2({{\mathbb  R}}_+)\)</span> og að bæði
+<span class="math">\(f\)</span> og <span class="math">\(f{{^{\prime}}}\)</span> séu af veldisvísisgerð, þá fáum
+við með því að beita þessari formúlu tvisvar að</p>
+<div class="math">
+\[{{\cal L}}\{f{{^{\prime\prime}}}\}(s)=s{{\cal L}}\{f{{^{\prime}}}\}(s)-f{{^{\prime}}}(0)=s^ 2{{\cal L}}\{f\}(s)
+ -sf(0)-f{{^{\prime}}}(0),\]</div>
+<p>og með þrepun fáum við síðan:</p>
+<div class="section" id="id6">
+<h4>10.2.1.1. Setning<a class="headerlink" href="#id6" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<p>Ef <span class="math">\(f\in C^ m({{\mathbb  R}}_+)\)</span> og
+<span class="math">\(f, f{{^{\prime}}}, f{{^{\prime\prime}}}, \dots, f^{(m-1)}\)</span>, eru af veldisvísisgerð, þá er
+<span class="math">\({{\cal L}}\{f^{(m)}\}(s)\)</span> skilgreint fyrir öll
+<span class="math">\(s\in {{\mathbb  C}}\)</span> með <span class="math">\({{\operatorname{Re\, }}}s\)</span> nógu
+stórt og</p>
+<div class="math">
+\[{{\cal L}}\{f^{(m)}\}(s)=s^
+ m{{\cal L}}\{f\}(s)-s^{m-1}f(0)-\cdots-sf^{(m-2)}(0)-f^{(m-1)}(0).\]</div>
+<hr class="docutils" />
+<p>Áður en við snúum okkur að því að leysa afleiðujöfnuhneppi með
+Laplace-ummyndun, skulum við líta á veldisvísisfylkið:</p>
+</div>
+<div class="section" id="id7">
+<h4>10.2.1.2. Setning<a class="headerlink" href="#id7" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<p>Um sérhvert <span class="math">\(m\times m\)</span> fylki <span class="math">\(A\)</span> gildir</p>
+<div class="math">
+\[{{\cal L}}\{e^{tA}\}(s) = (sI-A)^{-1}.\]</div>
+</div>
+</div>
+<div id='scrolled_to_subsection_3' > <script> top.scrolldepth_tags.push('#scrolled_to_subsection_3'); </script></div>
+<hr class="docutils" />
+<div class="section" id="greenfalli-og-foldun">
+<h2>10.3. Green–fallið og földun<a class="headerlink" href="#greenfalli-og-foldun" title="Varanlegur hlekkur á titilinn">¶</a></h2>
+<div class="section" id="id8">
+<h3>10.3.1. Green–fallið og földun<a class="headerlink" href="#id8" title="Varanlegur hlekkur á titilinn">¶</a></h3>
+<p>Lítum nú á afleiðujöfnu með fastastuðla</p>
+<div class="math">
+\[P(D)u=(a_mD^m+\cdots+a_1D+a_0)u=f(t),\]</div>
+<p>með upphafsskilyrðunum</p>
+<div class="math">
+\[u(a)=b_0, u{{^{\prime}}}(a)=b_1,\  \dots,  \  u^{(m-1)}(a)=b_{m-1}.\]</div>
+<p>Með því að hliðra til tímaásnum, þ.e.&nbsp;skipta á fallinu <span class="math">\(u(t)\)</span> og
+<span class="math">\(u(t-a)\)</span>, þá getum við gert ráð fyrir að <span class="math">\(a=0\)</span>.</p>
+<p>Við höfum sýnt fram á að fallið <span class="math">\(u_p\)</span> sem uppfyllir
+<span class="math">\(P(D)u=f(t)\)</span>, með óhliðruðu upphafsskilyrðunum
+<span class="math">\(b_0=\cdots=b_{m-1}=0\)</span> er gefið með formúlunni</p>
+<div class="math">
+\[u_p(t)=\int_0^tG(t,\tau) f(\tau)\, d\tau,\]</div>
+<p>þar sem <span class="math">\(G\)</span> er Green–fall virkjans <span class="math">\(P(D)\)</span>. Við skulum nú
+reikna út <span class="math">\(U_p(s)={{\cal L}}\{u_p\}(s)\)</span>. Vegna þess að
+upphafsgildin eru öll <span class="math">\(0\)</span>, þá er</p>
+<div class="math">
+\[{{\cal L}}\{u_p{{^{\prime}}}\}(s)=sU_p(s), \quad
+ {{\cal L}}\{u_p{{^{\prime\prime}}}\}(s)=s^2U_p(s),\dots,
+ {{\cal L}}\{u_p^{(m)}\}(s)=s^mU_p(s).\]</div>
+<p>Þetta gefur okkur að</p>
+<div class="math">
+\[{{\cal L}}\{P(D)u_p\}(s)=(a_ms^m+\cdots+a_1s+a_0)U_p(s)={{\cal L}}f(s),\]</div>
+<p>sem er greinilega jafnan</p>
+<div class="math">
+\[P(s)U_p(s)={{\cal L}}f(s),\]</div>
+<p>og við fáum</p>
+<div class="math">
+\[{{\cal L}}\{u_p\}(s)=\dfrac {{{\cal L}}f(s)}{P(s)}.\]</div>
+<p>Nú er Green–fallið <span class="math">\(G(t,\tau)=g(t-\tau)\)</span>, þar sem <span class="math">\(g\)</span>
+uppfyllir</p>
+<div class="math">
+\[P(D)g=0, \  g(0)=g{{^{\prime}}}(0)=\cdots=g^{(m-2)}(0)=0, \
+ g^{(m-1)}(0)=\dfrac 1{a_m}.\]</div>
+<p>Ef við setjum <span class="math">\(U(s)={{\cal L}}g(s)\)</span>, þá fáum við</p>
+<div class="math">
+\[\begin{split}\begin{aligned}
+ {{\cal L}}\{g{{^{\prime}}}\}(s) &amp;= s{{\cal L}}\{g\}(s)-g(0)=sU(s),\\
+ {{\cal L}}\{g{{^{\prime\prime}}}\}(s) &amp;= s^2{{\cal L}}\{g\}(s)-sg(0)-g{{^{\prime}}}(0)\\
+ &amp;=s^2U(s),\\
+ &amp;\qquad \vdots\qquad\qquad\vdots\qquad\qquad \vdots\\
+ {{\cal L}}\{g^{(m-1)}\}(s) &amp;=
+ s^{m-1}{{\cal L}}\{g\}(s)-s^{m-2}g(0)-\cdots-g^{(m-2)}(0)\\
+ &amp;=s^{m-1}U(s),\\
+ {{\cal L}}\{g^{(m)}\}(s) &amp;=
+ s^m{{\cal L}}\{g\}(s)-s^{m-1}g(0)-\cdots-g^{(m-1)}(0)\\
+ &amp;=s^mU(s)-\dfrac 1{a_m}.\end{aligned}\end{split}\]</div>
+<p>Við tökum nú Laplace-myndina af báðum hliðum jöfnunnar <span class="math">\(P(D)g=0\)</span>
+og fáum</p>
+<div class="math">
+\[(a_ms^mU(s)-1)+a_{m-1}s^{m-1}U(s)+\cdots+a_1sU(s)+a_0U(s)=0,\]</div>
+<p>og við fáum <span class="math">\(P(s)U(s)=1\)</span>, sem jafngildir</p>
+<div class="math">
+\[{{\cal L}}g(s)=\dfrac 1{P(s)}.\]</div>
+<p>Við höfum því sýnt fram á að</p>
+<div class="math">
+\[{{\cal L}}\left\{\int_0^tg(t-\tau)f(\tau)\, d\tau\right\}(s)= {{\cal L}}\{u_p\}(s)=
+ {{\cal L}}\{g\}(s){{\cal L}}\{f\}(s).\]</div>
+<p>Þessi formúla er engin tilviljun, því við höfum:</p>
+<div class="section" id="id9">
+<h4>10.3.1.1. Setning<a class="headerlink" href="#id9" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<p>Ef <span class="math">\(f\)</span> og <span class="math">\(g\)</span> eru föll af veldisvísisgerð og heildanleg á
+sérhverju bili <span class="math">\([0,b]\)</span>, þá er</p>
+<div class="math">
+\[{{\cal L}}\left\{\int_0^tf(t-\tau)g(\tau)\, d\tau\right\}(s)=
+ {{\cal L}}\{f\}(s){{\cal L}}\{g\}(s).\]</div>
+<hr class="docutils" />
+<p>Athugið að</p>
+<div class="math">
+\[\int_0^t f(t-\tau)g(\tau) \, d\tau=
+ \int_0^t f(\tau)g(t-\tau) \, d\tau.\]</div>
+<p>Með því að velja <span class="math">\(g(t)=1\)</span> og nota að <span class="math">\({{\cal L}}\{1\}=1/s\)</span>,
+þá fæst:</p>
+</div>
+<div class="section" id="fylgisetning">
+<h4>10.3.1.2. Fylgisetning<a class="headerlink" href="#fylgisetning" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<p>Ef <span class="math">\(f\)</span> er af veldisvísisgerð og heildanlegt á sérhverju bili
+<span class="math">\([0,b]\)</span>, þá er</p>
+<div class="math">
+\[{{\cal L}}\left\{\int_0^t f(\tau) \, d\tau\right\}(s) = \dfrac 1s
+ {{\cal L}}\{f\}(s).\]</div>
+<hr class="docutils" />
+<p><a href="http://www.stae.is/os/leita/convolution." class="tooltip" target="_blank">Földun<span>en: <i>convolution.</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> tveggja falla
+<span class="math">\(f, g: {{\mathbb  R}}\to {{\mathbb  C}}\)</span> er skilgreind með
+formúlunni</p>
+<div class="math">
+\[f\ast g(t)=\int_{-\infty}^{+\infty}f(t-\tau)g(\tau) \, d\tau,\]</div>
+<p>og talan <span class="math">\(t\)</span> liggur í skilgreiningarmengi <span class="math">\(f\ast g\)</span> ef heildið
+er samleitið.</p>
+<p>Ef <span class="math">\(f\)</span> er til dæmis heildanlegt á
+<span class="math">\({{\mathbb  R}}\)</span> og <span class="math">\(g\)</span> er takmarkað, þá er földunin vel
+skilgreind fyrir öll <span class="math">\(t\in {{\mathbb  R}}\)</span>.</p>
+<p>Ef föllin <span class="math">\(f\)</span> og
+<span class="math">\(g\)</span> eru bæði skilgreind og heildanleg á <span class="math">\({{\mathbb  R}}_+\)</span>,
+þá getum við framlengt skilgreiningarsvæði þeirra yfir í allt
+<span class="math">\({{\mathbb  R}}\)</span> með því að setja <span class="math">\(f(t)=g(t)=0\)</span> fyrir öll
+<span class="math">\(t&lt;0\)</span>.</p>
+<p>Þá er <span class="math">\(f\ast g(t)\)</span> skilgreint fyrir öll
+<span class="math">\(t\in {{\mathbb  R}}\)</span> og</p>
+<div class="math">
+\[f\ast g(t)= \int_0^tf(t-\tau)g(\tau)\, d\tau.\]</div>
+<p>Við getum því umritað síðustu setningu í</p>
+<div class="math">
+\[{{\cal L}}\{f\ast g\}={{\cal L}}\{f\}{{\cal L}}\{g\}.\]</div>
+</div>
+</div>
+<div id='scrolled_to_subsection_4' > <script> top.scrolldepth_tags.push('#scrolled_to_subsection_4'); </script></div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ordaskra.html" class="btn btn-neutral float-right" title="Orðaskrá" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="chapter09.html" class="btn btn-neutral" title="9. LÍNULEG AFLEIÐUJÖFNUHNEPPI" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+    </p>
+  </div>
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'2017',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+  
+<script src="_static/jquery.scrolldepth.js"></script>
+<script>
+    jQuery.scrollDepth({
+        percentage: false,
+        userTiming: false,
+        pixelDepth: false,
+        nonInteraction: false,
+        elements: top.scrolldepth_tags
+}); 
+</script>
+
+
+
+</body>
+</html>

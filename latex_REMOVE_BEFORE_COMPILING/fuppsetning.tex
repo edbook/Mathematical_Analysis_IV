@@ -1,0 +1,179 @@
+
+%
+%Allir pakkar sem þarf að nota.
+%
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[icelandic]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{pictex}
+\usepackage{epsfig,psfrag}
+\usepackage{makeidx}
+%\selectlanguage{icelandic}
+%----------------------------
+
+%
+\hoffset=-0.4truecm
+\voffset=-1truecm
+\textwidth=16truecm 
+%\textwidth=12truecm 
+\textheight=23truecm
+\evensidemargin=0truecm
+%
+% Gömlu gildin á bókinni 
+%
+%\voffset 1.4truecm
+%\hoffset .25truecm
+%\vsize  16.0truecm
+%\hsize  15truecm
+%
+%
+% Skilgreiningar á ýmsum skipunum.
+%
+%\newcommand{\Sb}{
+%$$
+%\sum_{\footnotesize\begin{array}{l} j=1 \\ j\neq k \end{array}}
+%$$
+%}
+\newcommand{\bolddot}{{\mathbf \cdot}}
+\newcommand{\C}{{\mathbb  C}}
+\newcommand{\Cn}{{\mathbb  C\sp n}}
+\newcommand{\crn}{{{\mathbb  C\mathbb  R^n}}}
+\newcommand{\R}{{\mathbb  R}}
+\newcommand{\Rn}{{\mathbb  R\sp n}}
+\newcommand{\Rnn}{{\mathbb  R\sp{n\times n}}}
+\newcommand{\Z}{{\mathbb  Z}}
+\newcommand{\N}{{\mathbb  N}}
+\renewcommand{\P}{{\mathbb  P}}
+\newcommand{\Q}{{\mathbb  Q}}
+\newcommand{\K}{{\mathbb  K}}
+\newcommand{\U}{{\mathbb  U}}
+\newcommand{\D}{{\mathbb  D}}
+\newcommand{\T}{{\mathbb  T}}
+\newcommand{\A}{{\cal A}}
+\newcommand{\E}{{\cal E}}
+\newcommand{\F}{{\cal F}}
+\renewcommand{\H}{{\cal H}}
+\renewcommand{\L}{{\cal L}}
+\newcommand{\M}{{\cal M}}
+\renewcommand{\O}{{\cal O}}
+\renewcommand{\S}{{\cal S}}
+\newcommand{\dash}{{\sp{\prime}}}
+\newcommand{\ddash}{{\sp{\prime\prime}}}
+\newcommand{\tdash}{{\sp{\prime\prime\prime}}}
+\newcommand{\set }[1]{{\{#1\}}}
+\newcommand{\scalar}[2]{{\langle#1,#2\rangle}}
+\newcommand{\arccot}{{\operatorname{arccot}}}
+\newcommand{\arccoth}{{\operatorname{arccoth}}}
+\newcommand{\arccosh}{{\operatorname{arccosh}}}
+\newcommand{\arcsinh}{{\operatorname{arcsinh}}}
+\newcommand{\arctanh}{{\operatorname{arctanh}}}
+\newcommand{\Log}{{\operatorname{Log}}}
+\newcommand{\Arg}{{\operatorname{Arg}}}
+\newcommand{\grad}{{\operatorname{grad}}}
+\newcommand{\graf}{{\operatorname{graf}}}
+\renewcommand{\div}{{\operatorname{div}}}
+\newcommand{\rot}{{\operatorname{rot}}}
+\newcommand{\curl}{{\operatorname{curl}}}
+\renewcommand{\Im}{{\operatorname{Im\, }}}
+\renewcommand{\Re}{{\operatorname{Re\, }}}
+\newcommand{\Res}{{\operatorname{Res}}}
+\newcommand{\vp}{{\operatorname{vp}}}
+\newcommand{\mynd}[1]{{{\operatorname{mynd}(#1)}}}
+\newcommand{\dbar}{{{\overline\partial}}}
+\newcommand{\inv}{{\operatorname{inv}}}
+\newcommand{\sign}{{\operatorname{sign}}}
+\newcommand{\trace}{{\operatorname{trace}}}
+\newcommand{\conv}{{\operatorname{conv}}}
+\newcommand{\Span}{{\operatorname{Sp}}}
+\newcommand{\stig}{{\operatorname{stig}}}
+\newcommand{\Exp}{{\operatorname{Exp}}}
+\newcommand{\diag}{{\operatorname{diag}}}
+\newcommand{\adj}{{\operatorname{adj}}}
+\newcommand{\erf}{{\operatorname{erf}}}
+\newcommand{\erfc}{{\operatorname{erfc}}}
+\newcommand{\Lloc}{{L_{\text{loc}}\sp 1}}
+\newcommand{\boldcdot}{{\mathbb \cdot}}
+%\newcommand{\Cinf0}[1]{{C_0\sp{\infty}(#1)}}
+\newcommand{\supp}{{\text{supp}\, }}
+\newcommand{\chsupp}{{\text{ch supp}\, }}
+\newcommand{\singsupp}{{\text{sing supp}\, }}
+\newcommand{\SL}[1]{{\dfrac {1}{\varrho} 
+\bigg(-\dfrac d{dx}\bigg(p\dfrac {d#1}{dx}\bigg)+q#1\bigg)}}
+\newcommand{\SLL}[1]{-\dfrac d{dx}\bigg(p\dfrac {d#1}{dx}\bigg)+q#1}
+\newcommand{\Laplace}[1]{\dfrac{\partial^2 #1}{\partial x^2}+\dfrac{\partial^2 #1}{\partial y^2}}
+\newcommand{\polh}[1]{{\widehat #1_{\C^n}}}
+\newcommand{\tilv}{{}}
+%
+\renewcommand{\chaptername}{Kafli}
+%
+% Númering á formæulum.
+%
+\numberwithin{equation}{section}
+%
+%  Innsetning á myndum.
+%
+\def\figura#1#2{
+\vbox{\centerline{
+\input #1
+}
+\centerline{#2}
+}\medskip}
+\def\vfigura#1#2{
+\setbox0\vbox{{
+\input #1
+}}
+\setbox1\vbox{\hbox{\box0}\hbox{{\obeylines #2}}}
+\dimen0 = -\ht1
+\advance\dimen0 by-\dp1
+\dimen1 = \wd1
+\dimen2 = -\dimen0
+\divide\dimen2 by\baselineskip
+\count100 = 1
+\advance\count100 by\dimen2
+\advance\count100 by1
+\box1
+\hangindent\dimen1
+\hangafter=-\count100
+\vskip\dimen0
+}
+%
+%  Setningar, skilgreiningar, o.s.frv. 
+%
+\newtheorem{setning+}           {Setning}      [section]
+\newtheorem{skilgreining+}  [setning+]  {Skilgreining}
+\newtheorem{setningogskilgreining+}  [setning+]  {Setning og
+skilgreining}
+\newtheorem{hjalparsetning+}  [setning+]  {Hjálparsetning}
+\newtheorem{fylgisetning+}  [setning+]  {Fylgisetning}
+\newtheorem{synidaemi+}  [setning+]  {Sýnidæmi}
+\newtheorem{forrit+}  [setning+]  {Forrit}
+
+\newcommand{\tx}[1]{{\rm({\it #1}). \ }}
+
+\newenvironment{se}{\begin{setning+}\sl}{\hfill$\square$\end{setning+}\rm}
+\newenvironment{sex}{\begin{setning+}\sl}{\hfill$\blacksquare$\end{setning+}\rm}
+\newenvironment{sk}{\begin{skilgreining+}\rm}{\hfill$\square$\end{skilgreining+}\rm}
+\newenvironment{sesk}{\begin{setningogskilgreining+}\rm}{\hfill$\square$\end{setningogskilgreining+}\rm}
+\newenvironment{hs}{\begin{hjalparsetning+}\sl}{\hfill$\square$\end{hjalparsetning+}\rm}
+\newenvironment{fs}{\begin{fylgisetning+}\sl}{\hfill$\square$\end{fylgisetning+}\rm}
+\newenvironment{sy}{\begin{synidaemi+}\rm}{\hfill$\square$\end{synidaemi+}\rm}
+\newenvironment{fo}{\begin{forrit+}\rm}{\hfill\end{forrit+}\rm}
+\newenvironment{so}{\medbreak\noindent{\it Sönnun:}\rm}{\hfill$\blacksquare$\rm}
+\newenvironment{sotx}[1]{\medbreak\noindent{\it #1:}\rm}{\hfill$\blacksquare$\rm}
+\newcounter{daemateljari}
+\newcommand{\aefing}{\section{Æfingardæmi} \setcounter{daemateljari}{1}}
+\newcommand{\daemi}{
+{\medskip\noindent{\bf \thedaemateljari.}}
+\addtocounter{daemateljari}{1}
+}
+
+%\def\aefing{{\large\bf\bigskip\bigskip\noindent Æfingardæmi}}
+%\def\daemi#1{\medskip\noindent{\bf #1.}}
+\def\svar#1{\smallskip\noindent{\bf #1.} \ }
+\def\lausn#1{\smallskip\noindent{\bf #1.} \ }
+\def\ugrein#1{\medbreak\noindent{\bf #1.} }
+\newcommand{\samantekt}{\noindent{\bf Samantekt.} }
+%\newcommand{\proclaimbox}{\hfill$\square$}
+

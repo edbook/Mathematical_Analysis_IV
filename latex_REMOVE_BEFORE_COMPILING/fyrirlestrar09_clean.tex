@@ -1,0 +1,1304 @@
+
+%
+%Allir pakkar sem þarf að nota.
+%
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[icelandic]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{pictex}
+\usepackage{epsfig,psfrag}
+\usepackage{makeidx}
+%\selectlanguage{icelandic}
+%----------------------------
+
+%
+\hoffset=-0.4truecm
+\voffset=-1truecm
+\textwidth=16truecm 
+%\textwidth=12truecm 
+\textheight=23truecm
+\evensidemargin=0truecm
+%
+% Gömlu gildin á bókinni 
+%
+%\voffset 1.4truecm
+%\hoffset .25truecm
+%\vsize  16.0truecm
+%\hsize  15truecm
+%
+%
+% Skilgreiningar á ýmsum skipunum.
+%
+%\newcommand{\Sb}{
+%$$
+%\sum_{\footnotesize\begin{array}{l} j=1 \\ j\neq k \end{array}}
+%$$
+%}
+\newcommand{\bolddot}{{\mathbf \cdot}}
+\newcommand{\C}{{\mathbb  C}}
+\newcommand{\Cn}{{\mathbb  C\sp n}}
+\newcommand{\crn}{{{\mathbb  C\mathbb  R^n}}}
+\newcommand{\R}{{\mathbb  R}}
+\newcommand{\Rn}{{\mathbb  R\sp n}}
+\newcommand{\Rnn}{{\mathbb  R\sp{n\times n}}}
+\newcommand{\Z}{{\mathbb  Z}}
+\newcommand{\N}{{\mathbb  N}}
+\renewcommand{\P}{{\mathbb  P}}
+\newcommand{\Q}{{\mathbb  Q}}
+\newcommand{\K}{{\mathbb  K}}
+\newcommand{\U}{{\mathbb  U}}
+\newcommand{\D}{{\mathbb  D}}
+\newcommand{\T}{{\mathbb  T}}
+\newcommand{\A}{{\cal A}}
+\newcommand{\E}{{\cal E}}
+\newcommand{\F}{{\cal F}}
+\renewcommand{\H}{{\cal H}}
+\renewcommand{\L}{{\cal L}}
+\newcommand{\M}{{\cal M}}
+\renewcommand{\O}{{\cal O}}
+\renewcommand{\S}{{\cal S}}
+\newcommand{\dash}{{\sp{\prime}}}
+\newcommand{\ddash}{{\sp{\prime\prime}}}
+\newcommand{\tdash}{{\sp{\prime\prime\prime}}}
+\newcommand{\set }[1]{{\{#1\}}}
+\newcommand{\scalar}[2]{{\langle#1,#2\rangle}}
+\newcommand{\arccot}{{\operatorname{arccot}}}
+\newcommand{\arccoth}{{\operatorname{arccoth}}}
+\newcommand{\arccosh}{{\operatorname{arccosh}}}
+\newcommand{\arcsinh}{{\operatorname{arcsinh}}}
+\newcommand{\arctanh}{{\operatorname{arctanh}}}
+\newcommand{\Log}{{\operatorname{Log}}}
+\newcommand{\Arg}{{\operatorname{Arg}}}
+\newcommand{\grad}{{\operatorname{grad}}}
+\newcommand{\graf}{{\operatorname{graf}}}
+\renewcommand{\div}{{\operatorname{div}}}
+\newcommand{\rot}{{\operatorname{rot}}}
+\newcommand{\curl}{{\operatorname{curl}}}
+\renewcommand{\Im}{{\operatorname{Im\, }}}
+\renewcommand{\Re}{{\operatorname{Re\, }}}
+\newcommand{\Res}{{\operatorname{Res}}}
+\newcommand{\vp}{{\operatorname{vp}}}
+\newcommand{\mynd}[1]{{{\operatorname{mynd}(#1)}}}
+\newcommand{\dbar}{{{\overline\partial}}}
+\newcommand{\inv}{{\operatorname{inv}}}
+\newcommand{\sign}{{\operatorname{sign}}}
+\newcommand{\trace}{{\operatorname{trace}}}
+\newcommand{\conv}{{\operatorname{conv}}}
+\newcommand{\Span}{{\operatorname{Sp}}}
+\newcommand{\stig}{{\operatorname{stig}}}
+\newcommand{\Exp}{{\operatorname{Exp}}}
+\newcommand{\diag}{{\operatorname{diag}}}
+\newcommand{\adj}{{\operatorname{adj}}}
+\newcommand{\erf}{{\operatorname{erf}}}
+\newcommand{\erfc}{{\operatorname{erfc}}}
+\newcommand{\Lloc}{{L_{\text{loc}}\sp 1}}
+\newcommand{\boldcdot}{{\mathbb \cdot}}
+%\newcommand{\Cinf0}[1]{{C_0\sp{\infty}(#1)}}
+\newcommand{\supp}{{\text{supp}\, }}
+\newcommand{\chsupp}{{\text{ch supp}\, }}
+\newcommand{\singsupp}{{\text{sing supp}\, }}
+\newcommand{\SL}[1]{{\dfrac {1}{\varrho} 
+\bigg(-\dfrac d{dx}\bigg(p\dfrac {d#1}{dx}\bigg)+q#1\bigg)}}
+\newcommand{\SLL}[1]{-\dfrac d{dx}\bigg(p\dfrac {d#1}{dx}\bigg)+q#1}
+\newcommand{\Laplace}[1]{\dfrac{\partial^2 #1}{\partial x^2}+\dfrac{\partial^2 #1}{\partial y^2}}
+\newcommand{\polh}[1]{{\widehat #1_{\C^n}}}
+\newcommand{\tilv}{{}}
+%
+\renewcommand{\chaptername}{Kafli}
+%
+% Númering á formæulum.
+%
+\numberwithin{equation}{section}
+%
+%  Innsetning á myndum.
+%
+\def\figura#1#2{
+\vbox{\centerline{
+\input #1
+}
+\centerline{#2}
+}\medskip}
+\def\vfigura#1#2{
+\setbox0\vbox{{
+\input #1
+}}
+\setbox1\vbox{\hbox{\box0}\hbox{{\obeylines #2}}}
+\dimen0 = -\ht1
+\advance\dimen0 by-\dp1
+\dimen1 = \wd1
+\dimen2 = -\dimen0
+\divide\dimen2 by\baselineskip
+\count100 = 1
+\advance\count100 by\dimen2
+\advance\count100 by1
+\box1
+\hangindent\dimen1
+\hangafter=-\count100
+\vskip\dimen0
+}
+%
+%  Setningar, skilgreiningar, o.s.frv. 
+%
+\newtheorem{setning+}           {Setning}      [section]
+\newtheorem{skilgreining+}  [setning+]  {Skilgreining}
+\newtheorem{setningogskilgreining+}  [setning+]  {Setning og
+skilgreining}
+\newtheorem{hjalparsetning+}  [setning+]  {Hjálparsetning}
+\newtheorem{fylgisetning+}  [setning+]  {Fylgisetning}
+\newtheorem{synidaemi+}  [setning+]  {Sýnidæmi}
+\newtheorem{forrit+}  [setning+]  {Forrit}
+
+\newcommand{\tx}[1]{{\rm({\it #1}). \ }}
+
+\newenvironment{se}{\begin{setning+}\sl}{\hfill$\square$\end{setning+}\rm}
+\newenvironment{sex}{\begin{setning+}\sl}{\hfill$\blacksquare$\end{setning+}\rm}
+\newenvironment{sk}{\begin{skilgreining+}\rm}{\hfill$\square$\end{skilgreining+}\rm}
+\newenvironment{sesk}{\begin{setningogskilgreining+}\rm}{\hfill$\square$\end{setningogskilgreining+}\rm}
+\newenvironment{hs}{\begin{hjalparsetning+}\sl}{\hfill$\square$\end{hjalparsetning+}\rm}
+\newenvironment{fs}{\begin{fylgisetning+}\sl}{\hfill$\square$\end{fylgisetning+}\rm}
+\newenvironment{sy}{\begin{synidaemi+}\rm}{\hfill$\square$\end{synidaemi+}\rm}
+\newenvironment{fo}{\begin{forrit+}\rm}{\hfill\end{forrit+}\rm}
+\newenvironment{so}{\medbreak\noindent{\it Sönnun:}\rm}{\hfill$\blacksquare$\rm}
+\newenvironment{sotx}[1]{\medbreak\noindent{\it #1:}\rm}{\hfill$\blacksquare$\rm}
+\newcounter{daemateljari}
+\newcommand{\aefing}{\section{Æfingardæmi}
+
+\subsection{Æfingardæmi} \setcounter{daemateljari}{1}}
+\newcommand{\daemi}{
+{\medskip\noindent{\bf \thedaemateljari.}}
+\addtocounter{daemateljari}{1}
+}
+
+%\def\aefing{{\large\bf\bigskip\bigskip\noindent Æfingardæmi}}
+%\def\daemi#1{\medskip\noindent{\bf #1.}}
+\def\svar#1{\smallskip\noindent{\bf #1.} \ }
+\def\lausn#1{\smallskip\noindent{\bf #1.} \ }
+\def\ugrein#1{\medbreak\noindent{\bf #1.} }
+\newcommand{\samantekt}{\noindent{\bf Samantekt.} }
+%\newcommand{\proclaimbox}{\hfill$\square$}
+
+%
+%
+%
+
+\chapter{LÍNULEG AFLEIÐUJÖFNUHNEPPI}
+
+
+\section {Tilvist og ótvíræðni lausna}
+
+
+\noindent
+Viðfangsefni þessa kafla eru línuleg afleiðujöfnuhneppi  af gerðinni
+ \begin{equation*}u\dash=A(t)u+f(t),
+
+.. _5.1.1:
+
+ \end{equation*}
+þar sem $A\in C(I,\C^{m\times m})$ er fylkjafall og $f\in C(I,\C^m)$ 
+er vigurfall sem er skilgreint á opnu bili $I$ á $\R$.  Ef við skrifum upp
+hnitin þá verður hneppið 
+\begin{align*}
+u_1\dash&=a_{11}(t)u_1+\cdots+a_{1m}(t)u_m+f_1(t),\\
+u_2\dash&=a_{21}(t)u_1+\cdots+a_{2m}(t)u_m+f_2(t),\\
+&\qquad \qquad \vdots\qquad \qquad \qquad \qquad \vdots\\
+u_m\dash&=a_{m1}(t)u_1+\cdots+a_{mm}(t)u_m+f_m(t).
+\end{align*}
+Hneppið er sagt vera {\it
+óhliðrað :hover:`óhliðraður` :hover:`afleiðujöfnuhneppi!óhliðrað`} ef
+fallið $f$ er núllfallið, en {\it
+hliðrað :hover:`afleiðujöfnuhneppi!hliðrað`} annars.   Samkvæmt
+fylgisetningu 6.7.6  hefur upphafsgildisverkefnið
+\begin{equation*}
+u\dash=A(t)u+f(t), \qquad u(a)=b,
+
+.. _5.1.2:
+
+\end{equation*}
+ótvírætt ákvarðaða lausn, þar sem $a$ er einhver gefinn punktur í $I$
+og $b$ er einhver gefinn vigur í $\C^m$.  
+
+\subsubsection{Skilgreining}
+Línulega rúmið, sem samanstendur af öllum lausnum á óhliðruðu
+jöfnunni $u\dash=A(t)u$, kallast {\it
+núllrúm :hover:`núllrúm` :hover:`núllrúm!afleiðujöfnuhneppis`
+ :hover:`línulegt afleiðujöfnuhneppi!núllrúm`} línulega
+jöfnuhneppisins.  Við táknum það með ${\cal N}(A)$.
+
+
+
+\subsubsection{Setning}
+Látum $I\subset \R$ vera bil og $A\in C(I,\C\sp
+{m\times m})$. Þá hefur núllrúmið ${\cal N}(A)$ víddina $m$.
+
+
+Við athugum nú að ef $v$ og $w$ eru tvær lausnir á hliðruðu jöfnunni
+$u\dash=A(t)u+f(t)$, þá er mismunurinn $v-w$ í núllrúminu, því
+ $$(v-w)\dash=v\dash-w\dash=A(t)v+f(t)-A(t)w-f(t)=A(t)(v-w).
+ $$
+Þetta gefur okkur því:
+
+\subsubsection{Setning}  
+Látum $I$ vera bil á rauntalnaásnum, $A\in C(I,\C\sp
+{m\times m})$ og $f\in C(I,\C\sp m)$.
+Þá er sérhver lausn á $u'=A(t)u+f(t)$ af gerðinni
+$$ u(t)=c_1u_1(t)+\cdots+c_mu_m(t)+u_p(t),$$
+þar sem $u_1,\dots,u_m$ er einhver grunnur í ${\cal N}(A)$,
+$c_1,\dots,c_m\in\C$ og $u_p$ er einhver lausn á hliðruðu jöfnunni.
+
+
+\subsection*{Jöfnur af hærri stigum  og jafngild hneppi}
+
+við vitum að línuleg $m$--ta stigs afleiðujafna
+ \begin{equation*}
+P(t,D)v= v\sp{(m)}+a_{m-1}(t)v\sp{(m-1)}+\cdots+a_1(t)v\dash
++a_0(t)v=g(t), \qquad t\in I, 
+
+.. _5.1.3:
+
+\end{equation*} 
+er jafngild hneppinu
+\begin{align*}
+u_1\dash &= u_2,\quad
+u_2\dash = u_3,\quad
+
+.. _5.1.4:
+
+\dots, \quad u_{m-1}\dash = u_m\\
+u_m\dash &=-a_0(t)u_1-a_1(t)u_2-\cdots-a_{m-1}(t)u_m+g(t).\nonumber
+\end{align*}
+í þeim skilningi að $v$ er lausn á afleiðujöfnunni þá og því aðeins að
+$u=[v,v\dash,\dots,v^{(m-1)}]^t$ sé lausn á hneppinu.
+Fylkið $A(t)$ og vigurinn $f(t)$ verða í þessu tilfelli 
+\begin{equation*}A(t)=\left[\begin{matrix}
+0&1&0&\dots&0\\
+0&0&1&\dots&0\\
+\vdots&\vdots&\vdots&\ddots&\vdots\\
+0&0&0&\dots&1\\
+-a_0(t)&-a_1(t)&-a_2(t)&\dots&-a_{m-1}(t)
+\end{matrix}\right],
+\qquad
+f(t)=\left[\begin{matrix}
+0\\
+0\\
+\vdots\\
+0\\
+g(t)
+
+.. _5.1.5:
+
+\end{matrix}\right].
+\end{equation*}
+
+\subsubsection{Setning} Látum  $P(t,D)=D\sp m+a_{m-1}(t)D\sp{m-1}+\cdots+a_1(t)D+a_0(t)$
+vera línulegan afleiðuvirkja og skilgreinum $A(t)$ sem fylkið í
+(:ref:`5.1.5`).  Þá er
+$$\det(\lambda I-A(t))=P(t,\lambda),$$
+þ.e.a.s.~kennimargliða :hover:`kennimargliða` :hover:`margliða!kennimargliða`
+fylkisins :hover:`kennimargliða!fylkis` $A(t)$ er kennimargliða
+virkjans :hover:`kennimargliða!virkja` $P(t,D)$.
+
+
+
+
+\section{Hneppi með fastastuðla :hover:`afleiðujöfnuhneppi!með
+fastastuðla` :hover:`fastastuðlar`}
+
+\subsection{Hneppi með fastastuðla :hover:`afleiðujöfnuhneppi!með
+fastastuðla` :hover:`fastastuðlar`}
+
+\noindent
+Nú ætlum við að byrja á því að reikna út lausnir á línulegum
+afleiðujöfnuhneppum.
+Við lítum á óhliðrað :hover:`afleiðujöfnuhneppi!óhliðrað`
+línulegt jöfnuhneppi $u\dash=Au$ og gerum ráð fyrir að stuðlarnir
+í fylkinu $A$  séu fastaföll.
+
+\subsubsection{Hjálparsetning}
+Látum $A$ vera $m\times m$ fylki og $\varepsilon$ vera
+eiginvigur :hover:`eiginvigur` þess með
+tilliti til eigingildisins :hover:`eigingildi` :hover:`eigingildi!fylkis`
+$\lambda$. Þá uppfyllir vigurfallið
+$u(t)=e\sp{\lambda t}\varepsilon$ jöfnuna $u\dash=Au$.
+
+{}
+
+
+Þessi einfalda hjálparsetning gefur okkur að í því tilfelli að hægt er
+að liða $b$ og $f(t)$ í línulegar samantektir af eiginvigrunum, þá
+leysist jöfnuhneppið  upp í óháðar jöfnur sem við getum leyst hverja
+fyrir sig:
+
+
+.. _set5.2.2:
+
+\subsubsection{Setning}
+Látum $A$ vera $m\times m$ fylki og gerum ráð fyrir að 
+$\varepsilon_1,\dots,\varepsilon_\ell$   séu eiginvigrar
+þess með tilliti til eigingildanna $\lambda_1,\dots,\lambda_\ell$.  
+Ef $a \in I$, $b\in \C^m$ og unnt er að skrifa
+$b=\beta_1\varepsilon_1+\cdots+\beta_\ell\varepsilon_\ell$ og 
+$f(t)=g_1(t)\varepsilon_1+\cdots+g_\ell(t)\varepsilon_\ell$, þá er
+lausnin á upphafsgildisverkefninu :hover:`upphafsgildisverkefni` 
+$$u\dash=Au+f(t), \qquad \qquad u(a)=b,
+$$ 
+gefin með  $u(t)=v_1(t)\varepsilon_1+\cdots+v_\ell(t)\varepsilon_\ell$, þar sem
+stuðullinn $v_j$  uppfyllir
+ \begin{equation*}v_j\dash(t)=\lambda_jv_j(t)+g_j(t), \qquad v_j(a)=\beta_j,
+
+.. _5.2.1:
+
+ \end{equation*}
+og er þar með 
+ \begin{equation*}v_j(t)=\beta_je^{\lambda_j(t-a)}+e^{\lambda_jt}\int_a^t e^{-\lambda_j
+
+.. _5.2.2:
+
+\tau}g_j(\tau) \, d\tau.
+ \end{equation*}
+
+
+
+\subsection*{Úrlausn með gefinn eiginvigragrunn}
+
+Nú skulum við  gera ráð fyrir því að
+fylkið $A$ hafi eiginvigragrunn :hover:`eiginvigragrunnur`
+$\varepsilon_1,\dots, \varepsilon_m$ með
+eigingildin $\lambda_1,\dots,\lambda_m$.  Þá getum við þáttað fylkið
+$A$ í
+ \begin{equation*}A=T\Lambda T\sp{-1},
+
+.. _5.2.3:
+
+ \end{equation*}
+þar sem eiginvigrarnir eru dálkar fylkisins $T$  og
+$\Lambda=\diag(\lambda_1,\dots,\lambda_m)  $ er
+hornalínufylki með tilsvarandi  eigingildi á hornalínunni,
+ $$T=\left[\begin{matrix}
+\varepsilon_{11}&\varepsilon_{12}&\dots&\varepsilon_{1m}\\
+\varepsilon_{21}&\varepsilon_{22}&\dots&\varepsilon_{2m}\\
+\vdots&\vdots&\ddots&\vdots\\
+\varepsilon_{m1}&\varepsilon_{m2}&\dots&\varepsilon_{mm}
+\end{matrix}\right],\qquad
+\Lambda =\left[\begin{matrix}
+\lambda_1&0&\dots&0\\
+0&\lambda_2&\dots&0\\
+\vdots&\vdots&\ddots&\vdots\\
+0&0&\dots&\lambda_m
+\end{matrix}\right].
+ $$
+Hér skrifum við $\varepsilon_j=[\varepsilon_{1j},\dots,\varepsilon_{mj}]^t$.  
+Hér mikilvægt að minnast þess að ef $b$ er vigur í $\C^m$, þá eru
+hnit hans $\beta=[\beta_1,\dots,\beta_m]^t$ miðað við grunninn
+$\{\varepsilon_1,\dots,\varepsilon_m\}$ gefin með  jöfnunni ${\beta}=T^{-1}b$.
+
+Nú skulum við skoða aftur lausnina á upphafsgildisverkefninu \tilv 9.1.2.
+Við látum $v(t)=[v_1(t),\dots,v_m(t)]^t$ vera hnit $u(t)$, 
+$g(t)=[g_1(t),\dots,g_m(t)]^t$ vera hnit $f(t)$ og
+$\beta=[\beta_1,\dots,\beta_m]^t$ 
+vera hnit $b$ miðað við grunninn
+$\{\varepsilon_1,\dots,\varepsilon_m\}$, þ.e.~$v=T^{-1}u$,
+$g=T^{-1}f$ og $\beta=T^{-1}b$.
+Við reiknum nú afleiðuna af $v$ og notum (:ref:`5.2.3`)
+\begin{gather*}
+v\dash=T^{-1}u\dash=T^{-1}(Au+f(t))=
+T^{-1}T\Lambda T^{-1}u+T^{-1}f(t)=\Lambda v+g(t), \qquad t\in I,\\
+v(a)=T^{-1}u(a)=T^{-1}b=\beta 
+\end{gather*}
+Nú er $\Lambda v=(\lambda_1v_1,\dots,\lambda_mv_m)$, svo við höfum fengið
+upphafsgildisverkefni fyrir $v$, sem sett
+er fram með jöfnunum (:ref:`5.2.1`) og þar með er lausnin gefin með 
+(:ref:`5.2.2`).
+
+
+Nú skulum við líta á þessa formúlu ögn nánar.  Við skilgreinum  fylkjafallið
+$$\diag(e^{\lambda_1t},\dots,e^{\lambda_mt})=
+\left[\begin{matrix}
+e\sp{\lambda_1t}&0&\dots&0\\
+0&e\sp{\lambda_2t}&\dots&0\\
+\vdots&\vdots&\ddots&\vdots\\
+0&0&\dots&e^{\lambda_mt}
+\end{matrix}\right],
+$$
+og athugum síðan að $T\diag(e^{\lambda_1t},\dots,e^{\lambda_mt})$ 
+hefur dálkana
+$e\sp{\lambda_1t}\varepsilon_1,\dots,e\sp{\lambda_mt}\varepsilon_m$ og því
+er 
+\begin{gather*}
+\beta_1e^{\lambda_1(t-a)}\varepsilon_1+
+\cdots+\beta_me^{\lambda_m(t-a)}\varepsilon_m=
+T\diag(e^{\lambda_1(t-a)},\dots,e^{\lambda_m(t-a)})\beta,\\
+e^{\lambda_1(t-\tau)}g_1(\tau)\varepsilon_1
++\cdots+
+e^{\lambda_m(t-\tau)}g_m(\tau)\varepsilon_m=
+T\diag(e^{\lambda_1(t-\tau)},\dots,e^{\lambda_m(t-\tau)})g(\tau).
+\end{gather*}
+Nú er $\beta=T^{-1}b$ og $g(\tau)=T^{-1}f(\tau)$, svo við fáum umritaða
+framsetningu á setningu :ref:`set5.2.2`:
+
+\subsubsection{Setning}
+Látum $A$ vera $m\times m$ fylki og gerum ráð fyrir að hægt sé að
+þátta $A$ í $A=T\Lambda T^{-1}$ þar sem $\Lambda $ er hornalínufylki með
+hornalínustökin $\lambda_1,\dots,\lambda_m$.  Látum $I$ vera bil á
+$\R$, $a\in I$, $f\in C(I,\C^m)$ og $b\in \C^m$.  Þá hefur
+upphafsgildisverkefnið  $$u\dash=Au+f(t), \qquad u(a)=b
+ $$
+ótvírætt ákvarðaða lausn á $I$, sem gefin er með formúlunni
+ 
+\begin{align*}
+u(t)&=T\diag(e^{\lambda_1(t-a)},\dots,e^{\lambda_m(t-a)})T^{-1}b\\
+&+\int_a^t T\diag(e^{\lambda_1(t-\tau)},\dots,e^{\lambda_m(t-\tau)})
+T^{-1}f(\tau)\, d\tau.
+\end{align*}
+ 
+
+
+Þessi setning segir ekkert meira en setning :ref:`set5.2.2` og hana höfum
+við sannað.  Við skulum engu að síður  staðfesta að þetta sé lausn á
+upphafsgildisverkefninu.  Athugum fyrst að
+\begin{align*}
+\dfrac d{dt}\diag(e^{\lambda_1 t},\dots,e^{\lambda_mt})
+&=
+\left[\begin{matrix}
+\lambda_1e\sp{\lambda_1t}&0&\dots&0\\
+0&\lambda_2e\sp{\lambda_2t}&\dots&0\\
+\vdots&\vdots&\ddots&\vdots\\
+0&0&\dots&\lambda_me^{\lambda_mt}
+\end{matrix}\right]\\
+&=\Lambda\diag(e^{\lambda_1 t},\dots,e^{\lambda_mt}).
+\end{align*}
+Ef við notum þessa formúlu, þá fáum við
+ \begin{multline*}
+u\dash(t)=T\Lambda \diag(e^{\lambda_1(t-a)},\dots,e^{\lambda_m(t-a)})T^{-1}b
+\\
++\int_a^t T\Lambda 
+\diag(e^{\lambda_1(t-\tau)},\dots,e^{\lambda_m(t-\tau)})T^{-1}f(\tau)\,
+d\tau + TT^{-1}f(t).
+\end{multline*}
+Nú notum við formúluna $T\Lambda =T\Lambda T\sp{-1}T=AT$ og fáum
+\begin{multline*}
+u\dash(t)
+=A\bigg(T\diag(e^{\lambda_1(t-a)},\dots,e^{\lambda_m(t-a)})T^{-1}b \\
++\int_a^t
+T\diag(e^{\lambda_1(t-\tau)},\dots,e^{\lambda_m(t-\tau)})T^{-1}f(\tau)\, 
+d\tau\bigg)+ f(t)=Au(t)+f(t).
+\end{multline*}
+ 
+
+\subsection*{Annars stigs hneppi}
+
+Aðferðinni sem við höfum verið að lýsa er oft hægt að beita á annars
+stigs hneppi, til að leysa upphafsgildisverkefni af gerðinni
+ \begin{equation*}u\ddash=Au+f(t), \qquad u(a)=b, \quad u\dash(a)=c,
+
+
+.. _5.2.4:
+
+ \end{equation*}
+í því tilfelli að hægt er að skrifa 
+ $$b=\beta_1\varepsilon_1+\cdots+\beta_\ell\varepsilon_\ell, \quad
+c=\gamma_1\varepsilon_1+\cdots+\gamma_\ell\varepsilon_\ell,\quad
+f(t)=g_1(t)\varepsilon_1+\cdots+g_\ell(t)\varepsilon_\ell.
+ $$
+Lausnin verður þá einfaldlega af gerðinni
+ \begin{equation*}u(t)=v_1(t)\varepsilon_1+\cdots+v_\ell(t)\varepsilon_\ell,
+
+
+.. _5.2.5:
+
+ \end{equation*}
+þar sem $v_j$ er lausnin á upphafsgildisverkefninu
+ \begin{equation*}v_j\ddash=\lambda_j v_j +g_j(t), \qquad v_j(a)=\beta_j, \quad
+v_j\dash(a)=\gamma_j. 
+
+
+.. _5.2.6:
+
+ \end{equation*}
+Þessi formúla er staðfest með beinum útreikningi.
+Ef við gerum ráð fyrir því að öll eigingildin séu neikvæð
+$\lambda_j=-\omega_j^2$, þá notfærum við okkur að
+$\cos {\omega}_j t$ og $\sin {\omega}_jt$ er lausnargrunnur fyrir 
+óhliðruðu jöfnuna og $\sin({\omega}_j(t-{\tau}))/{\omega}_j$ er
+Green--fall virkjans.  Þar með er lausnin
+ \begin{equation*}v_j(t)=\beta_j \cos(\omega_j(t-a))+
+(\gamma_j/\omega_j)\sin (\omega_j(t-a)) +
+\int_a^t\dfrac{\sin (\omega_j(t-\tau))}{\omega_j}g_j(\tau) \, d\tau. 
+
+
+.. _5.2.7:
+
+ \end{equation*}
+Í því tilfelli að hneppið er hreyfijöfnur einhvers
+eðlisfræðilegs kerfis, þá kallast liðirnir $v_j(t)\varepsilon_j$ í
+lausnarformúlunni  {\it sveifluhættir :hover:`sveifluháttur`} kerfisins.  Þeir eru
+innbyrðis óháðir eins og jöfnurnar.  Stærðin 
+${\omega}_j$ nefnist {\it tíðni
+sveifluháttarins :hover:`tíðni!sveifluháttar`} $v_j(t)\varepsilon_j$.
+
+ 
+\section{Grunnfylki}
+
+\subsection{Grunnfylki}
+
+\noindent
+Lítum á óhliðrað línulegt afleiðujöfnuhneppi 
+ $$u\dash=A(t)u, \qquad t\in I,
+ $$
+þar sem  $A\in C(I,\C\sp{m\times m})$, 
+$A(t)=(a_{jk}(t))_{j,k=1}\sp m$.
+Mengi allra lausna myndar línulegt rúm af vídd $m$.
+
+
+
+
+
+.. _hs5.3.1:
+
+\subsubsection{Hjálparsetning} Látum $u_1,\dots,u_m$ vera föll í ${\cal N}(A)$.  Þá eru
+eftirfarandi skilyrði jafngild:
+
+\noindent
+(i) Vigurföllin $u_1,\dots,u_m$ eru línulega óháð á bilinu $I$.
+
+\noindent
+(ii) Vigrarnir $u_1(t),\dots,u_m(t)$ eru línulega óháðir í $\R\sp m$
+(eða $\C\sp m$) fyrir sérhvert $t\in I$.
+
+\noindent
+(iii) Vigrarnir $u_1(a),\dots,u_m(a)$ eru línulega óháðir í $\R\sp m$
+(eða $\C\sp m$) fyrir eitthvert  $a\in I$.
+ 
+
+\subsubsection{Skilgreining} Fylki af gerðinni
+$$ \Phi(t)=[u_1(t),\dots,u_m(t)], \qquad t\in I, $$ 
+þar sem dálkavigrarnir $u_1,\dots,u_m$ mynda grunn í núllrúminu ${\cal
+N}(A)$ fyrir afleiðujöfnuhneppið $u\dash=A(t)u$, kallast
+{\it grunnfylki} fyrir afleiðujöfnuhneppið.
+
+
+Samkvæmt hjálparsetningu :ref:`hs5.3.1`, þá eru dálkarnir í $\Phi(t)$
+línulega óháðir fyrir öll $t\in I$ og þar með er andhverfan
+$\Phi(t)\sp{-1}$ til í sérhverjum punkti $t\in I$.  Við sjáum
+jafnframt að
+\begin{align*}
+\Phi\dash(t)&= [u_1\dash(t),\dots,u_m\dash(t)]=\nonumber\\
+&=[A(t)u_1(t),\dots,A(t)u_m(t)]=
+
+.. _5.3.1:
+\\
+&=A(t)\Phi(t).\nonumber
+\end{align*}
+Af hjálparsetningunni leiðir einnig að ef $m\times
+m$ fylkjafallið $\Phi$ uppfyllir $\Phi\dash=A(t)\Phi$ og $\Phi(a)$
+hefur andhverfu fyrir eitthvert $a\in I$, þá er $\Phi(t)$ grunnfylki
+fyrir afleiðujöfnuhneppið $u\dash =A(t)u$.
+
+\subsubsection{Setning}
+Látum $\Phi$ og $\Psi$ vera tvö grunnfylki fyrir jöfnuhneppið
+$u\dash=A(t)u$. Þá er til andhverfanlegt fylki $B$ þannig að 
+ \begin{equation*}\Psi(t)=\Phi(t)B.
+
+.. _5.3.2:
+
+ \end{equation*}
+
+
+
+\subsection*{Upphafsgildisverkefni fyrir grunnfylki}
+
+\noindent
+Við fáum nú lýsingu á lausn upphafsgildisverkefnisins með
+grunnfylkjum:
+
+
+.. _set5.3.4:
+
+\subsubsection{Setning}
+ Látum $\Phi(t)$ vera grunnfylki fyrir jöfnuhneppið $u\dash
+=A(t)u$. 
+
+\noindent
+(i)  Sérhvert stak í ${\cal N}(A)$ er af gerðinni $u(t)=\Phi(t)c$, þar
+sem $c$ er vigur í $\C\sp m$.
+
+\noindent
+(ii) Vigurfallið  $u_p$, sem gefið er með formúlunni
+ $$u_p(t)=\Phi(t)\int_a\sp t \Phi(\tau)\sp{-1}f(\tau)\, d\tau,
+ $$
+uppfyllir $u\dash=A(t)u+f(t)$ og $u(a)=0$. 
+
+\noindent
+(iii)  Lausnin á upphafsgildisverkefninu $u\dash=A(t)u+f(t)$, $u(a)=b$
+er gefin með formúlunni
+ $$u(t)=\Phi(t)\Phi(a)\sp{-1}b+
+\Phi(t)\int_a\sp t \Phi(\tau)\sp{-1}f(\tau)\, d\tau.
+ $$
+
+
+\medskip
+Nú getum við beitt setningunni á dálkana í $m\times m$ fylkinu $U(t)$ og
+fengið eftirfarandi
+tilvistarsetningu :hover:`fylkjaafleiðujafna!tilvistarsetning`:
+
+\subsubsection{Setning}
+Látum $A, F\in C(I,\C\sp {m\times m})$ og látum $\Phi$ vera grunnfylki
+fyrir $A$.  Þá hefur $m\times m$
+fylkjaafleiðujafnan :hover:`fylkjaafleiðujafna`
+ $$U\dash=A(t)U+F(t), \qquad U(a)=B, 
+ $$
+ótvírætt ákvarðaða lausn $U(t)$,  sem gefin er með formúlunni
+ $$U(t)=\Phi(t)\Phi(a)\sp{-1}B + \Phi(t)\int_a\sp t \Phi(\tau)\sp
+{-1}F(\tau) \, d\tau.
+ $$
+
+
+\subsection*{Hneppi með fastastuðla}
+
+Gerum nú ráð fyrir því að $A$ hafi fastastuðla og að eiginvigrar þess
+myndi grunn í $\C\sp m$.  Eins og við höfum áður sannfært okkur um,
+þá er það jafngilt því að unnt sé að þátta fylkið $A$ í 
+ $$A=T\Lambda T\sp{-1},
+ $$
+þar sem $\Lambda$ er hornalínufylki með eigingildin á hornalínunni,
+ $$\Lambda=\diag(\lambda_1,\dots,\lambda_m)=\left[\begin{matrix} 
+\lambda_1&0&\dots&0\\
+0&\lambda_2&\dots&0\\
+\vdots&\vdots&\ddots&\vdots\\
+0&0&\dots&\lambda_m\end{matrix}\right].
+ $$
+Lítum á fylkið 
+ $$\Phi(t)=T\diag(e\sp{t\lambda_1},\dots,e\sp{t\lambda_m})T\sp{-1}.
+ $$
+Það uppfyllir
+\begin{align*}
+\Phi\dash(t)
+&=T\diag(\lambda_1e\sp{t\lambda_1},\dots,\lambda_me\sp{t\lambda_m})T\sp{-1}=\\
+&=T\diag(\lambda_1,\dots,\lambda_m)
+\diag(e\sp{t\lambda_1},\dots,e\sp{t\lambda_m})T\sp{-1}=\\
+&=T\Lambda T\sp{-1} T
+\diag(e\sp{t\lambda_1},\dots,e\sp{t\lambda_m})T\sp{-1}=\\
+&=A\Phi(t), 
+\end{align*}
+með upphafsskilyrðinu
+$$
+\Phi(0)=I.
+$$
+Þar með er $\Phi$ grunnfylki fyrir hneppið $u\dash =Au$.  Hér er
+komin grunnlausnin sem við notuðum í útleiðslu okkar í grein 9.2.
+
+
+\section{Fylkjamargliður :hover:`fylkjamargliða` :hover:`margliða!fylkjamargliða` og
+fylkjaveldaraðir :hover:`fylkjaveldaröð` :hover:`veldaröð!fylkjaveldaröð`}
+
+\noindent
+Ef $A$ er $m\times m$ fylki og $p(\lambda)$ er margliða af
+tvinnbreytistærðinni $\lambda$, 
+ $$p(\lambda)=a_0+a_1\lambda+\cdots+a_n\lambda^n, 
+ $$
+þá getum við skilgreint  fylkjamargliðuna $p(A)$ með formúlunni
+ $$p(A)=a_0 I+a_1A+\cdots+a_n A^n, 
+ $$
+þar sem $I$ táknar $m\times m$--einingarfylkið.  Hér höfum við
+einfaldlega skipt á veldum $\lambda^k$ af $\lambda$ og veldum $A^k$
+af $A$ og jafnframt margfaldað fastaliðinn með einingarfylkinu $I$. 
+Til þess að geta stungið $A$ inn í  óendanlegar veldaraðir, þá þurfum
+við að skilgreina samleitni:
+
+\subsection*{Samleitnar fylkjarunur}
+
+\subsubsection{Skilgreining}  Runa $\{C_n\}_{n=0}^\infty$,  af
+$\ell\times m$ fylkjum $C_n=\big(c_{jkn}\big)_{j=1,k=1}^{\ell, m}$
+er sögð vera samleitin ef allar stuðlarunurnar
+ $$\{c_{jkn}\}_{n=0}^\infty, \qquad j=1,\dots,\ell, \quad k=1,\dots, m.
+ $$
+eru samleitnar.  Fylkið $C=\big(c_{jk}\big)_{j=1,k=1}^{\ell, m}$ sem
+hefur stuðlana
+ $$c_{jk}=\lim\limits_{n\to\infty}c_{jkn}, \qquad j=1,\dots,\ell, \quad
+k=1,\dots, m,
+ $$
+kallast markgildi rununnar $\{C_n\}_{n=0}^\infty$ og við táknum það
+með
+ $$C=\lim\limits_{n\to \infty}C_n.
+ $$
+Óendanleg summa $\sum_{n=0}^\infty C_n$ af $\ell\times m$ fylkjum er
+sögð vera samleitin, ef runan af hlutsummum  $\{\sum_{n=0}^N
+C_n\}_{N=0}^\infty$  er samleitin.  Við táknum markgildið einnig með
+$\sum_{n=0}^\infty C_n$,
+ $$\sum_{n=0}^\infty C_n= \lim\limits_{N\to \infty}
+\sum_{n=0}^N C_n.
+ $$
+
+
+Ef $C_n=a_n A^n$ og $A^0=I$, þá er 
+$\sum_{n=0}^\infty C_n=\sum_{n=0}^\infty a_nA^n$ 
+veldaröð.  
+
+
+\subsection*{Fylkjastaðall}
+
+Til þess að geta
+skorið úr um samleitni veldaraða þá þurfum við að tengja fylkið við
+samleitnigeisla raðarinnar.  Til þess innleiðum við:
+
+\subsubsection{Skilgreining}\tx{Fylkjastaðall :hover:`fylkjastaðall` :hover:`staðall`
+ :hover:`staðall!fylkjastaðall`}  Ef $A$ er $\ell\times m$ fylki, $A=(a_{jk})$,
+með tvinntölustök, þá skilgreinum við {\it staðalinn :hover:`staðall`} $\|A\|$ af $A$ með
+formúlunni 
+ $$\|A\|=\sum_{j=1}\sp \ell \sum_{k=1}\sp m |a_{jk}|.
+ $$
+Við köllum töluna $\|A\|$ einnig {\it
+lengd :hover:`lengd` :hover:`lengd!fylkis`} fylkisins $A$.
+
+
+
+.. _set5.4.3:
+
+\subsubsection{Setning}\tx{Reiknireglur um fylkjastaðal}  (i) Ef $A$ og $B$ eru
+$\ell\times m$ fylki með stök í $\C$ og $c\in \C$, þá er
+ $$\|A+B\|\leq \|A\|+\|B\| \qquad \text{og} \qquad
+\|cA\|=|c|\|A\|.
+ $$
+
+\noindent 
+(ii) Ef $A$ er $\ell\times m$ fylki og $B$ er $m\times n$ fylki, þá
+er
+ $$\|AB\|\leq \|A\|\|B\|.
+ $$
+
+\noindent
+(iii) Ef $A$ er $m\times m$ fylki, þá er
+ $$\|A\sp n\|\leq \|A\|\sp n.
+ $$
+
+
+\subsection*{Samleitnar fylkjaraðir}
+
+
+.. _set5.4.4:
+
+\subsubsection{Setning}\tx{Samleitnipróf fyrir
+fylkjaraðir :hover:`samleitnipróf fyrir
+fylkjaraðir` :hover:`samleitni!fylkjaraða`} Látum $\{C_n\}$ vera runu
+af $\ell\times m$ fylkjum  þannig að talnaröðin $\sum_{n=0}\sp
+\infty\|C_n\|$ sé samleitin.  Þá er fylkjaröðin $\sum_{n=0}\sp \infty
+C_n$ samleitin.
+
+
+
+\subsubsection{Fylgisetning}  Látum $\sum_{n=0}\sp \infty c_nz\sp n$ vera veldaröð með
+tvinntölustuðla  og gerum ráð fyrir að samleitnigeisli hennar sé
+${\varrho}>0$.  Ef $A$ er $m\times m$ fylki með tvinntölustuðla og 
+$\|A\|<{\varrho}$,
+þá er fylkjaveldaröðin $\sum_{n=0}\sp \infty c_nA\sp n$
+samleitin.
+
+
+
+
+Hugsum okkur nú að $f:S(0,\varrho)\to \C$ 
+sé fágað fall sem gefið er með 
+ $$f(z)=\sum_{n=0}\sp \infty c_n z\sp n, \qquad z\in S(0,\varrho).
+ $$
+Ef $A$ er $m\times m$ fylki og $\|A\|< \varrho$, þá getum við
+skilgreint $m\times m$ fylkið $f(A)$ með því að stinga $A$ inn í
+veldaröðina fyrir fágaða fallið $f$,   
+ $$f(A)=\sum_{n=0}\sp \infty c_nA\sp n,
+ $$
+því fylkjaveldaröðin í hægri hliðinni er samleitin. Við skilgreinum
+$A^0=I$.  Ef við vitum að
+$f$ er fágað fall á öllu $\C$ þá þurfum við engar áhyggjur að hafa af
+samleitninni og við getum sett hvaða $m\times m$ fylki sem er inn í röðina.
+Sem dæmi um fylkjaföll getum við tekið
+\begin{align*}
+e^A&=\sum\limits_{n=0}^\infty\dfrac 1{n!}{A^n}
+=I+A+\dfrac {1}{2!}A^2+\dfrac{1}{3!}A^3+\cdots,\\
+\cos A&= \sum\limits_{n=0}^\infty \dfrac{(-1)^n}{(2n)!}A^{2n}
+=I-\dfrac{1}{2!}A^2+\dfrac{1}{4!}A^4-\cdots,\\
+\sin A &=\sum\limits_{n=0}^\infty\dfrac{(-1)^n}{(2n+1)!}A^{2n+1}
+= A-\dfrac {1}{3!}A^3+\dfrac{1}{5!}A^5-\cdots,\\
+\cosh A&=\sum\limits_{n=0}^\infty\dfrac{1}{(2n)!}A^{2n}
+=I+\dfrac{1}{2!}A^2+\dfrac{1}{4!}A^4+\cdots,\\
+\sinh A &=\sum\limits_{n=0}^\infty\dfrac{1}{(2n+1)!}A^{2n+1}
+= A+\dfrac {1}{3!}A^3+\dfrac{1}{5!}A^5+\cdots,\\
+\ln (I+A) &= \sum\limits_{n=1}^\infty\dfrac{(-1)^{n+1}}{n}A^n
+=A-\dfrac{1}{2}A^2+\frac{1}3A^3-\cdots,\\
+(I-A)^{-1}&=\sum\limits_{n=0}^\infty A^n
+=I+A+A^2+\cdots, \\
+(I+A)^\alpha&= I+\alpha A+ \dfrac{\alpha(\alpha-1)}{2!}A^2 + 
+\dfrac {\alpha(\alpha-1)(\alpha-2)}{3!}A^3+\cdots.
+\end{align*}
+Fyrstu fimm raðirnar eru vel skilgreindar fyrir öll $m\times m$
+fylki, en hinar þrjár eru vel skilgreindar  ef $\|A\|<1$.  
+
+ 
+
+
+\section{Veldisvísisfylkið :hover:`veldisvísisfylki`}
+
+\subsection{Veldisvísisfylkið :hover:`veldisvísisfylki`}
+
+\noindent
+Nú ætlum við að finna almenna formúlu fyrir grunnfylki fyrir línulegt
+jöfnuhneppi með fastastuðla.  Í grein 9.3 sáum við hvernig
+grunnfylkið lítur út í því tilfelli að eiginvigrar stuðlafylkisins
+myndi grunn í $\C\sp m$.  Við byrjum á því að skoða rununa $\set {u_n}$ sem skilgreind var í aðferð Picards til að sanna setningu
+\tilv 6.7.5.  Hún er 
+\begin{gather*}
+u_0(t)=b,\\
+u_1(t)=b+\int_0\sp t Ab \, d\tau = (I+tA)b,\\
+u_2(t)=b+\int_0\sp t A(I+\tau A)b \, d\tau = (I+tA+\dfrac 12(tA)\sp 2)b,\\
+u_3(t)=b+\int_0\sp t A(I+\tau A + \dfrac{\tau\sp 2}2A\sp 2)b \, d\tau 
+= (I+tA+\dfrac 12(tA)\sp 2+\dfrac 1{3!}(tA)\sp 3)b,\\
+u_n(t)= (I+tA+\dots+\dfrac 1{n!}(tA)\sp n)b.
+\end{gather*}
+Í sönnun okkar á tilvistarsetningunni sýndum við fram á að þessi runa
+er samleitin í jöfnum mæli á sérhverju takmörkuðu bili á
+rauntalnaásnum $\R$.
+Með því að velja vigurinn $b$ sem grunnvigrana 
+$$[1,0,\dots,0]^t, \ [0,1,0,\dots,0]^t\ \dots, 
+\ [0,\dots,0,1]^t,$$ 
+þá fáum við út úr aðferð Picards að fylkjaröðin
+$\sum_{n=0}\sp \infty 
+\dfrac 1{n!}(tA)\sp n$ er samleitin.  Við sjáum að hér er komin
+veldaröðin fyrir veldisvísisfallið og sem grunnfylki fyrir
+jöfnuhneppið $u\dash=Au$ fáum við síðan $\Phi(t)=e\sp {tA}$.  
+
+\subsubsection{Setning}
+Fylkjafallið :hover:`fylkjafall` $\Phi(t)= e^{tA}$ er hin ótvírætt ákvarðaða lausn
+upphafsgildisverkefnisins
+ $$\Phi\dash(t) = A\Phi(t), \qquad t\in \R, \qquad \Phi(0)=I.
+ $$
+ 
+
+\medskip
+Nú skulum við sjá hvernig unnt er að nota tilvistarsetninguna fyrir
+línuleg hneppi til þess að sanna samlagningarformúluna fyrir
+fylkja\-veldis\-vísis\-fallið
+ :hover:`samlagnngarformúla!fylkjaveldisvísisfallsins`: 
+
+
+.. _set5.5.2:
+
+\subsubsection{Setning}
+Ef $A$ og $B$ eru $m\times m$ fylki og $AB=BA$, þá er
+ \begin{equation*}e\sp{A+B}=e\sp Ae\sp B=e^Be^A.
+
+.. _5.5.1:
+
+ \end{equation*}
+
+
+\subsubsection{Fylgisetning}
+Fylkið $e\sp {tA}$ hefur andhverfuna $e\sp{-tA}$.
+
+
+Setningu :ref:`set5.5.2` er ekki nokkur vandi að alhæfa:
+
+\subsubsection{Setning}
+Ef $A$ og $B$ eru $m\times m$ fylki og $AB=BA$, $f$ og $g$ eru fáguð
+föll á $S(0,\varrho)$, $\|A\|< \varrho$ og $\|B\|<\varrho$, þá er
+ $$f(A)g(B)=g(B)f(A).
+ $$
+
+
+
+
+
+.. _set5.5.5:
+
+\subsubsection{Setning}
+Ef $A=TBT\sp{-1}$, $f(z)=\sum_{n=0}^\infty a_nz^n$ er fágað fall,
+gefið  með veldaröð sem hefur samleitnigeisla $>\|A\|$, þá er
+$f(A)=Tf(B)T\sp{-1}$. 
+
+
+\medskip
+Látum nú $A$ vera $m\times m$ fylki og gerum ráð því að
+eiginvigrarnir $\varepsilon_1,\dots,\varepsilon_m$ með tilliti til
+eigingildanna $\lambda_1,\dots,\lambda_m$ myndi grunn í $\C\sp m$.
+Það er jafgilt því að unnt sé að þátta fylkið $A$ í
+ $$A=T\Lambda T\sp{-1},
+ $$
+þar sem $\varepsilon_1,\dots,\varepsilon_m$ mynda dálkana í
+$T$ og $\Lambda=\diag(\lambda_1,\dots,\lambda_m)$.
+Setning :ref:`set5.5.5` gefur nú
+ $$e\sp{t A}=Te\sp{t\Lambda} T\sp{-1}.
+ $$
+
+
+
+\section{Cayley--Hamilton--setningin :hover:`Cayley-Hamilton-setningin`
+ :hover:`setning!Cayley-Hamilton`}
+
+\subsection{Cayley--Hamilton--setningin :hover:`Cayley-Hamilton-setningin`
+ :hover:`setning!Cayley-Hamilton`}
+
+\noindent
+Veldisvísisfylkið $e\sp {tA}$ af $m\times m$ fylki $A$,
+ er gefið með óendanlegri veldaröð, sem
+ekki er árennileg við fyrstu sýn.  Við ætlum nú að sýna fram á að
+ætíð sé unnt að skrifa $e\sp{tA}$ á forminu
+ $$e\sp{tA}= f_0(t)I+f_1(t)A+\cdots+f_{m-1}(t)A\sp{m-1}, 
+ $$
+þar sem föllin $f_0,\dots,f_{m-1}$ eru gefin með samleitnum
+veldaröðum á $\R$.
+Veldisvísisfallið $e\sp{tA}$ er sem sagt margliða í $A$ af stigi 
+$\leq (m-1)$  með tvinntölustuðla sem eru háðir $t$.  
+
+\subsubsection{Skilgreining} Ef $A$ er $m\times m$ fylki með stuðla í $\C$, þá táknum við
+kennimargliðu þess með $p_A(\lambda)$, 
+ $$p_A(\lambda)=\det(\lambda I-A).
+ $$
+
+
+ 
+Við getum skrifað
+ $$
+p_A(\lambda)=a_0+a_1\lambda+\cdots+a_{m-1}\lambda\sp{m-1}+\lambda\sp m
+ $$
+og jafnframt myndað fylkjamargliðuna $p_A(A)$, sem er $m\times m$ fylki,
+með
+því að setja $A$ inn í þessa formúlu,
+ $$
+p_A(A)=a_0I+a_1A+\cdots+a_{m-1}A\sp{m-1}+A\sp m.
+ $$
+
+\subsubsection{Setning}\tx{Cayley--Hamilton} :hover:`Cayley-Hamilton-setningin`
+ :hover:`setning!Caylay-Hamilton`
+Ef $A$ er $m\times m$ fylki, þá er $p_A(A)=0$.
+
+{}
+
+
+  Við athugum fyrst að setningin er algerlega augljós ef eiginvigrar
+$A$ mynda grunn í $\C\sp m$, því þá er unnt að þátta fylkið $A$ í
+$A=T\Lambda T\sp{-1}$, þar sem
+$\Lambda=\diag(\lambda_1,\dots,\lambda_m)$ er hornalínufylkið með
+eigingildin á hornalínunni og 
+ $$p_A(A)=Tp_A(\Lambda)T\sp{-1}=
+T\diag(p_A(\lambda_1),\dots,p_A(\lambda_m))T\sp{-1}=0
+ $$
+því eigingildin $\lambda_1,\dots,\lambda_m$ eru núllstövar
+kennimargliðunnar $p_A$.
+
+Nú skulum við athuga hvaða þýðingu setning Cayley--Hamilton hefur.
+Ef við skrifum 
+ $$p_A(\lambda)=\lambda\sp
+m+a_{m-1}\lambda\sp{m-1}+\cdots+a_1\lambda+a_0,
+ $$
+þá gefur hún að 
+ \begin{equation*}A\sp m=-a_0I-a_1A-\cdots-a_{m-1}A\sp {m-1}. 
+
+.. _5.6.2:
+
+ \end{equation*}
+Með þrepun fáum við síðan að fyrir sérhvert $n\geq m$ eru til stuðlar
+$c_{jn}$ þannig að 
+ $$\dfrac 1{n!}A\sp n=
+c_{0n}I+c_{1n}A+\cdots+c_{m-1,n}A\sp{m-1}.
+ $$
+Þegar við stingum þessu inn í veldaröðina fyrir $e\sp{tA}$, þá fáum við
+ $$e\sp {tA}= \sum_{j=0}\sp {m-1}\bigg(
+\sum_{n=0}\sp\infty c_{jn}t\sp n\bigg)A\sp j.
+ $$
+Þessi formúla er alls ekki svo fráleit til útreikninga á tölvu, því
+við fáum rakningarformúlur fyrir stuðlana út frá (:ref:`5.6.2`) og
+\begin{multline*}
+\dfrac 1{(n+1)!}A\sp{n+1} =\dfrac 1{n+1}A\cdot\dfrac 1{n!}A\sp n=\\
+=\dfrac{c_{0n}}{n+1}A+\dfrac{c_{1n}}{n+1}A\sp 2+\cdots
++\dfrac{c_{m-1,n}}{n+1}A\sp m=\\
+=\dfrac{-c_{m-1,n}a_0}{n+1}I+\dfrac{c_{0n}-c_{m-1,n}a_1}{n+1}A+
+\cdots+\dfrac{c_{m-2,n}-c_{m-1,n}a_{m-1}}{n+1}A\sp{m-1}.
+\end{multline*}
+Stuðlarnir með númer $n=0,\dots,m-1$ eru gefnir með 
+ $$\begin{matrix}
+ & c_{0n}& c_{1n}&\dots&c_{(m-1),n}\\
+n=0&1/0!&0&\dots&0\\
+n=1&0&1/1!&\dots&0\\
+\vdots&\vdots&\vdots&\ddots&\vdots\\
+n=m-1&0&0&\dots&1/n!.
+\end{matrix}
+ $$
+Rakningarformúlurnar fyrir stuðlana með númer $n\geq m$ verða síðan
+\begin{align*}
+c_{0,n+1}&= \dfrac{-c_{m-1,n}a_0}{n+1},\\
+c_{j,n+1}&= \dfrac{c_{j-1,n}-c_{m-1,n}a_j}{n+1}, 
+\qquad j=1,\dots,m-1.
+\end{align*}
+Það  er greinilega auðvelt að forrita þetta í tölvu.
+Lausnin á upphafsgildisverkefninu $u\dash=Au$, $u(0)=b$ er síðan
+ $$u(t) =e\sp{tA}b = 
+\bigg( \sum_{n=0}\sp\infty c_{0n}t\sp n\bigg) b_0+\cdots+
+\bigg( \sum_{n=0}\sp \infty c_{m-1,n}t\sp n\bigg) b_{m-1},
+ $$
+þar sem vigrarnir $b_0,\dots, b_{m-1}$ eru reiknaðir út frá
+ $$
+b_0=b, \qquad b_1=Ab, \qquad b_2=A\sp 2b=Ab_1, \dots,
+b_{m-1}=A\sp{m-1}b=Ab_{m-2}.
+ $$
+
+
+
+\section{Newton-margliður :hover:`margliða!Newton`}
+
+
+\subsection*{Brúunarverkefni}
+
+Látum $f\in \O(\C)$ vera gefið fall, látum $\alpha_1,\dots,\alpha_\ell$
+vera ólíka punkta í $\C$, látum $m_1,\dots,m_\ell$ vera jákvæðar
+heiltölur og setjum $m=m_1+\cdots+m_\ell$.  Nú ætlum við að sýna fram
+á að það verkefni að finna margliðu $r$ af
+stigi $<m$, sem uppfyllir
+ \begin{equation*}f^{(j)}(\alpha_k) = r^{(j)}(\alpha_k), \qquad j=0,\dots,m_k-1, \quad
+k=1,\dots, \ell,
+
+.. _10.13.1:
+
+ \end{equation*}
+hafi ótvírætt ákvarðaða lausn $r$ og við ætlum jafnframt að finna
+formúlu fyrir margliðuna $r$.   Verkefni af þessu tagi nefnist
+{\it brúunarverkefni}.
+Síðan munum við sjá hvernig
+þessar formúlur eru notaðar til þess að reikna út veldisvísisfylkið
+$e^{tA}$.
+
+
+\subsection*{Úrlausn á brúunarverkefninu}
+
+Við skilgreinum rununa
+$\lambda_1,\dots,\lambda_m$ með því að telja 
+$\alpha_1,\dots,\alpha_\ell$ með margfeldni, þannig að fyrstu $m_1$
+gildin á $\lambda_j$ séu $\alpha_1$, næstu $m_2$ gildin á $\lambda_j$
+séu $\alpha_2$ o.s.frv.  Við skilgreinum síðan
+ \begin{equation*}p(z)=(z-\alpha_1)^{m_1}\cdots(z-\alpha_\ell)^{m_\ell}
+=(z-\lambda_1)\cdots(z-\lambda_m).
+
+.. _10.13.2:
+
+ \end{equation*}
+
+Athugum sértilfellið þegar $\ell=1$.  Þá getum við skrifað lausnina
+$r$  beint niður því hún er Taylor-margliða
+fallsins $f$ í punktinum $\alpha_1$ númer $m-1$,
+$$
+r(z)=f(\alpha_1)+f'(\alpha_1)(z-\alpha_1)+\cdots +
+\frac {f^{(m-1)}(\alpha_1)}{(m-1)!}(z-\alpha_1)^{m-1}.
+$$
+Almenna niðurstaðan er:
+
+\subsubsection{Setning}  Látum $f\in \O(\C)$, $\alpha_1,\dots,\alpha_\ell$ vera ólíka
+punkta í $\C$, $m_1,\dots,m_\ell$ vera jákvæðar heiltölur, setjum
+$m=m_1+\cdots+m_\ell$ og skilgreinum $p(z)$ með (:ref:`10.13.2`).  Þá er til
+margliða $r$ af stigi $<m$
+og $g\in \O(\C)$ þannig að
+\begin{equation*}
+f(z)=r(z)+p(z)g(z), \qquad z\in \C.
+
+.. _10.13.3:
+
+\end{equation*}
+Margliðan $r$ er lausn á  (:ref:`10.13.1`).
+Bæði $r$ og $g$ eru ótvírætt ákvörðuð og eru gefin með
+formúlunum
+\begin{align*}
+r(z)=f[\lambda_1]&+f[\lambda_1,\lambda_2](z-\lambda_1)+\cdots\\
+&+ f[\lambda_1,\dots,\lambda_m](z-\lambda_1)\cdots(z-\lambda_{m-1})
+\end{align*}
+og 
+$$
+g(z)=f[\lambda_1,\dots,\lambda_m,z](z-\lambda_1)\cdots(z-\lambda_m),
+$$
+þar sem mismunakvótarnir :hover:`mismunakvóti` eru skilgreindir með
+\begin{equation*}
+f[\lambda_i,\dots,\lambda_{i+j}]=
+\begin{cases}\dfrac{f^{(j)}(\lambda_i)}{j!},& 
+\lambda_i=\cdots=\lambda_{i+j}, \\
+\dfrac{f[\lambda_i,\dots,\lambda_{i+j-1}]-f[\lambda_{i+1},\dots,\lambda_{i+j}]}
+{\lambda_i-\lambda_{i+j}},&\lambda_i\neq \lambda_{i+j}, 
+\end{cases}
+
+
+.. _10.13.4:
+
+\end{equation*}
+fyrir $i=1,\dots,m$ og $j=0,\dots,m-i$.
+ 
+
+
+\medskip
+Framsetningin  á brúunarmargliðunni
+$r$, sem við notum hér, er kennd við
+Newton :hover:`Newton` :hover:`Newton!margliða`.  Í þessari útleiðslu
+höfum við gert ráð fyrir því að $f$ sé fágað á öllu $\C$.  En með
+því að huga vel að valinu á veginum sem heildað er yfir, þá er hægt að
+sýna fram á að þessar formúlur gildi í hvaða svæði sem er.
+
+
+\subsection*{Newton-margliður}
+
+
+\noindent
+ Nú segir setning
+Cayley--Hamilton okkur að sérhvert veldi $A\sp n$ af 
+$m\times m$ fylkinu  $A$ með $n\geq
+m$ megi skrifa sem línulega samantekt af $I,A,\dots, A\sp {m-1}$, og
+af því leiðir að fylkjafall $f(A)$, sem gefið er
+með samleitinni veldaröð, er í raun margliða í $A$ af stigi $\leq
+(m-1)$.  Nú viljum við reikna út þessa margliðu og nota til þess
+fallgildin $f(z)$.  Í tilfellinu $m=4$ þurfum við fyrst að reikna
+út mismuakvótatöfluna
+ $$\begin{matrix}
+f[\lambda_1]\\
+            &f[\lambda_1,\lambda_2]\\
+f[\lambda_2]&                       &f[\lambda_1, \lambda_2, \lambda_3]\\
+        &f[\lambda_2,\lambda_3]& &f[\lambda_1,\lambda_2,\lambda_3,\lambda_4]\\
+f[\lambda_3]&                       &f[\lambda_2, \lambda_3, \lambda_4]\\
+            &f[\lambda_3,\lambda_4]\\
+f[\lambda_4]
+\end{matrix}
+ $$
+þar sem $\lambda_1,\dots,\lambda_4$ er upptalning með margfeldni
+á núllstöðvum kennimargliðu $A$.
+Margliðan $r(z)$ er síðan reiknuð út frá hornalínustökunum
+\begin{align*}
+r(z)&=f[\lambda_1]+f[\lambda_1,\lambda_2](z-\lambda_1)
++f[\lambda_1, \lambda_2, \lambda_3](z-\lambda_1)(z-\lambda_2)\\
+&+f[\lambda_1, \lambda_2, \lambda_3,\lambda_4]
+(z-\lambda_1)(z-\lambda_2)(z-\lambda_3).
+\end{align*}
+Fylkið $f(A)$ fæst nú með því að stinga $A$ inn í formúluna í stað 
+breytunnar $z$ og setja $I$ inn í stað allra fastaliða í
+margliðuþáttum,
+\begin{align*}
+f(A)&=f[\lambda_1]I+f[\lambda_1,\lambda_2](A-\lambda_1I)
++f[\lambda_1, \lambda_2, \lambda_3](A-\lambda_1I)(A-\lambda_2I)\\
+&+f[\lambda_1, \lambda_2, \lambda_3,\lambda_4]
+(A-\lambda_1I)(A-\lambda_2I)(A-\lambda_3I).
+\end{align*}
+
+\subsection*{Veldisvísisfylkið}
+
+Við fórum út í þetta æfintýri til þes að reikna út margliðuna
+$e^{tA}$, sem byggir á fallinu $f(z)=e^{tz}$, þar sem $t$ er
+raunbreytistærð.  Afleiðurnar eru
+ $$f\dash(z)=te^{tz}, \qquad f\ddash(z)=t^2e^{tz}, \qquad
+f\tdash(z)=t^3e^{tz}, \qquad \dots.
+ $$
+Margliðan $p$ verður síðan kennimargliða
+fylkisins :hover:`kennimargliða!fylkis` :hover:`margliða!kennimargliða` $A$.
+
+
+.. _syn5.7.2:
+
+\subsubsection{Sýnidæmi} (i) Gerum ráð fyrir að $A$ sé $2\times 2$ fylki með ólík
+eigingildi $\alpha_1$ og $\alpha_2$.  Þá er 
+kennimargliðan $p_A(z)=(z-\alpha_1)(z-\alpha_2)$ og mismunakvótataflan
+ $$\begin{matrix}
+e^{t\alpha_1}\\
+&\dfrac{e^{t\alpha_1}-e^{t\alpha_2}}{\alpha_1-\alpha_2}\\
+e^{t\alpha_2}
+\end{matrix}
+ $$
+og við fáum 
+ $$e\sp{tz} = e\sp{t\alpha_1}+ 
+\dfrac{e^{t\alpha_1}-e^{t\alpha_2}}{\alpha_1-\alpha_2}
+(z-\alpha_1) +(z-\alpha_1)(z-\alpha_2)g(z),
+ $$
+sem gefur okkur formúluna fyrir $e\sp{tA}$, 
+ $$e^{tA}=e^{t\alpha_1}I+\dfrac{e^{t\alpha_1}-e^{t\alpha_2}}
+{\alpha_1-\alpha_2}(A-\alpha_1I).
+ $$
+(ii) Ef hins vegar $A$ er $2\times 2$ fylki með aðeins eitt
+eigingildi $\alpha_1$, þá verður mismunakvótataflan
+ $$\begin{matrix}
+e^{t\alpha_1}\\
+&te^{t\alpha_1}\\
+e^{t\alpha_1}
+\end{matrix}
+ $$
+og við fáum 
+ $$e\sp{tz}=e\sp{t\alpha_1}+te\sp{t\alpha_1}(z-\alpha_1)+(z-\alpha_1)\sp
+2g(z). 
+ $$
+Veldisvísisfylkið verður því
+ $$e^{tA}=e^{t\alpha_1}I+te^{t\alpha_1}(A-\alpha_1I).
+ $$
+(iii)  Ef $A$ er $3\times 3$ fylki með þrjú ólík eigingildi,
+${\alpha}_1,{\alpha}_2,{\alpha}_3$ þá verður mismunakvótataflan
+ $$\begin{matrix}
+e^{t{\alpha}_1}\\
+&\dfrac{e^{t\alpha_1}-e^{t\alpha_2}}{\alpha_1-\alpha_2}\\
+e^{t\alpha_2}& 
+&\dfrac1{\alpha_1-\alpha_3}\left\{
+\dfrac{e^{t\alpha_1}-e^{t\alpha_2}}{\alpha_1-\alpha_2}-
+\dfrac{e^{t\alpha_2}-e^{t\alpha_3}}{\alpha_2-\alpha_3}
+\right\}\\ 
+&\dfrac{e^{t\alpha_2}-e^{t\alpha_3}}{\alpha_2-\alpha_3}\\
+e^{t\alpha_3}\\
+\end{matrix}
+ $$
+og formúlan fyrir $e^{tA}$ verður
+\begin{multline*}
+e^{tA}=e^{t\alpha_1}I+\dfrac{e^{t\alpha_1}-e^{t\alpha_2}}
+{\alpha_1-\alpha_2}(A-\alpha_1I)+\\
++\dfrac1{\alpha_1-\alpha_3}\left\{
+\dfrac{e^{t\alpha_1}-e^{t\alpha_2}}{\alpha_1-\alpha_2}-
+\dfrac{e^{t\alpha_2}-e^{t\alpha_3}}{\alpha_2-\alpha_3}
+\right\} (A-\alpha_1I)(A-\alpha_2I).
+\end{multline*}
+(iv)  Ef $A$ er $3\times 3$ fylki með tvö ólík eigingildi,
+$\alpha_1$ tvöfalt og $\alpha_2$ einfalt, þá verður
+mismunakvótataflan 
+ $$\begin{matrix}
+e^{t\alpha_1}\\
+&te^{t\alpha_1}\\
+e^{t\alpha_1}& 
+&\dfrac1{\alpha_1-\alpha_2}\left\{te^{t\alpha_1}-
+\dfrac{e^{t\alpha_1}-e^{t\alpha_2}}{\alpha_1-\alpha_2}\right\}\\ 
+&\dfrac{e^{t\alpha_1}-e^{t\alpha_2}}{\alpha_1-\alpha_2}\\
+e^{t\alpha_2}\\
+\end{matrix}
+ $$
+og formúlan verður
+ $$e^{tA}=e^{t\alpha_1}I+te^{t\alpha_1}(A-\alpha_1I)+
+\dfrac1{\alpha_1-\alpha_2}\left\{te^{t\alpha_1}-
+\dfrac{e^{t\alpha_1}-e^{t\alpha_2}}{\alpha_1-\alpha_2}\right\}
+(A-\alpha_1I)^2.
+ $$
+(v) Að lokum skulum við líta á tilfellið að $A$ sé $3\times 3$ fylki
+með eitt eigingildi $\alpha_1$.  Mismunakvótataflan verður þá
+einfaldlega
+ $$\begin{matrix}
+e^{t\alpha_1}\\
+&te^{t\alpha_1}\\
+e^{t\alpha_1}& 
+&\dfrac{t^2}{2}e^{t\alpha_1}\\ 
+&te^{t\alpha_1}\\
+e^{t\alpha_1}\\
+\end{matrix}
+ $$
+og veldisvísisfylkið verður
+$$e^{tA}=e^{t\alpha_1}I+te^{t\alpha_1}(A-\alpha_1I)+
+\dfrac{t^2}2e^{t\alpha_1}(A-\alpha_1I)^2.
+ $$
+
+
+
+Hugsum okkur nú að við séum að finna lausn á
+upphafsgildisverkefninu $u\dash=Au$, $u(0)=b$, þar sem $A$ er
+$3\times 3$ fylki með eitt eigingildi $\alpha_1$.  Formúlan í
+sýnidæmi :ref:`syn5.7.2` (v) gefur
+ $$e^{tA}b=e^{t\alpha_1}b_0+te^{t\alpha_1}b_1+\dfrac {t^2}2e^{t\alpha_1}b_2
+ $$
+þar sem 
+ $$b_0=b, \qquad b_1=(A-\alpha_1I)b_0, \qquad b_2=(A-\alpha_1I)b_1.
+ $$
+Athugið að hér væri ákaflega heimskulegt að reikna fyrst út fylkið
+$(A-\alpha_1I)^2$ og margfalda það síðan með $b$ til að fá $b_2$, því
+það kostar almennt margfalt meiri vinnu en við þurfum að framkvæma í
+þeirri aðferð sem hér er lýst.
+
+
+
