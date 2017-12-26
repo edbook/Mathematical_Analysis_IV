@@ -1,0 +1,2953 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>5. Raðalausnir á hlutafleiðujöfnum &mdash; Stærðfræðigreining IV 2018</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon_2.ico"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Stærðfræðigreining IV 2018" href="index.html"/>
+        <link rel="next" title="6. Fourier–ummyndun" href="bokin16_final.html"/>
+        <link rel="prev" title="4. Eigingildisverkefni" href="bokin14_final.html"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="../../resizegg.js"></script>
+     
+
+	<!-- hoverrole.py css code -->
+	<style type="text/css">
+		a.tooltip {outline:none; border-bottom: thin dotted; background: #ffeedd}
+		a.tooltip strong {line-height:30px;}
+		a.tooltip:hover {text-decoration:none;} 
+		a.tooltip span {
+		    z-index:10;display:none; padding:14px 20px;
+		    margin-top:-30px; margin-left:12px;
+		    width:310px; line-height:16px;
+		}
+		a.tooltip:hover span{
+		    display:inline; position:absolute; color:#111;
+		    border:1px solid #DCA; background:#fffAF0;}
+		.callout {z-index:20;position:absolute;top:30px;border:0;left:-12px;}
+		    
+		/*CSS3*/
+		a.tooltip span
+		{
+		    border-radius:4px;
+		    box-shadow: 5px 5px 8px #CCC;
+		}
+	</style>
+
+     
+
+    
+    <!-- ADD YOUR GOOGLE ANALYTICS TRACKING CODE HERE-->
+    <script>
+  		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  		ga('create', 'UA-UA-78633732-3', 'auto');
+  		ga('send', 'pageview');
+
+	</script>
+
+    <script>top.scrolldepth_tags = []; </script>
+
+     
+
+
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+
+        
+          <a href="index.html" class="icon icon-home"> Stærðfræðigreining IV
+        
+
+        
+          
+          <img src="_static/hi_horiz_raunvisindadeild.png" class="logo" />
+        
+        </a>
+
+        
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Leit" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+          
+          
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="bokin11_final.html">1. Nokkur undirstöðuatriði um hlutafleiðujöfnur</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="bokin11_final.html#nokkur-atrii-um-hlutafleiur-og-hlutafleiujofnur">1.1. Nokkur atriði um hlutafleiður og hlutafleiðujöfnur</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin11_final.html#fjolvisar-einfoldun-a-rithaetti">1.1.1. Fjölvísar – einföldun á rithætti</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin11_final.html#linulegar-hlutafleiujofnur">1.1.2. Línulegar hlutafleiðujöfnur</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin11_final.html#kennimarglia-og-kennijafna">1.1.3. Kennimargliða og kennijafna</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin11_final.html#hlutafleiujofnur-me-hliarskilyrum">1.1.4. Hlutafleiðujöfnur með hliðarskilyrðum</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin11_final.html#hlutafleiujofnur-i-elisfraei">1.2. Hlutafleiðujöfnur í eðlisfræði</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin11_final.html#hitastig-i-fostu-efni-varmaleinijafna">1.2.1. Hitastig í föstu efni – varmaleiðnijafna</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin11_final.html#synidaemi">1.2.1.1. Sýnidæmi</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bokin11_final.html#samhverfa-varmaleinijafna-i-einni-og-tveimur-rumviddum">1.2.2. Samhverfa – varmaleiðnijafna í einni og tveimur rúmvíddum</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin11_final.html#id1">1.2.2.1. Sýnidæmi</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bokin11_final.html#varmajafnvaegi-laplace-jafna-og-poisson-jafna">1.2.3. Varmajafnvægi – Laplace-jafna og Poisson-jafna</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin11_final.html#id2">1.2.3.1. Sýnidæmi</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bokin11_final.html#sveiflandi-strengur-bylgjujafna-i-einni-rumvidd">1.2.4. Sveiflandi strengur – bylgjujafna í einni rúmvídd</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin11_final.html#id3">1.2.4.1. Sýnidæmi</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bokin11_final.html#tromma-bylgjujafna-i-tveimur-rumviddum">1.2.5. Tromma – bylgjujafna í tveimur rúmvíddum</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin11_final.html#id4">1.2.5.1. Sýnidæmi</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bokin11_final.html#sveiflur-i-bitum-bitajafna">1.2.6. Sveiflur í bitum – bitajafna</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin11_final.html#id5">1.2.6.1. Sýnidæmi</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bokin11_final.html#sveiflur-i-plotum">1.2.7. Sveiflur í plötum</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin11_final.html#id6">1.2.7.1. Sýnidæmi</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bokin11_final.html#rafsegulfraei-maxwell-jofnur">1.2.8. Rafsegulfræði – Maxwell-jöfnur</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin11_final.html#id7">1.2.8.1. Sýnidæmi</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bokin11_final.html#rafstoufraei-laplace-jafna-og-poisson-jafna">1.2.9. Rafstöðufræði – Laplace-jafna og Poisson-jafna</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin11_final.html#id8">1.2.9.1. Sýnidæmi</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bokin11_final.html#rafsegulbylgjur-bylgjujafna-i-remur-rumviddum">1.2.10. Rafsegulbylgjur – bylgjujafna í þremur rúmvíddum</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin11_final.html#id9">1.2.10.1. Sýnidæmi</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bokin11_final.html#skammtafraei-schrodinger-jafna">1.2.11. Skammtafræði –Schrödinger-jafna</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin11_final.html#id10">1.2.11.1. Sýnidæmi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin11_final.html#hliarskilyri-og-vel-framsett-verkefni">1.3. Hliðarskilyrði og vel framsett verkefni</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin11_final.html#upphafsskilyri">1.3.1. Upphafsskilyrði</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin11_final.html#jaarskilyri">1.3.2. Jaðarskilyrði</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin11_final.html#upphafs-og-jaarskilyri-fyrir-streng-og-himnu">1.3.3. Upphafs- og jaðarskilyrði fyrir streng og himnu</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin11_final.html#id11">1.3.3.1. Sýnidæmi</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bokin11_final.html#upphafs-og-jaargildisverkefni">1.3.4. Upphafs- og jaðargildisverkefni</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin11_final.html#id12">1.3.4.1. Sýnidæmi</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bokin11_final.html#vel-framsett-verkefni">1.3.5. Vel framsett verkefni</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin11_final.html#stougleiki-dirichlet-verkefnisins">1.3.6. Stöðugleiki Dirichlet-verkefnisins</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin11_final.html#id13">1.3.6.1. Sýnidæmi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin11_final.html#flokkun-a-annars-stigs-jofnum">1.4. Flokkun á annars stigs jöfnum</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin11_final.html#id14">1.4.1. Flokkun á annars stigs jöfnum</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin11_final.html#skilgreining">1.4.1.1. Skilgreining</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin11_final.html#id15">1.4.1.2. Skilgreining</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin11_final.html#aefingardaemi">1.5. Æfingardæmi</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin11_final.html#id16">1.5.1. Æfingardæmi</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin11_final.html#daemi">1.5.1.1. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin11_final.html#id17">1.5.1.2. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin11_final.html#id18">1.5.1.3. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin11_final.html#id19">1.5.1.4. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin11_final.html#id20">1.5.1.5. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin11_final.html#id21">1.5.1.6. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin11_final.html#id22">1.5.1.7. Dæmi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="bokin12_final.html">2. Fyrsta stigs hlutafleiðujöfnur</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="bokin12_final.html#inngangur">2.1. Inngangur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bokin12_final.html#kennilinuaferin-fyrir-linulegar-fyrsta-stigs-jofnur">2.2. Kennilínuaðferðin fyrir línulegar fyrsta stigs jöfnur</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin12_final.html#id1">2.2.1. Kennilínuaðferðin fyrir línulegar fyrsta stigs jöfnur</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin12_final.html#synidaemi">2.2.1.1. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin12_final.html#setning">2.2.1.2. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin12_final.html#sonnun">2.2.1.3. Sönnun</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin12_final.html#id2">2.2.1.4. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin12_final.html#skilgreining">2.2.1.5. Skilgreining</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin12_final.html#id3">2.2.1.6. Skilgreining</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin12_final.html#id4">2.2.1.7. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin12_final.html#id5">2.2.1.8. Sýnidæmi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin12_final.html#urlausn-a-fyrsta-stigs-jofnum-me-laplace-ummyndun">2.3. Úrlausn á fyrsta stigs jöfnum með Laplace-ummyndun</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin12_final.html#id6">2.3.1. Úrlausn á fyrsta stigs jöfnum með Laplace-ummyndun</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin12_final.html#id7">2.3.1.1. Sýnidæmi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin12_final.html#aefingardaemi">2.4. Æfingardæmi</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin12_final.html#id8">2.4.1. Æfingardæmi</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin12_final.html#daemi">2.4.1.1. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin12_final.html#id9">2.4.1.2. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin12_final.html#id10">2.4.1.3. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin12_final.html#id11">2.4.1.4. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin12_final.html#id12">2.4.1.5. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin12_final.html#id13">2.4.1.6. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin12_final.html#id14">2.4.1.7. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin12_final.html#id15">2.4.1.8. Dæmi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="bokin13_final.html">3. Fourier-raðir</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="bokin13_final.html#inngangur">3.1. Inngangur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bokin13_final.html#fourierrair-af-lotubundnum-follum">3.2. Fourier–raðir af <span class="math">\(2\pi\)</span>-lotubundnum föllum</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin13_final.html#lotubundin-foll">3.2.1. <span class="math">\(2\pi\)</span>-lotubundin föll</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin13_final.html#skilgreining-a-fourier-stulum-og-fourier-roum">3.2.2. Skilgreining á Fourier-stuðlum og Fourier-röðum</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin13_final.html#skilgreining">3.2.2.1. Skilgreining</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bokin13_final.html#reiknireglur-fyrir-fourierstula">3.2.3. Reiknireglur fyrir Fourier–stuðla</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin13_final.html#setning">3.2.3.1. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin13_final.html#sonnun">3.2.3.2. Sönnun</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bokin13_final.html#nokkur-synidaemi">3.2.4. Nokkur sýnidæmi</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin13_final.html#synidaemi">3.2.4.1. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin13_final.html#id1">3.2.4.2. Sýnidæmi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin13_final.html#innfeldi-og-besselojafnan">3.3. Innfeldi og Bessel–ójafnan</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin13_final.html#innfeldi-a">3.3.1. Innfeldi á <span class="math">\(L^2[-\pi,\pi]\)</span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin13_final.html#regla-pyagorasar-a-og-bessel-ojafna">3.3.2. Regla Pýþagórasar á <span class="math">\(L^2[-\pi,\pi]\)</span> og Bessel-ójafna</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin13_final.html#id2">3.3.2.1. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin13_final.html#id3">3.3.2.2. Sönnun</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin13_final.html#id4">3.3.2.3. Setning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bokin13_final.html#fourier-rair-af-follum-i">3.3.3. Fourier-raðir af föllum í <span class="math">\(PC^1({{\mathbb  R}})\cap C({{\mathbb  R}})\)</span></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin13_final.html#id5">3.3.3.1. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin13_final.html#id6">3.3.3.2. Sönnun</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin13_final.html#andhverfuformula-fouriers">3.4. Andhverfuformúla Fouriers</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin13_final.html#id7">3.4.1. Andhverfuformúla Fouriers</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin13_final.html#id8">3.4.1.1. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin13_final.html#id9">3.4.1.2. Sönnun</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin13_final.html#fourier-rair-lotubundinna-falla">3.5. Fourier-raðir <span class="math">\(T\)</span>-lotubundinna falla</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin13_final.html#id10">3.5.1. Fourier-raðir <span class="math">\(T\)</span>-lotubundinna falla</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin13_final.html#id11">3.5.1.1. Skilgreining</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin13_final.html#id12">3.5.1.2. Setning</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin13_final.html#parsevaljafnan">3.6. Parseval–jafnan</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin13_final.html#id13">3.6.1. Parseval–jafnan</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin13_final.html#hjalparsetning">3.6.1.1. Hjálparsetning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin13_final.html#id14">3.6.1.2. Sönnun</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin13_final.html#id15">3.6.1.3. Hjálparsetning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin13_final.html#id16">3.6.1.4. Sönnun</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin13_final.html#id17">3.6.1.5. Hjálparsetning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bokin13_final.html#parseval-jafnan">3.6.2. Parseval-jafnan</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin13_final.html#id18">3.6.2.1. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin13_final.html#id19">3.6.2.2. Sönnun</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin13_final.html#kosinus-og-sinusrair-a-endanlegum-bilum">3.7. Kósínus– og sínus–raðir á endanlegum bilum</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin13_final.html#jafnstae-lotubundin-framlenging">3.7.1. Jafnstæð lotubundin framlenging</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin13_final.html#oddstae-lotubundin-framlenging">3.7.2. Oddstæð lotubundin framlenging</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin13_final.html#skilgreining-a-fourier-stulum">3.7.3. Skilgreining á Fourier-stuðlum</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin13_final.html#id20">3.7.3.1. Skilgreining</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bokin13_final.html#id21">3.7.4. Andhverfuformúla Fouriers</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin13_final.html#id22">3.7.4.1. Setning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bokin13_final.html#synidaemi-um-lotubundnar-framlengingar">3.7.5. Sýnidæmi um lotubundnar framlengingar</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin13_final.html#id23">3.7.5.1. Sýnidæmi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin13_final.html#fourierrair-og-afleiujofnur">3.8. Fourier–raðir og afleiðujöfnur</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin13_final.html#id24">3.8.1. Fourier–raðir og afleiðujöfnur</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin13_final.html#id25">3.8.1.1. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin13_final.html#id26">3.8.1.2. Sönnun</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin13_final.html#id27">3.8.1.3. Skilgreining</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bokin13_final.html#synidaemi-deyfar-sveifur-me-lotubundnum-krafti">3.8.2. Sýnidæmi: Deyfðar sveifur með lotubundnum krafti</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin13_final.html#id28">3.8.2.1. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin13_final.html#id29">3.8.2.2. Sýnidæmi</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bokin13_final.html#sveiflandi-strengur">3.8.3. Sveiflandi strengur</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin13_final.html#id30">3.8.3.1. Sýnidæmi</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bokin13_final.html#sveiflandi-festi">3.8.4. Sveiflandi festi</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin13_final.html#id31">3.8.4.1. Sýnidæmi</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bokin13_final.html#varmaleini">3.8.5. Varmaleiðni</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin13_final.html#id32">3.8.5.1. Sýnidæmi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin13_final.html#aefingardaemi">3.9. Æfingardæmi</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin13_final.html#id33">3.9.1. Æfingardæmi</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin13_final.html#daemi">3.9.1.1. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin13_final.html#id34">3.9.1.2. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin13_final.html#id35">3.9.1.3. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin13_final.html#id36">3.9.1.4. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin13_final.html#id37">3.9.1.5. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin13_final.html#id38">3.9.1.6. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin13_final.html#id39">3.9.1.7. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin13_final.html#id40">3.9.1.8. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin13_final.html#id41">3.9.1.9. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin13_final.html#id42">3.9.1.10. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin13_final.html#id43">3.9.1.11. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin13_final.html#id44">3.9.1.12. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin13_final.html#id45">3.9.1.13. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin13_final.html#id46">3.9.1.14. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin13_final.html#id47">3.9.1.15. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin13_final.html#id48">3.9.1.16. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin13_final.html#id49">3.9.1.17. Dæmi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="bokin14_final.html">4. Eigingildisverkefni</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="bokin14_final.html#eigingildi-og-eiginfoll">4.1. Eigingildi og eiginföll</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin14_final.html#upprifjun-ur-linulegri-algebru">4.1.1. Upprifjun úr línulegri algebru</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin14_final.html#mikilvaegi-eigingilda">4.1.2. Mikilvægi eigingilda</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin14_final.html#mikilvaegi-veldisvisisfallsins">4.1.3. Mikilvægi veldisvísisfallsins</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin14_final.html#eigingildisverkefni-fyrir-afleiuvirkja">4.2. Eigingildisverkefni fyrir afleiðuvirkja</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin14_final.html#fallsjaarskilyri-i-baum-endapunktum">4.2.1. Fallsjaðarskilyrði í báðum endapunktum</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin14_final.html#synidaemi">4.2.1.1. Sýnidæmi</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bokin14_final.html#afleiujaarskilyri-i-baum-endapunktum">4.2.2. Afleiðujaðarskilyrði í báðum endapunktum</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin14_final.html#id1">4.2.2.1. Sýnidæmi</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bokin14_final.html#fallsjaarskilyri-i-orum-endapunkti-og-afleiuskilyri-i-hinum">4.2.3. Fallsjaðarskilyrði í öðrum endapunkti og afleiðuskilyrði í hinum</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin14_final.html#id2">4.2.3.1. Sýnidæmi</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bokin14_final.html#blondu-jaarskilyri-i-baum-endapunktum">4.2.4. Blönduð jaðarskilyrði í báðum endapunktum</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin14_final.html#id3">4.2.4.1. Sýnidæmi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin14_final.html#askilnaur-breytistaera">4.3. Aðskilnaður breytistærða</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin14_final.html#id4">4.3.1. Aðskilnaður breytistærða</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin14_final.html#id5">4.3.1.1. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin14_final.html#id6">4.3.1.2. Sýnidæmi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin14_final.html#virkjar-af-sturmliouvilleger">4.4. Virkjar af Sturm–Liouville–gerð</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin14_final.html#id7">4.4.1. Virkjar af Sturm–Liouville–gerð</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin14_final.html#skilgreining">4.4.1.1. Skilgreining</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin14_final.html#id8">4.4.1.2. Skilgreining</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin14_final.html#id9">4.4.1.3. Skilgreining</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin14_final.html#setning">4.4.1.4. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin14_final.html#sonnun">4.4.1.5. Sönnun</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin14_final.html#eigingildisverkefni-af-sturmliouvilleger">4.5. Eigingildisverkefni af Sturm–Liouville–gerð</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin14_final.html#id10">4.5.1. Eigingildisverkefni af Sturm–Liouville–gerð</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin14_final.html#id11">4.5.1.1. Skilgreining</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin14_final.html#id12">4.5.1.2. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin14_final.html#id13">4.5.1.3. Sönnun</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin14_final.html#id14">4.5.1.4. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin14_final.html#id15">4.5.1.5. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin14_final.html#id16">4.5.1.6. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin14_final.html#id17">4.5.1.7. Skilgreining</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin14_final.html#id18">4.5.1.8. Sýnidæmi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin14_final.html#green-foll-fyrir-jaargildisverkefni">4.6. Green-föll fyrir jaðargildisverkefni</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin14_final.html#id19">4.6.1. Green-föll fyrir jaðargildisverkefni</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin14_final.html#id20">4.6.1.1. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin14_final.html#id21">4.6.1.2. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin14_final.html#hjalparsetning">4.6.1.3. Hjálparsetning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin14_final.html#id22">4.6.1.4. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin14_final.html#id23">4.6.1.5. Sönnun</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin14_final.html#id24">4.6.1.6. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin14_final.html#id25">4.6.1.7. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin14_final.html#id26">4.6.1.8. Sönnun</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin14_final.html#eiginfallaliun-og-greenfoll">4.7. Eiginfallaliðun og Green–föll</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin14_final.html#id27">4.7.1. Eiginfallaliðun og Green–föll</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin14_final.html#id28">4.7.1.1. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin14_final.html#id29">4.7.1.2. Setning</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin14_final.html#aefingardaemi">4.8. Æfingardæmi</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin14_final.html#id30">4.8.1. Æfingardæmi</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin14_final.html#daemi">4.8.1.1. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin14_final.html#id31">4.8.1.2. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin14_final.html#id32">4.8.1.3. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin14_final.html#id33">4.8.1.4. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin14_final.html#id34">4.8.1.5. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin14_final.html#id35">4.8.1.6. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin14_final.html#id36">4.8.1.7. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin14_final.html#id37">4.8.1.8. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin14_final.html#id38">4.8.1.9. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin14_final.html#id39">4.8.1.10. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin14_final.html#id40">4.8.1.11. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin14_final.html#id41">4.8.1.12. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin14_final.html#id42">4.8.1.13. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin14_final.html#id43">4.8.1.14. Dæmi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">5. Raðalausnir á hlutafleiðujöfnum</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#inngangur">5.1. Inngangur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#laplace-virkinn-i-retthyrndum-hnitum">5.2. Laplace-virkinn í rétthyrndum hnitum</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#laplace-virkinn-i-polhnitum">5.3. Laplace-virkinn í pólhnitum</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#varmaleiniverkefni-og-fourier-rair">5.4. Varmaleiðniverkefni og Fourier-raðir</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#askilnaur-breytistaera">5.5. Aðskilnaður breytistærða</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">5.5.1. Aðskilnaður breytistærða</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#synidaemi">5.5.1.1. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id2">5.5.1.2. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id3">5.5.1.3. Sýnidæmi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#tvofaldar-fourier-rair">5.6. Tvöfaldar Fourier-raðir</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id4">5.6.1. Tvöfaldar Fourier-raðir</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id5">5.6.1.1. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id6">5.6.1.2. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id7">5.6.1.3. Sýnidæmi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#eiginfallarair">5.7. Eiginfallaraðir</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id8">5.7.1. Eiginfallaraðir</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id9">5.7.1.1. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id10">5.7.1.2. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id11">5.7.1.3. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id12">5.7.1.4. Sýnidæmi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#aefingardaemi">5.8. Æfingardæmi</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id13">5.8.1. Æfingardæmi</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#daemi">5.8.1.1. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id14">5.8.1.2. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id15">5.8.1.3. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id16">5.8.1.4. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id17">5.8.1.5. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id18">5.8.1.6. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id19">5.8.1.7. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id20">5.8.1.8. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id21">5.8.1.9. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id22">5.8.1.10. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id23">5.8.1.11. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id24">5.8.1.12. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id25">5.8.1.13. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id26">5.8.1.14. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id27">5.8.1.15. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id28">5.8.1.16. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id29">5.8.1.17. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id30">5.8.1.18. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id31">5.8.1.19. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id32">5.8.1.20. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id33">5.8.1.21. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id34">5.8.1.22. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id35">5.8.1.23. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id36">5.8.1.24. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id37">5.8.1.25. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id38">5.8.1.26. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id39">5.8.1.27. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id40">5.8.1.28. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id41">5.8.1.29. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id42">5.8.1.30. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id43">5.8.1.31. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id44">5.8.1.32. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id45">5.8.1.33. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id46">5.8.1.34. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id47">5.8.1.35. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id48">5.8.1.36. Dæmi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="bokin16_final.html">6. Fourier–ummyndun</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="bokin16_final.html#inngangur">6.1. Inngangur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bokin16_final.html#skilgreiningar-og-nokkrar-reiknireglur">6.2. Skilgreiningar og nokkrar reiknireglur</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin16_final.html#rum-heildanlegra-falla">6.2.1. Rúm heildanlegra falla <span class="math">\(L^1({{\mathbb  R}})\)</span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin16_final.html#skilgreining-a-fourier-ummyndun">6.2.2. Skilgreining á Fourier-ummyndun</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin16_final.html#nokkur-synidaemi">6.2.3. Nokkur sýnidæmi</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#synidaemi">6.2.3.1. Sýnidæmi</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bokin16_final.html#fourier-mynd-ettifalls-stoluu-normaldreifingarinnar">6.2.4. Fourier-mynd þéttifalls stöðluðu normaldreifingarinnar</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id1">6.2.4.1. Sýnidæmi</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bokin16_final.html#regla-i-fourier-ummyndun-er-linuleg-vorpun">6.2.5. Regla (i): Fourier-ummyndun er línuleg vörpun</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin16_final.html#regla-ii">6.2.6. Regla (ii): <span class="math">\({{\cal F}}\{f(\alpha x)\}(\xi)= (1/{|\alpha|}){{\cal F}}\{f\}(\xi/\alpha)\)</span>,&nbsp; <span class="math">\(\alpha\in {{\mathbb  R}}\)</span> &nbsp;<span class="math">\(\alpha\neq 0\)</span>, <span class="math">\(\xi\in {{\mathbb  R}}\)</span>.</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id2">6.2.6.1. Sýnidæmi</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bokin16_final.html#regla-iii">6.2.7. Regla (iii): <span class="math">\({{\cal F}}\{f(x-\alpha)\}(\xi) =e^{-i\alpha\xi}{{\cal F}}\{f\}(\xi)\)</span>, <span class="math">\(\alpha\in {{\mathbb  R}}\)</span>, <span class="math">\(\xi\in {{\mathbb  R}}\)</span>.</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id3">6.2.7.1. Sýnidæmi</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bokin16_final.html#regla-iv">6.2.8. Regla (iv): <span class="math">\({{\cal F}}\{e^{i\alpha x}f(x)\}(\xi)={{\cal F}}\{f\}(\xi-\alpha)\)</span>, <span class="math">\(\alpha\in {{\mathbb  R}}\)</span>, <span class="math">\(\xi\in {{\mathbb  R}}\)</span>.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin16_final.html#regla-v">6.2.9. Regla (v): <span class="math">\({{\cal F}}\{\overline{f(x)}\}(\xi) =\overline{{{\cal F}}\{f\}(-\xi)}\)</span>, <span class="math">\(\xi\in {{\mathbb  R}}\)</span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin16_final.html#regla-vi-ef-er-raungilt">6.2.10. Regla (vi): <span class="math">\({{\cal F}}f(\xi)=\overline{{{\cal F}}f(-\xi)}\)</span>, <span class="math">\(\xi\in{{\mathbb  R}}\)</span>, ef <span class="math">\(f\)</span> er raungilt.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin16_final.html#regla-vii-ef-er-jafnstaett">6.2.11. Regla (vii): <span class="math">\(\displaystyle{{\cal F}}f(\xi) =2\int_0^{+\infty}\cos(x\xi)f(x)\, dx\)</span>, <span class="math">\(\xi\in {{\mathbb  R}}\)</span>, ef <span class="math">\(f\)</span> er jafnstætt.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin16_final.html#regla-viii-ef-er-oddstaett">6.2.12. Regla (viii): <span class="math">\(\displaystyle{{\cal F}}f(\xi) =-2i\int_0^{+\infty}\sin(x\xi)f(x)\, dx\)</span>, ef <span class="math">\(f\)</span> er oddstætt.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin16_final.html#regla-ix">6.2.13. Regla (ix): <span class="math">\({{\cal F}}\{f^{(k)}\}(\xi)=(i\xi)^k{{\cal F}}\{f\}(\xi)\)</span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin16_final.html#regla-x">6.2.14. Regla (x): <span class="math">\({\cal F}\{x^jf(x)\}(\xi)=i^j\dfrac{d^j}{d\xi^j}{\cal F}\{f\}(\xi)\)</span>, <span class="math">\(\xi\in {\mathbb  R}\)</span>.</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id4">6.2.14.1. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id5">6.2.14.2. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id6">6.2.14.3. Sýnidæmi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin16_final.html#andhverf-fourierummyndun">6.3. Andhverf Fourier–ummyndun</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin16_final.html#id7">6.3.1. Andhverf Fourier–ummyndun</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#hjalparsetning">6.3.1.1. Hjálparsetning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#sonnun">6.3.1.2. Sönnun</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#setning">6.3.1.3. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id8">6.3.1.4. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id9">6.3.1.5. Sönnun</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id10">6.3.1.6. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id11">6.3.1.7. Sönnun</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin16_final.html#foldun-og-fourierummyndun">6.4. Földun og Fourier–ummyndun</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin16_final.html#foldun">6.4.1. Földun</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin16_final.html#regla-xi">6.4.2. Regla (xi): <span class="math">\({{\cal F}}\{f\ast g\}(\xi)={{\cal F}}f(\xi){{\cal F}}g(\xi)\)</span>, <span class="math">\(\xi\in {{\mathbb  R}}\)</span>, <span class="math">\(f,g\in L^1({{\mathbb  R}})\)</span></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin16_final.html#afleiujofnur-og-fourierummyndun">6.5. Afleiðujöfnur og Fourier–ummyndun</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin16_final.html#serlausnir-a-afleiujofnum-reiknaar-me-fourier-ummyndun">6.5.1. Sérlausnir á afleiðujöfnum reiknaðar með Fourier-ummyndun</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id12">6.5.1.1. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id13">6.5.1.2. Sönnun</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id14">6.5.1.3. Sýnidæmi</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bokin16_final.html#stofnbrotaliun-raera-falla-og-andhverf-fourier-ummyndun">6.5.2. Stofnbrotaliðun ræðra falla og andhverf Fourier-ummyndun</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id15">6.5.2.1. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id16">6.5.2.2. Sönnun</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bokin16_final.html#deyfar-sveiflur">6.5.3. Deyfðar sveiflur</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id17">6.5.3.1. Sýnidæmi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin16_final.html#planchereljafnan">6.6. Plancherel–jafnan</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin16_final.html#regla-xii">6.6.1. Regla (xii): <span class="math">\(\displaystyle \int\limits_{-\infty}^{+\infty} \widehat f(x) g(x)\, dx = \int\limits_{-\infty}^{+\infty} f(x) \widehat g(x)\, dx\)</span>, <span class="math">\(f,g\in L^1({{\mathbb  R}})\)</span>.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin16_final.html#regla-xiii">6.6.2. Regla (xiii): <span class="math">\(\displaystyle\int_{-\infty}^{+\infty} |f(x)|^2\, dx  = \dfrac 1{2{\pi}}\int_{-\infty}^{+\infty} |\widehat f(\xi)|^2 \, d\xi\)</span>, <span class="math">\(f\in L^1({{\mathbb  R}})\)</span>, <span class="math">\(|f|\leq C\)</span>.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin16_final.html#regla-xiv">6.6.3. Regla (xiv) <span class="math">\(\displaystyle \int\limits_{-\infty}^{+\infty}  f(x) \overline{g(x)}\, dx =\dfrac 1{2{\pi}} \int\limits_{-\infty}^{+\infty} \widehat f({\xi}) \overline{\widehat g({\xi})}\, d{\xi}\)</span>.</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id18">6.6.3.1. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id19">6.6.3.2. Sönnun</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin16_final.html#leifareikningur-og-fourierummyndun">6.7. Leifareikningur og Fourier–ummyndun</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin16_final.html#fourier-myndir-reiknaar-me-leifareikningi">6.7.1. Fourier-myndir reiknaðar með leifareikningi.</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id20">6.7.1.1. Hjálparsetning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id21">6.7.1.2. Sönnun</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id22">6.7.1.3. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id23">6.7.1.4. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id24">6.7.1.5. Sýnidæmi</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bokin16_final.html#andhverfar-fourier-myndir-reiknaar-me-leifareikningi">6.7.2. Andhverfar Fourier-myndir reiknaðar með leifareikningi.</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id25">6.7.2.1. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id26">6.7.2.2. Sýnidæmi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin16_final.html#andhverf-laplaceummyndun">6.8. Andhverf Laplace–ummyndun</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin16_final.html#id27">6.8.1. Andhverf Laplace–ummyndun</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id28">6.8.1.1. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id29">6.8.1.2. Sönnun</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id30">6.8.1.3. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id31">6.8.1.4. Sönnun</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin16_final.html#andhverf-laplace-ummyndun-og-leifareikningur">6.9. Andhverf Laplace-ummyndun og leifareikningur</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin16_final.html#id32">6.9.1. Andhverf Laplace-ummyndun og leifareikningur</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id33">6.9.1.1. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id34">6.9.1.2. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id35">6.9.1.3. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id36">6.9.1.4. Sýnidæmi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin16_final.html#sinus-og-kosinusummyndanir">6.10. Sínus– og kósínus–ummyndanir</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin16_final.html#id37">6.10.1. Sínus– og kósínus–ummyndanir</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#skilgreining">6.10.1.1. Skilgreining</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id38">6.10.1.2. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id39">6.10.1.3. Sönnun</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin16_final.html#aefingardaemi">6.11. Æfingardæmi</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin16_final.html#id40">6.11.1. Æfingardæmi</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#daemi">6.11.1.1. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id41">6.11.1.2. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id42">6.11.1.3. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id43">6.11.1.4. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id44">6.11.1.5. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id45">6.11.1.6. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id46">6.11.1.7. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id47">6.11.1.8. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id48">6.11.1.9. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id49">6.11.1.10. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id50">6.11.1.11. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id51">6.11.1.12. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id52">6.11.1.13. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id53">6.11.1.14. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id54">6.11.1.15. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id55">6.11.1.16. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id56">6.11.1.17. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id57">6.11.1.18. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id58">6.11.1.19. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id59">6.11.1.20. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id60">6.11.1.21. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin16_final.html#id61">6.11.1.22. Dæmi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="bokin17_final.html">7. Laplace-virkinn</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="bokin17_final.html#inngangur">7.1. Inngangur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bokin17_final.html#y-foll-og-fagaar-varpanir">7.2. Þýð föll og fágaðar varpanir</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin17_final.html#id1">7.2.1. Þýð föll og fágaðar varpanir</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin17_final.html#setning">7.2.1.1. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin17_final.html#sonnun">7.2.1.2. Sönnun</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin17_final.html#synidaemi">7.2.1.3. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin17_final.html#id2">7.2.1.4. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin17_final.html#id3">7.2.1.5. Sýnidæmi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin17_final.html#poisson-formulan-a-hringskifu">7.3. Poisson-formúlan á hringskífu</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin17_final.html#id4">7.3.1. Poisson-formúlan á hringskífu</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin17_final.html#id5">7.3.1.1. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin17_final.html#id6">7.3.1.2. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin17_final.html#id7">7.3.1.3. Sönnun</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin17_final.html#poisson-formulan-a-halfplani">7.4. Poisson-formúlan á hálfplani</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin17_final.html#id8">7.4.1. Poisson-formúlan á hálfplani</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin17_final.html#id9">7.4.1.1. Sýnidæmi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin17_final.html#green-formulurnar">7.5. Green-formúlurnar</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin17_final.html#id10">7.5.1. Green-formúlurnar</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin17_final.html#id11">7.5.1.1. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin17_final.html#id12">7.5.1.2. Sönnun</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin17_final.html#ha-og-laggildislogmal-fyrir-y-foll">7.6. Há- og lággildislögmál fyrir þýð föll</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin17_final.html#id13">7.6.1. Há- og lággildislögmál fyrir þýð föll</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin17_final.html#id14">7.6.1.1. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin17_final.html#id15">7.6.1.2. Sönnun</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin17_final.html#id16">7.6.1.3. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin17_final.html#id17">7.6.1.4. Sönnun</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin17_final.html#green-foll">7.7. Green-föll</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin17_final.html#id18">7.7.1. Green-föll</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin17_final.html#skilgreining">7.7.1.1. Skilgreining</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin17_final.html#id19">7.7.1.2. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin17_final.html#id20">7.7.1.3. Sönnun</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin17_final.html#id21">7.7.1.4. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin17_final.html#id22">7.7.1.5. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin17_final.html#id23">7.7.1.6. Sýnidæmi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin17_final.html#poisson-kjarnar">7.8. Poisson-kjarnar</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin17_final.html#id24">7.8.1. Poisson-kjarnar</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin17_final.html#id25">7.8.1.1. Skilgreining</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin17_final.html#hnikareikningur-og-jaargildisverkefni">7.9. Hnikareikningur og jaðargildisverkefni</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin17_final.html#id26">7.9.1. Hnikareikningur og jaðargildisverkefni</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin17_final.html#id27">7.9.1.1. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin17_final.html#id28">7.9.1.2. Sönnun</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin17_final.html#aefingardaemi">7.10. Æfingardæmi</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin17_final.html#id29">7.10.1. Æfingardæmi</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin17_final.html#daemi">7.10.1.1. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin17_final.html#id30">7.10.1.2. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin17_final.html#id31">7.10.1.3. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin17_final.html#id32">7.10.1.4. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin17_final.html#id33">7.10.1.5. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin17_final.html#id34">7.10.1.6. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin17_final.html#id35">7.10.1.7. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin17_final.html#id36">7.10.1.8. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin17_final.html#id37">7.10.1.9. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin17_final.html#id38">7.10.1.10. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin17_final.html#id39">7.10.1.11. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin17_final.html#id40">7.10.1.12. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin17_final.html#id41">7.10.1.13. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin17_final.html#id42">7.10.1.14. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin17_final.html#id43">7.10.1.15. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin17_final.html#id44">7.10.1.16. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin17_final.html#id45">7.10.1.17. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin17_final.html#id46">7.10.1.18. Dæmi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="bokin18_final.html">8. Bylgjujafnan</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="bokin18_final.html#inngangur">8.1. Inngangur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bokin18_final.html#einvia-bylgjujafnan-a-ollu-ruminu">8.2. Einvíða bylgjujafnan á öllu rúminu</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin18_final.html#id1">8.2.1. Einvíða bylgjujafnan á öllu rúminu</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin18_final.html#setning">8.2.1.1. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin18_final.html#sonnun">8.2.1.2. Sönnun</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin18_final.html#bylgjujafnan-me-upphafsskilyrum">8.3. Bylgjujafnan með upphafsskilyrðum</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin18_final.html#id2">8.3.1. Bylgjujafnan með upphafsskilyrðum</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin18_final.html#id3">8.3.1.1. Setning</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin18_final.html#hliraa-bylgjujafnan">8.4. Hliðraða bylgjujafnan</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bokin18_final.html#formulur-dalemberts-poissons-og-kirchhoffs">8.5. Formúlur d’Alemberts, Poissons og Kirchhoffs</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin18_final.html#id4">8.5.1. Formúlur d’Alemberts, Poissons og Kirchhoffs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin18_final.html#id5">8.5.1.1. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin18_final.html#id6">8.5.1.2. Sönnun</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin18_final.html#kulubylgjur">8.6. Kúlubylgjur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bokin18_final.html#speglanir-a-bylgjum">8.7. Speglanir á bylgjum</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin18_final.html#id7">8.7.1. Speglanir á bylgjum</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin18_final.html#synidaemi">8.7.1.1. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin18_final.html#id8">8.7.1.2. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin18_final.html#id9">8.7.1.3. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin18_final.html#id10">8.7.1.4. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin18_final.html#id11">8.7.1.5. Sýnidæmi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin18_final.html#urlausn-a-bylgjujofnum-me-laplace-ummyndun">8.8. Úrlausn á bylgjujöfnum með Laplace-ummyndun</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin18_final.html#id12">8.8.1. Úrlausn á bylgjujöfnum með Laplace-ummyndun</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin18_final.html#id13">8.8.1.1. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin18_final.html#id14">8.8.1.2. Sýnidæmi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin18_final.html#aefingardaemi">8.9. Æfingardæmi</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin18_final.html#id15">8.9.1. Æfingardæmi</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin18_final.html#daemi">8.9.1.1. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin18_final.html#id16">8.9.1.2. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin18_final.html#id17">8.9.1.3. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin18_final.html#id18">8.9.1.4. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin18_final.html#id19">8.9.1.5. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin18_final.html#id20">8.9.1.6. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin18_final.html#id21">8.9.1.7. Dæmi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="bokin19_final.html">9. Varmaleiðnijafnan</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="bokin19_final.html#hitakjarninn">9.1. Hitakjarninn</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin19_final.html#id1">9.1.1. Hitakjarninn</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin19_final.html#skilgreining">9.1.1.1. Skilgreining</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin19_final.html#setning">9.1.1.2. Setning</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin19_final.html#hliraa-varmaleinijafnan">9.2. Hliðraða varmaleiðnijafnan</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin19_final.html#id2">9.2.1. Hliðraða varmaleiðnijafnan</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin19_final.html#id3">9.2.1.1. Setning</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin19_final.html#urlausn-a-varmaleinijofnum-me-laplace-ummyndun">9.3. Úrlausn á varmaleiðnijöfnum með Laplace-ummyndun</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin19_final.html#id4">9.3.1. Úrlausn á varmaleiðnijöfnum með Laplace-ummyndun</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin19_final.html#synidaemi">9.3.1.1. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin19_final.html#id5">9.3.1.2. Sýnidæmi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin19_final.html#aefingardaemi">9.4. Æfingardæmi</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin19_final.html#id6">9.4.1. Æfingardæmi</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin19_final.html#daemi">9.4.1.1. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin19_final.html#id7">9.4.1.2. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin19_final.html#id8">9.4.1.3. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin19_final.html#id9">9.4.1.4. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin19_final.html#id10">9.4.1.5. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin19_final.html#id11">9.4.1.6. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin19_final.html#id12">9.4.1.7. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin19_final.html#id13">9.4.1.8. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin19_final.html#id14">9.4.1.9. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin19_final.html#id15">9.4.1.10. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin19_final.html#id16">9.4.1.11. Dæmi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="bokin20_final.html">10. Dreififöll og veikar lausnir á hlutafleiðujöfnum</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="bokin20_final.html#inngangur">10.1. Inngangur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bokin20_final.html#veik-markgildi-veikar-afleiur-og-foll-diracs">10.2. Veik markgildi, veikar afleiður og föll Diracs</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin20_final.html#id1">10.2.1. Veik markgildi, veikar afleiður og föll Diracs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin20_final.html#synidaemi">10.2.1.1. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin20_final.html#skilgreining">10.2.1.2. Skilgreining</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin20_final.html#id2">10.2.1.3. Skilgreining</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin20_final.html#id3">10.2.1.4. Skilgreining</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin20_final.html#setning">10.2.1.5. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin20_final.html#sonnun">10.2.1.6. Sönnun</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin20_final.html#id4">10.2.1.7. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin20_final.html#id5">10.2.1.8. Sönnun</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin20_final.html#id6">10.2.1.9. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin20_final.html#id7">10.2.1.10. Sönnun</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin20_final.html#id8">10.2.1.11. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin20_final.html#id9">10.2.1.12. Skilgreining</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin20_final.html#id10">10.2.1.13. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin20_final.html#id11">10.2.1.14. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin20_final.html#id12">10.2.1.15. Sönnun</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin20_final.html#id13">10.2.1.16. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin20_final.html#id14">10.2.1.17. Sönnun</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin20_final.html#id15">10.2.1.18. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin20_final.html#id16">10.2.1.19. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin20_final.html#id17">10.2.1.20. Skilgreining</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin20_final.html#id18">10.2.1.21. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin20_final.html#id19">10.2.1.22. Setning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin20_final.html#id20">10.2.1.23. Sönnun</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin20_final.html#veik-markgildi-og-foll-diracs">10.3. Veik markgildi og <span class="math">\({\delta}\)</span>-föll Diracs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bokin20_final.html#veikar-afleiur-og-grunnlausnir">10.4. Veikar afleiður og grunnlausnir</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin20_final.html#id21">10.4.1. Veikar afleiður og grunnlausnir</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin20_final.html#id22">10.4.1.1. Skilgreining</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin20_final.html#id23">10.4.1.2. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin20_final.html#id24">10.4.1.3. Skilgreining</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin20_final.html#id25">10.4.1.4. Skilgreining</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin20_final.html#grunnlausn-bylgjuvirkjans">10.5. Grunnlausn bylgjuvirkjans</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bokin20_final.html#grunnlausn-varmaleinivirkjans">10.6. Grunnlausn varmaleiðnivirkjans</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bokin20_final.html#grunnlausn-laplace-virkjans">10.7. Grunnlausn Laplace-virkjans</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin20_final.html#id26">10.7.1. Grunnlausn Laplace-virkjans</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin20_final.html#id27">10.7.1.1. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin20_final.html#id28">10.7.1.2. Sýnidæmi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin20_final.html#fourier-ummyndun-af-dreififollum-og-grunnlausnir">10.8. Fourier-ummyndun af dreififöllum og grunnlausnir</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin20_final.html#id29">10.8.1. Fourier-ummyndun af dreififöllum og grunnlausnir</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin20_final.html#id30">10.8.1.1. Skilgreining</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin20_final.html#id31">10.8.1.2. Skilgreining</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin20_final.html#id32">10.8.1.3. Skilgreining</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin20_final.html#id33">10.8.1.4. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin20_final.html#id34">10.8.1.5. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin20_final.html#id35">10.8.1.6. Setning</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin20_final.html#aefingardaemi">10.9. Æfingardæmi</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin20_final.html#id36">10.9.1. Æfingardæmi</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin20_final.html#daemi">10.9.1.1. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin20_final.html#id37">10.9.1.2. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin20_final.html#id38">10.9.1.3. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin20_final.html#id39">10.9.1.4. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin20_final.html#id40">10.9.1.5. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin20_final.html#id41">10.9.1.6. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin20_final.html#id42">10.9.1.7. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin20_final.html#id43">10.9.1.8. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin20_final.html#id44">10.9.1.9. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin20_final.html#id45">10.9.1.10. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin20_final.html#id46">10.9.1.11. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin20_final.html#id47">10.9.1.12. Dæmi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="bokin21_final.html">11. Mismunaaðferðir</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="bokin21_final.html#inngangur">11.1. Inngangur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bokin21_final.html#mismunaafer-fyrir-venjulegar-afleiujofnur">11.2. Mismunaaðferð fyrir venjulegar afleiðujöfnur</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin21_final.html#mismunajafna-i-vinstri-endapunkti">11.2.1. Mismunajafna í vinstri endapunkti</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin21_final.html#mismunajafna-i-innri-punktum-bilsins">11.2.2. Mismunajafna í innri punktum bilsins</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin21_final.html#mismunajafna-i-haegri-endapunkti">11.2.3. Mismunajafna í hægri endapunkti</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin21_final.html#hneppi">11.2.4. Hneppið</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin21_final.html#synidaemi">11.2.4.1. Sýnidæmi</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bokin21_final.html#skekkjumat">11.2.5. Skekkjumat</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin21_final.html#heildun-yfir-hlutbil">11.3. Heildun yfir hlutbil</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin21_final.html#mismunajafna-i-vinstri-endapunkti-bilsins">11.3.1. Mismunajafna í vinstri endapunkti bilsins</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin21_final.html#mismunajofnur-i-innri-punktum-skiptingarinnar">11.3.2. Mismunajöfnur í innri punktum skiptingarinnar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin21_final.html#id1">11.3.3. Mismunajafna í hægri endapunkti</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin21_final.html#nalgunarjofnuhneppi">11.3.4. Nálgunarjöfnuhneppið</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin21_final.html#id2">11.3.4.1. Sýnidæmi</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bokin21_final.html#nalgunarjofnur-fyrir-almennar-skiptingar">11.3.5. Nálgunarjöfnur fyrir almennar skiptingar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin21_final.html#linuleg-bruun-og-ufugrunnfoll">11.3.6. Línuleg brúun og þúfugrunnföll</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin21_final.html#staarskekkjur-i-mismunasambondum">11.4. Staðarskekkjur í mismunasamböndum</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin21_final.html#setning-taylors">11.4.1. Setning Taylors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin21_final.html#stig-og-overa">11.4.2. Stig og óvera</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin21_final.html#mat-a-staarskekkju">11.4.3. Mat á staðarskekkju</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin21_final.html#staarskekkja-i-vinstri-endapunkti">11.4.4. Staðarskekkja í vinstri endapunkti</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin21_final.html#annar-en-siri-moguleiki-a-nalgun-jaarskilyrisins">11.4.5. Annar en síðri möguleiki á nálgun jaðarskilyrðisins</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin21_final.html#staarskekkja-i-innri-punktum">11.4.6. Staðarskekkja í innri punktum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin21_final.html#staarskekkja-i-innri-punktum-me-betri-forsendum">11.4.7. Staðarskekkja í innri punktum með betri forsendum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin21_final.html#staarskekkja-i-haegri-endapunkti">11.4.8. Staðarskekkja í hægri endapunkti <span class="math">\(x_N=b\)</span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin21_final.html#samantekt-a-mismunaafer-me-heildun-yfir-hlutbil">11.4.9. Samantekt á mismunaaðferð með heildun yfir hlutbil</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin21_final.html#mismunaafer-fyrir-hlutafleiujofnur">11.5. Mismunaaðferð fyrir hlutafleiðujöfnur</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin21_final.html#net">11.5.1. Net</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin21_final.html#heildun-yfir-hlutsvaei">11.5.2. Heildun yfir hlutsvæði</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin21_final.html#nalgunarjafna-i-innri-punkti">11.5.3. Nálgunarjafna í innri punkti</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin21_final.html#punktuppsprettur">11.5.4. Punktuppsprettur</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin21_final.html#dirichlet-verkefni-a-retthyrningi">11.5.5. Dirichlet verkefni á rétthyrningi</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin21_final.html#id3">11.5.5.1. Sýnidæmi</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bokin21_final.html#blanda-jaarskilyri">11.5.6. Blandað jaðarskilyrði</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin21_final.html#id4">11.5.6.1. Sýnidæmi</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bokin21_final.html#jaargildisverkefni-a-rihyrningi">11.5.7. Jaðargildisverkefni á þríhyrningi</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin21_final.html#id5">11.5.7.1. Sýnidæmi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin21_final.html#almenn-mismunaafer-a-retthyrningi">11.6. Almenn mismunaaðferð á rétthyrningi</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin21_final.html#uppbygging-forrits">11.6.1. Uppbygging forrits</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin21_final.html#innri-punktar">11.6.1.1. Innri punktar:</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin21_final.html#innri-punktar-a-jorum">11.6.1.2. Innri punktar á jöðrum:</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin21_final.html#hornpunktar">11.6.1.3. Hornpunktar:</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin21_final.html#id6">11.6.1.4. Punktuppsprettur:</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin21_final.html#gefin-gildi-i-einstaka-netpunktum">11.6.1.5. Gefin gildi í einstaka netpunktum:</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin21_final.html#utreikningur-a-lausn">11.6.1.6. Útreikningur á lausn:</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin21_final.html#teikning-a-nalgunarlausn">11.6.1.7. Teikning á nálgunarlausn:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin21_final.html#aefingardaemi">11.7. Æfingardæmi</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin21_final.html#id7">11.7.1. Æfingardæmi</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin21_final.html#daemi">11.7.1.1. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin21_final.html#id8">11.7.1.2. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin21_final.html#id9">11.7.1.3. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin21_final.html#id10">11.7.1.4. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin21_final.html#id11">11.7.1.5. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin21_final.html#id12">11.7.1.6. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin21_final.html#id13">11.7.1.7. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin21_final.html#id14">11.7.1.8. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin21_final.html#id15">11.7.1.9. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin21_final.html#id16">11.7.1.10. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin21_final.html#id17">11.7.1.11. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin21_final.html#id18">11.7.1.12. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin21_final.html#id19">11.7.1.13. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin21_final.html#id20">11.7.1.14. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin21_final.html#id21">11.7.1.15. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin21_final.html#id22">11.7.1.16. Dæmi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="bokin22_final.html">12. Bútaaðferðir</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="bokin22_final.html#inngangur">12.1. Inngangur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bokin22_final.html#hlutheildun-innfeldi-og-tvilinulegt-form">12.2. Hlutheildun, innfeldi og tvílínulegt form</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin22_final.html#um-hlutheildun">12.2.1. Um hlutheildun</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin22_final.html#sundurleitnisetning-og-hlutheildun">12.2.2. Sundurleitnisetning og hlutheildun</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin22_final.html#innfeldi">12.2.3. Innfeldi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin22_final.html#tvilinulegt-form-sem-gefur-af-ser">12.2.4. Tvílínulegt form sem <span class="math">\(L\)</span> gefur af sér</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin22_final.html#sambandi-vi-jaargildisverkefnin">12.2.5. Sambandið við jaðargildisverkefnin</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin22_final.html#afer-galerkins-fyrir-dirichlet-verkefni">12.3. Aðferð Galerkins fyrir Dirichlet-verkefnið</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin22_final.html#galerkin-afer-i-einni-vidd-fyrir-dirichlet-verkefni">12.3.1. Galerkin-aðferð í einni vídd fyrir Dirichlet-verkefni</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin22_final.html#galerkin-afer-i-tveimur-viddum-fyrir-dirichlet-verkefni">12.3.2. Galerkin-aðferð í tveimur víddum fyrir Dirichlet-verkefni</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin22_final.html#afer-galerkins-me-almennum-jaarskilyrum">12.4. Aðferð Galerkins með almennum jaðarskilyrðum</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin22_final.html#almenn-jaarskilyri-i-einni-vidd">12.4.1. Almenn jaðarskilyrði í einni vídd</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin22_final.html#blondu-jaarskilyri-i-baum-endapunktum">12.4.2. Blönduð jaðarskilyrði í báðum endapunktum:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin22_final.html#fallsjaarskilyri-i-vinstri-endapunkti">12.4.3. Fallsjaðarskilyrði í vinstri endapunkti</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin22_final.html#fallsjaarskilyri-i-haegri-endapunkti">12.4.4. Fallsjaðarskilyrði í hægri endapunkti</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin22_final.html#fallsjaarskilyri-i-baum-endapunktum">12.4.5. Fallsjaðarskilyrði í báðum endapunktum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin22_final.html#almenn-jaarskilyri-i-tveimur-viddum">12.4.6. Almenn jaðarskilyrði í tveimur víddum</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin22_final.html#synidaemi">12.4.6.1. Sýnidæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin22_final.html#id1">12.4.6.2. Sýnidæmi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin22_final.html#butaafer-i-einni-vidd">12.5. Bútaaðferð í einni vídd</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin22_final.html#id2">12.5.1. Blönduð jaðarskilyrði í báðum endapunktum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin22_final.html#fallsjaarskilyri">12.5.2. Fallsjaðarskilyrði</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin22_final.html#punktuppsprettur">12.5.3. Punktuppsprettur</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin22_final.html#butaafer-i-tveimur-viddum">12.6. Bútaaðferð í tveimur víddum</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin22_final.html#rithattur-fyrir-rihyrningana">12.6.1. Ritháttur fyrir þríhyrningana</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin22_final.html#ufugrunnfoll">12.6.2. Þúfugrunnföll</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin22_final.html#jaargildisverkefni-a">12.6.3. Jaðargildisverkefni á <span class="math">\(S\)</span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin22_final.html#nalgun-a-lausn-jaargildisverkefnisins-a">12.6.4. Nálgun á lausn jaðargildisverkefnisins á <span class="math">\(S\)</span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin22_final.html#butun-flatarheildin">12.6.5. Bútun – Flatarheildin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin22_final.html#butun-jaarheildin">12.6.6. Bútun – jaðarheildin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bokin22_final.html#nalgun-a-stulum-hneppisins">12.6.7. Nálgun á stuðlum hneppisins <span class="math">\(A{\mathbf c}={\mathbf b}\)</span></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bokin22_final.html#aefingardaemi">12.7. Æfingardæmi</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bokin22_final.html#id3">12.7.1. Æfingardæmi</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bokin22_final.html#daemi">12.7.1.1. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin22_final.html#id4">12.7.1.2. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin22_final.html#id5">12.7.1.3. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin22_final.html#id6">12.7.1.4. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin22_final.html#id7">12.7.1.5. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin22_final.html#id8">12.7.1.6. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin22_final.html#id9">12.7.1.7. Dæmi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bokin22_final.html#id10">12.7.1.8. Dæmi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="ordaskra.html">Orðaskrá</a></li>
+</ul>
+
+          
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">Stærðfræðigreining IV</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>5. Raðalausnir á hlutafleiðujöfnum</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/bokin15_final.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="raalausnir-a-hlutafleiujofnum">
+<h1>5. Raðalausnir á hlutafleiðujöfnum<a class="headerlink" href="#raalausnir-a-hlutafleiujofnum" title="Varanlegur hlekkur á titilinn">¶</a></h1>
+<div class="section" id="inngangur">
+<h2>5.1. Inngangur<a class="headerlink" href="#inngangur" title="Varanlegur hlekkur á titilinn">¶</a></h2>
+<p>Í þessum kafla kynnumst við ýmsum aðferðum til þess að leiða út formúlur
+fyrir lausnir á hlutafleiðujöfnum með hliðarskilyrðum. Aðferðirnar eiga
+það sammerkt að gengið er út frá lausnartilgátum sem segja að hægt sé að
+liða lausnina í eiginfallaröð með tilliti til einnar breytistærðar með
+stuðlum sem eru háðir öðrum breytistærðum. Eiginfallaröðin ákvarðast af
+hliðarskilyrðunum, sem oftast eru jaðarskilyrði, en gildin á stuðlum
+raðarinnar ákvarðast af hlutafleiðujöfnunni og einhverjum
+hliðarskilyrðum, sem ýmist eru upphafs- eða jaðarskilyrði.</p>
+<p>Hugmyndin að baki þessara lausnaraðferða hefur þegar komið fram í
+nokkrum sýnidæmum í kafla 13. Í sýnidæmi 13.8.5 fjölluðum við um
+sveiflur strengs, þar sem frávikið frá jafnvægisstöðu <span class="math">\(u(x,t)\)</span>
+uppfyllir bylgjujöfnuna,</p>
+<div class="math">
+\[\begin{split}\dfrac{{\partial}^2u}{{\partial}t^2}-
+ c^2\dfrac{{\partial}^2u}{{\partial}x^2}=0,
+ \qquad 0&lt;x&lt;L, \quad t&gt;0.\end{split}\]</div>
+<p>Ef strengurinn er festur niður í báðum endapunktum, þá fáum við
+jaðarskilyrðið</p>
+<div class="math">
+\[u(0,t)=u(L,t)=0, \qquad t\geq 0.\]</div>
+<p>Þetta segir okkur að eðlileg lausnartilgáta sé að hægt sé að liða
+<span class="math">\(u(x,t)\)</span> í Fourier-sínusröð með tilliti til <span class="math">\(x\)</span> með stuðlum
+sem eru háðir tíma,</p>
+<div class="math">
+\[u(x,t)=\sum\limits_{n=1}^{\infty} u_n(t)\sin(n{\pi}x/L), \quad
+ u_n(t)= \dfrac 2L\int_0^L u(x,t)\sin(n{\pi}x/L)\, dx.\]</div>
+<p>Með því að láta bylgjuvirkjann <span class="math">\({\partial}_t^2-c^2{\partial}_x^2\)</span>
+verka lið fyrir lið summunni (<span class="xref std std-ref">Link title</span>) og setja ákveðin
+upphafsskilyrði um stöðu og hraða strengsins við tímann <span class="math">\(t=0\)</span>,
+sáum við að Fourier-stuðullinn <span class="math">\(u_n(t)\)</span> væri lausn á ákveðnu
+upphafsgildisverkefni sem auðvelt var að leysa.</p>
+<p>Í sýnidæmi 13.8.7 fjölluðum við um hitastig <span class="math">\(u(x,t)\)</span> í stöng af
+lengd <span class="math">\(L\)</span>, þar sem varmamyndun á massa- og lengdareiningu er
+<span class="math">\(f(x,t)\)</span>, en <span class="math">\(u(x,t)\)</span> uppfyllir þá varmaleiðnijöfnuna</p>
+<div class="math">
+\[\begin{split}\dfrac{{\partial} u}{{\partial}t}-{\kappa}
+ \dfrac{{\partial}^2 u}{{\partial}x^2}=f(x,t), \qquad 0&lt;x&lt;L, \quad t&gt;0.\end{split}\]</div>
+<p>Ef gert er ráð fyrir að endar stangarinnar séu einangraðir, þá fáum við
+jaðarskilyrðið</p>
+<div class="math">
+\[\begin{split}{\partial}_xu(0,t)={\partial}_xu(L,t)=0, \qquad t&gt;0.\end{split}\]</div>
+<p>Á því sjáum við að eðlilegt er að setja fram þá lausnartilgátu að hægt
+sé að liða <span class="math">\(u(x,t)\)</span> í Fourier-kósínusröð með tilliti til <span class="math">\(x\)</span></p>
+<div class="math">
+\[u(x,t)=\sum\limits_{n=0}^{\infty} u_n(t)\cos(n{\pi}x/L),\]</div>
+<p>og gefa sér að Fourier-kósínusstuðlar fallsins <span class="math">\(f\)</span> séu þekktir</p>
+<div class="math">
+\[f(x,t)=\sum\limits_{n=0}^{\infty} f_n(t)\cos(n{\pi}x/L).\]</div>
+<p>Með því að beita varmaleiðnivirkjanum
+<span class="math">\({\partial}_t-{\kappa}{\partial}_x^2\)</span> lið fyrir lið í summunni
+(<span class="xref std std-ref">Link title</span>), þá fengum við að <span class="math">\(u_n\)</span> verður að uppfylla jöfnuna
+<span class="math">\(u_n{{^{\prime}}}(t)+{\kappa}(n{\pi}/L)^2u_n(t)=f_n(t)\)</span> og út
+frá henni ákvarðast <span class="math">\(u_n(t)\)</span>.</p>
+<p>Við ætlum nú að útfæra þessa hugmynd í mörgum afbrigðum til þess að
+leiða út lausnarformúlur fyrir ýmsar hlutafleiðujöfnur eins og
+bylgjujöfnuna, varmaleiðnijöfnuna og Laplace-jöfnuna með
+hliðarskilyrðum.</p>
+<div id='scrolled_to_subsection_2' > <script> top.scrolldepth_tags.push('#scrolled_to_subsection_2'); </script></div>
+<div class="section" id="laplace-virkinn-i-retthyrndum-hnitum">
+<h2>5.2. Laplace-virkinn í rétthyrndum hnitum<a class="headerlink" href="#laplace-virkinn-i-retthyrndum-hnitum" title="Varanlegur hlekkur á titilinn">¶</a></h2>
+<p>Í grein 12.3 nefndum við að <em>Dirichlet-verkefni</em> fyrir Laplace-virkjann
+í plani er:</p>
+<div class="math">
+\[\begin{split}\begin{cases}
+ \Delta u=\dfrac{\partial^2u}{\partial x^2}+
+ \dfrac{\partial^2u}{\partial y^2}=0, &amp;(x,y)\in X,\\
+ u(x,y)={\varphi}(x,y), &amp;(x,y)\in {\partial}X,
+ \end{cases}\end{split}\]</div>
+<p>þar sem <span class="math">\(X\)</span> er opið svæði í <span class="math">\({{\mathbb  R}}^2\)</span> með jaðar
+<span class="math">\({\partial}X\)</span> og <span class="math">\({\varphi}\)</span> er gefið fall á
+<span class="math">\({\partial}X\)</span>. Í eðlisfræðinni er þetta verkefni mjög mikilvægt.
+Lausnin getur til dæmis verið hitastig í þunnri plötu, sem er í
+varmajafnvægi, (<span class="math">\({\partial}u/{\partial}t=0\)</span>). Fallið <span class="math">\(u\)</span>
+getur einnig verið rafstöðumætti í þunnri leiðandi plötu. Nú skulum við
+líta á tilfellið þegar <span class="math">\(X\)</span> er rétthyrnd plata:</p>
+<div class="math">
+\[\begin{split}\begin{cases} \Delta u=0, &amp;0&lt;x&lt;L, \ 0&lt;y&lt;M,\\
+ u(x,0)=\varphi_1(x), \ u(x,M)=\varphi_2(x), &amp;0&lt;x&lt;L,\\
+ u(0,y)=\psi_1(y), \ u(L,y)=\psi_2(y), &amp;0&lt;y&lt;M.
+ \end{cases}\end{split}\]</div>
+<div class="figure align-center" id="id49">
+<img alt="Dirichlet verkefnið á ferhyrningi" src="_images/fig141.svg" /><p class="caption"><span class="caption-text">Mynd: Dirichlet verkefnið á ferhyrningi</span></p>
+</div>
+<p>Við skiptum verkefninu í fjóra hluta</p>
+<div class="math">
+\[\begin{split}\begin{cases} \Delta u_1=0,\\
+ u_1(x,0)=\varphi_1(x), \ u_1(x,M)=0,\\
+ u_1(0,y)=u_1(L,y)=0,
+ \end{cases}\qquad
+ \begin{cases} \Delta u_2=0,\\
+ u_2(x,0)=0, u_2(x,M)=\varphi_2(x),\\
+ u_2(0,y)=u_2(L,y)=0,
+ \end{cases}\end{split}\]</div>
+<div class="math">
+\[\begin{split}\begin{cases} \Delta u_3=0,\\
+ u_3(x,0)=u_3(x,M)=0,\\
+ u_3(0,y)=\psi_1(y), \ u_3(L,y)=0,
+ \end{cases} \qquad
+ \begin{cases} \Delta u_4=0,\\
+ u_4(x,0)=u_4(x,M)=0,\\
+ u_4(0,y)=0, u_4(L,y)=\psi_2(y).
+ \end{cases}\end{split}\]</div>
+<div class="figure align-center" id="id50">
+<img alt="Liðun á Dirichlet verkefninu í fernt" src="_images/fig142.svg" /><p class="caption"><span class="caption-text">Mynd: Liðun á Dirichlet verkefninu í fernt</span></p>
+</div>
+<p>Ef við getum sýnt fram á að lausnirnar <span class="math">\(u_1\)</span>, <span class="math">\(u_2\)</span>,
+<span class="math">\(u_3\)</span> og <span class="math">\(u_4\)</span> á þessum verkefnunum eru til og leitt út
+formúlur fyrir þeim, þá segir samlagningarlögmálið að lausnin <span class="math">\(u\)</span>
+á (<span class="xref std std-ref">Link title</span>) sé <span class="math">\(u(x,y)=u_1(x,y)+u_2(x,y)+u_3(x,y)+u_4(x,y)\)</span>.</p>
+<p>Nú snúum við okkur að verkefnunum fjórum. Skilyrðin
+<span class="math">\(u_1(0,y)=u_1(L,y)=0\)</span> segja okkur að eðlilegt sé að ganga út frá
+þeirri lausnartilgátu að hægt sé að liða <span class="math">\(u_1(x,y)\)</span> í
+Fourier-sínusröð,</p>
+<div class="math">
+\[\begin{split}\begin{gathered}
+ u_1(x,y)=\sum\limits_{n=1}^\infty u_{1n}(y)\sin\big(n\pi x/L\big), \\
+ u_{1n}(y)=b_n(u_1(\cdot,y))
+ =\dfrac 2L\int_0^Lu_1(x,y)\sin\big(n\pi x/L\big)\, dx.\end{gathered}\end{split}\]</div>
+<p>Til þess að ákvarða stuðlana <span class="math">\(u_{1n}(y)\)</span>, þá látum við
+Laplace-virkjann verka lið fyrir lið í summunni og stingum inn
+jaðarskilyrðunum,</p>
+<div class="math">
+\[\begin{split}\begin{aligned}
+ \Delta u_1(x,y)&amp;=
+ \sum\limits_{n=1}^\infty
+ \bigg(\dfrac{\partial^2}{\partial x^2}+
+ \dfrac{\partial^2}{\partial y^2}\bigg) u_{1n}(y)\sin\big(n\pi x/L\big)\\
+ &amp;=
+ \sum\limits_{n=1}^\infty
+ \big(-(n\pi/L)^2 u_{1n}(y)+ u_{1n}{{^{\prime\prime}}}(y)
+ \big)\sin\big(n\pi x/L\big)=0,\\
+ u_1(x,0)&amp;=\sum\limits_{n=1}^\infty
+ u_{1n}(0)\sin\big(n\pi x/L\big)\\
+ &amp;=\sum\limits_{n=1}^\infty b_n(\varphi_1) \sin\big(n\pi x/L\big)
+ =\varphi_1(x),\\
+ u_1(x,M)&amp;=\sum\limits_{n=1}^\infty
+ u_{1n}(M)\sin\big(n\pi x/L\big)=0.\end{aligned}\end{split}\]</div>
+<p>Út úr þessum jöfnum lesum við nú að <span class="math">\(u_{1n}\)</span> verður að vera lausn
+á jaðargildisverkefninu</p>
+<div class="math">
+\[\begin{split}\begin{cases}
+ u_{1n}{{^{\prime\prime}}}(y)-(n\pi/L)^2 u_{1n}(y)=0, &amp;0&lt;y&lt;M,\\
+ u_{1n}(0)=b_n(\varphi_1), \quad u_{1n}(M)=0.
+ \end{cases}\end{split}\]</div>
+<p>Almenn lausn á þessari afleiðujöfnu er</p>
+<div class="math">
+\[u_{1n}(y)=A_n\cosh\big(n\pi y/L\big)+B_n\sinh\big(n\pi y/L\big),\]</div>
+<p>og jaðarskilyrðin gefa</p>
+<div class="math">
+\[\begin{split}\begin{aligned}
+ u_{1n}(0)&amp;=A_n=b_n(\varphi_1),\\
+ u_{1n}(M)&amp;=A_n\cosh\big(n\pi M/L\big)+B_n\sinh\big(n\pi M/L\big)=0.\end{aligned}\end{split}\]</div>
+<p>Þar með er</p>
+<div class="math">
+\[\begin{split}\begin{aligned}
+ u_{1n}(y)&amp;=b_n(\varphi_1)\cosh\big(n\pi y/L\big)- b_n(\varphi_1)
+ \dfrac{\cosh\big(n\pi M/L\big)}{\sinh\big(n\pi M/L\big)}
+ \sinh\big(n\pi y/L\big)\\
+ &amp;=b_n(\varphi_1)\dfrac
+ {\sinh\big(n\pi M/L\big) \cosh\big(n\pi y/L\big)
+ -\cosh\big(n\pi M/L\big) \sinh\big(n\pi y/L\big)}
+ {\sinh\big(n\pi M/L\big)}\\
+ &amp;=b_n(\varphi_1)\dfrac
+ {\sinh\big(n\pi (M-y)/L\big)}
+ {\sinh\big(n\pi M/L\big)}.\end{aligned}\end{split}\]</div>
+<p>Við höfum því ákvarðað fyrsta liðinn <span class="math">\(u_1\)</span> í framsetningu okkar á
+<span class="math">\(u\)</span>. Til þess að finna <span class="math">\(u_2\)</span> skiptum við einungis á
+<span class="math">\(y\)</span> og <span class="math">\(M-y\)</span> og til þess að ákvarða <span class="math">\(u_3\)</span> og
+<span class="math">\(u_4\)</span>, þá skiptum við einfaldlega á hlutverkum <span class="math">\(x\)</span> og
+<span class="math">\(y\)</span>. Útkoman verður því</p>
+<div class="math">
+\[\begin{split}\begin{aligned}
+ u(x,y)&amp;=\sum\limits_{n=1}^\infty
+ b_n(\varphi_1)
+ \dfrac{\sinh\big(n\pi(M-y)/L\big)}{\sinh\big(n\pi M/L\big)}
+ \sin\big(n\pi x/L\big)\\
+ &amp;+\sum\limits_{n=1}^\infty
+ b_n(\varphi_2)
+ \dfrac{\sinh\big(n\pi y/L\big)}{\sinh\big(n\pi M/L\big)}
+ \sin\big(n\pi x/L\big)\nonumber\\
+ &amp;+\sum\limits_{n=1}^\infty
+ b_n(\psi_1)
+ \dfrac{\sinh\big(n\pi (L-x)/M\big)}{\sinh\big(n\pi L/M\big)}
+ \sin\big(n\pi y/M\big)\nonumber\\
+ &amp;+\sum\limits_{n=1}^\infty
+ b_n(\psi_2)
+ \dfrac{\sinh\big(n\pi x/M\big)}{\sinh\big(n\pi L/M\big)}
+ \sin\big(n\pi y/M\big).\nonumber\end{aligned}\end{split}\]</div>
+<p>Hér er rétt að lesandinn staldri við og sannfæri sig um að föllin, sem
+summurnar fjórar skilgreina séu lausnirnar á jaðargildisverkefnunum
+fjórum hér að ofan.</p>
+<p>Í þessari úrlausn sáum við að það er mikilvægt að föllin
+<span class="math">\(x\mapsto \sin(n{\pi}x/L)\)</span> uppfylla gefnu jaðarskilyrðin í
+<span class="math">\(x=0\)</span> og <span class="math">\(x=L\)</span> og jafnframt að það er lykilatriði að þau eru
+<em>eiginföll</em> fyrri liðarins í Laplace-virkjanum, þ.e.</p>
+<div class="math">
+\[-\dfrac{d^2}{dx^2} \sin(n{\pi} x/L)=
+ \big(n{\pi}/L\big)^2 \sin(n{\pi} x/L).\]</div>
+<div id='scrolled_to_subsection_3' > <script> top.scrolldepth_tags.push('#scrolled_to_subsection_3'); </script></div>
+<div class="section" id="laplace-virkinn-i-polhnitum">
+<h2>5.3. Laplace-virkinn í pólhnitum<a class="headerlink" href="#laplace-virkinn-i-polhnitum" title="Varanlegur hlekkur á titilinn">¶</a></h2>
+<p>Í þessari grein höldum við áfram með Dirichlet-verkefnið fyrir
+Laplace-virkjann, en nú leysum við það á hringskífu</p>
+<div class="math">
+\[\begin{split}\begin{cases} \Delta u=
+ \dfrac{\partial^2u}{\partial x^2}+
+ \dfrac{\partial^2u}{\partial y^2}=0, &amp;x^2+y^2&lt;a^2,\\
+ u(x,y)=\varphi(x,y), &amp;x^2+y^2=a^2.
+ \end{cases}\end{split}\]</div>
+<p>Hér er <span class="math">\(\varphi\)</span> gefið fall á jaðri hringskífunnar
+<span class="math">\(D_a=\{(x,y); x^2+y^2&lt;a^2\}\)</span>. Til þess að leysa verkefnið skiptum
+við yfir í pólhnit og setjum
+<span class="math">\(v(r,\theta)=u(r\cos \theta,r\sin \theta)\)</span> og
+<span class="math">\({\psi}(\theta)=\varphi(a\cos \theta,a\sin \theta)\)</span>. Í viðauka D
+er leidd út formúla fyrir Laplace-virkjann í pólhnitum,</p>
+<div class="math">
+\[\Delta = \dfrac 1r\dfrac{\partial}{\partial r}
+ \bigg(r\dfrac{\partial }{\partial r}\bigg)
+ +\dfrac 1{r^2}\dfrac{\partial^2 }{\partial\theta^2},\]</div>
+<p>svo verkefnið (<span class="xref std std-ref">Link title</span>) verður</p>
+<div class="math">
+\[\begin{split}\begin{cases}
+ \dfrac 1r\dfrac{\partial}{\partial r}
+ \bigg(r\dfrac{\partial v}{\partial r}\bigg)
+ +\dfrac 1{r^2}\dfrac{\partial^2 v}{\partial\theta^2}=0, &amp;r&lt;a,
+ \ {\theta}\in {{\mathbb  R}},\\
+ v(a,\theta)={\psi}(\theta), &amp;{\theta}\in {{\mathbb  R}}.
+ \end{cases}\end{split}\]</div>
+<p>Nú er ljóst að bæði <span class="math">\(v\)</span> og <span class="math">\({\psi}\)</span> eru
+<span class="math">\(2\pi\)</span>-lotubundin föll af <span class="math">\(\theta\)</span> og því er eðlileg
+lausnartilgáta að setja þau fram með Fourier-röðum með tilliti til
+<span class="math">\({\theta}\)</span></p>
+<div class="math">
+\[v(r,\theta)=\sum\limits_{n=-\infty}^{+\infty}
+ v_n(r)e^{in\theta}, \qquad
+ {\psi}(\theta)=\sum\limits_{n=-\infty}^{+\infty}
+ {\psi}_n e^{in\theta},\]</div>
+<p>þar sem <span class="math">\(v_n(r)=c_n(v(r,\cdot))\)</span> er Fourier-stuðull <span class="math">\(v\)</span>,
+þar sem litið er á <span class="math">\(v\)</span> sem fall af <span class="math">\(\theta\)</span> fyrir fast
+<span class="math">\(r\)</span> og <span class="math">\({\psi}_n=c_n({\psi})\)</span>. Nú látum við Laplace-virkjann
+verka lið fyrir lið í röðinni fyrir <span class="math">\(v\)</span> og lítum einnig á
+jaðarskilyrðin:</p>
+<div class="math">
+\[\begin{split}\begin{aligned}
+ \Delta v(r,\theta)&amp;=\dfrac 1{r^2}\sum\limits_{n=-\infty}^{+\infty}
+ \bigg(r\partial_r\big(r\partial_r\big)
+ +\partial_\theta^2\bigg)v_n(r)e^{in\theta}\\
+ &amp;=\dfrac 1{r^2}\sum\limits_{n=-\infty}^{+\infty}
+ \bigg(r\big(rv_n{{^{\prime}}}(r)\big){{^{\prime}}}-n^2v_n(r)\bigg)e^{in\theta}=0,\\
+ v(a,\theta)&amp;=\sum\limits_{n=-\infty}^{+\infty}v_n(a)e^{in{\theta}}=
+ \sum\limits_{n=-\infty}^{+\infty} {\psi}_ne^{in\theta}={\psi}(\theta).\end{aligned}\end{split}\]</div>
+<p>Af þessum tveimur jöfnum sjáum við að stuðlafallið <span class="math">\(v_n\)</span> verður að
+vera lausn á jaðargildisverkefninu</p>
+<div class="math">
+\[\begin{split}\begin{cases}
+ r\dfrac d{dr}\bigg(r\dfrac{dv_n}{dr}\bigg)-n^2v_n=0, &amp;r&lt;a,\\
+ v_n(a)={\psi}_n, \quad v_n(r) \text{ takmarkað ef } r\to 0.
+ \end{cases}\end{split}\]</div>
+<p>Þetta er Euler-jafna, sem við fjölluðum um í grein 7.3, og því leitum
+við að lausn af gerðinni <span class="math">\(v_n(r)=r^\alpha\)</span> og sjáum að
+<span class="math">\(\alpha\)</span> verður þá að uppfylla</p>
+<div class="math">
+\[r\dfrac d{dr}\bigg( r\dfrac d{dr}r^\alpha\bigg)=\alpha^2r^\alpha=
+ n^2r^\alpha.\]</div>
+<p>Þetta segir okkur að <span class="math">\(\alpha=\pm n\)</span> og að almenn lausn á
+(<span class="xref std std-ref">Link title</span>) sé</p>
+<div class="math">
+\[\begin{split}v_n(r)=
+ \begin{cases}
+ A_nr^{|n|}+B_nr^{-|n|}, &amp;n\neq 0\\
+ A_0+B_0\ln r, &amp;n=0.
+ \end{cases}\end{split}\]</div>
+<p>Til þess að lausnin geti verið takmörkuð í <span class="math">\(r=0\)</span>, þá verðum við
+að útiloka liðina með neikvæðum veldisvísi og logrann. Skilyrðið
+<span class="math">\(v_n(a)={\psi}_n\)</span> gefur að <span class="math">\(A_n={\psi}_n/a^{|n|}\)</span>. Þar með
+er lausnin fundin</p>
+<div class="math">
+\[v(r,\theta)=\sum\limits_{n=-\infty}^{+\infty}
+ c_n({\psi}) \bigg(\dfrac r a\bigg)^{|n|}e^{in\theta}.\]</div>
+<p>Það er auðveld æfing að sannfæra sig um að þetta sé lausn á
+Laplace-jöfnunni með gefnum jaðarskilyrðum. Hér er mikilvægt að taka
+eftir því að ástæðan fyrir því að þessi lausnaraðferð virkar svona vel
+er að fallið <span class="math">\(e^{in\theta}\)</span> er <em>eiginfall</em> seinni liðarins í
+Laplace-virkjanum, þ.e.</p>
+<div class="math">
+\[-\dfrac{d^2}{d\theta^2}e^{in\theta}=n^2 e^{in\theta}, \qquad
+ \theta\in {{\mathbb  R}}.\]</div>
+<div id='scrolled_to_subsection_4' > <script> top.scrolldepth_tags.push('#scrolled_to_subsection_4'); </script></div>
+<div class="section" id="varmaleiniverkefni-og-fourier-rair">
+<h2>5.4. Varmaleiðniverkefni og Fourier-raðir<a class="headerlink" href="#varmaleiniverkefni-og-fourier-rair" title="Varanlegur hlekkur á titilinn">¶</a></h2>
+<p>Við skulum nú reikna út hitastig í jarðvegi sem fall af tíma <span class="math">\(t\)</span>
+og dýpi <span class="math">\(x\)</span> með hitastigið á yfirborði gefið sem fall af tíma
+<span class="math">\(f(t)\)</span>. Það er eðlilegt að gefa sér að <span class="math">\(f\)</span> sé
+<span class="math">\(T\)</span>-lotubundið fall, þar sem lotan <span class="math">\(T\)</span> getur til dæmis verið
+<span class="math">\(1\)</span> ár. Við þurfum þá að leysa jaðargildisverkefnið</p>
+<div class="math">
+\[\begin{split}\begin{cases}
+ \dfrac{\partial u}{\partial t}-\kappa
+ \dfrac{\partial^2 u}{\partial x^2}=0, &amp;x&gt;0, \ t\in {{\mathbb  R}},\\
+ u(0,t)=f(t), &amp;t\in {{\mathbb  R}},\\
+ u(x,t) \text{ takmarkað ef } &amp; x\to +\infty.
+ \end{cases}\end{split}\]</div>
+<p>Það er eðlileg lausnartilgáta að gefa sér að <span class="math">\(u(x,t)\)</span> sé
+<span class="math">\(T\)</span>-lotubundið fall af <span class="math">\(t\)</span> fyrir fast <span class="math">\(x\)</span>. Við liðum
+því <span class="math">\(u\)</span> í Fourier-röð</p>
+<div class="math">
+\[u(x,t)=\sum\limits_{n=-\infty}^{+\infty}
+ u_n(x)e^{in\omega t}, \qquad \omega=2\pi/T,\]</div>
+<p>því <span class="math">\(f\)</span> er af sömu gerð</p>
+<div class="math">
+\[f(t)=\sum\limits_{n=-\infty}^{+\infty}
+ c_n(f)e^{in\omega t}.\]</div>
+<p>Til þess að ákvarða stuðlana <span class="math">\(u_n(x)\)</span>, þá stingum við röðinni
+fyrir <span class="math">\(u\)</span> inn í varmaleiðnijöfnuna og setjum fram jaðarskilyrðið
+með röðum,</p>
+<div class="math">
+\[\begin{split}\begin{aligned}
+ \dfrac{\partial u}{\partial t}-\kappa
+ \dfrac{\partial^2 u}{\partial x^2}&amp;=
+ \sum\limits_{n=-\infty}^{+\infty}\bigg(
+ \dfrac{\partial }{\partial t}-\kappa
+ \dfrac{\partial^2 }{\partial x^2}\bigg)u_n(x)e^{in\omega t}\\
+ &amp;= \sum\limits_{n=-\infty}^{+\infty}\bigg(
+ in\omega  u_n(x)-{\kappa}u_n{{^{\prime\prime}}}(x)\bigg)e^{in\omega t}=0,\\
+ u(0,t)&amp;=\sum\limits_{n=-\infty}^{+\infty} u_n(0)e^{in\omega t}
+ =\sum\limits_{n=-\infty}^{+\infty} c_n(f)e^{in\omega t}=f(t).\end{aligned}\end{split}\]</div>
+<p>Þar með verður <span class="math">\(u_n\)</span> að uppfylla</p>
+<div class="math">
+\[\begin{split}\begin{cases}
+ u_n{{^{\prime\prime}}}(x)-\dfrac{in\omega}\kappa u_n(x)=0,\\
+ u_n(0)=c_n(f),\\
+ u_n(x) \text{ er takmarkað ef } x \to +\infty.
+ \end{cases}\end{split}\]</div>
+<p>Kennijafna afleiðujöfnunnar er</p>
+<div class="math">
+\[\lambda^2-\dfrac{in\omega}\kappa=0\]</div>
+<p>og núllstöðvar hennar eru <span class="math">\(\lambda=\pm k_n\)</span>, þar sem</p>
+<div class="math">
+\[\begin{split}k_n=
+ \begin{cases}
+ \bigg(\dfrac 1{\sqrt 2}+\dfrac i{\sqrt 2}\bigg)
+ \sqrt{n\omega/\kappa}, &amp;n&gt;0,\\
+ 0, &amp;n=0,\\
+ \bigg(\dfrac 1{\sqrt 2}-\dfrac i{\sqrt 2}\bigg)
+ \sqrt{|n|\omega/\kappa}, &amp;n&lt;0.
+ \end{cases}\end{split}\]</div>
+<p>Lausnin er því</p>
+<div class="math">
+\[\begin{split}u_n(x)=\begin{cases}
+ A_ne^{-k_nx}+B_ne^{k_nx}, &amp;n\neq 0\\
+ A_0+B_0x, &amp;n=0.
+ \end{cases}\end{split}\]</div>
+<p>Til þess að lausnin haldist takmörkuð ef <span class="math">\(x\to +\infty\)</span>, þá
+verður <span class="math">\(B_n=0\)</span> að gilda fyrir öll <span class="math">\(n\)</span>. Jaðarskilyrðið
+<span class="math">\(u_n(0)=c_n(f)\)</span> gefur að <span class="math">\(A_n=c_n(f)\)</span>. Við höfum því að</p>
+<div class="math">
+\[u_n(x)=c_n(f)e^{-\sqrt{|n|\omega/2\kappa}\, x}
+ e^{-i{{\operatorname{sign}}}(n)\sqrt{|n|\omega/2\kappa}\, x},\]</div>
+<p>og þar með er lausnin fundin</p>
+<div class="math">
+\[u(x,t)=\sum\limits_{n=-\infty}^{+\infty}
+ c_n(f)e^{-\sqrt{|n|\omega/2\kappa}\, x}
+ e^{i(n\omega t-{{\operatorname{sign}}}(n)\sqrt{|n|\omega/2\kappa}\, x)}.\]</div>
+<p>Við sjáum að sveifluvíddin og fasahliðrunin í liðnum
+<span class="math">\(u_n(x)e^{in\omega t}\)</span> í lausninni eru háð dýpi og tíðninni
+<span class="math">\(n\omega\)</span>.</p>
+<div id='scrolled_to_subsection_5' > <script> top.scrolldepth_tags.push('#scrolled_to_subsection_5'); </script></div>
+<div class="section" id="askilnaur-breytistaera">
+<h2>5.5. Aðskilnaður breytistærða<a class="headerlink" href="#askilnaur-breytistaera" title="Varanlegur hlekkur á titilinn">¶</a></h2>
+<div class="section" id="id1">
+<h3>5.5.1. Aðskilnaður breytistærða<a class="headerlink" href="#id1" title="Varanlegur hlekkur á titilinn">¶</a></h3>
+<p>Í öllum þeim sýnidæmum sem við höfum fjallað um í þessum kafla höfum við
+gengið út frá lausnartilgátum sem segja að hægt sé að liða lausn á
+hlutafleiðujöfnu með hliðarskilyrðum í einhvers konar röð. Annað
+sjónarhorn á þessar lausnaraðferðir er oft nefnt <em>aðskilnaður
+breytistærða</em>. Við skulum nú leysa nokkur verkefni með þeirri aðferð.</p>
+<div class="section" id="synidaemi">
+<h4>5.5.1.1. Sýnidæmi<a class="headerlink" href="#synidaemi" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<script type="text/javascript">
+    function showhide(element){
+        if (!document.getElementById)
+            return
+
+        if (element.style.display == "block")
+            element.style.display = "none"
+        else
+            element.style.display = "block"
+    };
+</script>
+<div class="admonition note"><p class="first admonition-title"><a href="javascript:showhide(document.getElementById('toggleblock51'))">Sýna dæmi: Strengur; framhald</a></p><div id="toggleblock51" style="display: none"><br/><p>Í sýnidæmi 13.8.5 leiddum við út formúlu fyrir sveiflandi streng en
+frávik hans <span class="math">\(u(x,t)\)</span> frá jafnvægisstöðu uppfyllir bylgjujöfnuna</p>
+<div class="math">
+\[\dfrac{\partial^2 u}{\partial t^2}-
+ c^2\dfrac{\partial^2 u}{\partial x^2}=0, \qquad c=\sqrt{T/\varrho},\]</div>
+<p>þar sem <span class="math">\(T\)</span> táknar spennuna í strengnum og <span class="math">\({\varrho}\)</span>
+táknar massa á lengdareiningu. Ef við gefum okkur að strengurinn sé
+festur niður í báðum endapunktum, þá fáum við náttúruleg jaðarskilyrði</p>
+<div class="math">
+\[u(0,t)=u(L,t)=0.\]</div>
+<p>Þegar <em>aðskilnaði breytistærða</em> er beitt, er byrjað á að ákvarða allar
+lausnir á jöfnunni af gerðinni <span class="math">\(v(x,t)=T(t)X(x)\)</span>. Við stingum
+þessu falli inn í jöfnuna (<span class="xref std std-ref">Link title</span>) og fáum</p>
+<div class="math">
+\[\dfrac{\partial^2 v}{\partial t^2}-
+ c^2\dfrac{\partial^2 v}{\partial x^2}=
+ T{{^{\prime\prime}}}(t)X(x)-c^2T(t)X{{^{\prime\prime}}}(x)=0.\]</div>
+<p>Með því að deila í gegnum þessa jöfnu með <span class="math">\(c^2T(t)X(x)\)</span>, þá sjáum
+við að hún jafngildir</p>
+<div class="math">
+\[\dfrac{T{{^{\prime\prime}}}(t)}{c^2T(t)} = \dfrac{X{{^{\prime\prime}}}(x)}{X(x)}.\]</div>
+<p>Vinstra megin jafnaðarmerkisins stendur fall, sem er aðeins háð
+<span class="math">\(t\)</span>, en hægra megin stendur fall, sem er aðeins háð <span class="math">\(x\)</span>.
+Þessi stærð hlýtur því að vera fasti. Við skulum tákna hann með
+<span class="math">\(-{\lambda}\)</span>. Nú segir jaðarskilyrðið (<span class="xref std std-ref">Link title</span>) að
+<span class="math">\(X(0)=X(L)=0\)</span> verði að gilda. Þar með verður <span class="math">\(X\)</span> að vera
+lausn á eigingildisverkefninu</p>
+<div class="math">
+\[-X{{^{\prime\prime}}}={\lambda} X, \qquad X(0)=X(L)=0.\]</div>
+<p>Við fundum lausnina á þessu verkefni í sýnidæmi 1.6.2. Eigingildin eru
+<span class="math">\({\lambda}_n=\big(n{\pi}/L\big)^2\)</span> og tilsvarandi eiginföll má
+taka <span class="math">\(X_n(x)=\sin\big(n{\pi}x/L\big)\)</span>, <span class="math">\(n=1,2,3,\dots\)</span>.
+Víkjum nú aftur að (<span class="xref std std-ref">Link title</span>) til þess að ákvarða fallið <span class="math">\(T\)</span>.
+Fyrir hin ólíku eigingildi þarf <span class="math">\(T\)</span> að uppfylla</p>
+<div class="math">
+\[-T{{^{\prime\prime}}}= c^2{\lambda}_n T.\]</div>
+<p>Almenn lausn þessarar jöfnu er
+<span class="math">\(T_n(t)= A_n\cos\big(n{\pi}ct/L\big) + B_n\sin\big(n{\pi}ct/L\big)\)</span>. Niðurstaðan er nú að allar lausnir af
+gerðinni <span class="math">\(T(t)X(x)\)</span> á (<span class="xref std std-ref">Link title</span>) með jaðarskilyrðinu
+(<span class="xref std std-ref">Link title</span>) eru</p>
+<div class="math">
+\[T_n(t)X_n(x)=\big(A_n\cos\big(n{\pi}ct/L\big) +
+ B_n\sin\big(n{\pi}ct/L\big)\big)
+ \sin\big(n{\pi}x/L\big), \qquad n=1,2,\dots,\]</div>
+<p>þar sem velja má fastana <span class="math">\(A_n\)</span> og <span class="math">\(B_n\)</span> frjálst. Það er
+ljóst að summa endanlega margra lausna á (<span class="xref std std-ref">Link title</span>) og
+(<span class="xref std std-ref">Link title</span>) er lausn og sama gildir um hratt samleitnar óendanlegar
+raðir</p>
+<div class="math">
+\[u(x,t)=\sum\limits_{n=1}^{\infty}
+ \big(A_n\cos\big(n{\pi}ct/L\big) +
+ B_n\sin\big(n{\pi}ct/L\big)\big)
+ \sin\big(n{\pi}x/L\big).\]</div>
+<p>Við fáum því Fourier-sínusröð sem við fjölluðum um í kafla 8. Til þess
+að ákvarða stuðlana <span class="math">\(A_n\)</span> og <span class="math">\(B_n\)</span> þarf að bæta við fleiri
+hliðarskilyrðum. Eðlilegt er að það séu upphafsskilyrði af gerðinni</p>
+<div class="math">
+\[u(x,0)={\varphi}(x), \qquad {\partial}_tu(x,0)={\psi}(x),\]</div>
+<p>þar sem <span class="math">\({\varphi}\)</span> og <span class="math">\({\psi}\)</span> eru gefin föll á bilinu
+<span class="math">\((0,L)\)</span>. Ef við göngum út frá því að sínusstuðlar fallanna
+<span class="math">\(\varphi\)</span> og <span class="math">\({\psi}\)</span> séu þekktir</p>
+<div class="math">
+\[\varphi(x)=\sum\limits_{n=1}^{\infty} \varphi_n \sin(n{\pi}x/L), \qquad
+ {\psi}(x)=\sum\limits_{n=1}^{\infty} {\psi}_n \sin(n{\pi}x/L),\]</div>
+<p>þá gefa upphafsskilyrðin</p>
+<div class="math">
+\[\begin{split}\begin{gathered}
+ u(x,0)=\sum\limits_{n=1}^{\infty}A_n\sin(n{\pi}x/L)=
+ \sum\limits_{n=1}^{\infty}\varphi_n\sin(n{\pi}x/L)=\varphi(x),\\
+ {\partial}_tu(x,0)=\sum\limits_{n=1}^{\infty}
+ B_n(n{\pi}c/L)\sin(n{\pi}x/L)=
+ \sum\limits_{n=1}^{\infty}{\psi}_n\sin(n{\pi}x/L)={\psi}(x).\end{gathered}\end{split}\]</div>
+<p>Af þessum þremur jöfnum drögum við þá ályktun að</p>
+<div class="math">
+\[A_n={\varphi}_n \qquad \text{ og } \qquad
+ B_n={\psi}_n L/(n{\pi}c).\]</div>
+<p>Lausnin <span class="math">\(u(x,t)\)</span> er þá fundin</p>
+<div class="math">
+\[u(x,t)=\sum\limits_{n=1}^{\infty}
+ \bigg(\varphi_n\cos\big(n{\pi}ct/L\big) +
+ \dfrac{{\psi}_nL}{n{\pi}c} \sin\big(n{\pi}ct/L\big)\bigg)
+ \sin(n{\pi}x/L).\]</div>
+<p>Þetta er að sjálfsögðu sama lausnarformúla og við leiddum út í sýnidæmi
+8.7.5.</p>
+</div></div></div>
+<div class="section" id="id2">
+<h4>5.5.1.2. Sýnidæmi<a class="headerlink" href="#id2" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<script type="text/javascript">
+    function showhide(element){
+        if (!document.getElementById)
+            return
+
+        if (element.style.display == "block")
+            element.style.display = "none"
+        else
+            element.style.display = "block"
+    };
+</script>
+<div class="admonition note"><p class="first admonition-title"><a href="javascript:showhide(document.getElementById('toggleblock52'))">Sýna dæmi: Dirichlet-verkefnið á ferhyrningi</a></p><div id="toggleblock52" style="display: none"><br/><p>Tökum nú aftur fyrir verkefni númer 2 á mynd 13.2(BYRJUN Á 15.2!) og leysum það út frá
+sjónarhóli aðskilnaðar breytistærða.</p>
+<div class="math">
+\[\begin{split}\begin{cases} \Delta u={\partial}_x^2u+{\partial}_y^2u=0, &amp;0&lt;x&lt;L, \ 0&lt;y&lt;M,\\
+ u(0,y)=u(L,y)=0, &amp;0&lt;y&lt;M,\\
+ u(x,0)=0, \ u(x,M)=\varphi(x), &amp;0&lt;x&lt;L,\\
+ \end{cases}\end{split}\]</div>
+<p>þar sem <span class="math">\(\varphi\)</span> er gefið fall á <span class="math">\([0,L]\)</span>. Við byrjum
+samkvæmt forskrift í aðskilnaði breytistærða á því að finna allar
+lausnir <span class="math">\(v\)</span> af gerðinni <span class="math">\(v(x,y)=X(x)Y(y)\)</span> sem uppfylla
+jöfnuna og óhliðruðu jaðarskilyrðin. Fyrst stingum við <span class="math">\(v\)</span> inn í
+jöfnuna og fáum</p>
+<div class="math">
+\[X{{^{\prime\prime}}}(x)Y(y)+X(x)Y{{^{\prime\prime}}}(y)=0.\]</div>
+<p>Nú deilum við í gegnum þessa jöfnu með <span class="math">\(X(x)Y(y)\)</span> og sjáum að</p>
+<div class="math">
+\[-\dfrac{X{{^{\prime\prime}}}(x)}{X(x)}=\dfrac{Y{{^{\prime\prime}}}(y)}{Y(y)}.\]</div>
+<p>Fallið sem stendur vinstra megin jafnaðarmerkisins er einungis háð
+<span class="math">\(x\)</span>, en það sem stendur hægra megin er einungis háð <span class="math">\(y\)</span>. Við
+höfum því</p>
+<div class="math">
+\[-X{{^{\prime\prime}}}(x)=\lambda X(x) \qquad \text{ og } \qquad Y{{^{\prime\prime}}}(y)=\lambda Y(y),\]</div>
+<p>þar sem <span class="math">\(\lambda\)</span> er fasti. Nú lítum við á óhliðruðu
+jaðarskilyrðin</p>
+<div class="math">
+\[X(0)Y(y)=X(L)Y(y)=0, \qquad X(x)Y(0)=0,\]</div>
+<p>og sjáum að <span class="math">\(X\)</span> verður að vera lausn á eigingildisverkefninu</p>
+<div class="math">
+\[-X{{^{\prime\prime}}}=\lambda X, \qquad X(0)=X(L)=0.\]</div>
+<p>Þetta verkefni leystum við í sýnidæmi 1.6.2 og komumst að þeirri
+niðurstöðu að eigingildin eru
+<span class="math">\(\lambda=\lambda_n=\big(n\pi/L\big)^2\)</span>, <span class="math">\(n=1,2,3,\dots\)</span>, og
+tilsvarandi eiginföll</p>
+<div class="math">
+\[X_n(x)=C_n \sin\big(n\pi x/L\big), \qquad n=1,2,3,\dots.\]</div>
+<p>Nú snúum við okkur að seinni jöfnunni í (<span class="xref std std-ref">Link title</span>) og leysum hana
+með seinna jaðarskilyrðinu í (<span class="xref std std-ref">Link title</span>),</p>
+<div class="math">
+\[Y{{^{\prime\prime}}}(y)=\big(n\pi/L\big)^2 Y(y), \qquad Y(0)=0.\]</div>
+<p>Þessi jafna hefur greinilega lausnina</p>
+<div class="math">
+\[Y_n(y)=D_n \sinh\big(n\pi y/L\big), \qquad n=1,2,3,\dots.\]</div>
+<p>Nú eru allar lausnir á (<span class="xref std std-ref">Link title</span>) af gerðinni
+<span class="math">\(v(x,y)=X(x)Y(y)\)</span> með óhliðruðu jaðarskilyrðunum af gerðinni</p>
+<div class="math">
+\[v(x,y)=C_nD_n \sin\big(n\pi x/L\big)\sinh\big(n\pi y/L\big), \qquad
+ n=1,2,3,\dots.\]</div>
+<p>Hér höfum við tvo frjálsa fasta sem við margföldum saman og því er
+greinilegt að við getum valið <span class="math">\(D_n=1\)</span>. Nú myndum við óendanlega
+línulega samatekt af þessum lausnum</p>
+<div class="math">
+\[u(x,y)=\sum\limits_{n=1}^\infty
+ C_n\sin\big(n\pi x/L\big)\sinh\big(n\pi y/L\big).\]</div>
+<p>Þetta er fall sem uppfyllir jöfnuna (<span class="xref std std-ref">Link title</span>) með óhliðruðum
+jaðarskilyrðum. Nú er eitt jaðarskilyrði eftir,
+<span class="math">\(u(x,M)=\varphi(x)\)</span>. Til þess að það verði uppfyllt þurfum við að
+hafa</p>
+<div class="math">
+\[\begin{split}\begin{aligned}
+ u(x,M)&amp;= \sum\limits_{n=1}^\infty
+ C_n \sin\big(n\pi x/L\big)\sinh\big(n\pi M/L\big)\\
+ &amp;= \sum\limits_{n=1}^\infty
+ b_n(\varphi) \sin\big(n\pi x/L\big)=\varphi(x),\end{aligned}\end{split}\]</div>
+<p>þar sem <span class="math">\(b_n(\varphi)\)</span> er Fourier-sínusstuðull fallsins
+<span class="math">\(\varphi\)</span>,</p>
+<div class="math">
+\[b_n(\varphi)=\dfrac 2L\int_0^L\varphi(x)\sin\big(n\pi x/L\big)\,  dx\]</div>
+<p>Með því að bera saman stuðlana í summunum tveimur, þá fáum við
+lausnina,</p>
+<div class="math">
+\[u(x,y)=\sum_{n=1}^\infty
+ b_n(\varphi)\dfrac{\sinh\big(n\pi y/L\big)}{\sinh\big(n\pi
+ M/L\big)} \sin\big(n\pi x/L\big).\]</div>
+<p>Athugið að þetta er önnur óendanlega summan í formúlunni
+(<span class="xref std std-ref">Link title</span>).</p>
+</div></div></div>
+<div class="section" id="id3">
+<h4>5.5.1.3. Sýnidæmi<a class="headerlink" href="#id3" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<script type="text/javascript">
+    function showhide(element){
+        if (!document.getElementById)
+            return
+
+        if (element.style.display == "block")
+            element.style.display = "none"
+        else
+            element.style.display = "block"
+    };
+</script>
+<div class="admonition note"><p class="first admonition-title"><a href="javascript:showhide(document.getElementById('toggleblock53'))">Sýna dæmi: Dirichlet-verkefnið á hringskífu</a></p><div id="toggleblock53" style="display: none"><br/><p>Við skulum nú leysa aftur verkefnið sem við tókum fyrir í grein 13.3,</p>
+<div class="math">
+\[\begin{split}\begin{cases}
+ \dfrac 1r\dfrac{\partial}{\partial r}
+ \bigg(r\dfrac{\partial v}{\partial r}\bigg)
+ +\dfrac 1{r^2}\dfrac{\partial^2 v}{\partial\theta^2}=0, &amp;r&lt;a,
+ \ {\theta}\in {{\mathbb  R}},\\
+ v(a,\theta)={\psi}(\theta), &amp;{\theta}\in {{\mathbb  R}},
+ \end{cases}\end{split}\]</div>
+<p>þar sem föllin <span class="math">\(v\)</span> og <span class="math">\(\psi\)</span> eru <span class="math">\(2\pi\)</span>-lotubundin í
+<span class="math">\(\theta\)</span>. Við beitum aðskilnaði breytistærða og leitum fyrst að
+öllum lausnum af gerðinni <span class="math">\(w(r,\theta)=R(r)\Theta(\theta)\)</span>. Ef við
+stingum þessu falli inn í afleiðujöfnuna, þá fáum við að</p>
+<div class="math">
+\[r \big(r R{{^{\prime}}}(r)\big){{^{\prime}}}\Theta(\theta)
+ +R(r)\Theta{{^{\prime\prime}}}(\theta)=0.\]</div>
+<p>Nú deilum við í gegnum jöfnuna með <span class="math">\(R(r)\Theta(\theta)\)</span> og fáum
+þá jafngilda jöfnu</p>
+<div class="math">
+\[r\big(r R{{^{\prime}}}(r)\big){{^{\prime}}}/R(r)
+ =-\Theta {{^{\prime\prime}}}(\theta)/\Theta (\theta).\]</div>
+<p>Vinstri hlið þessarar jöfnu er aðeins háð <span class="math">\(r\)</span> en hægri hliðin er
+aðeins háð <span class="math">\(\theta\)</span>. Þar með sjáum við að þessi föll eru jöfn sama
+fastanum <span class="math">\(\lambda\)</span>. Við getum þá skrifað jöfnurnar upp aftur</p>
+<div class="math">
+\[-\Theta{{^{\prime\prime}}}(\theta)=\lambda\Theta(\theta),
+ \qquad
+ r\dfrac d{dr}\bigg(r\dfrac {d R}{dr}(r)\bigg)=\lambda {R(r)}.\]</div>
+<p>Almenn lausn á fyrri jöfnunni er</p>
+<div class="math">
+\[\begin{split}\Theta(\theta)=\begin{cases}
+ Ae^{i\beta\theta}+Be^{-i\beta\theta},  &amp;\lambda=\beta^2\neq 0,\\
+ A_0+B_0\theta, &amp;\lambda=0.
+ \end{cases}\end{split}\]</div>
+<p>Fallið <span class="math">\(\Theta\)</span> á að vera <span class="math">\(2\pi\)</span>-lotubundið og því fáum við
+að einu gildin sem <span class="math">\(\lambda\)</span> getur tekið eru
+<span class="math">\(\lambda=\lambda_n=n^2\)</span>, <span class="math">\(n=0,1,2,\dots\)</span>, og <span class="math">\(B_0=0\)</span>.
+Þar með er</p>
+<div class="math">
+\[\begin{split}\Theta(\theta)=\begin{cases}
+ A_ne^{in\theta}+B_ne^{-in\theta},  &amp;n=1,2,3,\dots,\\
+ A_0, &amp;\lambda=0.
+ \end{cases}\end{split}\]</div>
+<p>Nú ráðumst við á seinni jöfnuna í (<span class="xref std std-ref">Link title</span>) með
+<span class="math">\(\lambda=n^2\)</span>. Þetta er Euler-jafna, sem við fjölluðum um í grein
+2.3. Með því að leita að lausn af gerðinni <span class="math">\(R(r)=r^\alpha\)</span> sjáum
+við að <span class="math">\(\alpha=\pm n\)</span>. Almenn lausn á seinni jöfnunni í
+(<span class="xref std std-ref">Link title</span>) með <span class="math">\(\lambda=n^2\)</span> er því</p>
+<div class="math">
+\[\begin{split}R(r)=\begin{cases}
+ C_nr^n+D_nr^{-n}, &amp;n=1,2,3,\dots,\\
+ C_0+D_0\ln r, &amp;n=0.
+ \end{cases}\end{split}\]</div>
+<p>Við erum að leysa (<span class="xref std std-ref">Link title</span>) og jafnan á að gilda í <span class="math">\(r=0\)</span>.
+Því verður hún að vera takmörkuð og við ályktum að <span class="math">\(D_n=0\)</span>,
+<span class="math">\(n=0,1,2,\dots\)</span>. Þar með er</p>
+<div class="math">
+\[\begin{split}R(r)=\begin{cases}
+ C_nr^n, &amp;n=1,2,3,\dots,\\
+ C_0, &amp;n=0.
+ \end{cases}\end{split}\]</div>
+<p>Við erum nú búin að ákvarða allar lausnir á (<span class="xref std std-ref">Link title</span>) af gerðinni
+<span class="math">\(w(r,\theta)=R(r)\Theta(\theta)\)</span> og þær eru</p>
+<div class="math">
+\[w(r,\theta)=
+ C_nr^n\big(A_ne^{in\theta}+B_ne^{-in\theta}\big), \qquad n=0,1,2,\dots,\]</div>
+<p>þar sem <span class="math">\(A_n\)</span>, <span class="math">\(B_n\)</span> og <span class="math">\(C_n\)</span> eru frjálsir fastar.
+Það er greinilegt að við megum alltaf velja <span class="math">\(C_n=1\)</span>. Nú er jafnan
+(<span class="xref std std-ref">Link title</span>) línuleg og óhliðruð, svo línuleg samantekt af lausnum er
+lausn og sama gildir um hratt samleitnar óendanlegar summur. Ef við
+tökum lausnirnar saman, þá er greinilegt að við getum skrifað
+óendanlegar línulegar samantektir sem</p>
+<div class="math">
+\[v(r,\theta)=\sum\limits_{-\infty}^{+\infty}A_nr^{|n|}e^{in\theta},\]</div>
+<p>þar sem við höfum sett <span class="math">\(A_n=B_{-n}\)</span> ef <span class="math">\(n&lt;0\)</span>. Hér er
+Fourier-röðin komin. Við eigum eftir að notfæra okkur jaðarskilyrðið í
+<span class="math">\(r=a\)</span>, en það segir</p>
+<div class="math">
+\[v(a,\theta)=\sum\limits_{-\infty}^{+\infty}A_na^{|n|}e^{in\theta}
+ =\sum\limits_{-\infty}^{+\infty}c_n(\psi)a^{|n|}e^{in\theta}=\psi(\theta).\]</div>
+<p>Með samanburði á stuðlum fáum við nú að <span class="math">\(A_n=c_n(\psi)/a^{|n|}\)</span>
+og við endum á sömu lausnarformúlu og áður</p>
+<div class="math">
+\[v(r,\theta)=\sum\limits_{-\infty}^{+\infty}
+ c_n(\psi)\bigg(\dfrac ra\bigg)^{|n|} e^{in\theta}.\]</div>
+</div></div></div>
+</div>
+<div id='scrolled_to_subsection_6' > <script> top.scrolldepth_tags.push('#scrolled_to_subsection_6'); </script></div>
+<div class="section" id="tvofaldar-fourier-rair">
+<h2>5.6. Tvöfaldar Fourier-raðir<a class="headerlink" href="#tvofaldar-fourier-rair" title="Varanlegur hlekkur á titilinn">¶</a></h2>
+<div class="section" id="id4">
+<h3>5.6.1. Tvöfaldar Fourier-raðir<a class="headerlink" href="#id4" title="Varanlegur hlekkur á titilinn">¶</a></h3>
+<p>Látum <span class="math">\({\varphi}:\overline D\to {{\mathbb  C}}\)</span> vera samfellt
+deildanlegt á <span class="math">\(D=\{(x,y); 0&lt;x&lt;L, 0&lt;y&lt;M\}\)</span> og samfellt á lokuninni
+<span class="math">\(\overline  D\)</span>. Ef <span class="math">\({\varphi}\)</span> er jafnt <span class="math">\(0\)</span> á jaðrinum
+<span class="math">\({\partial}D\)</span>, þá getum við liðað <span class="math">\({\varphi}\)</span> í
+Fourier-sínusröð með tilliti til <span class="math">\(y\)</span></p>
+<div class="math">
+\[{\varphi}(x,y)= \sum\limits_{m=1}^{\infty}
+ {\varphi}_m(x)\sin\big(m{\pi}y/M\big),\]</div>
+<p>þar sem <span class="math">\({\varphi}_m\)</span> er <span class="math">\(m\)</span>-ti Fourierstuðull fallsins
+<span class="math">\(y\mapsto {\varphi}(x,y)\)</span>,</p>
+<div class="math">
+\[{\varphi}_m(x)= \dfrac 2M \int_0^M
+ {\varphi}(x,y)\sin\big(m{\pi}y/M\big)\, dy.\]</div>
+<p>Nú er fallið <span class="math">\({\varphi}_m\)</span> samfellt deildanlegt og tekur gildið
+<span class="math">\(0\)</span> í <span class="math">\(x=0\)</span> og <span class="math">\(x=L\)</span>, svo við getum liðað það í
+Fourier-sínusröð. Ef við látum <span class="math">\(b_{n,m}\)</span> tákna <span class="math">\(n\)</span>-ta
+Fourier-sínusstuðul fallsins <span class="math">\({\varphi}_m\)</span>,</p>
+<div class="math">
+\[b_{n,m}({\varphi}) = \dfrac 4{LM} \int_0^L\int_0^M
+ {\varphi}(x,y) \sin\big(n{\pi}x/L\big)\sin\big(m{\pi}y/M\big)
+ \, dxdy,\]</div>
+<p>þá fáum við framsetningu á <span class="math">\({\varphi}\)</span> með tvöfaldri Fourier-röð,</p>
+<div class="math">
+\[{\varphi}(x,y)=\sum\limits_{n=1}^{{\infty}}
+ \sum\limits_{m=1}^{{\infty}} b_{n,m}({\varphi})
+ \sin\big(n{\pi}x/L\big)\sin\big(m{\pi}y/M\big).\]</div>
+<div class="section" id="id5">
+<h4>5.6.1.1. Sýnidæmi<a class="headerlink" href="#id5" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<script type="text/javascript">
+    function showhide(element){
+        if (!document.getElementById)
+            return
+
+        if (element.style.display == "block")
+            element.style.display = "none"
+        else
+            element.style.display = "block"
+    };
+</script>
+<div class="admonition note"><p class="first admonition-title"><a href="javascript:showhide(document.getElementById('toggleblock54'))">Sýna dæmi: Poisson-jafnan á ferhyrningi</a></p><div id="toggleblock54" style="display: none"><br/><p>Leysum nú Poisson-jöfnuna á rétthyrningi með óhliðruðum jaðarskilyrðum</p>
+<div class="math">
+\[\begin{split}\begin{cases}
+ \Delta u=f(x,y),
+ &amp;0&lt;x&lt;L, 0&lt;y&lt;M, \\
+ u(0,y)=u(L,y)=0,
+ &amp;0&lt;y&lt;M,\\
+ u(x,0)=u(x,M)=0,
+ &amp;0&lt;x&lt;L.
+ \end{cases}\end{split}\]</div>
+<p>Vegna jaðarskilyrðanna göngum við út frá liðun á lausninni í tvöfalda
+Fourier-sínusröð,</p>
+<div class="math">
+\[u(x,y)=\sum\limits_{m=1}^{\infty}\sum\limits_{n=1}^{\infty}
+ u_{n,m} \sin\big(n{\pi}x/L\big)\sin\big(m{\pi}y/M\big).\]</div>
+<p>Við gefum okkur einnig að við þekkjum Fourier-stuðla fallsins <span class="math">\(f\)</span>,</p>
+<div class="math">
+\[f(x,y)=\sum\limits_{m=1}^{\infty}\sum\limits_{n=1}^{\infty}
+ f_{n,m} \sin\big(n{\pi}x/L\big)\sin\big(m{\pi}y/M\big).\]</div>
+<p>Nú látum við Laplace-virkjann verka lið fyrir lið í summunni
+(<span class="xref std std-ref">Link title</span>)</p>
+<div class="math">
+\[\begin{split}\begin{aligned}
+ \Delta u=&amp;
+ \sum\limits_{m=1}^{\infty}\sum\limits_{n=1}^{\infty}
+ u_{n,m}\bigg(\dfrac{\partial^2u}{\partial x^2}
+ +\dfrac{\partial^2u}{\partial y^2}\bigg)
+ \sin\big(n{\pi}x/L\big)\sin\big(m{\pi}y/M\big)\\
+ &amp;=
+ \sum\limits_{m=1}^{\infty}\sum\limits_{n=1}^{\infty}
+ u_{n,m}\big(-n^2{\pi}^2/L^2-m^2{\pi}^2/M^2\big)
+ \sin\big(n{\pi}x/L\big)\sin\big(m{\pi}y/M\big)\\
+ &amp;=
+ \sum\limits_{m=1}^{\infty}\sum\limits_{n=1}^{\infty}
+ f_{n,m}\sin\big(n{\pi}x/L\big)\sin\big(m{\pi}y/M\big)=f(x,y).\end{aligned}\end{split}\]</div>
+<p>Með því að bera saman stuðlana í þessum tveimur röðum, þá fáum við
+lausnarformúluna</p>
+<div class="math">
+\[u(x,y)=\dfrac{-1}{\pi^2}
+ \sum\limits_{m=1}^{\infty}\sum\limits_{n=1}^{\infty}
+ \dfrac{f_{n,m}}{n^2/L^2+m^2/M^2}
+  \sin\big(n{\pi}x/L\big)\sin\big(m{\pi}y/M\big).\]</div>
+</div></div><p>Ef við breytum jaðarskilyrðinu þannig að
+<span class="math">\({\partial}\varphi/{\partial} n=0\)</span> á öllum jaðrinum nema í hornpunktunum, þá er hægt með nákvæmlega
+sömu röksemdafærslu og hér að framan að liða <span class="math">\(\varphi\)</span> í tvöfalda
+Fourier-kósínusröð,</p>
+<div class="math">
+\[{\varphi}(x,y)=\sum\limits_{n=0}^{{\infty}}
+ \sum\limits_{m=0}^{{\infty}} a_{n,m}({\varphi})
+ \cos\big(n{\pi}x/L\big)\cos\big(m{\pi}y/M\big),\]</div>
+<p>þar sem</p>
+<div class="math">
+\[a_{n,m}({\varphi}) = \dfrac {{\alpha}_{n,m}}{LM} \int_0^L\int_0^M
+ {\varphi}(x,y) \cos\big(n{\pi}x/L\big)\cos\big(m{\pi}y/M\big)
+ \, dxdy.\]</div>
+<p>og <span class="math">\({\alpha}_{0,0}=1\)</span>, <span class="math">\({\alpha}_{0,m}={\alpha}_{n,0}=2\)</span>,
+<span class="math">\({\alpha}_{n,m}=4\)</span>, <span class="math">\(n,m=1,2,3,\dots\)</span>.</p>
+</div>
+<div class="section" id="id6">
+<h4>5.6.1.2. Sýnidæmi<a class="headerlink" href="#id6" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<script type="text/javascript">
+    function showhide(element){
+        if (!document.getElementById)
+            return
+
+        if (element.style.display == "block")
+            element.style.display = "none"
+        else
+            element.style.display = "block"
+    };
+</script>
+<div class="admonition note"><p class="first admonition-title"><a href="javascript:showhide(document.getElementById('toggleblock55'))">Sýna dæmi: Varmaleiðni í plötu</a></p><div id="toggleblock55" style="display: none"><br/><p>Við skulum nú leysa varmaleiðnijöfnuna á ferhyrningi með
+Neumann-skilyrði á jaðrinum, en þau segja að jaðarinn sé einangraður,</p>
+<div class="math">
+\[\begin{split}\begin{cases}
+ \dfrac{{\partial} u}{{\partial} t}
+ -{\kappa}\bigg(\dfrac{\partial^2u}{\partial x^2}
+ +\dfrac{\partial^2u}{\partial y^2}\bigg)=0,
+ &amp;0&lt;x&lt;L, 0&lt;y&lt;M, t&gt;0,\\
+ {\partial}_xu(0,y,t)={\partial}_xu(L,y,t)=0,
+ &amp;0&lt;y&lt;M, t&gt;0,\\
+ {\partial}_yu(x,0,t)={\partial}_yu(x,M,t)=0,
+ &amp;0&lt;x&lt;L, t&gt;0,\\
+ u(x,y,0)=\varphi(x,y),
+ &amp;0&lt;x&lt;L, 0&lt;y&lt;M,
+ \end{cases}\end{split}\]</div>
+<p>þar sem <span class="math">\(\varphi\)</span> er gefið fall á
+<span class="math">\(D=\{(x,y); 0&lt;x&lt;L, 0&lt;y&lt;M\}\)</span>. Við úrlausn á þessu verkefni göngum
+við út frá liðun á fallinu <span class="math">\(u\)</span> í Fourier-kósínusröð með stuðlum
+sem eru háðir tíma,</p>
+<div class="math">
+\[u(x,y,t)=\sum\limits_{n=0}^{{\infty}}
+ \sum\limits_{m=0}^{{\infty}} u_{n,m}(t)
+ \cos\big(n{\pi}x/L\big)\cos\big(m{\pi}y/M\big),\]</div>
+<p>og setjum upphafsskilyrðin einnig fram með sams konar Fourier-röð. Til
+einföldunar skulum við skrifa
+<span class="math">\(v_{n,m}(x,y)=\cos\big(n{\pi}x/L\big)\cos\big(m{\pi}y/M\big)\)</span>. Við
+sjáum nú strax að <span class="math">\(u_{n,m}(0)=a_{n,m}({\varphi})\)</span>. Við látum
+varmaleiðnivirkjann verka lið fyrir lið í röðinni fyrir <span class="math">\(u\)</span> og
+fáum þá</p>
+<div class="math">
+\[\begin{split}\begin{aligned}
+ \big({\partial}_t-{\kappa}\Delta \big)u&amp;=
+ \sum\limits_{n=0}^{\infty}\sum\limits_{m=0}^{\infty}
+ \big({\partial}_t-{\kappa}
+ {\partial^2_x}-{\kappa}
+ {\partial^2_y}\big)u_{n,m}(t)
+ v_{n,m}(x,y)\\
+ &amp;=
+ \sum\limits_{n=0}^{\infty}\sum\limits_{m=0}^{\infty}
+ \big(u_{n,m}{{^{\prime}}}(t)+{\kappa}(n^2{\pi}^2/L^2+m^2{\pi}^2/M^2)
+ \big)u_{n,m}(t) v_{n,m}(x,y)=0.\end{aligned}\end{split}\]</div>
+<p>Fourier-stuðlar fallsins <span class="math">\(u\)</span> verða því að uppfylla</p>
+<div class="math">
+\[u_{n,m}{{^{\prime}}}(t)+{\kappa}(n^2{\pi}^2/L^2+m^2{\pi}^2/M^2)u_{n,m}(t)=0,
+ \quad \text{ og } \qquad u_{n,m}(0)=a_{n,m}({\varphi}).\]</div>
+<p>Lausnin verður því</p>
+<div class="math">
+\[u(x,y,t)=\sum\limits_{n=0}^{{\infty}}
+ \sum\limits_{m=0}^{{\infty}}
+ a_{n,m}({\varphi})e^{-{\kappa}{\pi}^2(n^2/L^2+m^2/M^2)t}
+ \cos\big(n{\pi}x/L\big)\cos\big(m{\pi}y/M\big).\]</div>
+</div></div></div>
+<div class="section" id="id7">
+<h4>5.6.1.3. Sýnidæmi<a class="headerlink" href="#id7" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<script type="text/javascript">
+    function showhide(element){
+        if (!document.getElementById)
+            return
+
+        if (element.style.display == "block")
+            element.style.display = "none"
+        else
+            element.style.display = "block"
+    };
+</script>
+<div class="admonition note"><p class="first admonition-title"><a href="javascript:showhide(document.getElementById('toggleblock56'))">Sýna dæmi: Rétthyrnd tromma</a></p><div id="toggleblock56" style="display: none"><br/><p>Nú hugsum við okkur að himna sé strekkt á rétthyrndan ramma
+<span class="math">\(D=\{(x,y); 0&lt;x&lt;L, 0&lt;y&lt;M\}\)</span> og að hún sveiflist þar. Í sýnidæmi
+12.2.2 sáum við að færsla efnispunkts <span class="math">\((x,y)\)</span> frá jafnvægisstöðu
+<span class="math">\(u(x,y,t)\)</span> uppfyllir tvívíðu bylgjujöfnuna. Ef staða og hraði
+trommunnar er gefinn við tímann <span class="math">\(t=0\)</span>, þá er <span class="math">\(u\)</span> lausn
+verkefnisins</p>
+<div class="math">
+\[\begin{split}\begin{cases}
+ \dfrac{{\partial^2} u}{{\partial} t^2}
+ -c^2\bigg(\dfrac{\partial^2u}{\partial x^2}
+ +\dfrac{\partial^2u}{\partial y^2}\bigg)=0,
+ &amp;0&lt;x&lt;L, 0&lt;y&lt;M, t&gt;0,\\
+ u(0,y,t)=u(L,y,t)=0,
+ &amp;0&lt;y&lt;M, t&gt;0,\\
+ u(x,0,t)=u(x,M,t)=0,
+ &amp;0&lt;x&lt;L, t&gt;0,\\
+ u(x,y,0)=\varphi(x,y), \ {\partial}_tu(x,y,0)={\psi}(x,y),
+ &amp;0&lt;x&lt;L, 0&lt;y&lt;M.
+ \end{cases}\end{split}\]</div>
+<p>Við liðum lausnina í tvöfalda Fourier-röð</p>
+<div class="math">
+\[u(x,y,t)=\sum\limits_{n=1}^{{\infty}}
+ \sum\limits_{m=1}^{{\infty}} u_{n,m}(t)
+ \sin\big(n{\pi}x/L\big)\sin\big(m{\pi}y/M\big).\]</div>
+<p>Við látum bylgjuvirkjann verka lið fyrir lið í summunni og sjáum þá að
+<span class="math">\(u_{n,m}\)</span> verður að uppfylla annars stigs jöfnuna</p>
+<div class="math">
+\[u_{n,m}{{^{\prime\prime}}}(t)+c^2{\pi}^2(n^2/L^2+m^2/M^2)u_{n,m}=0,\]</div>
+<p>en almenn lausn hennar er</p>
+<div class="math">
+\[u_{n,m}(t)=A_{n,m}\cos\big(\sqrt{n^2/L^2+m^2/M^2}\, {\pi}ct\big)
+ +B_{n,m}\sin\big(\sqrt{n^2/L^2+m^2/M^2}\, {\pi}ct\big).\]</div>
+<p>Út frá upphafsskilyrðunum sjáum við síðan að</p>
+<div class="math">
+\[A_{n,m}=b_{n,m}({\varphi}) \qquad \text{ og } \qquad
+ B_{n,m}=\dfrac{b_{n,m}({\psi})}{\sqrt{n^2/L^2+m^2/M^2}\, {\pi}c}.\]</div>
+<p>Leyfilegar tíðnir í sveiflunni eru því</p>
+<div class="math">
+\[\{\tfrac 12\sqrt{n^2/L^2+m^2/M^2}\, c; n,m=1,2,3,\dots\}.\]</div>
+<p>Lægsta tíðnin <span class="math">\(\frac 12\sqrt{1/L^2+1/M^2}\, c\)</span> nefnist
+<em>grunntíðni</em> og hinar tíðnirnar nefnast <em>yfirtíðnir</em>. Greinilegt er að
+yfirtíðnirnar eru ekki heiltölumargfeldi af grunntíðninni eins og við
+sáum í hliðstæðu verkefni fyrir sveiflandi streng. Þetta fyrirbæri er
+einnig eiginleiki hringlaga tromma, en það er miklu erfiðara að sýna
+fram á það. Þetta er skýringin á því hvers vegna trommur gefa ekki frá
+sér hreinan tón eins og strengir.</p>
+</div></div></div>
+</div>
+<div id='scrolled_to_subsection_7' > <script> top.scrolldepth_tags.push('#scrolled_to_subsection_7'); </script></div>
+<div class="section" id="eiginfallarair">
+<h2>5.7. Eiginfallaraðir<a class="headerlink" href="#eiginfallarair" title="Varanlegur hlekkur á titilinn">¶</a></h2>
+<div class="section" id="id8">
+<h3>5.7.1. Eiginfallaraðir<a class="headerlink" href="#id8" title="Varanlegur hlekkur á titilinn">¶</a></h3>
+<p>Gerum ráð fyrir að <span class="math">\(P(x,D_x)\)</span> sé venjulegur afleiðuvirki af
+Sturm-Liouville-gerð á bilinu <span class="math">\([a,b]\)</span>,</p>
+<div class="math">
+\[P(x,D_x)v=\dfrac 1{\varrho(x)}\bigg(
+ -\dfrac d{dx}\bigg(p(x)\dfrac{dv}{dx}\bigg)+q(x)v \bigg),\qquad x\in [a,b],\]</div>
+<p>að <span class="math">\(B=(B_1,B_2)\)</span> sé almennur jaðargildisvirki á <span class="math">\([a,b]\)</span>,</p>
+<div class="math">
+\[B_jv=\alpha_{j1}v(a)+\alpha_{j2}v{{^{\prime}}}(a)+
+ \beta_{j1}v(b)+\beta_{j2}v{{^{\prime}}}(b), \qquad j=1,2,\]</div>
+<p>að <span class="math">\(P(x,D_x)\)</span> sé samhverfur með tilliti til jaðarskilyrðanna
+<span class="math">\(Bv=0\)</span> og að <span class="math">\(P(x,D_x)\)</span> sé reglulegur virki, samkvæmt
+skilgreiningum okkar í kafla 9. Þá segir setning 9.2.4 okkur að
+eigingildisverkefnið</p>
+<div class="math">
+\[P(x,D_x)v=\lambda v, \qquad Bv=0,\]</div>
+<p>hafi óendanlega runu af eigingildum</p>
+<div class="math">
+\[\begin{split}\lambda_0&lt;\lambda_1&lt;\lambda_2\cdots \to +\infty\end{split}\]</div>
+<p>og tilsvarandi runu af raungildum eiginföllum</p>
+<div class="math">
+\[u_0,u_1,u_2,\dots.\]</div>
+<p>Eiginföllin eru innbyrðis hornrétt í þeim skilningi að</p>
+<div class="math">
+\[{{\langle u_j,u_k\rangle}}=\int_a^bu_j(x)u_k(x)\varrho(x)\, dx=0,
+ \qquad j\neq k.\]</div>
+<p>Ef <span class="math">\(v\)</span> er tvisvar samfellt deildanlegt og uppfyllir óhliðruðu
+jaðarskilyrðin <span class="math">\(Bv=0\)</span>, þá er</p>
+<div class="math">
+\[v(x)=\sum\limits_{n=0}^{\infty} c_nu_n(x),\]</div>
+<p>þar sem Fourier-stuðlar <span class="math">\(v\)</span> með tilliti til eiginfallanna eru</p>
+<div class="math">
+\[c_n=\int_a^bv(x)u_n(x)\varrho(x)\, dx \bigg/
+ \int_a^bu_n(x)^2\varrho(x)\, dx.\]</div>
+<p>Oft er hægt að leysa hlutafleiðujöfnur með jaðarskilyrðum með því að
+gefa sér liðun á lausninni í eiginfallaröð með tilliti til einnar
+breytistærðar með stuðlum sem eru háðir hinum.</p>
+<div class="section" id="id9">
+<h4>5.7.1.1. Sýnidæmi<a class="headerlink" href="#id9" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<script type="text/javascript">
+    function showhide(element){
+        if (!document.getElementById)
+            return
+
+        if (element.style.display == "block")
+            element.style.display = "none"
+        else
+            element.style.display = "block"
+    };
+</script>
+<div class="admonition note"><p class="first admonition-title"><a href="javascript:showhide(document.getElementById('toggleblock57'))">Sýna dæmi: Varmaleiðni</a></p><div id="toggleblock57" style="display: none"><br/><p>Við skulum nú líta á alhæft varmaleiðniverkefni</p>
+<div class="math">
+\[\begin{split}\begin{cases}
+ \dfrac{\partial u}{\partial t}+P(x,\partial_x)u=f(x,t),
+ &amp;x\in ]a,b[, \ t&gt;0,\\
+ u(x,0)=\varphi(x), &amp; x\in ]a,b[,\\
+ B_1u(\cdot,t)=B_2u(\cdot,t)=0, &amp;t&gt;0.
+ \end{cases}\end{split}\]</div>
+<p>Hér er <span class="math">\(u\)</span> fall af tveimur breytistærðum <span class="math">\((x,t)\)</span> og
+<span class="math">\(B_ju(\cdot,t)\)</span> táknar að jaðargildisvirkinn <span class="math">\(B_j\)</span> verki með
+tilliti til fyrri breytistærðarinnar <span class="math">\(x\)</span>. Við ákvörðum lausnina
+<span class="math">\(u\)</span> með þeirri lausnartilgátu að hægt sé að liða hana í
+eiginfallaröð</p>
+<div class="math">
+\[u(x,t)=\sum\limits_{n=0}^{\infty} c_n(t)u_n(x),\]</div>
+<p>þar sem Fourier-stuðlarnir með tilliti til eiginfallanna eru tímaháðir
+og gefnir með formúlunni</p>
+<div class="math">
+\[c_n(t)=\int_a^bu(x,t)u_n(x)\varrho(x)\, dx \bigg/
+ \int_a^bu_n(x)^2\varrho(x)\, dx.\]</div>
+<p>Fyrst öll eiginföllin uppfylla jaðarskilyrðin, þá er augljóst að fallið
+<span class="math">\(u\)</span> uppfyllir þau einnig, því við megum láta jaðargildisvirkjana
+verka lið fyrir lið í summunni fyrir <span class="math">\(u\)</span>. Nú hugsum við okkur
+einnig að föllin <span class="math">\(f\)</span> og <span class="math">\(\varphi\)</span> séu sett fram með
+eiginfallaröðum</p>
+<div class="math">
+\[f(x,t)=\sum\limits_{n=0}^{\infty} f_n(t)u_n(x), \qquad
+ \varphi(x)=\sum\limits_{n=0}^{\infty} \varphi_nu_n(x).\]</div>
+<p>Ef við látum síðan hlutafleiðuvirkjann verka lið fyrir lið í
+eiginfallaröð <span class="math">\(u\)</span>, notum upphafsskilyrðin og jöfnuna
+<span class="math">\(P(x,D_x)u_n={\lambda}_nu_n\)</span>, þá fáum við</p>
+<div class="math">
+\[\begin{split}\begin{aligned}
+ \dfrac{{\partial}u}{{\partial} t}(x,t) +P(x,{\partial}_x)u(x,t)&amp;=
+ \sum\limits_{n=0}^{\infty}\bigg(
+ \dfrac{{\partial}}{{\partial} t} +P(x,{\partial}_x)\bigg)c_n(t)u_n(x)
+ \label{13.7.6}\\
+ &amp;=\sum\limits_{n=0}^{\infty}\bigg(
+ c_n{{^{\prime}}}(t)u_n(x)+c_n(t)P(x,D_x)u_n(x)\bigg)\nonumber\\
+ &amp;=\sum\limits_{n=0}^{\infty}\bigg(
+ c_n{{^{\prime}}}(t)+{\lambda}_nc_n(t)\bigg)u_n(x)\nonumber\\
+ &amp;=\sum\limits_{n=0}^{\infty} f_n(t)u_n(x)=f(x,t),\nonumber\\
+ u(x,0)&amp;=\sum\limits_{n=0}^{\infty} c_n(0)u_n(x)
+ =\sum\limits_{n=0}^{\infty} {\varphi}_nu_n(x)={\varphi}(x).\nonumber\end{aligned}\end{split}\]</div>
+<p>Með því að bera saman stuðlana í jöfnunum, þá fáum við
+upphafsgildisverkefni fyrir <span class="math">\(c_n(t)\)</span>,</p>
+<div class="math">
+\[\begin{split}\begin{cases}
+ c_n{{^{\prime}}}(t)+{\lambda}_nc_n(t)=f_n(t),\\
+ c_n(0)={\varphi}_n.
+ \end{cases}\end{split}\]</div>
+<p>Þetta er fyrsta stigs jafna með fastastuðla, svo</p>
+<div class="math">
+\[c_n(t)={\varphi}_ne^{-{\lambda}_n t}+
+ e^{-{\lambda}_n t}\int_0^te^{{\lambda}_n {\tau}}f_n({\tau})\, d{\tau}.\]</div>
+</div></div></div>
+<div class="section" id="id10">
+<h4>5.7.1.2. Sýnidæmi<a class="headerlink" href="#id10" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<script type="text/javascript">
+    function showhide(element){
+        if (!document.getElementById)
+            return
+
+        if (element.style.display == "block")
+            element.style.display = "none"
+        else
+            element.style.display = "block"
+    };
+</script>
+<div class="admonition note"><p class="first admonition-title"><a href="javascript:showhide(document.getElementById('toggleblock58'))">Sýna dæmi: Bylgjujafna</a></p><div id="toggleblock58" style="display: none"><br/><p>Nú skulum við líta á hliðstætt dæmi fyrir alhæfða bylgjujöfnu</p>
+<div class="math">
+\[\begin{split}\begin{cases}
+ \dfrac{\partial^2 u}{\partial t^2}+P(x,\partial_x)u=f(x,t),
+ &amp;x\in ]a,b[, \ t&gt;0,\\
+ u(x,0)=\varphi(x),\ {\partial}_tu(x,0)={\psi}(x), &amp; x\in ]a,b[,\\
+ B_1u(\cdot,t)=B_2u(\cdot,t)=0, &amp;t&gt;0.
+ \end{cases}\end{split}\]</div>
+<p>Við hugsum okkur nákvæmlega sams konar framsetningu á <span class="math">\(u\)</span>,
+<span class="math">\(f\)</span> og <span class="math">\({\varphi}\)</span> og í sýnidæmi <span class="xref std std-ref">Link title</span> og bætum
+við liðun á <span class="math">\({\psi}\)</span>,</p>
+<div class="math">
+\[{\psi}(x)=\sum\limits_{n=0}^{\infty}{\psi}_nu_n(x).\]</div>
+<p>Við látum hlutafleiðuvirkjann verka lið fyrir lið í eiginfallasummunni</p>
+<div class="math">
+\[\begin{split}\begin{aligned}
+ \dfrac{{\partial}^2u}{{\partial} t^2}(x,t) +P(x,{\partial}_x)u(x,t)&amp;=
+ \sum\limits_{n=0}^{\infty}\bigg(
+ \dfrac{{\partial}^2}{{\partial} t^2} +P(x,{\partial}_x)\bigg)c_n(t)u_n(x)
+ \\
+ &amp;=\sum\limits_{n=0}^{\infty}\bigg(
+ c_n{{^{\prime\prime}}}(t)u_n(x)+c_n(t)P(x,D_x)u_n(x)\bigg)\nonumber\\
+ &amp;=\sum\limits_{n=0}^{\infty}\bigg(
+ c_n{{^{\prime\prime}}}(t)+{\lambda}_nc_n(t)\bigg)u_n(x)\nonumber\\
+ &amp;=\sum\limits_{n=0}^{\infty} f_n(t)u_n(x)=f(x,t),\nonumber\\
+ u(x,0)&amp;=\sum\limits_{n=0}^{\infty} c_n(0)u_n(x)
+ =\sum\limits_{n=0}^{\infty} {\varphi}_nu_n(x)={\varphi}(x),\nonumber\\
+ {\partial}_tu(x,0)&amp;=\sum\limits_{n=0}^{\infty} c_n{{^{\prime}}}(0)u_n(x)
+ =\sum\limits_{n=0}^{\infty} {\psi}_nu_n(x)={\psi}(x).\nonumber\end{aligned}\end{split}\]</div>
+<p>Eftir stuðlasamanburð fáum við að <span class="math">\(c_n(t)\)</span> verður að uppfylla</p>
+<div class="math">
+\[\begin{split}\begin{cases}
+ c_n{{^{\prime\prime}}}(t)+{\lambda}_nc_n(t)=f_n(t),\\
+ c_n(0)={\varphi}_n, \quad c_n{{^{\prime}}}(0)={\psi}_n.
+ \end{cases}\end{split}\]</div>
+<p>Nú er lausnarformúlan fyrir <span class="math">\(c_n\)</span> háð því hvert formerkið er á
+eigingildinu <span class="math">\({\lambda}_n\)</span>:</p>
+<p>(i) <span class="math">\({\lambda}_n&gt;0\)</span>, <span class="math">\({\lambda}_n={\beta}_n^2\)</span>,
+<span class="math">\({\beta}_n&gt;0\)</span>. Hér mynda <span class="math">\(\cos {\beta}_nt\)</span> og
+<span class="math">\(\sin {\beta}_nt\)</span> lausnagrunn fyrir óhliðruðu jöfnuna og
+Green-fall virkjans er <span class="math">\(\sin({\beta}_n(t-{\tau}))/{\beta}_n\)</span>. Þar
+með er</p>
+<div class="math">
+\[c_n(t)={\varphi}_n\cos({\beta}_nt)+\dfrac {{\psi}_n}{{\beta}_n}
+ \sin({\beta}_nt)+\int_0^t\dfrac{\sin({\beta}_n(t-{\tau}))}{{\beta}_n}
+ f_n({\tau}) \, d{\tau}.\]</div>
+<p>(ii) <span class="math">\({\lambda}_n=0\)</span>. Í þessu tilfelli mynda <span class="math">\(1\)</span> og
+<span class="math">\(t\)</span> lausnagrunn fyrir óhliðruðu jöfnuna og Green-fallið er
+<span class="math">\(t-{\tau}\)</span>. Þar með er</p>
+<div class="math">
+\[c_n(t)={\varphi}_n+{\psi}_nt+\int_0^t(t-{\tau})f_n({\tau})\, d{\tau}.\]</div>
+<p>(iii) <span class="math">\({\lambda}_n&lt;0\)</span>, <span class="math">\({\lambda}_n=-{\gamma}_n^2\)</span>,
+<span class="math">\({\gamma}_n&gt;0\)</span>. Hér fáum við lausnagrunninn
+<span class="math">\(\cosh({\gamma}_nt)\)</span> og <span class="math">\(\sinh({\gamma}_nt)\)</span> og Green-fallið
+<span class="math">\(\sinh({\gamma}_n(t-{\tau}))/{\gamma}_n\)</span>. Lausnin er því</p>
+<div class="math">
+\[c_n(t)={\varphi}_n\cosh({\gamma}_nt)+\dfrac {{\psi}_n}{{\gamma}_n}
+ \sinh({\gamma}_nt)+\int_0^t\dfrac{\sinh({\gamma}_n(t-{\tau}))}{{\gamma}_n}
+ f_n({\tau}) \, d{\tau}.\]</div>
+</div></div></div>
+<div class="section" id="id11">
+<h4>5.7.1.3. Sýnidæmi<a class="headerlink" href="#id11" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<script type="text/javascript">
+    function showhide(element){
+        if (!document.getElementById)
+            return
+
+        if (element.style.display == "block")
+            element.style.display = "none"
+        else
+            element.style.display = "block"
+    };
+</script>
+<div class="admonition note"><p class="first admonition-title"><a href="javascript:showhide(document.getElementById('toggleblock59'))">Sýna dæmi: Laplace-jafna</a></p><div id="toggleblock59" style="display: none"><br/><p>Með eiginfallaliðun er oft hægt að leysa Laplace- og Poisson-jöfnurnar
+með almennum jaðarskilyrðum á ferhyrningi. Við tökum eitt dæmi til þess
+að útskýra þetta,</p>
+<div class="math">
+\[\begin{split}\begin{cases}
+ \Delta u=0, &amp;a&lt;x&lt;b, \ 0&lt;y&lt;L,\\
+ B_1u(\cdot,y)=B_2u(\cdot,y)=0, &amp;0&lt;y&lt;L,\\
+ u(x,0)=0, \ u(x,L)=\varphi(x), &amp;a&lt;x&lt;b,
+ \end{cases}\end{split}\]</div>
+<p>þar sem <span class="math">\(B_1\)</span> og <span class="math">\(B_2\)</span> eru almennir jaðargildisvirkjar á
+<span class="math">\([a,b]\)</span> og <span class="math">\(\varphi\)</span> er gefið fall á <span class="math">\([a,b]\)</span>. Við
+gefum okkur nú sömu forsendur og rithátt og í sýnidæmum <span class="xref std std-ref">Link title</span>
+og <span class="xref std std-ref">Link title</span> með <span class="math">\(P(x,D_x)=-D_x^2\)</span> og göngum út frá þeirri
+lausnartilgátu að hægt sé að liða lausnina <span class="math">\(u(x,y)\)</span> í
+eiginfallaröð</p>
+<div class="math">
+\[u(x,y)=\sum\limits_{n=0}^{\infty} c_n(y)u_n(x).\]</div>
+<p>Þá er greinilegt að jaðarskilyrðin <span class="math">\(B_1u(\cdot,y)=B_2u(\cdot,y)=0\)</span>
+eru uppfylllt. Ef við látum nú <span class="math">\(-\Delta\)</span> verka lið fyrir lið í
+summunni og setjum inn hin jaðarskilyrðin, þá fáum við</p>
+<div class="math">
+\[\begin{split}\begin{aligned}
+ -\Delta u(x,y)
+ &amp;=\sum\limits_{n=0}^{\infty}
+ \bigg(-\dfrac{{\partial}^2}{{\partial}x^2}
+ -\dfrac{{\partial}^2}{{\partial}y^2}\bigg)c_n(y)u_n(x)\\
+ &amp;=\sum\limits_{n=0}^{\infty}
+ \big(-c_n(y)u_n{{^{\prime\prime}}}(x)-c_n{{^{\prime\prime}}}(y)u_n(x)\big)\\
+ &amp;=\sum\limits_{n=0}^{\infty}
+ \big({\lambda}_nc_n(y)-c_n{{^{\prime\prime}}}(y)\big)u_n(x)=0,\\
+ u(x,0)
+ &amp;=\sum\limits_{n=0}^{\infty} c_n(0)u_n(x)=0,\\
+ u(x,L)
+ &amp;=\sum\limits_{n=0}^{\infty} c_n(L)u_n(x)
+ =\sum\limits_{n=0}^{\infty} \varphi_nu_n(x)=\varphi(x).\end{aligned}\end{split}\]</div>
+<p>Út úr þessum jöfnum lesum við að stuðlarnir þurfa að uppfylla</p>
+<div class="math">
+\[c_n{{^{\prime\prime}}}(y)={\lambda}_nc_n(y),\qquad c_n(0)=0, \qquad c_n(L)=\varphi_n.\]</div>
+<p>Ef öll eigingildin eru jákvæð og við skrifum
+<span class="math">\({\lambda}_n={\beta}_n^2\)</span>, þá er <span class="math">\(c_n\)</span> gefið með formúlunni</p>
+<div class="math">
+\[c_n(y)=\varphi_n\dfrac{\sinh({\beta}_ny)}{\sinh({\beta}_nL)}\]</div>
+<p>og lausnarformúlan verður</p>
+<div class="math">
+\[u(x,y)=\sum\limits_{n=0}^{\infty} \varphi_nu_n(x)
+ \dfrac{\sinh({\beta}_ny)}{\sinh({\beta}_nL)}.\]</div>
+</div></div><p>Látum <span class="math">\(P(x,D_x)\)</span>, <span class="math">\(x\in [a,b]\)</span>, og <span class="math">\(Q(y,D_y)\)</span>,
+<span class="math">\(y\in [c,d]\)</span>, vera tvo afleiðuvirkja af Sturm-Liouville gerð og
+<span class="math">\(B^1=(B_1^1,B_2^1)\)</span> og <span class="math">\(B^2=(B_1^2,B_2^2)\)</span> vera almenna
+jaðargildisvirkja á bilunum <span class="math">\([a,b]\)</span> og <span class="math">\([c,d]\)</span>. Gerum ráð
+fyrir að virkjarnir séu reglulegir og samhverfir með tilliti til
+jaðarskilyrðanna. Lítum síðan á eigingildisverkefnin</p>
+<div class="math">
+\[\begin{split}\begin{gathered}
+ P(x,D_x)u={\lambda}u, \quad x\in [a,b], \qquad
+ B_1^1u=B_2^1u=0,
+ \\
+ Q(y,D_y)v={\mu}v, \quad y\in [c,d], \qquad
+ B_1^2v=B_2^2v=0.\end{gathered}\end{split}\]</div>
+<p>Við táknum eigingildin og eiginföllin úr þeim með
+<span class="math">\(({\lambda}_n,u_n)\)</span> og <span class="math">\(({\mu}_n,v_n)\)</span> og gerum ráð fyrir að
+þeir myndi einingarréttan grunn með tilliti til innfeldanna sem
+virkjarnir skilgreina og lýst er í kafla 9. Táknum vægisföllin í þessum
+innfeldum með <span class="math">\({\varrho}\)</span> og <span class="math">\({\sigma}\)</span>. Látum nú
+<span class="math">\({\varphi}\)</span> vera tvisvar samfellt deildanlegt á rétthyrningnum
+<span class="math">\(D=\{(x,y); a&lt;x&lt;b, c&lt;y&lt;d\}\)</span>, samfellt deildanlegt á lokuninni
+<span class="math">\(\overline D\)</span> og gerum ráð fyrir að <span class="math">\({\varphi}\)</span> uppfylli
+jaðarskilyrðin</p>
+<div class="math">
+\[\begin{split}\begin{gathered}
+ B_1^1{\varphi}(\cdot,y)=B_2^1{\varphi}(\cdot,y)=0, \qquad y\in [c,d],\\
+ B_1^2{\varphi}(x,\cdot)=B_2^2{\varphi}(x,\cdot)=0, \qquad x\in [a,b]. \end{gathered}\end{split}\]</div>
+<p>Þá gefur setning 9.2.4 og sama röksemdafærsla og við beittum á tvöföldu
+Fourier- raðirnar að hægt er að liða <span class="math">\({\varphi}\)</span> í tvöfalda
+eiginfallröð</p>
+<div class="math">
+\[{\varphi}(x,y)=\sum\limits_{n=1}^{\infty}\sum\limits_{m=1}^{\infty}
+ c_{n,m}({\varphi})u_n(x)v_m(y),\]</div>
+<p>þar sem stuðlarnir eru gefnir með formúlunni</p>
+<div class="math">
+\[c_{n,m}({\varphi})
+ =\int_a^b\int_c^d {\varphi}(x,y)u_n(x)v_m(y){\varrho}(x){\sigma}(y)\, dxdy.\]</div>
+</div>
+<div class="section" id="id12">
+<h4>5.7.1.4. Sýnidæmi<a class="headerlink" href="#id12" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<script type="text/javascript">
+    function showhide(element){
+        if (!document.getElementById)
+            return
+
+        if (element.style.display == "block")
+            element.style.display = "none"
+        else
+            element.style.display = "block"
+    };
+</script>
+<div class="admonition note"><p class="first admonition-title"><a href="javascript:showhide(document.getElementById('toggleblock60'))">Sýna dæmi: Varmaleiðni</a></p><div id="toggleblock60" style="display: none"><br/><p>Lítum nú á verkefnið</p>
+<div class="math">
+\[\begin{split}\begin{cases}
+ \dfrac {\partial u}{{\partial}t}+P(x,{\partial}_x)u
+ +Q(y,{\partial}_y)u=0,  &amp;a&lt;x&lt;b, \ c&lt;y&lt;d, \ t&gt;0,\\
+ B_1^1u(\cdot,y,t)=B_2^1u(\cdot,y,t)=0, &amp;c&lt;y&lt;d,\ t&gt;0,\\
+ B_1^2u(x,\cdot,t)=B_2^2u(x,\cdot,t)=0, &amp;a&lt;x&lt;b,\ t&gt;0,\\
+ u(x,y,0)={\varphi}(x,y), &amp;a&lt;x&lt;b, \  c&lt;y&lt;d,
+ \end{cases}\end{split}\]</div>
+<p>þar sem forsendurnar eru þær sömu og lýst er hér að framan. Við finnum
+lausnarformúlu fyrir þetta verkefni með því að liða <span class="math">\(u\)</span> í tvöfalda
+eiginfallaröð með stuðlum <span class="math">\(w_{n,m}\)</span> sem eru háðir tíma. Með því að
+láta virkjann verka lið fyrir lið í eiginfallaröðinni, þá fáum við að
+<span class="math">\(w_{n,m}\)</span> verður að uppfylla
+<span class="math">\(w_{n,m}{{^{\prime}}}(t)+({\lambda}_n+{\mu}_m)w_{n,m}(t)=0\)</span> með
+upphafsskilyrðinu <span class="math">\(w_{n,m}(t)=c_{n,m}({\varphi})\)</span>. Svarið verður
+því</p>
+<div class="math">
+\[u(x,y,t)=\sum\limits_{n=1}^{\infty}\sum\limits_{m=1}^{\infty}
+ c_{n,m}({\varphi})e^{-({\lambda}_n+{\mu}_m)t} u_n(x)v_n(y).\]</div>
+</div></div></div>
+</div>
+<div id='scrolled_to_subsection_8' > <script> top.scrolldepth_tags.push('#scrolled_to_subsection_8'); </script></div>
+<div class="section" id="aefingardaemi">
+<h2>5.8. Æfingardæmi<a class="headerlink" href="#aefingardaemi" title="Varanlegur hlekkur á titilinn">¶</a></h2>
+<div class="section" id="id13">
+<h3>5.8.1. Æfingardæmi<a class="headerlink" href="#id13" title="Varanlegur hlekkur á titilinn">¶</a></h3>
+<div class="section" id="daemi">
+<h4>5.8.1.1. Dæmi<a class="headerlink" href="#daemi" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<p>Leysið hliðruðu bylgjujöfnuna með óhliðruðum hliðarskilyrðum,</p>
+<div class="math">
+\[{\partial}^2_tu-c^2 {\partial}^2_x u=f(x,t), \qquad
+ u(0,t)=u(L,t)=0, \qquad
+ u(x,0)={\partial}_tu(x,0)=0,\]</div>
+<p><span class="math">\(0&lt;x&lt;L\)</span>, <span class="math">\(t&gt;0\)</span>, með því að liða fallið <span class="math">\(f\)</span> í
+Fourier-sínusröð með tilliti til <span class="math">\(x\)</span> og ganga út frá sams konar
+liðun á lausninni <span class="math">\(u\)</span>. [<em>Leiðbeining</em>: Skoðið sýnidæmi 8.7.5 og
+8.7.7.]</p>
+</div>
+<div class="section" id="id14">
+<h4>5.8.1.2. Dæmi<a class="headerlink" href="#id14" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<p>Leysið bylgjujöfnuna með hliðruðum jaðarskilyrðum og óhliðruðum
+upphafsskilyrðum</p>
+<div class="math">
+\[{\partial}^2_t u-c^2
+ {\partial}^2_x u=0, \qquad
+  u(0,t)=g(t), \ u(L,t)=h(t), \qquad
+ u(x,0)={\partial}_tu(x,0)=0,\]</div>
+<p><span class="math">\(0&lt;x&lt;L\)</span>, <span class="math">\(t&gt;0\)</span>, þar sem föllin <span class="math">\(g\)</span> og <span class="math">\(h\)</span> eru
+tvisvar samfellt deildanleg á <span class="math">\({{\mathbb  R}}_+\)</span>. Gangið út frá
+því að gefið sé fall <span class="math">\(w(x,t)\)</span>, sem uppfyllir jaðarskilyrðin,
+þ.e.&nbsp;<span class="math">\(w(0,t)=g(t)\)</span> og <span class="math">\(w(L,t)=h(t)\)</span>. Skrifið
+<span class="math">\(u(x,t)=w(x,t)+v(x,t)\)</span> og sýnið fram á að þá uppfylli <span class="math">\(v\)</span>
+hliðraða bylgjujöfnu með hliðruðum upphafsskilyrðum, en óhliðruðum
+jaðarskilyrðum. Notið síðan niðurstöðuna úr dæmi 1 og sýnidæmi 8.7.5 til
+þess að skrifa upp lausnarformúlu fyrir <span class="math">\(u\)</span>.</p>
+</div>
+<div class="section" id="id15">
+<h4>5.8.1.3. Dæmi<a class="headerlink" href="#id15" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<p>(i) Skrifið upp lausnarformúluna í síðasta dæmi í því sértilfelli að
+<span class="math">\(w(x,t)=g(t)(L-x)/L+h(t)x/L\)</span>. Reiknið út Fourier-sínusraðir
+fallanna <span class="math">\(x\mapsto x/L\)</span> og <span class="math">\(x\mapsto (L-x)/L\)</span>.</p>
+<p>(ii) Skoðið sértilfellið þegar föllin <span class="math">\(g\)</span> og <span class="math">\(h\)</span> eru fastar.</p>
+</div>
+<div class="section" id="id16">
+<h4>5.8.1.4. Dæmi<a class="headerlink" href="#id16" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<p>Leysið dæmi 2 í því sértilfelli að <span class="math">\(g(t)=0\)</span> og <span class="math">\(h(t)=\sin ({\omega} t)\)</span>. Fyrir hvaða gildi á <span class="math">\({\omega}\)</span> fæst herma í
+sveiflunni?</p>
+</div>
+<div class="section" id="id17">
+<h4>5.8.1.5. Dæmi<a class="headerlink" href="#id17" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<p>Leysið verkefnið í dæmi 1 í því sértilfelli að <span class="math">\(f\)</span> er einungis háð
+<span class="math">\(x\)</span> en ekki <span class="math">\(t\)</span> með eftirfarandi aðferð: Finnið fyrst
+lausnina <span class="math">\(w\)</span> sem uppfyllir
+<span class="math">\(-c^2w{{^{\prime\prime}}}(x)=f(x)\)</span>, <span class="math">\(w(0)=0\)</span> og
+<span class="math">\(w(L)=0\)</span>. Skrifið <span class="math">\(u(x,t)=w(x)+v(x,t)\)</span> og sýnið að <span class="math">\(v\)</span>
+sé þá lausn á verkefni, sem leyst var í sýnidæmi 8.7.5. Notið þá
+lausnarformúlu til þess að ákvarða <span class="math">\(u\)</span>.</p>
+</div>
+<div class="section" id="id18">
+<h4>5.8.1.6. Dæmi<a class="headerlink" href="#id18" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<p>Ákvarðið lausnarformúlu fyrir varmaleiðniverkefni með hliðruðum
+jaðarskilyrðum</p>
+<div class="math">
+\[{\partial}_t u-{\kappa}
+ {\partial}^2_x u =0, \quad
+ {\partial}_x u(0,t)=g(t), \quad  {\partial}_xu(L,t)=h(t), \quad
+ u(x,0)=0,\]</div>
+<p><span class="math">\(0&lt;x&lt;L\)</span>, <span class="math">\(t&gt;0\)</span>, þar sem föllin <span class="math">\(g\)</span> og <span class="math">\(h\)</span> eru
+samfellt deildanleg á <span class="math">\({{\mathbb  R}}_+\)</span>. Gangið út frá því að
+gefið sé fallið <span class="math">\(w(x,t)\)</span> sem uppfylli jaðarskilyrðin
+<span class="math">\({\partial}_xw(0,t)=g(t)\)</span> og <span class="math">\({\partial}_xw(L,t)=h(t)\)</span>.
+Skrifið <span class="math">\(u(x,t)=w(x,t)+v(x,t)\)</span> og sýnið fram á að <span class="math">\(v\)</span>
+uppfylli hliðraða varmaleiðnijöfnu með hliðruðum upphafsgildum en
+óhliðruðum jaðargildum. Notið niðurstöðuna úr sýnidæmi 8.7.7 til þess að
+skrifa upp lausnarformúlu fyrir <span class="math">\(u\)</span>.</p>
+</div>
+<div class="section" id="id19">
+<h4>5.8.1.7. Dæmi<a class="headerlink" href="#id19" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<p>(i) Skrifið upp lausnarformúluna í síðasta dæmi í því sértilfelli að
+<span class="math">\(w(x,t)=g(t)x(L-x)^2/L^2-h(t)(L-x)x^2/L^2\)</span>. Reiknið út
+Fourier-kósínusraðir fallanna <span class="math">\(x\mapsto x(L-x)^2/L^2\)</span> og
+<span class="math">\(x\mapsto (L-x)x^2/L^2\)</span>.</p>
+<p>(ii) Skoðið sértilfellið þegar föllin <span class="math">\(g\)</span> og <span class="math">\(h\)</span> eru fastar.</p>
+</div>
+<div class="section" id="id20">
+<h4>5.8.1.8. Dæmi<a class="headerlink" href="#id20" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<p>Liðið fallið <span class="math">\({\varphi}\)</span> sem skilgreint er með
+<span class="math">\(\varphi(x)=2x\)</span>, ef <span class="math">\(0\leq x\leq 1/2\)</span>, og
+<span class="math">\({\varphi}(x)=2-2x\)</span>, ef <span class="math">\(1/2\leq x\leq 1\)</span>, í sínusröð og
+notið röðina til þess að finna lausn á verkefninu</p>
+<div class="math">
+\[{\partial}_t^2u+2{\partial}_tu-{\partial}_x^2u=0, \quad
+ u(x,0)=\varphi(x), \quad {\partial}_tu(x,0)=0, \quad
+ u(0,t)=u(1,t)=0,\]</div>
+<p>þar sem <span class="math">\(0&lt;x&lt;1\)</span>, <span class="math">\(t&gt;0\)</span>.</p>
+</div>
+<div class="section" id="id21">
+<h4>5.8.1.9. Dæmi<a class="headerlink" href="#id21" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<p>Leysið jaðargildisverkefnið</p>
+<div class="math">
+\[{\partial}_x^2u+{\partial}_y^2u=0, \quad
+ u(0,y)=u(L,y)=0, \quad
+ u(x,0)=0, \quad u(x,M)=x(L-x),\]</div>
+<p>þar sem <span class="math">\(0&lt;x&lt;L\)</span>, <span class="math">\(0&lt;y&lt;M\)</span>, <span class="math">\(L&gt;0\)</span> og <span class="math">\(M&gt;0\)</span>.</p>
+</div>
+<div class="section" id="id22">
+<h4>5.8.1.10. Dæmi<a class="headerlink" href="#id22" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<p>Notið Fourier-raðir til þess að leysa verkefnið</p>
+<div class="math">
+\[\partial^2_xu
+ +\partial^2_yu+u=0, \quad
+ u(0,y)=0, \quad  u(\pi,y)=y(\pi-y), \quad
+ u(x,0)=0, \quad  u(x,\pi)=0,\]</div>
+<p>þar sem <span class="math">\(0&lt;x&lt;\pi\)</span> og <span class="math">\(0&lt;y&lt;\pi\)</span>.</p>
+</div>
+<div class="section" id="id23">
+<h4>5.8.1.11. Dæmi<a class="headerlink" href="#id23" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<p>Leysið jaðargildisverkefnið</p>
+<div class="math">
+\[\Delta u=0,  \quad
+ u(0,y)=u(L,y)=0, \quad
+ \lim\limits_{y\to +{\infty}} u(x,y)=0,\quad
+ u(x,0)=\varphi(x),\]</div>
+<p>þar sem <span class="math">\(0&lt;x&lt;L\)</span>, <span class="math">\(y&gt;0\)</span> og <span class="math">\(\varphi\)</span> er gefið fall á
+<span class="math">\([0,L]\)</span>.</p>
+</div>
+<div class="section" id="id24">
+<h4>5.8.1.12. Dæmi<a class="headerlink" href="#id24" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<p>Leysið Dirichlet-verkefnið í hringkraga með því að skipta yfir í pólhnit
+og setja lausnina fram með Fourier-röð:</p>
+<div class="math">
+\[\begin{split}\begin{cases}
+ \Delta u=0, &amp;0&lt;a^2&lt;x^2+y^2&lt;b^2,\\
+ u(x,y)={\varphi}(x,y), &amp;x^2+y^2=a^2,\\
+ u(x,y)={\psi}(x,y), &amp;x^2+y^2=b^2.
+ \end{cases}\end{split}\]</div>
+</div>
+<div class="section" id="id25">
+<h4>5.8.1.13. Dæmi<a class="headerlink" href="#id25" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<p>Leysið Dirichlet-verkefnið utanvert við hring og setjið lausnina fram
+með Fourier-röð:</p>
+<div class="math">
+\[\begin{split}\begin{cases}
+ \Delta u=0, &amp;x^2+y^2&gt;a^2&gt;0,\\
+ u(x,y)={\varphi}(x,y), &amp;x^2+y^2=a^2,\\
+ u(x,y) \text{ takmarkað í ${\infty}$}.
+ \end{cases}\end{split}\]</div>
+</div>
+<div class="section" id="id26">
+<h4>5.8.1.14. Dæmi<a class="headerlink" href="#id26" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<p>Finnið lausnina á Robin-verkefninu</p>
+<div class="math">
+\[\Delta u=0,   \quad \text{ á } D_a, \qquad
+ \dfrac{{\partial}u}{{\partial} n}+{\alpha}u=h, \quad \text{ á }
+ {\partial} D_a,\]</div>
+<p>þar sem <span class="math">\(D_a=\{(x,y); x^2+y^2&lt;a^2\}\)</span>, <span class="math">\({\alpha}\)</span> er fasti
+og <span class="math">\(h\)</span> er gefið samfellt fall á jaðri skífunnar.</p>
+</div>
+<div class="section" id="id27">
+<h4>5.8.1.15. Dæmi<a class="headerlink" href="#id27" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<p>Ákvarðið lausn á jaðargildisverkefninu</p>
+<div class="math">
+\[\begin{split}\begin{cases}
+ \Delta  u=
+ \dfrac 1r\dfrac{{\partial}}{{\partial} r}
+ \bigg(r\dfrac{{\partial}u}{{\partial} r}\bigg)
+ +\dfrac 1{r^2}\dfrac{{\partial}^2u}{{\partial}{\theta}^2}=0,
+ &amp; 1&lt;r&lt;2, \ 0&lt;{\theta}&lt;{\pi}/4,\\
+ u(1,{\theta})=0, \ u(2,{\theta})={\theta}({\pi}/4-{\theta}),
+ &amp;0\leq {\theta}\leq {\pi}/4,\\
+ u(r,0)=u(r,{\pi}/4)=0, &amp;1\leq r\leq 2,
+ \end{cases}\end{split}\]</div>
+<p>með því að ganga út frá þeirri lausnartilgátu að hægt sé að setja
+lausnina fram með Fourier-sínusröð í <span class="math">\(\theta\)</span> með stuðlum sem eru
+háðir <span class="math">\(r\)</span>.</p>
+</div>
+<div class="section" id="id28">
+<h4>5.8.1.16. Dæmi<a class="headerlink" href="#id28" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<p>Látum fallið <span class="math">\(f\)</span> vera gefið með formúlunni</p>
+<div class="math">
+\[f(t)=\tfrac 12(T_0+T_1)+\tfrac 12(T_1-T_0)\cos\big({\omega} t\big),
+ \qquad t\in {{\mathbb  R}},\]</div>
+<p>þar sem <span class="math">\({\omega}=2{\pi}/T\)</span>, <span class="math">\(T_1&gt;T_0\)</span>. Reiknið út lausnina
+<span class="math">\(u(x,t)\)</span> á (<span class="xref std std-ref">Link title</span>) í þessu tilfelli.</p>
+</div>
+<div class="section" id="id29">
+<h4>5.8.1.17. Dæmi<a class="headerlink" href="#id29" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<p>Látum <span class="math">\(f\)</span> vera gefið með formúlunni í síðasta dæmi og gefum okkur
+gildin <span class="math">\(T=1\text{ár}\approx \,3\cdot 10^7 s\)</span>,
+<span class="math">\({\kappa}= 10^6\)</span> fyrir klöpp og <span class="math">\({\kappa}= 1.5\cdot 10^6\)</span>
+fyrir sand, <span class="math">\(T_1=11^\circ C\)</span>, <span class="math">\(T_0=-1^\circ C\)</span>. Teiknið upp
+lausnina <span class="math">\(u(x,t)\)</span> á verkefninu (<span class="xref std std-ref">Link title</span>) yfir eina lotu með
+tilliti til tíma fyrir nokkur gildi á <span class="math">\(x\)</span>. Fyrir hvaða gildi á
+<span class="math">\(x\)</span> er fasahliðrunin <span class="math">\(\frac 12\)</span> ár? Fyrir hvaða gildi á
+<span class="math">\(x\)</span> er árssveiflan í hitastiginu orðin <span class="math">\(1\%\)</span> af
+árssveiflunni á yfirborðinu?</p>
+</div>
+<div class="section" id="id30">
+<h4>5.8.1.18. Dæmi<a class="headerlink" href="#id30" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<p>Beitið aðskilnaði breytistærða til þess að ákvarða sveiflur strengs, þar
+sem tekið er tillit til núnings,</p>
+<div class="math">
+\[{\partial}^2_tu-c^2{\partial}^2_xu+a{\partial}_tu=0,
+ \qquad u(0,t)=u(L,t)=0,  \qquad u(x,0)={\varphi}(x),\]</div>
+<p><span class="math">\(0&lt;x&lt;L\)</span> og <span class="math">\(t&gt;0\)</span>.</p>
+</div>
+<div class="section" id="id31">
+<h4>5.8.1.19. Dæmi<a class="headerlink" href="#id31" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<p>Beitið aðskilnaði breytistærða til þess að ákvarða sveiflur strengs, þar
+sem tekið er tillit til fjöðrunar,</p>
+<div class="math">
+\[{\partial}^2_tu-c^2{\partial}^2_xu+ku=0,
+ \qquad u(0,t)=u(L,t)=0,  \qquad u(x,0)={\varphi}(x),\]</div>
+<p><span class="math">\(0&lt;x&lt;L\)</span> og <span class="math">\(t&gt;0\)</span>.</p>
+</div>
+<div class="section" id="id32">
+<h4>5.8.1.20. Dæmi<a class="headerlink" href="#id32" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<p>Beitið aðskilnaði breytistærða til þess að leysa bitajöfnuna með
+einfaldlega undirstuddum endum, en það er verkefnið</p>
+<div class="math">
+\[\begin{split}\begin{gathered}
+ {\partial}^2_tu+a^4{\partial}_x^4u=0, \quad
+ u(x,0)={\varphi}(x), \quad {\partial}_tu(x,0)={\psi}(x),
+ \\
+ u(0,t)={\partial}^2_xu(0,t)=u(L,t)={\partial}_x^2u(L,t)=0, \quad\end{gathered}\end{split}\]</div>
+<p>þar sem <span class="math">\(0&lt;x&lt;L\)</span>, <span class="math">\(t&gt;0\)</span> og
+<span class="math">\(a=\root 4 \of {EI/{\varrho}A}\)</span> og stærðirnar eru skilgreindar í
+sýnidæmi 12.2.2. Hver er grunntíðni sveiflunnar?</p>
+</div>
+<div class="section" id="id33">
+<h4>5.8.1.21. Dæmi<a class="headerlink" href="#id33" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<p>Leysið bitajöfnuna í dæmi 3, en gerið ráð fyrir því að bitinn sé
+einfaldlega undirstuddur í punktinum <span class="math">\(x=0\)</span> en innspenntur í
+<span class="math">\(x=L\)</span>. Það þýðir að jaðarskilyrðin breytast í</p>
+<div class="math">
+\[u(0,t)={\partial}^2_xu(0,t)=u(L,t)={\partial}_xu(L,t)=0.\]</div>
+<p>Athugið að hér fæst eigingildisverkefni þar sem afleiðujafnan er af
+stigi <span class="math">\(4\)</span>. Gefið ykkur að eiginföllin myndi grunn þannig að hægt
+sé að liða sérhvert fall, sem er samfellt deildanlegt á köflum og
+samfellt, í eiginfallaröð.</p>
+</div>
+<div class="section" id="id34">
+<h4>5.8.1.22. Dæmi<a class="headerlink" href="#id34" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<p>Leysið bitajöfnuna í dæmi 3, en gerið ráð fyrir því að bitinn sé
+einfaldlega undirstuddur í punktinum <span class="math">\(x=0\)</span> en frjáls í punktinum
+<span class="math">\(x=L\)</span>. Það þýðir að jaðarskilyrðin breytast í</p>
+<div class="math">
+\[u(0,t)={\partial}^2_xu(0,t)={\partial}_x^2u(L,t)={\partial}_x^3u(L,t)=0.\]</div>
+</div>
+<div class="section" id="id35">
+<h4>5.8.1.23. Dæmi<a class="headerlink" href="#id35" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<p>Leysið hliðruðu bylgjujöfnuna á ferhyrningi</p>
+<div class="math">
+\[\begin{split}\begin{cases}
+ \dfrac{{\partial}^2 u}{{\partial} t^2}
+ -c^2\bigg(\dfrac{\partial^2u}{\partial x^2}
+ +\dfrac{\partial^2u}{\partial y^2}\bigg)=f(x,y,t),
+ &amp;0&lt;x&lt;L, 0&lt;y&lt;M, t&gt;0,\\
+ u(0,y,t)=u(L,y,t)=0,
+ &amp;0&lt;y&lt;M, t&gt;0,\\
+ u(x,0,t)=u(x,M,t)=0,
+ &amp;0&lt;x&lt;L, t&gt;0,\\
+ u(x,y,0)={\partial}_tu(x,y,0)=0,
+ &amp;0&lt;x&lt;L, 0&lt;y&lt;M.
+ \end{cases}\end{split}\]</div>
+</div>
+<div class="section" id="id36">
+<h4>5.8.1.24. Dæmi<a class="headerlink" href="#id36" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<p>Færsla efnispunkta í rétthyrndri þunnri plötu, sem er einfaldlega
+undirstudd á jaðrinum uppfyllir jaðargildisverkefnið</p>
+<div class="math">
+\[\begin{split}\begin{cases}
+ \dfrac{{\partial}^2 w}{{\partial} t^2}
+ +a^4\Delta ^2w=0,\\
+ w(0,y,t)=w(L,y,t)={\partial}^2_xw(0,y,t)={\partial}^2_xw(L,y,t)=0,\\
+ w(x,0,t)=w(x,M,t)={\partial}^2_yw(x,0,t)={\partial}^2_yw(x,M,t)=0,\\
+ w(x,y,0)=\varphi(x,y), \quad {\partial}_tw(x,y,0)={\psi}(x,y),
+ \end{cases}\end{split}\]</div>
+<p>þar sem <span class="math">\(0&lt;x&lt;L\)</span>, <span class="math">\(0&lt;y&lt;M\)</span> og <span class="math">\(t&gt;0\)</span>. Athugið að
+jaðarskilyrðin segja að færslan og beygjuvægið séu núll á jaðrinum.
+Finnið formúlu fyrir lausn þessa verkefnis.</p>
+</div>
+<div class="section" id="id37">
+<h4>5.8.1.25. Dæmi<a class="headerlink" href="#id37" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<p>(<em>Dirichlet-verkefni á teningi.</em>) Setjum
+<span class="math">\(D=\{(x,y); 0&lt;x&lt;L, 0&lt;y&lt;M\}\)</span> og látum <span class="math">\(T\)</span> vera teninginn
+<span class="math">\(\{(x,y,z); 0&lt;x&lt;L, 0&lt;y&lt;M, 0&lt;z&lt;N\}\)</span>. Finnið formúlu fyrir lausn
+verkefnisins</p>
+<div class="math">
+\[\begin{split}\begin{cases}
+ \Delta u=
+ \dfrac{{\partial}^2u}{{\partial}x^2}+
+ \dfrac{{\partial}^2u}{{\partial}y^2}+
+ \dfrac{{\partial}^2u}{{\partial}z^2}=0
+ &amp;(x,y,z)\in T,\\
+ u(x,y,0)=0,\  u(x,y,N)=\varphi(x,y), &amp;(x,y)\in D,\\
+ u(x,y,z)=0, &amp;(x,y)\in {\partial}D, \ 0&lt;z&lt;N.
+ \end{cases}\end{split}\]</div>
+<p>með því að ganga út frá þeirri lausnartilgátu að hægt sé að liða
+<span class="math">\(u\)</span> í tvöfalda Fourier-röð með Fourier-stuðla, sem eru háðir
+<span class="math">\(z\)</span>. Hvernig verður lausnarformúlan ef sett eru almenn Dirichlet
+skilyrði á allan jaðarinn?</p>
+</div>
+<div class="section" id="id38">
+<h4>5.8.1.26. Dæmi<a class="headerlink" href="#id38" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<p>(<em>Þrefaldar Fourier-raðir.</em>) Látum <span class="math">\(T\)</span> vera teninginn
+<span class="math">\(\{(x,y,z); 0&lt;x&lt;L, 0&lt;y&lt;M, 0&lt;z&lt;N\}\)</span> og
+<span class="math">\({\varphi}:\overline T\to {{\mathbb  C}}\)</span> vera fall sem er
+samfellt deildanlegt á <span class="math">\(T\)</span>. Sýnið að ef <span class="math">\({\varphi}\)</span> tekur
+gildið <span class="math">\(0\)</span> á <span class="math">\({\partial} T\)</span>, þá sé hægt að liða
+<span class="math">\({\varphi}\)</span> í þrefalda Fourier-sínusröð. Ákvarðið formúlu fyrir
+stuðlana í röðinni.</p>
+</div>
+<div class="section" id="id39">
+<h4>5.8.1.27. Dæmi<a class="headerlink" href="#id39" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<p>(<em>Poisson-jafnan á teningi.</em>) Látum <span class="math">\(T\)</span> vera teninginn
+<span class="math">\(\{(x,y,z); 0&lt;x&lt;L, 0&lt;y&lt;M, 0&lt;z&lt;N\}\)</span>. Finnið formúlu fyrir lausn
+verkefnisins</p>
+<div class="math">
+\[\begin{split}\begin{cases}
+ \Delta u=
+ \dfrac{{\partial}^2u}{{\partial}x^2}+
+ \dfrac{{\partial}^2u}{{\partial}y^2}+
+ \dfrac{{\partial}^2u}{{\partial}z^2}=f(x,y,z)
+ &amp;(x,y,z)\in T,\\
+ u(x,y,z)=0,  &amp;(x,y,z)\in {\partial}T,
+ \end{cases}\end{split}\]</div>
+<p>með því að ganga út frá þeirri lausnartilgátu að hægt sé að liða
+<span class="math">\(u\)</span> í þrefalda Fourier-sínusröð.</p>
+</div>
+<div class="section" id="id40">
+<h4>5.8.1.28. Dæmi<a class="headerlink" href="#id40" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<p>Leysið bylgjujöfnuna með hliðarskilyrðum</p>
+<div class="math">
+\[\begin{split}\begin{cases}
+ \dfrac{{\partial}^2u}{{\partial}t^2}
+ -c^2\dfrac{{\partial}^2u}{{\partial}x^2}=f(x,t), &amp;0&lt;x&lt;L, \ t&gt;0,\\
+ u(x,0)={\varphi}(x),\ {\partial}_tu(x,0)={\psi}(x), &amp;0&lt;x&lt;L,\\
+ u(0,t)={\partial}_xu(L,t)=0, &amp;t&gt;0.
+ \end{cases}\end{split}\]</div>
+</div>
+<div class="section" id="id41">
+<h4>5.8.1.29. Dæmi<a class="headerlink" href="#id41" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<p>Leysið verkefnið</p>
+<div class="math">
+\[\begin{split}\begin{cases}
+ \dfrac{{\partial}u}{{\partial} t}-{\kappa}
+ \dfrac{{\partial}^2u}{{\partial}x^2}=f(x,t), &amp;x\in ]0,L[, \ t&gt;0,\\
+ u(x,0)={\varphi}(x), &amp;x\in ]0,L[,\\
+ u(0,t)={\partial}_xu(0,t)=0, &amp;t&gt;0.
+ \end{cases}\end{split}\]</div>
+</div>
+<div class="section" id="id42">
+<h4>5.8.1.30. Dæmi<a class="headerlink" href="#id42" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<p>Leysið jaðargildisverkefnið</p>
+<div class="math">
+\[\begin{split}\begin{cases}
+ {\partial}_x^2u+{\partial}_y^2u=0, &amp;0&lt;x&lt;L, \ 0&lt;y&lt;M,\\
+ u(0,y)={\partial}_xu(L,y)=0, &amp;0&lt;y&lt;M,\\
+ u(x,0)=0, \quad u(x,M)=x(2L-x), &amp;0&lt;x&lt;L,
+ \end{cases}\end{split}\]</div>
+<p>þar sem <span class="math">\(L\)</span> og <span class="math">\(M\)</span> eru jákvæðar rauntölur.</p>
+</div>
+<div class="section" id="id43">
+<h4>5.8.1.31. Dæmi<a class="headerlink" href="#id43" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<p>Látum <span class="math">\(L=P(x,D_x)\)</span> vera afleiðuvirkja af Sturm-Liouville-gerð, sem
+er samhverfur með tilliti til jaðarskilyrðanna <span class="math">\(Bu=0\)</span>, þar sem
+<span class="math">\(B\)</span> er almennur jaðargildisvirki á bilinu <span class="math">\([a,b]\)</span>. Notið
+eiginfallaliðun til þess að finna lausnarformúlu fyrir eftirfarandi
+verkefni, ef gefið er fall <span class="math">\(w(x,t)\)</span>, sem uppfyllir hliðruðu
+jaðarskilyrðin,</p>
+<div class="math">
+\[\begin{split}\begin{cases}
+ \dfrac{{\partial} u}{{\partial}t}+P(x,D_x)u=0, &amp;a&lt;x&lt;b, \ t&gt;0,\\
+ u(x,0)=0, &amp; a&lt;x&lt;b,\\
+ B_1u(\cdot,t)=g(t), \quad B_2(\cdot,t)=h(t).
+ \end{cases}\end{split}\]</div>
+<p>Hér táknar <span class="math">\(B_ju(\cdot,t)\)</span> að jaðargildisvirkinn <span class="math">\(B_j\)</span> eigi
+að verka á <span class="math">\(u\)</span> sem fall af <span class="math">\(x\)</span> fyrir fast <span class="math">\(t\)</span>.</p>
+</div>
+<div class="section" id="id44">
+<h4>5.8.1.32. Dæmi<a class="headerlink" href="#id44" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<p>Beitið eiginfallaliðun til þess að finna lausn á jaðargildisverkefninu</p>
+<div class="math">
+\[\begin{split}\begin{cases}
+ \dfrac{{\partial} u}{\partial t}
+ -{\kappa}\dfrac{{\partial}^2 u}{\partial x^2}=0, &amp;0&lt;x&lt;L, \ t&gt;0,\\
+ u(x,0)=\varphi(x), &amp;0&lt;x&lt;L,\\
+ {\partial}_xu(0,t)=hu(L,t)+{\partial}_xu(L,t)=0, &amp;t&gt;0.
+ \end{cases}\end{split}\]</div>
+</div>
+<div class="section" id="id45">
+<h4>5.8.1.33. Dæmi<a class="headerlink" href="#id45" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<p>Leysið eigingildisverkefnið</p>
+<div class="math">
+\[\begin{split}\begin{cases}
+ -(1+x)^2v{{^{\prime\prime}}}={\lambda}v,  &amp;0&lt;x&lt;1,\\
+ v(0)=v(1)=0,
+ \end{cases}\end{split}\]</div>
+<p>og notið lausnina til þess að finna formúlu fyrir lausn verkefnisins</p>
+<div class="math">
+\[\begin{split}\begin{cases}
+ \dfrac{{\partial}^2u}{{\partial}t^2}
+ -(1+x)^2\dfrac{{\partial}^2u}{{\partial}x^2}=0, &amp;0&lt;x&lt;1, \ t&gt;0,\\
+ u(x,0)={\varphi}(x),\ {\partial}_tu(x,0)={\psi}(x), &amp;0&lt;x&lt;1,\\
+ u(0,t)=u(1,t)=0, &amp;t&gt;0.
+ \end{cases}\end{split}\]</div>
+</div>
+<div class="section" id="id46">
+<h4>5.8.1.34. Dæmi<a class="headerlink" href="#id46" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<p>Látum <span class="math">\(L\)</span> tákna afleiðuvirkjann, sem skilgreindur er með</p>
+<div class="math">
+\[Lu=P(x,D)u=-(1+x^2)\dfrac{d}{dx}\bigg((1+x^2)\dfrac{du}{dx}\bigg).\]</div>
+<p>Sýnið að <span class="math">\(L e^{i{\beta}\arctan x}={\beta}^2e^{i{\beta}\arctan x}\)</span>
+og notið niðurstöðuna til þess að ákvarða lausn á eiginigildisverkefninu</p>
+<div class="math">
+\[Lu={\lambda}u, \qquad u(0)=0, \quad u{{^{\prime}}}(1)=0.\]</div>
+<p>Notið síðan eiginföllin til þess að ákvarða formúlu fyrir lausnina á
+verkefninu</p>
+<div class="math">
+\[\begin{split}\begin{cases}
+ \dfrac{{\partial}^2 w}{{\partial} t^2}+P(x,{\partial}_x)w=0,
+ &amp;0&lt;x&lt;1, \ t&gt;0,\\
+ w(0,t)={\partial}_xw(1,t)=0,
+ &amp;t&gt;0,\\
+ w(x,0)={\varphi}(x),
+ &amp;0&lt;x&lt;1,\\
+ {\partial}_tw(x,0)={\psi}(x),
+ &amp;0&lt;x&lt;1.
+ \end{cases}\end{split}\]</div>
+</div>
+<div class="section" id="id47">
+<h4>5.8.1.35. Dæmi<a class="headerlink" href="#id47" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<p>Leysið æstæðu varmaleiðnijöfnuna <span class="math">\(-{\kappa}\Delta u=f\)</span> á
+<span class="math">\(D=\{(x,y);0&lt;x&lt;L, 0&lt;y&lt;M\}\)</span> þar sem hitastigið <span class="math">\(u(x,y)\)</span> er
+<span class="math">\(T_0\)</span>, ef <span class="math">\(x=0\)</span>, og sá hluti jaðarsins, sem gefinn er með
+jöfnunum <span class="math">\(x=L\)</span>, <span class="math">\(y=0\)</span> og <span class="math">\(y=M\)</span>, er varmaeinangraður.</p>
+</div>
+<div class="section" id="id48">
+<h4>5.8.1.36. Dæmi<a class="headerlink" href="#id48" title="Varanlegur hlekkur á titilinn">¶</a></h4>
+<p>Leysið varmaleiðnijöfnuna <span class="math">\({\partial}_tu-{\kappa}\Delta u=0\)</span> á
+<span class="math">\(D=\{(x,y);0&lt;x&lt;L, 0&lt;y&lt;M\}\)</span> og fyrir <span class="math">\(t&gt;0\)</span> með
+upphafsgildunum <span class="math">\({\varphi}(x,y)\)</span> og þeim jaðarskilyrðum að
+hitastigið <span class="math">\(u(x,y)\)</span> sé <span class="math">\(T_0\)</span>, ef <span class="math">\(x=0\)</span> eða
+<span class="math">\(y=0\)</span>, og að sá hluti jaðarsins, sem gefinn er með jöfnunum
+<span class="math">\(x=L\)</span> og <span class="math">\(y=M\)</span>, sé varmaeinangraður.</p>
+</div>
+</div>
+<div id='scrolled_to_subsection_9' > <script> top.scrolldepth_tags.push('#scrolled_to_subsection_9'); </script></div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="bokin16_final.html" class="btn btn-neutral float-right" title="6. Fourier–ummyndun" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="bokin14_final.html" class="btn btn-neutral" title="4. Eigingildisverkefni" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+    </p>
+  </div>
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'2018',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+  
+<script src="_static/jquery.scrolldepth.js"></script>
+<script>
+    jQuery.scrollDepth({
+        percentage: false,
+        userTiming: false,
+        pixelDepth: false,
+        nonInteraction: false,
+        elements: top.scrolldepth_tags
+}); 
+</script>
+
+
+
+</body>
+</html>

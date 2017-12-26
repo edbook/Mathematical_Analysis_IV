@@ -14,6 +14,7 @@ Contents:
    :glob:
    
    chapter*
+   bokin*
 
 .. toctree::
    ordaskra
