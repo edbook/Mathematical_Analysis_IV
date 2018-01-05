@@ -34,9 +34,7 @@ rafstöðufræði og æstæð varmaleiðniverkefni.
 :math:`z=x+iy` og á pólformi :math:`z=re^{i\theta}`. Í tveimur víddum
 koma fram sterk tengsl við fáguð föll. Það byggir á þeirri staðreynd að
 raun- og þverhluti fágaðs falls eru þýð föll og samskeyting á þýðu og
-fáguðu falli er þýtt fall. Í grein 4.7 sáum við fyrst þessi tengsl,
-þegar við fjölluðum um hagnýtingar í straumfræði og reiknuðum út
-straumlínur fyrir tvívíð streymi.
+fáguðu falli er þýtt fall.
 
 Meginverkefnið í þessum kafla er að leiða út heildunarframsetningu á
 lausn Poisson-jöfnunnar :math:`\Delta u=f` á opnu mengi :math:`X` með
@@ -52,8 +50,6 @@ hún er
 :math:`G_X` nefnist *Green-fall* eða *Green-kjarni* fyrir svæðið
 :math:`X`. Fyrra heildið gefur þýtt fall sem uppfyllir jaðarskilyrðin og
 það síðara gefur lausn á Poisson-jöfnunni með óhliðruðum jaðarskilyrðum.
-Þessi lausnaraðferð er hliðstæð þeirri sem við beittum við úrlausn á
-jaðargildisverkefnunum í grein 2.7.
 
 Þýð föll og fágaðar varpanir
 ----------------------------
@@ -87,10 +83,7 @@ Hér höfum við notfært okkur að blönduðu afleiðurnar uppfylla
 :math:`\partial_x\partial_y v=\partial_y\partial_x v`. Þar með eru bæði
 föllin :math:`u` og :math:`v` þýð.
 
-Virkjarnir :math:`\partial_z=\partial/\partial z` og
-:math:`\partial_{\overline z}=\partial/\partial \overline z` komu við
-sögu hjá okkur þegar við vorum að rannsaka skilgreininguna á fáguðum
-föllum í setningu 4.2.10,
+Rifjum upp að Wirtinger-virkjarnir eru
 
 .. math::
 
@@ -120,13 +113,12 @@ sé fágað. Við höfum að
    =\tfrac 12\big(\partial_z f+\overline{\partial_{\overline z} f}\big) 
    = \tfrac 12 f{{^{\prime}}}.
 
-(Hér höfum við notað reikniregluna :math:`{\partial}_z\overline f =\overline{({\partial}_{\overline z}f)}`, sem sönnuð er í dæmi 17.2.4,
+(Hér höfum við notað reikniregluna :math:`{\partial}_z\overline f =\overline{({\partial}_{\overline z}f)}`
 og að fyrir fágað fall :math:`f` er
 :math:`{\partial}_zf=f{{^{\prime}}}`.) Út úr þessari jöfnu lesum við
 að :math:`f` er stofnfall :math:`2\partial_z u`. Nú er tilvist á
-stofnfalli háð því hvernig svæðið :math:`X` lítur út. Í setningu 10.2.3
-sáum við að sérhvert fágað fall á stjörnusvæði hefur stofnfall og í
-setningu 10.11.2 sáum við að svæði :math:`X` er einfaldlega
+stofnfalli háð því hvernig svæðið :math:`X` lítur út. Rifjum upp að sérhvert fágað fall á stjörnusvæði hefur stofnfall 
+og að svæði :math:`X` er einfaldlega
 samanhangandi þá og því aðeins að sérhvert fall í :math:`{{\cal A}}(X)`
 hafi stofnfall:
 
@@ -281,9 +273,13 @@ getum alltaf leyst verkefnið
 þar sem :math:`\psi` er gefið samfellt fall á jaðrinum
 :math:`\partial Y`. Ef við setjum einfaldlega
 :math:`\psi(\zeta)=\varphi(F^{[-1]}(\zeta))`, fyrir
-:math:`\zeta\in \partial Y`. Þá leiðir beint af (:ref:`Link title <17.2.7>`) að lausn
-:math:`u` á (:ref:`Link title <17.2.8>`) er gefin með :math:`u(z)=v(F(z))`, þar sem
-:math:`v` er lausnin á (:ref:`Link title <17.2.9>`).
+:math:`\zeta\in \partial Y`. Þá leiðir beint af 
+
+.. math:: \Delta_z u(z)=\Delta_\zeta v({\zeta})\big |F{{^{\prime}}}(z)\big|^2
+
+að lausn :math:`u` á Dirichlet-verkefninu á :math:`X` 
+er gefin með :math:`u(z)=v(F(z))`, þar sem
+:math:`v` er lausnin á Dirichlet-verkefninu á :math:`Y`.
 
 Af tilvist á vörpuninni :math:`F` er það að segja, að til er setning,
 sem nefnist *vörpunarsetning Riemanns* og hún segir að um sérhvert
@@ -309,8 +305,7 @@ fyrst að hún uppfyllir
 .. math:: F(\infty)=1, \qquad F(0)=-1, \quad \text {  og } \quad F(1)=-i.
 
 Punktarnir :math:`0` og :math:`1` ákvarða línuna :math:`{{\mathbb  R}}`
-ótvírætt og við vitum að :math:`F` varpar línu á hring eða línu,
-samkvæmt setningu 4.1.1. Fyrst hún varpar :math:`\infty` á :math:`1`, þá
+ótvírætt og við vitum að :math:`F` varpar línu á hring eða línu. Fyrst hún varpar :math:`\infty` á :math:`1`, þá
 varpast :math:`{{\mathbb  R}}` á hring. Nú eru punktarnir :math:`1`,
 :math:`-1` og :math:`-i` á einingarhringnum, svo
 :math:`F({{\mathbb  R}}\cup\{\infty\})=\partial \Bbb E`. Nú er
@@ -335,7 +330,7 @@ Laplace-virkjann á skífunni :math:`D_a=\{(x,y); x^2+y^2<a^2\}`,
    u={\varphi}   \quad \text{ á }  \quad \partial D_a.
 
 Hér er :math:`\varphi` gefið fall á jaðri hringskífunnar
-:math:`{\partial}D_a`. Lausnina fundum við í grein 13.3 með því að
+:math:`{\partial}D_a`. Lausnina fundum við í kaflanum um raðalausnir á hlutafleiðujöfnum með því að
 innleiða pólhnit og skilgreina
 :math:`v(r,\theta)=u(r\cos \theta,r\sin \theta)` og
 :math:`{\psi}(\theta)=\varphi(a\cos \theta,a\sin \theta)`. Lausnin er
@@ -399,7 +394,7 @@ Við getum því sett lausnina fram sem heildi,
 Þessi formúla nefnist *Poisson-formúla* fyrir hringskífuna :math:`D_a`.
 Ef við stingum inn rétthyrndum hnitum
 :math:`z=(x,y)=x+iy=re^{i{\theta}}`, þá verður lausnarformúlan fyrir
-(:ref:`Link title <17.3.1>`),
+Dirichlet-verkefninu á einingarskífunni,
 
 .. math::
 
@@ -409,7 +404,7 @@ Ef við stingum inn rétthyrndum hnitum
 Nú athugum við að bogalengdarfrymið á hringnum :math:`{\partial}D_a` er
 :math:`ds=a\, dt`, þegar hann er stikaður með
 :math:`t\mapsto {\zeta}=ae^{it}` og því getum við umritað
-(:ref:`Link title <17.3.5>`) yfir í heildi yfir :math:`{\partial} D_a` með tilliti
+lausnarformúluna yfir í heildi yfir :math:`{\partial} D_a` með tilliti
 til bogalengdarinnar,
 
 .. math::
@@ -433,8 +428,8 @@ og hugsum okkur að við viljum leysa verkefnið
    u=\varphi \quad \text{ á } \quad \partial X,
 
 þar sem :math:`\varphi` er gefið samfellt fall á jaðrinum
-:math:`\partial X`. Til þess að beita aðferðinni, sem lýst er í grein
-17.2, þá þurfum við að finna fágaða vörpun :math:`F`, sem varpar
+:math:`\partial X`. Til þess að beita aðferðinni, sem lýst er í næstu grein hér fyrir ofan, 
+þá þurfum við að finna fágaða vörpun :math:`F`, sem varpar
 :math:`\overline X` gagntækt á :math:`\overline {\Bbb E}`.
 
 .. figure:: ./myndir/fig171.svg
@@ -477,7 +472,7 @@ Lausn þess er gefin með Poisson-formúlunni,
   v(\zeta)=\dfrac{1-|\zeta|^2}{2{\pi}}\int_{-\pi}^{\pi}
    \dfrac{\varphi((e^{it}+1)^2)}{|\zeta-e^{it}|^2}\, dt,
 
-og þar með er lausnin :math:`u` á (:ref:`Link title <17.3.7>`) gefin með
+og þar með er lausnin :math:`u` á Dirichlet-verkefninu í hjartanu gefin með
 
 .. math::
 
@@ -486,7 +481,14 @@ og þar með er lausnin :math:`u` á (:ref:`Link title <17.3.7>`) gefin með
 
 .. end-toggle::
 
-Ef við stingum :math:`z=0` inn í (:ref:`Link title <17.3.6>`) og notfærum okkur að
+Ef við stingum :math:`z=0` inn í 
+
+.. math::
+
+  u(z)=\dfrac{a^2-|z|^2}{2{\pi}a}\int_{{\partial}D_a}
+   \dfrac{\varphi({\zeta})}{|z-{\zeta}|^2}\, ds({\zeta}).
+
+og notfærum okkur að
 :math:`|{\zeta}|=a` ef :math:`{\zeta}\in {\partial}D_a`, þá fáum við
 
 .. math::
@@ -517,7 +519,7 @@ Sönnun
 
 .. begin-toggle:: :label: Sýna sönnun
 
-Við beitum (:ref:`Link title <17.3.9>`) á fallið :math:`v(z)=u({\alpha}+z)` með
+Við beitum formúlunni fyrir framan setninguna á fallið :math:`v(z)=u({\alpha}+z)` með
 :math:`{\varphi}(z)=u({\alpha}+z)`.
 
 .. end-toggle::
@@ -561,7 +563,7 @@ Fourier-ummyndunina séu uppfylltar, þannig að
    \qquad \text{ og } \qquad
    {{\cal F}}\{\partial_y^ku(\cdot,y)\}(\xi)=\partial_y^k\widehat u(\xi,y).
 
-Eftir Fourier-ummyndun af öllum liðum verkefnisins (:ref:`Link title <17.4.1>`) fæst
+Eftir Fourier-ummyndun af öllum liðum verkefnisins fæst
 að :math:`\widehat u(\xi,y)` þarf að uppfylla
 
 .. math::
@@ -593,7 +595,8 @@ Til þess að :math:`\widehat u(\xi,y)` haldist takmarkað ef
 Hægri hliðin í þessari jöfnu er margfeldi tveggja Fourier-mynda og því
 getum við skrifað :math:`u(x,y)` sem földun tveggja falla ef við getum
 reiknað út andhverfu Fourier-mynd fallsins
-:math:`\xi\mapsto e^{-|\xi|y}`. Það er auðvelt, því í sýnidæmi 6.2.1
+:math:`\xi\mapsto e^{-|\xi|y}`. Það er auðvelt, því í 
+:ref:`sýnidæmi <synokkurfouriersynidaemi>`
 sýndum við fram á að :math:`{{\cal F}}\{e^{-|\xi|y}\}(x)=2y/(x^2+y^2)`
 og þar með gefur andhverfuformúlan að
 :math:`{{\cal F}}\{P_{\Bbb H_+}(\cdot,y)\}(\xi)=e^{-|\xi|y}` þar sem
@@ -604,7 +607,7 @@ og þar með gefur andhverfuformúlan að
   P_{\Bbb H_+}(x,y)=\dfrac{y}{\pi(x^2+y^2)}, \qquad (x,y) \in
    {{\mathbb  R}}^2\setminus{{\{(0,0)\}}}.
 
-Földunarreglan í setningu 6.4.1 gefur okkur nú lausnarformúluna
+Földunarreglan fyrir Fourier-myndir gefur okkur nú lausnarformúluna
 
 .. math::
 
@@ -612,7 +615,7 @@ Földunarreglan í setningu 6.4.1 gefur okkur nú lausnarformúluna
    \dfrac{\varphi(t)}{(x-t)^2+y^2}\, dt.
 
 Þessi formúla nefnist *Poisson-formúla á efra hálfplaninu*. Í útleiðslu
-okkar á (:ref:`Link title <17.4.3>`) gengum við út frá því að fallið :math:`\varphi`
+okkar á lausnarformúlunni gengum við út frá því að fallið :math:`\varphi`
 væri heildanlegt, en Poisson-formúlan gildir ef við gerum ráð fyrir að
 :math:`\varphi` sé samfellt og takmarkað á :math:`{{\mathbb  R}}`.
 
@@ -622,8 +625,8 @@ Sýnidæmi
 .. begin-toggle:: :label: Sýna dæmi: Dirichlet-verkefnið á fjórðungi
 
 Nú þegar við þekkjum lausnarformúluna fyrir Dirichlet-verkefnið á
-hálfplani, þá er auðvelt að beita aðferðinni sem lýst er í lok greinar
-17.2 til þess að leysa hliðstætt verkefni á fjórðungi af planinu,
+hálfplani, þá er auðvelt að beita aðferðinni sem lýst er í lok greinarinnar um þýð föll og fágaðar varpanir hér að framan
+til þess að leysa hliðstætt verkefni á fjórðungi af planinu,
 
 .. math::
 
@@ -654,7 +657,7 @@ skilgreinir gagntæka vörpun frá :math:`\overline X` á
 Nú látum við :math:`v` tákna lausnina á :math:`\Delta v=0` á :math:`Y`
 með jaðargildin :math:`v(\xi,0)={\psi}(\xi)` ef
 :math:`\xi\in {{\mathbb  R}}`. Samkvæmt Poisson-formúlunni
-(:ref:`Link title <17.4.3>`) er
+fyrir efra hálfplan er
 
 .. math::
 
@@ -662,7 +665,7 @@ með jaðargildin :math:`v(\xi,0)={\psi}(\xi)` ef
    \dfrac{{\psi}(t)\, dt}{(\xi-t)^2+\eta^2}, \qquad \zeta=\xi+i\eta\in Y.
 
 Nú setjum við inn :math:`\xi=x^2-y^2` og :math:`\eta=2xy` samkvæmt
-(:ref:`Link title <17.4.5>` og fáum þá lausnarformúlu fyrir (:ref:`Link title <17.4.4>`),
+formúlunni hér að framan og fáum þá lausnarformúlu fyrir Dirichlet-verkefni á fjórðungi,
 
 .. math::
 
@@ -840,8 +843,7 @@ meðalgildi fallsins :math:`u` yfir :math:`{\partial}B(0,r)` er
    &=\dfrac 1{4{\pi}}\int_0^{\pi}\int_0^{2\pi} v(r,{\theta},\phi)
    \, \sin{\theta}\, d{\theta} d\phi.\end{aligned}
 
-Ef við gefum okkur að :math:`u` sé þýtt fall, þá gefa (:ref:`Link title <17.5.7>`)
-og (:ref:`Link title <17.5.8>`) að
+Ef við gefum okkur að :math:`u` sé þýtt fall, þá gefa formúlurnar fyrir heildi :math:`\frac{\partial u}{\partial n}` yfir :math:`\partial D` og :math:`\partial B(0,r)` hér að framan að
 
 .. math::
 
@@ -1055,7 +1057,7 @@ Jaðarinn :math:`\partial X_\varepsilon` samanstendur af tveimur hlutum,
 Athugið að síðasta markgildið er tekið af meðalgildi :math:`u` á
 :math:`{\partial}B(x,{\varepsilon})` og vegna samfelldni :math:`u`
 stefnir það á :math:`u(x)`. Ef :math:`n=2`, þá er seinni liðurinn í
-vinstri hlið (:ref:`Link title <17.7.3>`) jafn
+vinstri hlið þriðju síðustu formúlu jafn
 
 .. math::
 
@@ -1079,8 +1081,7 @@ fáum við að
    \int_{X_\varepsilon}E(x-\xi) \Delta u(\xi)\, d\xi
    = \int_{X}E(x-\xi) \Delta u(\xi)\, d\xi.
 
-Nú getum við látið :math:`\varepsilon\to 0` í (:ref:`Link title <17.7.3>`) og notfært
-okkur (:ref:`Link title <17.7.4>`), (:ref:`Link title <17.7.5>`) og (:ref:`Link title <17.7.6>`). Við fáum þá
+Nú getum við látið :math:`\varepsilon\to 0` og notfært okkur síðustu þrjár formúlur. Við fáum þá
 
 .. math::
 
@@ -1101,7 +1102,7 @@ lokuninni og beitum annarri formúlu Greens,
    -v(\xi)\dfrac{\partial u}{\partial n}(\xi)\bigg)\, dS(\xi)
    +\int_X v(\xi)\Delta u(\xi)\, d\xi  .
 
-Nú leggjum við saman (:ref:`Link title <17.7.7>`) og (:ref:`Link title <17.7.8>`) og fáum þá
+Nú leggjum við saman tvær síðustu formúlur og fáum þá
 
 .. math::
 
@@ -1119,7 +1120,7 @@ Nú leggjum við saman (:ref:`Link title <17.7.7>`) og (:ref:`Link title <17.7.8
 Hugsum okkur nú að við gætum ákvarðað fall :math:`v` sem er háð
 :math:`x` og :math:`\xi` þannig að :math:`\xi\mapsto v(x,\xi)` er þýtt
 og :math:`E(x-\xi)+v(x,\xi)=0`, ef :math:`x\in \partial X` og
-:math:`\xi\in X`. Þá verður miðliðurinn í (:ref:`Link title <17.7.9>`) að núlli.
+:math:`\xi\in X`. Þá verður miðliðurinn í síðustu formúlu að núlli.
 
 Skilgreining
 ^^^^^^^^^^^^
@@ -1227,8 +1228,42 @@ og í punkti :math:`x=\xi_0+i\varepsilon e^{it}\in \partial B(\xi_0,\varepsilon)
    =\dfrac{-1}{2\pi\varepsilon}
    -\dfrac{\partial}{\partial r}w(\xi_0+\varepsilon e^{it},\xi_0).
 
-Með nákvæmlega sömu röksemdafærslu og leiddi til (:ref:`Link title <17.7.4>`) og
-(:ref:`Link title <17.7.5>`) fáum við að hægt er að taka markgildi í (:ref:`Link title <17.7.10>`)
+Með nákvæmlega sömu röksemdafærslu og leiddi til jafnanna
+
+.. math::
+
+  \lim\limits_{\varepsilon\to 0}
+   \int_{\partial B(x,\varepsilon)}u(\xi)
+   \dfrac{\partial E}{\partial n}(x-\xi) \, dS(\xi)
+   =-\lim\limits_{\varepsilon\to 0}
+   \dfrac 1{a({\partial}B(x,{\varepsilon}))}
+   \int_{{\partial}B(x,{\varepsilon})}
+   u\, dS = -u(x)
+
+og
+
+.. math::
+
+  \lim\limits_{\varepsilon\to 0}
+   \int_{\partial B(x,\varepsilon)}
+   E(x-\xi) \dfrac{\partial u}{\partial n}(\xi) \, dS(\xi)
+   =\lim\limits_{\varepsilon\to 0}
+   {\varepsilon}{\ln \varepsilon}
+   \dfrac 1{a({\partial}B(x,{\varepsilon}))}
+   \int_{{\partial}B(x,{\varepsilon})}
+   \dfrac{\partial u}{\partial n} \, dS =0
+
+fyrr í þessari grein fáum við að hægt er að taka markgildi í 
+
+.. math::
+
+  0=\int_{\partial B(x_0,\varepsilon)}
+   \bigg( u\dfrac{\partial v}{\partial n}-
+    v\dfrac{\partial u}{\partial n}\bigg) \, dS
+   +\int_{\partial B({\xi}_0,\varepsilon)}
+   \bigg( u\dfrac{\partial v}{\partial n}-
+    v\dfrac{\partial u}{\partial n}\bigg) \, dS
+
 og að það er :math:`0=v(x_0)-u(\xi_0)`, sem jafngildir því að
 :math:`G_X(x_0,\xi_0)=G_X(\xi_0,x_0)`. Tilfellið :math:`n=3` er
 meðhöndlað á nákvæmlega sama hátt.
@@ -1240,7 +1275,22 @@ Green-fall takmarkaðs svæðis :math:`X` og við gerum ráð fyrir að ytri
 þverafleiðan :math:`\partial G_X(x,\xi)/\partial n` af :math:`G_X` með
 tilliti til :math:`\xi` sé til ef :math:`x\in X` og
 :math:`\xi\in {\partial}X`, þar sem ekki er brot á jaðrinum
-:math:`\partial X`, þá gefur (:ref:`Link title <17.7.9>`) okkur
+:math:`\partial X`, þá gefur formúlan
+
+.. math::
+
+  \begin{aligned}
+   u(x)&=
+   \int_{\partial X}u(\xi)\bigg(
+   \dfrac{\partial E}{\partial n}(x-\xi)
+   +\dfrac{\partial v}{\partial n}(\xi)\bigg)\, dS(\xi)
+   \\
+   &-\int_{\partial X}\bigg(E(x-\xi)+v(\xi)\bigg)
+   \dfrac{\partial u}{\partial n}(\xi) \, dS(\xi)\nonumber\\
+   &+\int_{X} \bigg(E(x-\xi)+v(\xi)\bigg) \Delta u(\xi)\, d\xi
+   \nonumber\end{aligned}
+
+okkur
 
 .. math::
 
@@ -1268,7 +1318,7 @@ Látum nú :math:`D_a=\{x\in {{\mathbb  R}}^n; |x|<a\}` vera skífu/kúlu í
 :math:`{{\mathbb  R}}^n` með miðpunkt :math:`0` og geisla :math:`a`. Til
 þess að ákvarða Green-fall :math:`D_a`, þá þurfum við að finna fall
 :math:`w_a` þannig að :math:`G_{D_a}(x,{\xi})=E(x-{\xi})+w_a(x,{\xi})`
-uppfylli skilyrðin í skilgreiningu :ref:`Link title <sk17.7.1>`. Þetta er hægt að
+uppfylli skilyrðin í skilgreiningunni á Green-falli. Þetta er hægt að
 gera með svokallaðri *speglunaraðferð*. Hún er hugsuð þannig að fyrst
 tökum við :math:`{\xi}\in D_a`, :math:`{\xi}\neq  0`. Við lítum síðan á
 spegilpunkt :math:`{\xi}` um hringinn/kúluflötinn :math:`{\partial}D_a`,
@@ -1288,7 +1338,7 @@ uppfyllir :math:`|{\xi}||{\xi}^\ast|=a^2`. Þar með er
 :math:`{\xi}^\ast` er utanvert við hringinn og :math:`E` er þýtt á
 :math:`{{\mathbb  R}}^n\setminus{{\{0\}}}`, þá er ljóst að fallið
 :math:`x\mapsto w_a(x,{\xi})` er þýtt á :math:`D_a`, svo skilyrði (i) og
-\(iii) í skilgreiningu :ref:`Link title <sk17.7.1>` eru uppfyllt. Til þess að sanna að
+\(iii) í skilgreiningunni á Green-falli eru uppfyllt. Til þess að sanna að
 \(ii) sé uppfyllt þá athugum við, að ef :math:`x\in {\partial}D_a`, þá
 eru þríhyrningarnir með hornpunktana :math:`0,x,{\xi}` og
 :math:`0,a{\xi}/|{\xi}|,|{\xi}|x/a` einslaga og þar með er
@@ -1328,8 +1378,8 @@ hálfplanið/hálfrúmið. Jaðar þess :math:`{\partial}\Bbb H_+` er
 rauntalnalínan :math:`{{\mathbb  R}}` í
 :math:`{{\mathbb  C}}={{\mathbb  R}}^2`, ef :math:`n=2`, en
 :math:`x_1x_2`-planið, ef :math:`n=3`. Eftir að hafa séð
-speglunaraðferðina í sýnidæmi :ref:`Link title <syn17.7.3>`, þá sjáum við í hendi
-okkar að skilyrðin í skilgreiningu :ref:`Link title <sk17.7.1>` eru uppfyllt fyrir
+speglunaraðferðina í sýnidæminu hér á undan, þá sjáum við í hendi
+okkar að skilyrðin í skilgreiningunni á Green-falli eru uppfyllt fyrir
 
 .. math:: G _{\Bbb H_+}(x,{\xi})=E(x-{\xi})-E(x-{\xi}^\ast),
 
@@ -1365,8 +1415,7 @@ Nú skulum við innleiða ritháttinn :math:`z` og :math:`{\zeta}` fyrir
 punkta í :math:`{{\mathbb  R}}^2={{\mathbb  C}}` eins og venja er í
 tvinnfallagreiningu og láta
 :math:`\Bbb E=\{z\in {{\mathbb  C}}; |z|<1\}` tákna einingarskífuna í
-:math:`{{\mathbb  C}}`. Auðvelt er að sannfæra sig út frá
-(:ref:`Link title <17.7.13>`) um að
+:math:`{{\mathbb  C}}`. Auðvelt er að sannfæra sig um að
 
 .. math::
 
@@ -1399,22 +1448,21 @@ og því uppfyllir
    \dfrac 1{2\pi}\ln |z-\zeta|+
    \dfrac 1{2\pi}\ln|(F(z)-F(\zeta))/(z-\zeta)|+w_Y(F(z),F(\zeta)),
 
-skilyrðin (i)-(iii) í skilgreiningu :ref:`Link title <syn17.7.3>`, því fallið
+skilyrðin (i)-(iii) í skilgreiningunni á Green-falli, því fallið
 
 .. math::
 
   z\mapsto w_X(z,\zeta)=
    \dfrac 1{2\pi}\ln|(F(z)-F(\zeta))/(z-\zeta)|+w_Y(F(z),F(\zeta))
 
-er þýtt, því samskeyting af þýðu og fáguðu falli er þýtt samkvæmt
-setningu 17.2.3.
+er þýtt, því samskeyting af þýðu og fáguðu falli er þýtt.
 
 Sýnidæmi
 ^^^^^^^^
 
 .. begin-toggle:: :label: Sýna dæmi
 
-Í sýnidæmi 17.3.1 skoðuðum við svæðið sem takmarkast af hjartaferlinum
+Fyrr í kaflanum skoðuðum við svæðið sem takmarkast af hjartaferlinum
 :math:`r=2(1+\cos {\theta})`, þ.e.
 
 .. math:: X=\{z=re^{i{\theta}}; r<2(1+\cos {\theta})\}.
@@ -1438,12 +1486,12 @@ Poisson-kjarnar
 Poisson-kjarnar
 ~~~~~~~~~~~~~~~
 
-Í grein 17.3 leystum við Dirichlet-verkefnið fyrir hringskífu og í grein
-17.4 leystum við Dirichlet-verkefnið fyrir hálfplan. Í báðum tilfellunum
+Í þessum kafla höfum við leyst Dirichlet-verkefnið fyrir hringskífu og 
+hálfplan. Í báðum tilfellunum
 leiddum við út lausnarformúlu, sem er heildi yfir jaðarinn á svæðinu og
 hægt er að líta á það sem földun á jaðargildunum og kjarna, sem við
 nefndum Poisson-kjarna. Nú ætlum við að alhæfa þessar formúlur, en við
-sáum í (:ref:`Link title <17.7.12>`) að lausnarformúla fyrir verkefnið
+sáum í síðustu grein að lausnarformúla fyrir verkefnið
 
 .. math::
 
@@ -1486,7 +1534,7 @@ Auðvelt er að sannfæra sig um að
    =\dfrac{{\partial} G_{\Bbb E}}{{\partial} r}(z,re^{it})
    \bigg|_{r=1}=\dfrac{1-|z|^2}{2{\pi}|z-e^{it}|^2},
 
-í samræmi við útreikningana í grein 17.3, og að
+og
 
 .. math::
 
@@ -1495,7 +1543,7 @@ Auðvelt er að sannfæra sig um að
    \bigg|_{{\eta}=0}=
    \dfrac {\zeta}{{\pi}(z^2+{\zeta}^2)},
 
-í samræmi við útkomuna í grein 17.4.
+í samræmi við umfjöllun okkar um Poisson-formúluna í greinum hér að framan.
 
 Gerum nú ráð fyrir að við höfum gagntæka vörpun :math:`F:\overline X\to \overline Y` sem varpar jaðrinum :math:`{\partial} X` gagntækt á
 :math:`{\partial} Y` og er fáguð á :math:`X`. Til einföldunar skulum við gera ráð fyrir að
@@ -1619,7 +1667,14 @@ Setning
 ^^^^^^^
 
 (*Lögmál Dirichlets*).   Fallið :math:`u\in C^2(X)\cap C(\overline X)`
-er lausn á Dirichlet-verkefninu (:ref:`Link title <17.9.1>`) þá og því aðeins að
+er lausn á Dirichlet-verkefninu 
+
+.. math::
+
+  -\Delta u =f \quad \text{ á } \quad X \qquad \text{ og } \qquad
+   u=g \quad \text { á } \quad {\partial} X
+
+þá og því aðeins að
 :math:`E[w]\geq E[u]` fyrir öll :math:`w\in C^2(X)\cap C(\overline X)`
 sem uppfylla :math:`w=g` á :math:`{\partial} X`.
 
@@ -1628,10 +1683,18 @@ Sönnun
 
 .. begin-toggle:: :label: Sýna sönnun
 
-Ef :math:`u` er lausn á (:ref:`Link title <17.9.1>`) og
+Ef :math:`u` er lausn á Dirichlet-verkefninu og
 :math:`w\in C^2(X)\cap C(\overline X)` uppfyllir :math:`w=g` á
 :math:`{\partial} X`, þá er :math:`v=w-u` leyfileg hnikun á föllum í
-:math:`V_g`. Þar með gefur (:ref:`Link title <17.9.3>`) að
+:math:`V_g`. Þar með gefur 
+
+.. math::
+
+  {\cal E}[w+sv] ={\cal E}[w] 
+   -s\int_X\big(\Delta w  + f\big)v \, dx
+   +\tfrac 12 s^2 \int_X|\nabla v|^2 \, dx
+
+að
 
 .. math::
 
@@ -1642,13 +1705,20 @@ Ef :math:`u` er lausn á (:ref:`Link title <17.9.1>`) og
 Öfugt, ef :math:`u` er fall í :math:`V_g` sem lágmarkar orkuheildið og
 :math:`v` er leyfileg hnikun á föllum í :math:`V_g`, þá er afleiðan af
 fallinu :math:`s\mapsto {\cal E}[u+sv]` í punktinum :math:`s=0` jöfn
-:math:`0`. Þar með gefur (:ref:`Link title <17.9.4>`) okkur að
+:math:`0`. Þar með gefur 
+
+.. math::
+
+  \dfrac d{ds} {\cal E}[w+sv]\bigg|_{s=0} =
+   -\int_X \big(\Delta w  +  f\big) v \, dx
+
+okkur að
 
 .. math:: \int_X\big(\Delta w  + f\big)v \, dx=0.
 
 Fyrst :math:`v` er ótiltekin leyfileg hnikun á föllum í :math:`V_g`, þá
 gefur þetta að :math:`-\Delta u=f` á :math:`X`. Við höfum því sýnt að
-:math:`u` er lausn á (:ref:`Link title <17.9.1>`).
+:math:`u` er lausn á Dirichlet-verkefninu.
 
 .. end-toggle::
 
@@ -1743,13 +1813,37 @@ Sýnið að :math:`{\partial_z \overline  f}= \overline{\partial_{ \overline z}f
 Dæmi
 ^^^^
 
-Sannið keðjuregluna á forminu (:ref:`Link title <17.2.5>`) og (:ref:`Link title <17.2.6>`).
+Sannið keðjuregluna á forminu 
+
+.. math::
+
+  \begin{aligned}
+   \dfrac{\partial u}{\partial z}(z)
+   &=\dfrac{\partial v}{\partial \zeta}({\zeta})
+   \dfrac{\partial F}{\partial z}(z)
+   +\dfrac{\partial v}{\partial\overline\zeta}({\zeta})
+   \dfrac{\partial \overline F}{\partial z}(z),
+   \\
+   \text{og}\\
+   \dfrac{\partial u}{\partial \overline z}(z)
+   &=\dfrac{\partial v}{\partial \zeta}({\zeta})
+   \dfrac{\partial F}{\partial \overline z}(z)
+   +\dfrac{\partial v}{\partial\overline \zeta}({\zeta})
+   \dfrac{\partial  \overline F}{\partial \overline z}(z).\end{aligned}
+
 
 Dæmi
 ^^^^
 
 Sýnið að Poisson-kjarninn sé þýtt fall á efra hálfplaninu og staðfestið
-að taka megi afleiður af fallinu :math:`u` í (:ref:`Link title <17.4.3>`) með því að
+að taka megi afleiður af fallinu 
+
+.. math::
+
+  u(x,y)=P_{\Bbb H_+}(\cdot,y)\ast \varphi(x)=\dfrac y\pi\int_{-\infty}^{+\infty}
+   \dfrac{\varphi(t)}{(x-t)^2+y^2}\, dt
+
+með því að
 deilda undir heildið í hægri hliðinni.
 
 Dæmi
@@ -1763,8 +1857,20 @@ samfellt takmarkað fall :math:`\varphi`.
 Dæmi
 ^^^^
 
-Notið niðurstöðurnar úr dæmi 1 og 2 til þess að sanna að (:ref:`Link title <17.4.3>`)
-sé lausnarformúla fyrir verkefnið (:ref:`Link title <17.4.1>`).
+Notið niðurstöðurnar úr dæmi 1 og 2 til þess að sanna að 
+
+.. math::
+
+  u(x,y)=P_{\Bbb H_+}(\cdot,y)\ast \varphi(x)=\dfrac y\pi\int_{-\infty}^{+\infty}
+   \dfrac{\varphi(t)}{(x-t)^2+y^2}\, dt
+
+sé lausnarformúla fyrir verkefnið 
+
+.. math::
+
+  \Delta u= 0  \quad \text { á  } \quad \Bbb H_+
+   \qquad \text{ og } \qquad
+   u={\varphi}   \quad \text{ á }  \quad  {{\mathbb  R}}.
 
 Dæmi
 ^^^^
@@ -1796,7 +1902,14 @@ Green-fall á hálfhring
 Dæmi
 ^^^^
 
-Notið formúluna (:ref:`Link title <17.8.3>`) til þess að reikna út Poisson-kjarnann
+Notið formúluna 
+
+.. math::
+
+  P_X(z,{\zeta})=P_Y(F(z),F({\zeta}))|F{{^{\prime}}}({\zeta})|,
+   \qquad z\in  X, \ {\zeta}\in {\partial}X.
+
+til þess að reikna út Poisson-kjarnann
 fyrir svæðið sem afmarkast af hjartaferlinum.
 
 Dæmi

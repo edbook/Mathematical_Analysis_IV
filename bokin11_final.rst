@@ -125,7 +125,7 @@ hlutafleiðuvirki* og við getum skrifað hana á forminu
 
 þar sem stuðullinn :math:`a_{\alpha}` er háður fjölvísinum
 :math:`{\alpha} = (\alpha _1 , \dots , \alpha _n )` og punktinum
-:math:`x = (x_1, \dots , x_n)`. Jafnan (:ref:`Link title <12.1.8>`) er sögð vera
+:math:`x = (x_1, \dots , x_n)`. Jafnan :math:`L u = f` er sögð vera
 *óhliðruð* ef :math:`f` er núllfallið, en *hliðruð* annars.
 
 Allar hlutafleiðujöfnur sem við fjöllum um eru línulegar. Ef stuðlarnir
@@ -170,8 +170,8 @@ Alveg eins og fyrir venjulega afleiðuvirkja þá skilgreinum við
 þar sem :math:`\xi = (\xi_1 , \dots , \xi_n)` og
 :math:`\xi ^{\alpha} = \xi_1^{\alpha_1}  \xi_2^{\alpha_2}  \dots  \xi_n^{\alpha_n}`. Þetta er margliða af :math:`n` breytistærðum
 af stigi :math:`\leq m` með stuðlum sem breytast með :math:`x`.
-Hliðstætt við ritháttinn sem við innleiddum í grein 2.1 er síðan
-hlutafleiðuvirkinn (:ref:`Link title <12.1.9>`) einnig táknaður með
+Hliðstætt við ritháttinn fyrir venjulega afleiðuvirkja er
+hlutafleiðuvirkinn einnig táknaður með
 
 .. math::
 
@@ -203,7 +203,7 @@ að núllrúmið er óendanlega vítt.
 Hlutafleiðujöfnur með hliðarskilyrðum
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Í kafla 7 sáum við að lausn á venjulegri línulegri afleiðujöfnu af stigi
+Lausn á venjulegri línulegri afleiðujöfnu af stigi
 :math:`m` ákvarðast ótvírætt af :math:`m` skilyrðum á lausnina í einum
 punkti, svokölluðum upphafsskilyrðum. Einnig gátum við fengið ótvírætt
 ákvarðaða lausn með því að setja :math:`m` skilyrði á lausnina í tveimur
@@ -469,7 +469,7 @@ Sýnidæmi
 
 .. begin-toggle:: :label: Sýna dæmi: Strengur;bylgjujafna
 
-Í sýnidæmi :ref:`Link title <syn1.3.2>` leiddum við út hreyfijöfnur fyrir festi. Nú
+Við höfum áður leitt út hreyfijöfnur fyrir festi. Nú
 skulum við líta á skylt dæmi. Það er strengur af lengd :math:`L` og
 massa :math:`m`. Við gerum ráð fyrir að hann sé strekktur, festur niður
 í báðum endapunktum og að hann sveiflist í plani. Við veljum hnit þannig
@@ -584,6 +584,8 @@ lögmál Newtons eins og í útleiðslunni hér að framan að færslan uppfylli
 Tromma – bylgjujafna í tveimur rúmvíddum
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. _sytrommabylgjujafnaitveimurrumviddum:
+
 Sýnidæmi
 ^^^^^^^^
 
@@ -650,6 +652,8 @@ við að :math:`u` uppfyllir bylgjujöfnuna í tvívíðu rúmi,
 
 Sveiflur í bitum – bitajafna
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. _sysveifluribitumbitajafna:
 
 Sýnidæmi
 ^^^^^^^^
@@ -756,7 +760,7 @@ krappinn sem ferillinn :math:`x\mapsto v(x,t)` myndar við tímann
 sér nálgunina :math:`{\kappa}(x,t)\approx {\partial}^2_xv(x,t)`. Næst er
 að nefna að sambandið milli skerkraftsins og beygjuvægisins er
 :math:`S(x,t)={\partial}_xM(x,t)`. Ef við notum þessar upplýsingar í
-(:ref:`Link title <12.2.7>`), þá fáum við að færslan verður að uppfylla
+jöfnunni hér að framan, þá fáum við að færslan verður að uppfylla
 hlutafleiðujöfnuna,
 
 .. math::
@@ -803,8 +807,7 @@ efnispunkts í :math:`(x,y)` frá jafnvægisstöðu við tímann :math:`t`.
 
     Mynd: Þversveiflur í plötu.
 
-Útleiðslan á hreyfijöfnu :math:`w` er svipuð og fyrir :math:`v` í
-sýnidæmi :ref:`Link title <syn12.2.3>`, en töluvert snúnari. Niðurstaðan er að
+Útleiðslan á hreyfijöfnu :math:`w` er svipuð og fyrir hreyfijöfnu bita, en töluvert snúnari. Niðurstaðan er að
 
 .. math:: {\varrho}h\dfrac{{\partial}^2w}{{\partial}t^2}+D\Delta^2w=F,
 
@@ -951,8 +954,7 @@ Ef :math:`\mathbf  A` er þrívítt vigursvið, þá gildir jafnan
   \nabla\times(\nabla\times {\mathbf  A})=\nabla(\nabla\cdot {\mathbf A})-
    \nabla^2{\mathbf  A}.
 
-Ef við látum virkjann :math:`\nabla \times` verka á síðustu jöfnuna í
-(:ref:`Link title <12.2.15>`), þá fáum við
+Ef við látum virkjann :math:`\nabla \times` verka á fjórðu Maxwell-jöfnuna, þá fáum við
 
 .. math::
 
@@ -960,8 +962,7 @@ Ef við látum virkjann :math:`\nabla \times` verka á síðustu jöfnuna í
    \nabla^2{\mathbf  E}=-\nabla \times \dfrac{{\partial}{\mathbf  B}}
    {{\partial} t},
 
-og ef við látum :math:`{\partial}/{\partial}t` verka á aðra jöfnuna í
-(:ref:`Link title <12.2.15>`), þá fáum við
+og ef við látum :math:`{\partial}/{\partial}t` verka á aðra Maxwell-jöfnuna, þá fáum við
 
 .. math::
 
@@ -983,8 +984,7 @@ hliðinni stendur bylgjuvirkinn í þrívíðu rúmi
 :math:`{\partial}^2/{\partial}t^2-c^2\Delta`, því
 :math:`\nabla^2=\Delta`. Hann verkar á hvert hnit fyrir sig í
 rafsviðinu :math:`\mathbf E`. Til þess að fá hliðstæða jöfnu fyrir
-segulsviðið, þá látum við :math:`\nabla\times` verka á aðra jöfnuna í
-(:ref:`Link title <12.2.15>`)
+segulsviðið, þá látum við :math:`\nabla\times` verka á aðra Maxwell-jöfnuna
 
 .. math::
 
@@ -993,8 +993,7 @@ segulsviðið, þá látum við :math:`\nabla\times` verka á aðra jöfnuna í
    = {\epsilon}{\mu}\nabla \times\dfrac{{\partial}{\mathbf  E}}{{\partial}t}
    +{\mu}\nabla \times {\mathbf J}.
 
-Ef við látum :math:`{\partial}/{\partial}t` verka á fjórðu jöfnuna í
-(:ref:`Link title <12.2.15>`), þá fáum við
+Ef við látum :math:`{\partial}/{\partial}t` verka á fjórðu Maxwell-jöfnuna, þá fáum við
 
 .. math::
 
@@ -1022,7 +1021,7 @@ einsátta línulegu efni, þá uppfyllir :math:`u` þrívíðu bylgjujöfnuna
    +\dfrac{\partial^2 u}{\partial z^2}\bigg)=f(x,y,z,t),
 
 þar sem fallið :math:`f` er háð hleðslu- og straumþéttleikanum í efninu
-og er lesið út úr jöfnunum (:ref:`Link title <12.2.17>`) og (:ref:`Link title <12.2.18>`).
+og er lesið út úr hægri hliðum jafnanna hér að framan.
 
 .. end-toggle::
 
@@ -1169,7 +1168,7 @@ Sýnidæmi
 
 .. begin-toggle:: :label: Sýna dæmi: Strengur og himna
 
-Í sýnidæmi :ref:`Link title <syn1.6.3>` fjölluðum við um streng sem ytri kraftur
+Við fjölluðum um streng sem ytri kraftur
 verkar á og sáum að með vissum nálgunum væri fráviki strengsins frá
 jafnvægisstöðu :math:`u(x,t)` lýst með einvíðu bylgjujöfnunni
 
@@ -1206,7 +1205,7 @@ Ef við hugsum okkur að hægt sé að stjórna stöðu endapunkta strengsins,
    \qquad
    {\beta}_1u(L,t)+{\beta}_2{\partial}_xu(L,t)=h(t).
 
-Í sýnidæmi :ref:`Link title <syn11.2.6a>` fjölluðum við um hreyfingu himnu, sem ytri
+Við fjölluðum um hreyfingu himnu, sem ytri
 kraftur verkar á og sáum þar að með ákveðnum nálgunum uppfyllir færsla
 :math:`u(x,y,t)` efnispunkts :math:`(x,y)` frá jafnvægisstöðu tvívíðu
 bylgjujöfnuna
@@ -1361,9 +1360,9 @@ eða æstætt hitastig í :math:`X` sem gefið er á jaðrinum með
 
 Lausn á Laplace-jöfnunni þýtt fall. Einn af undirstöðueiginleikum þýðra
 falla er að þau taka há- og lággildi á jaðri takmarkaðra svæða. Ef
-:math:`u_1` og :math:`u_2` eru lausnir á (:ref:`Link title <12.3.9>`) með jaðargildin
+:math:`u_1` og :math:`u_2` eru lausnir á Laplace-jöfnu með jaðargildin
 :math:`{\varphi}_1` og :math:`{\varphi}_2` þá er :math:`u=u_1-u_2` lausn
-á (:ref:`Link title <12.3.9>`) með jaðargildin
+á Laplace-jöfnu með jaðargildin
 :math:`{\varphi}={\varphi}_1-{\varphi}_2`. Hágildislögmálið segir okkur
 þá að
 
@@ -1374,7 +1373,7 @@ falla er að þau taka há- og lággildi á jaðri takmarkaðra svæða. Ef
    =\|\varphi_1-\varphi_2\|_{\infty,\partial X}.
 
 Þessi ójafna segir okkur að frávik í lausninni geti ekki verið meira en
-frávikið í jaðargildunum. Þar með er lausn verkefnisins (:ref:`Link title <12.3.9>`)
+frávikið í jaðargildunum. Þar með er lausn verkefnisins Laplace-jöfnu
 stöðug.
 
 .. end-toggle::
@@ -1398,7 +1397,7 @@ línuleg óhliðruð annars stigs jafna með fastastuðla af gerðinni
 Skilgreining
 ^^^^^^^^^^^^
 
-Hlutafleiðuvirkinn og hlutafleiðujafnan (:ref:`Link title <12.4.1>`) eru sögð vera
+Hlutafleiðuvirkinn og hlutafleiðujafnan eru sögð vera
 *sporger* eða *elliptísk* ef :math:`a_{12}^2<a_{11}a_{22}`, þau eru sögð
 vera *breiðger* eða *hýperbólsk* ef :math:`a_{12}^2>a_{11}a_{22}`, og
 þau eru sögð vera *fleygger* eða *parabólsk* ef
@@ -1422,8 +1421,7 @@ fleygger. Þegar fram í sækir munum við sjá að eiginleikar lausna þessara
 þriggja jafna eru mjög ólíkir. Hins vegar eru eiginleikar hverrar um sig
 einkennandi fyrir flokkinn sem hún tilheyrir. Það liggur í þeirri
 staðreynd að hægt er að framkvæma línuleg hnitaskipti :math:`y=Bx`,
-:math:`v(y)=u(B^{-1}y)=u(x)`, þannig að sporger jafna (:ref:`Link title <12.4.1>`)
-jafngildi
+:math:`v(y)=u(B^{-1}y)=u(x)`, þannig að sporger jafna jafngildi
 
 .. math::
 
@@ -1499,7 +1497,7 @@ fylkinu :math:`B AB^t` og þar með fæst með þessu vali á :math:`B` að
    =\sum_{l=1}^n \partial^2_{y_l}v=\Delta v.
 
 Ef öll eigingildin eru neikvæð, þá getum við margfaldað í gegnum jöfnuna
-(:ref:`Link title <12.4.3>`) með :math:`-1` og litið á :math:`-A` í stað :math:`A`.
+með :math:`-1` og litið á :math:`-A` í stað :math:`A`.
 
 Lítum nú á sértilfellið :math:`n=2` aftur. Kennijafna fylkisins
 :math:`A` er
@@ -1519,16 +1517,23 @@ breytistærðir.
 Skilgreining
 ^^^^^^^^^^^^
 
-Hlutafleiðuvirkinn og hlutafleiðujafnan (:ref:`Link title <12.4.3>`) eru sögð vera
+Hlutafleiðuvirkinn og hlutafleiðujafnan
+
+.. math::
+
+  \sum_{j,k=1}^n a_{jk} \partial_{x_j}{\partial}_{x_k}u
+   +\sum_{j=1}^n a_j\partial_{x_j}u+a_0u=0.
+
+eru sögð vera
 *sporger* ef öll eigingildi stuðlafylkisins :math:`A` eru jákvæð eða ef
-þau eru öll neikvæð. Þau eru sögð vera breiðger ef öll eigingildin eru
+þau eru öll neikvæð. Þau eru sögð vera *breiðger* ef öll eigingildin eru
 frábrugðin :math:`0` og eitt þeirra hefur öfugt formerki við hin
-:math:`n-1`. Þau eru sögð vera fleygger ef nákvæmlega eitt eigingildi er
+:math:`n-1`. Þau eru sögð vera *fleygger* ef nákvæmlega eitt eigingildi er
 :math:`0` og öll hin hafa sama formerki.
 
 --------------
 
-Við höfum séð að sporger jafna af gerðinni (:ref:`Link title <12.4.3>`) ummyndast með
+Við höfum séð að sporger jafna ummyndast með
 hnitaskiptunum :math:`y=Bx` og :math:`v({y})=u(x)` í
 
 .. math:: \Delta v+\sum\limits_{j=1}^n \alpha_j\partial_{y_j}v+\alpha_0v=0.
@@ -1626,8 +1631,7 @@ víddum.
 Dæmi
 ^^^^
 
-*Æstæða bitajafnan*: Ef við gerum ráð fyrir því að ytri krafturinn sem
-verkar á bitann í sýnidæmi 12.2.3 sé tímaóháður og að bitinn sé í
+*Æstæða bitajafnan*: Ef við gerum ráð fyrir því að ytri krafturinn í bitajöfnunni sé tímaóháður og að bitinn sé í
 kyrrstöðu við þetta álag, þá fáum við æstæðu bitajöfnuna
 :math:`EIv^{(4)}(x)=F(x)`.
 

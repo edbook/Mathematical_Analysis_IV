@@ -5,12 +5,7 @@ Dreififöll og veikar lausnir á hlutafleiðujöfnum
 Inngangur
 ---------
 
-Í greinum 2.8, 6.9 og 7.6 kynntumst við nokkrum undirstöðuhugtökum um
-dreififöll á rauntalnalínunni :math:`{{\mathbb  R}}={{\mathbb  R}}^1`.
-Auðvelt er að alhæfa þau hugtök yfir á rúmið :math:`{{\mathbb  R}}^n` í
-hærri víddum. Reyndar eru dreififöllin mun mikilvægari við úrlausn á
-hlutafleiðujöfnum en við úrlausn á venjulegum afleiðujöfnum. Í þessum
-stutta kafla kynnumst við örlítið veikum hlutafleiðum, veikum lausnum á
+Í þessum stutta kafla kynnumst við örlítið veikum hlutafleiðum, veikum lausnum á
 hlutafleiðujöfnum og grunnlausnum á hlutafleiðujöfnum. Einnig sjáum við
 eðlisfræðilega túlkun á Green-föllum fyrir Laplace-virkjann.
 
@@ -20,7 +15,7 @@ Veik markgildi, veikar afleiður og föll Diracs
 Veik markgildi, veikar afleiður og föll Diracs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Í setningu 2.5.2 og fylgisetningu 2.5.4 sáum við að lausnin á verkefninu
+Í setningu 7.5.2 og fylgisetningu 7.5.4 sáum við að lausnin á verkefninu
 
 .. math::
 
@@ -96,7 +91,7 @@ Sýnidæmi
 
 .. begin-toggle:: :label: Sýna dæmi: Deyfðsveifla; framhald
 
-Lítum nú enn einu sinni á deyfðan sveifil úr sýnidæmi 1.1.1 og látum nú
+Lítum nú enn einu sinni á deyfðan sveifil úr sýnidæmi 6.1.1 og látum nú
 :math:`u(t)` tákna færslu hans frá jafnvægisstöðu og :math:`f(t)` tákna
 summu ytri krafta sem á hann verka. *Atlag* kraftsviðsins
 :math:`f` á tímabilinu :math:`[{\alpha},{\beta}]` er skilgreint sem
@@ -111,9 +106,9 @@ miklum krafti,
 
 .. figure:: ./myndir/fig029.svg
     :align: center
-    :alt: Vantar titil
+    :alt: Krafsvið :math:`f_{\varepsilon}`
 
-    Mynd: Vantar titil
+    Mynd: Krafsvið :math:`f_{\varepsilon}`
 
 .. math::
 
@@ -432,7 +427,7 @@ Sýnidæmi
 
 .. begin-toggle:: :label: Sýna dæmi: Deyfð sveifla;framhald
 
-Í sýnidæmi 2.8.1 litum við á kraftsvið sem verkaði á sveifilinn örskamma
+Í sýnidæmi 20.2.1 litum við á kraftsvið sem verkaði á sveifilinn örskamma
 stund. Við skulum nú líta aftur á þetta dæmi en hafa almennt kraftsvið
 :math:`f` með atlag 1, :math:`f(t)=0` ef :math:`t\notin [0,1]` og
 skilgreina kraftsviðið
@@ -782,7 +777,7 @@ Sýnidæmi
 
 .. begin-toggle:: :label: Sýna dæmi: RLC-rás; framhald
 
-Í sýnidæmi 1.1.2 sáum við að straumurinn :math:`i(t)` í lokaðri
+Í sýnidæmi 6.1.2 sáum við að straumurinn :math:`i(t)` í lokaðri
 straumrás með viðnámi :math:`R`, spólu með spanstuðul :math:`L` og þétti
 með rýmd :math:`C` uppfyllir
 
@@ -796,9 +791,9 @@ nálægt því að vera Heaviside-fallið.
 
 .. figure:: ./myndir/fig028.svg
     :align: center
-    :alt: Vantar titil
+    :alt: Frumspenna og afleiða þess
 
-    Mynd: Vantar titil
+    Mynd: Frumspenna og afleiða þess
 
 Nú er :math:`H{{^{\prime}}}={\delta}` í veikum skilningi og því má
 búast við því að straumurinn :math:`i` sé nálægt því að vera
@@ -857,7 +852,7 @@ Tökum nú saman liðina
 
 .. end-toggle::
 
-Í setningu 2.7.4 voru sett fram fjögur skilyrði, sem einkenna
+Í setningu 14.6.4 voru sett fram fjögur skilyrði, sem einkenna
 Green-fallið fyrir jaðargildisverkefnið
 
 .. math:: P(x,D)u=f, \qquad Bu=0.
@@ -875,7 +870,10 @@ og skilyrðið (iv) gefur síðan að :math:`G_B(x,{\xi})` sem fall af
 Veik markgildi og :math:`{\delta}`-föll Diracs
 ----------------------------------------------
 
-Í grein 2.8 sáum við fyrst skilgreiningu og túlkun á Dirac-fallinu
+Veik markgildi og :math:`{\delta}`-föll Diracs
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Í grein 20.2 sáum við fyrst skilgreiningu og túlkun á Dirac-fallinu
 :math:`{\delta}_a`. Það á sér hliðstæða skilgreiningu í hærri víddum.
 
 Skilgreining
@@ -1068,7 +1066,7 @@ Sýnidæmi
 
 .. begin-toggle:: :label: Sýna dæmi: Varmaleiðnikjarninn
 
-Í grein 16.2 sáum við hvernig varmaleiðnijafnan
+Í grein 19.2 sáum við hvernig varmaleiðnijafnan
 :math:`{\partial}_tu-{\kappa}\Delta u=f` er leyst á
 :math:`{{\mathbb  R}}^n\times {{\mathbb  R}}_+` með upphafsgildum
 :math:`u(x,0)={\varphi}(x)` fyrir :math:`x\in {{\mathbb  R}}^n`. Þar
@@ -1327,7 +1325,7 @@ Sýnidæmi
 
 .. begin-toggle:: :label: Sýna dæmi: Veikar lausnir bylgjujöfnunnar
 
-Í grein 15.2 sáum við að lausn á bylgjujöfnunni
+Í grein 18.2 sáum við að lausn á bylgjujöfnunni
 :math:`{\partial}_t^2-c^2{\partial}_x^2u=0` á :math:`{{\mathbb  R}}^2`
 er af gerðinni
 
@@ -1386,7 +1384,7 @@ fyrir utan takmarkað mengi og því er
    \bigg[\partial_\eta\psi(\xi,\eta)\bigg]_{\xi\to -\infty}^{\xi\to
    +\infty}=0.\end{gathered}
 
-Á mynd 15.1 er útbreiðslu bylgju lýst. Það eru brot í ferlinum, en það
+Á myndum í kafla 18 er útbreiðslu bylgju lýst. Það eru brot í ferlinum, en það
 kemur ekki að sök, því við tökum lausn í veikum skilningi.
 
 .. end-toggle::
@@ -1482,7 +1480,7 @@ hlutafleiðuvirkjans :math:`P({\partial})`, þá er
 Grunnlausn bylgjuvirkjans
 -------------------------
 
-Í setningu 15.5.1 er að finna lausn einvíðu bylgjujöfnunnar
+Í setningu 18.5.1 er að finna lausn einvíðu bylgjujöfnunnar
 :math:`{\partial}_t^2-c^2{\partial}_x^2u=f` með upphafsskilyrðum
 :math:`u(x,0)={\varphi}(x)` og :math:`{\partial}_tu(x,0)={\psi}(x)`. Hún
 er gefin með d’Alembert-formúlunni
@@ -1508,8 +1506,7 @@ er gefin með d’Alembert-formúlunni
    ={{\langle E,\big(\partial_t^2-c^2\partial_x^2\big)\varphi\rangle}}=\varphi(0,0),
    \qquad \varphi\in C_0^\infty({{\mathbb  R}}^2).
 
-Við notum nú sama rithátt og í grein 15.2, skiptum yfir í kennihnit og
-fáum þá á sama hátt og í sýnidæmi 18.3.2
+Við notum nú sama rithátt og í grein 18.2, skiptum yfir í kennihnit og fáum þá
 
 .. math::
 
@@ -1723,13 +1720,13 @@ Sýnidæmi
 
 .. begin-toggle:: :label: Sýna dæmi: Hleðsluþéttleiki á línu og grunnlausn Laplace-virkjans
 
-Í sýnidæmi 18.2.9 sáum við að Coulomb-mættið er rafmætti sem hleðsla
+Í sýnidæmi 20.3.9 sáum við að Coulomb-mættið er rafmætti sem hleðsla
 :math:`Q={\epsilon}_0` í upphafspunktinum skapar í rúminu
 :math:`{{\mathbb  R}}^3`. Hugsum okkur nú jafna hleðsludreifingu
 :math:`{\varrho}_\ell` [:math:`C/m`] á línu :math:`\ell` í þrívíðu rúmi
 og veljum hnitakerfið þannig að línan fari gegnum punktinn
 :math:`({\xi},{\eta})` í planinu :math:`{{\mathbb  R}}^2` og standi
-hornrétt á það. Með svipuðum rökum og í sýnidæmi 18.2.9 getum við sýnt
+hornrétt á það. Með svipuðum rökum og í sýnidæmi 20.3.9 getum við sýnt
 fram á að þessi hleðsludreifing sé veikt markgildi af samfelldri
 hleðsludreifingu í sívalningi :math:`S_r` með geislann :math:`r`
 umhverfis línuna :math:`\ell`, sem skreppur saman í hleðsludreifingu á
@@ -1967,7 +1964,7 @@ við
 .. math:: \widehat E({\xi}) =\dfrac 1{P(i{\xi})}.
 
 Við reiknuðum út andhverfu Fourier-myndina af þessu falli í setningu
-6.5.2. Niðurstaðan verður því:
+16.5.3. Niðurstaðan verður því:
 
 Setning
 ^^^^^^^
@@ -1997,9 +1994,9 @@ fallið, sem skilgreint er með :math:`\varphi(x)=x^{-a}e^{-1/x}` ef
 
 .. figure:: ./myndir/fig0210.svg
     :align: center
-    :alt: Vantar titil
+    :alt: :math:`e^{-1/x}`
 
-    Mynd: Vantar titil
+    Mynd: :math:`e^{-1/x}`
 
 Dæmi
 ^^^^
@@ -2026,9 +2023,9 @@ ef :math:`x\notin[a-{\varepsilon}/2,b+{\varepsilon}/2]`. Setjið síðan
 
 .. figure:: ./myndir/fig0211.svg
     :align: center
-    :alt: Vantar titil
+    :alt: :math:`\psi (x)`
 
-    Mynd: Vantar titil
+    Mynd: :math:`\psi (x)`
 
 Dæmi
 ^^^^

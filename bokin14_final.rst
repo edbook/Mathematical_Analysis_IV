@@ -81,7 +81,7 @@ Ef við tökum almennan afleiðuvirkja með fastastuðla
 sem segir okkur að fallið :math:`u` sé eiginfall virkjans :math:`P(D)`
 með eigingildið :math:`\lambda=P(\alpha)`.
 
-Þetta notuðum við í kafla 6 til þess að finna sérlausnir á
+Þetta notuðum við til þess að finna sérlausnir á
 afleiðujöfnum, en hugmyndin er að finna lausn á jöfnunni
 :math:`P(D)u=f`, þar sem fallið :math:`f` er af gerðinni
 
@@ -91,6 +91,8 @@ og :math:`P(\alpha_j)\neq 0` fyrir öll :math:`j`, með því að taka eins
 summu
 
 .. math:: u(x)=\sum_j \dfrac{c_j}{P(\alpha_j)} e^{\alpha_j x}
+
+.. _sec14.2:
 
 Eigingildisverkefni fyrir afleiðuvirkja
 ---------------------------------------
@@ -106,9 +108,9 @@ Eigingildisverkefni fyrir afleiðuvirkja
 rauntalnaásnum, með skilyrðum á lausnina í endapunktum bilsins
 :math:`I`, kallast :hover:`eigingildisverkefni`.
 Verkefnið er fólgið í því að finna öll :math:`\lambda\in {{\mathbb  C}}`
-þannig að (:ref:`Link title <1.6.1>`) hafi lausn :math:`u_\lambda`, sem er ekki
+þannig að jafnan hafi lausn :math:`u_\lambda`, sem er ekki
 núllfallið. Slík gildi :math:`\lambda` kallast :hover:`eigingildi` 
-verkefnisins (:ref:`Link title <1.6.1>`) og lausnir
+verkefnisins og lausnir
 :math:`u_\lambda\neq 0` á jöfnunni kallast :hover:`eiginföll, eiginfall`.
 
 Nú ætlum við að leysa nokkur eigingildisverkefni með virkjann
@@ -116,6 +118,8 @@ Nú ætlum við að leysa nokkur eigingildisverkefni með virkjann
 
 Fallsjaðarskilyrði í báðum endapunktum
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. _syfallsjadarskilyrdiibadumendapunktum:
 
 Sýnidæmi
 ^^^^^^^^
@@ -196,7 +200,7 @@ Fyrra jaðarskilyrðið segir að :math:`0=X'(0)=D`. Þar með er
 :math:`\lambda=0` eigingildi og tilsvarandi eiginföll eru
 :math:`X_0(x)=C_0` með :math:`C_0\neq 0`.
 
-Við sáum í sýnidæmi :ref:`Link title <syn1.6.2>` að kennijafna afleiðujöfnunnar er
+Við sáum í síðasta sýnidæmi að kennijafna afleiðujöfnunnar er
 :math:`z^2+\lambda=0`. Í stað þess að velja :math:`e^{i\beta x}` og
 :math:`e^{-i\beta x}` sem lausnagrunn, þá skulum við velja
 :math:`cos(\beta x)` og :math:`\sin(\beta x)`. Almenn lausn er þá
@@ -275,8 +279,7 @@ Nú skulum við takast á við eigingildisverkefnið
   -u{{^{\prime\prime}}}={\lambda}u, \quad \text{ á } [0,L], \qquad
    u{{^{\prime}}}(0)-a_0u(0)=0, \quad u{{^{\prime}}}(L)+a_Lu(L)=0.
 
-**Jákvæð eigingildi:** Nú lítum við á eigingildisverkefnið
-(:ref:`Link title <9.2.10>`) og leitum að skilyrði þess að :math:`{\lambda}=\beta^2`,
+**Jákvæð eigingildi:** Við leitum fyrst að skilyrði þess að :math:`{\lambda}=\beta^2`,
 :math:`\beta>0` sé eigingildi. Almenn lausn jöfnunnar er
 
 .. math:: u(x)=C\cos \beta x+D\sin \beta x
@@ -304,7 +307,7 @@ fáum því jöfnuna
 
 Það er ekki til nein bein formúla fyrir lausnir þessarar jöfnu, en með
 aðferð Newtons og Raphsons er auðvelt að finna tölulegar nálganir á
-þeim. Með því að teikna upp gröf fallanna í báðum hliðum (:ref:`Link title <9.2.11>`)
+þeim. Með því að teikna upp gröf fallanna í báðum hliðum jöfnunar hér að ofan
 í tilfellinu :math:`a_0>0` og :math:`a_L>0`, þá sjáum við að til eru
 óendanlega margar lausnir :math:`\alpha_2<\beta_2<\cdots\to+{\infty}`,
 :math:`\beta_n\approx (n-1/2){\pi}` ef :math:`n\to +{\infty}`:
@@ -387,12 +390,12 @@ Nú þarf :math:`C\neq 0` að gilda og því fáum við
 
 .. math:: \tanh{\gamma}L=\dfrac{-(a_0+a_L){\gamma}}{{\gamma}^2+a_0a_L}.
 
-Samfelldi ferillinn á mynd 14.3 er graf fallsins :math:`\tanh{\gamma}L`
+Samfelldi ferillinn á myndinni hér að neðan er graf fallsins :math:`\tanh{\gamma}L`
 sem fall af :math:`{\gamma}`. Ef :math:`a_0>0` og :math:`a_L>0`, þá fæst
-ekkert neikvætt eigingildi, því í vinstri hlið (:ref:`Link title <9.2.13>`) stendur
+ekkert neikvætt eigingildi, því í vinstri hliðinni stendur
 jákvætt fall, en neikvætt í hægri hliðinni. Ef :math:`a_0` og
 :math:`a_L` hafa ólík formerki og :math:`L<(a_0+a_L)/|a_0a_L|`, þá er
-punktaferillinn á mynd 14.3 graf fallsins í hægri hlið (:ref:`Link title <9.2.13>`).
+punktaferillinn á mynd 14.3 graf fallsins í hægri hliðinni.
 Tilfellið að :math:`a_0` og :math:`a_L` hafi ólík formerki og
 :math:`L>(a_0+a_L)/|a_0a_L|` er strikaferillinn á mynd hér að framan. Þá
 fæst eitt neikvætt eigingildi :math:`{\lambda}_0=-{\gamma}_0^2`.
@@ -428,10 +431,21 @@ Sýnidæmi
 
 .. begin-toggle:: :label: Sýna dæmi
 
-Lítum á sýnidæmi :ref:`Link title <sy:13.8.5a>` sem fjallar um sveiflandi streng og
-leysum það með aðskilnaði breytistærða. Við byrjum á því að finna allar
+Lítum á :ref:`sýnidæmi <Sveiflandistrengurframhald>` sem fjallar um sveiflandi streng og
+leysum það með aðskilnaði breytistærða, 
+
+.. math::
+
+  \dfrac{{\partial}^2u}{{\partial}t^2}-
+   c^2\dfrac{{\partial}^2u}{{\partial}x^2}=0, \qquad u(0,t)=u(L,t)=0,
+
+.. math::
+   u(x,0)=\varphi(x), \qquad {\partial}_tu(x,0)={\psi}(x), \qquad x\in
+   ]0,L[.
+
+Við byrjum á því að finna allar
 lausnir á jöfnunni af gerðinni :math:`T(t)X(x)`. Við stingum þessu falli
-inn í jöfnuna (:ref:`Link title <8.7.3>`) og fáum
+inn í jöfnuna og fáum
 
 .. math:: T{{^{\prime\prime}}}(t)X(x)-c^2T(t)X{{^{\prime\prime}}}(x)=0.
 
@@ -444,24 +458,25 @@ Vinstra megin jafnaðarmerkisins stendur fall, sem er aðeins háð
 :math:`t`, en hægra megin stendur fall, sem er aðeins háð :math:`x`.
 Þessi stærð hlýtur því að vera fasti. Við skulum tákna hann með
 :math:`-{\lambda}`, þar sem :math:`{\lambda}` er rauntala. Nú segir
-jaðarskilyrðið (:ref:`Link title <8.7.4>`) að :math:`X(0)=X(L)=0` verði að gilda. Þar
+jaðarskilyrðið að :math:`X(0)=X(L)=0` verði að gilda. Þar
 með verður :math:`X` að vera lausn á eigingildisverkefninu
 
 .. math:: -X{{^{\prime\prime}}}={\lambda} X, \qquad X(0)=X(L)=0.
 
-Við fundum lausnina á þessu verkefni í sýnidæmi :ref:`Link title <syn1.6.2>`.
+Við fundum lausnina á þessu verkefni í 
+:ref:`sýnidæmi <syfallsjadarskilyrdiibadumendapunktum>`.
 Eigingildin eru :math:`{\lambda}_n=\big(n{\pi}/L\big)^2` og tilsvarandi
 eiginföll má taka :math:`X_n(x)=\sin\big(n{\pi}x/L\big)`,
-:math:`n=1,2,3,\dots`. Víkjum nú aftur að (:ref:`Link title <1.6.5>`) til þess að
-ákvarða fallið :math:`T`. Fyrir eigingildið :math:`\lambda_n` þarf
+:math:`n=1,2,3,\dots`. Víkjum nú aftur að fallinu :math:`T`. 
+Fyrir eigingildið :math:`\lambda_n` þarf
 :math:`T` að uppfylla
 
 .. math:: -T{{^{\prime\prime}}}= c^2{\lambda}_n T.
 
 Almenn lausn þessarar jöfnu er
-:math:`T_n(t)= A_n\cos\big(n{\pi}ct/L\big) + B_n\sin\big(n{\pi}ct/L\big)`. Niðurstaðan er nú að allar lausnir af
-gerðinni :math:`T(t)X(x)` á (:ref:`Link title <8.7.3>`) með jaðarskilyrðinu
-(:ref:`Link title <8.7.4>`) eru
+:math:`T_n(t)= A_n\cos\big(n{\pi}ct/L\big) + B_n\sin\big(n{\pi}ct/L\big)`. Niðurstaðan er nú að allar lausnir á bylgjujöfnunni af
+gerðinni :math:`T(t)X(x)` með jaðarskilyrðinu
+hér að ofan eru
 
 .. math::
 
@@ -470,9 +485,8 @@ gerðinni :math:`T(t)X(x)` á (:ref:`Link title <8.7.3>`) með jaðarskilyrðinu
    \sin\big(n{\pi}x/L\big),
 
 :math:`n=1,2,\dots`, þar sem velja má fastana :math:`A_n` og
-:math:`B_n` frjálst. Það er ljóst að summa endanlega margra lausna á
-(:ref:`Link title <8.7.3>`) og (:ref:`Link title <8.7.4>`) er lausn og sama gildir um óendanlegar
-raðir
+:math:`B_n` frjálst. Það er ljóst að summa endanlega margra lausna
+er lausn og sama gildir um óendanlegar raðir
 
 .. math::
 
@@ -482,7 +496,7 @@ raðir
    \sin\big(n{\pi}x/L\big),
 
 að því gefnu að þær séu nógu hratt samleitnar. Hér er Fourier–röðin úr
-:ref:`Link title <sy:13.8.5a>` komin. Stuðlarnir :math:`A_n` og :math:`B_n` ákvarðast
+fyrra sýnidæminu komin. Stuðlarnir :math:`A_n` og :math:`B_n` ákvarðast
 síðan af upphafsskilyrðum,
 
 .. math:: u(x,0)=f(x), \qquad {\partial}_tu(x,0)=g(x),
@@ -529,7 +543,7 @@ Nú sjáum við að í hægri hlið jöfnunnar stendur fall sem er einungis há�
 :math:`z`, en í vinstri hliðinni stendur fall sem er háð
 :math:`(x,y,t)`. Þar með hlýtur :math:`Z{{^{\prime\prime}}}(z)/Z(z)`
 að vera fastafall. Með nákvæmlega sömu rökum fáum við síðan að hinir
-liðirnir í (:ref:`Link title <1.6.8>`) eru fastaföll og við fáum því
+liðirnir í jöfnunni eru fastaföll og við fáum því
 
 .. math::
 
@@ -542,8 +556,11 @@ liðirnir í (:ref:`Link title <1.6.8>`) eru fastaföll og við fáum því
 tvinntölur eftir því hvort við gerum ráð fyrir raun- eða tvinntölugildum
 lausnum.
 
-Hugsum okkur nú að við viljum leysa hlutafleiðujöfnuna (:ref:`Link title <1.6.7>`) á
-menginu
+Hugsum okkur nú að við viljum leysa hlutafleiðujöfnuna
+
+.. math:: a\partial_t^2u+b\partial_tu+cu-\Delta u=0,
+
+á menginu
 
 .. math:: \Omega=\{(x,y,z,t);  0<x<1, 0<y<1, 0<z<1\}
 
@@ -552,8 +569,10 @@ punktur á jaðri :math:`\Omega`, en það þýðir að eitt hnitanna :math:`x`,
 :math:`y` eða :math:`z` taki gildið :math:`0` eða :math:`1`. Ef við
 beitum aðskilnaði breytistærða eins og áður var lýst, þá sjáum við að
 föllin :math:`X`, :math:`Y` og :math:`Z` verða öll að vera lausnir á
-eigingildisverkefninu í sýnidæmi :ref:`Link title <syn1.6.2>`. Þar með sjáum við að
-sérhver lausn á hlutafleiðujöfnunni (:ref:`Link title <1.6.7>`) af gerðinni
+eigingildisverkefninu í 
+:ref:`sýnidæmi <syfallsjadarskilyrdiibadumendapunktum>`. 
+Þar með sjáum við að
+sérhver lausn á hlutafleiðujöfnunni af gerðinni
 :math:`u(x,y,z,t)=T(t)X(x)Y(y)Z(z)` með þessum jaðarkilyrðum er af
 gerðinni
 
@@ -589,7 +608,7 @@ fram með öðrum hætti,
   Lu ={{\dfrac {1}{\varrho} 
    \bigg(-\dfrac d{dx}\bigg(p\dfrac {du}{dx}\bigg)+qu\bigg)}}.
 
-Sambandið milli (:ref:`Link title <9.1.1>`) og (:ref:`Link title <9.1.2>`) er einfalt. Við tökum
+Sambandið milli þessara tveggja framsetninga er einfalt. Við tökum
 
 .. math::
 
@@ -599,7 +618,14 @@ Sambandið milli (:ref:`Link title <9.1.1>`) og (:ref:`Link title <9.1.2>`) er e
    {\varrho}(x)=\dfrac{-p(x)}{a_2(x)},
 
 þar sem :math:`C` er einhver ótiltekinn fasti. Það er rétt að rifja það
-upp á þessu stigi að formúlan (7.6.4) segir okkur að fallið
+upp á þessu stigi að formúlan
+
+.. math::
+
+  W(t)=W(a)\exp\bigg(-\int_a^ t\dfrac{a_{1}(\tau)}{a_2(\tau)}\,
+  d\tau\bigg)
+
+segir okkur að fallið
 
 .. math:: [a,b]\ni x\mapsto p(x)W(u_1,u_2)(x)
 
@@ -610,7 +636,12 @@ Skilgreining
 ^^^^^^^^^^^^
 
 Við segjum að virkinn :math:`L` sé af Sturm–Liouville–gerð ef hann er
-settur fram með formúlunni (:ref:`Link title <9.1.2>`).
+settur fram með formúlunni 
+
+.. math::
+
+  Lu ={{\dfrac {1}{\varrho} 
+   \bigg(-\dfrac d{dx}\bigg(p\dfrac {du}{dx}\bigg)+qu\bigg)}}.
 
 --------------
 
@@ -627,8 +658,7 @@ Skilgreining
 ^^^^^^^^^^^^
 
 Við segjum að virki :math:`L` af Sturm–Liouville–gerð sé *reglulegur* ef
-föllin :math:`p`, :math:`q` og :math:`{\varrho}` uppfylla
-(:ref:`Link title <9.1.5>`).
+föllin :math:`p`, :math:`q` og :math:`{\varrho}` uppfylla þessi skilyrði.
 
 --------------
 
@@ -735,7 +765,7 @@ Við segjum að virkinn :math:`L` sé *samhverfur* á :math:`C^2_B[a,b]` eða
 
 --------------
 
-Út frá formúlu Greens (:ref:`Link title <9.1.11>`) sjáum við að :math:`L` er
+Út frá formúlu Greens sjáum við að :math:`L` er
 samhverfur á :math:`C^2_B[a,b]` þá og því aðeins að
 
 .. math::
@@ -774,7 +804,18 @@ Sönnun
 
 .. begin-toggle:: :label: Sýna sönnun
 
-\(ii) er augljós afleiðing af (:ref:`Link title <9.1.14>`) og til þess að sanna (i) þá
+\(ii) er augljós afleiðing af 
+
+.. math::
+
+  p(b)\left|
+   \begin{matrix} u(b) & u{{^{\prime}}}(b) \\ \bar v(b) &\bar v{{^{\prime}}}(b)
+   \end{matrix}\right| =
+   p(a)\left|
+   \begin{matrix} u(a) & u{{^{\prime}}}(a) \\ \bar v(a) &\bar v{{^{\prime}}}(a)
+   \end{matrix}\right|
+
+og til þess að sanna (i) þá
 tökum við :math:`u,v\in C^2_B[a,b]`. Jöfnurnar :math:`Bu=0` og
 :math:`Bv=0` jafngilda því að vigrarnir :math:`(\alpha_1,\beta_1)` og
 :math:`(\alpha_2,\beta_2)` uppfylli
@@ -801,7 +842,18 @@ tökum við :math:`u,v\in C^2_B[a,b]`. Jöfnurnar :math:`Bu=0` og
    \end{matrix}\right].
 
 Hvorugur vigranna er núllvigurinn, svo ákveður fylkjanna verða að vera
-0. Þar með gildir (:ref:`Link title <9.1.14>`) og virkinn :math:`L` er samhverfur.
+0. Þar með gildir 
+
+.. math::
+
+  p(b)\left|
+   \begin{matrix} u(b) & u{{^{\prime}}}(b) \\ \bar v(b) &\bar v{{^{\prime}}}(b)
+   \end{matrix}\right| =
+   p(a)\left|
+   \begin{matrix} u(a) & u{{^{\prime}}}(a) \\ \bar v(a) &\bar v{{^{\prime}}}(a)
+   \end{matrix}\right|
+
+og virkinn :math:`L` er samhverfur.
 
 .. end-toggle::
 
@@ -815,11 +867,11 @@ Nú tökum við fyrir eigingildisverkefnið
 
 .. math:: Lu= {\lambda} u , \qquad Bu=0,
 
-þar sem :math:`L` er virki af Sturm–Liouville–gerð (:ref:`Link title <9.1.2>`) og
-:math:`B` er almennur jaðargildisvirki af gerðinni (:ref:`Link title <9.1.12>`).
+þar sem :math:`L` er virki af Sturm–Liouville–gerð og
+:math:`B` er almennur jaðargildisvirki.
 Talan :math:`{\lambda}\in {{\mathbb  C}}` kallast 
 :hover:`eigingildi` virkjans :math:`L` á :math:`C^2_B[a,b]` ef til er
-lausn á (:ref:`Link title <9.2.1>`) sem er ekki núllfallið og sérhver slík lausn
+lausn :math:`u` á :math:`Lu = \lambda u` sem er ekki núllfallið og sérhver slík lausn
 kallast :hover:`eiginfall`. Línulega rúmið sem spannað er af
 öllum eiginföllum með tilliti til eigingildisins :math:`{\lambda}`
 köllum við :hover:`eiginrúmið, eiginrúm` með tilliti til eigingildisins
@@ -829,7 +881,7 @@ Skilgreining
 ^^^^^^^^^^^^
 
 Ef :math:`L` er reglulegur virki af Sturm–Liouville–gerð, þá segjum við
-að verkefnið (:ref:`Link title <9.2.1>`) sé *reglulegt*.
+að eigingildisverkefnið sé *reglulegt*.
 
 Setning
 ^^^^^^^
@@ -880,7 +932,7 @@ eiginföll ef þeir eru báðir frábrugðnir núllfallinu. Við getum því
 alltaf tekið raungild föll sem grunn fyrir eiginrúmið
 :math:`E_{\lambda}`. Gerum nú ráð fyrir að :math:`u` sé raungilt
 eiginfall sem svarar til eigingildisins :math:`{\lambda}` og gerum ráð
-fyrir að :math:`\|u\|=1`. Þá gefur (:ref:`Link title <9.1.9>`)
+fyrir að :math:`\|u\|=1`. Þá fæst
 
 .. math::
 
@@ -889,7 +941,7 @@ fyrir að :math:`\|u\|=1`. Þá gefur (:ref:`Link title <9.1.9>`)
    {{\langle Lu,u\rangle}} = \bigg[-p(x)u(x)u{{^{\prime}}}(x)\bigg]_a^b +{{\langle u,u\rangle}}_L \\
    &= p(a)u(a)u{{^{\prime}}}(a)-p(b)u(b)u{{^{\prime}}}(b) +{{\langle u,u\rangle}}_L\nonumber\end{aligned}
 
-Ef jaðarskilyrðin eru aðskilin eins og í setningu 9.1.4, þá uppfyllir
+Ef jaðarskilyrðin eru aðskilin eins og í setningunni í síðustu grein, þá uppfyllir
 :math:`u` jöfnurnar
 
 .. math::
@@ -962,14 +1014,18 @@ Sýnidæmi
 
 .. begin-toggle:: :label: Sýna dæmi
 
-Í sýnidæmi 1.6.2 sáum við að eigingildisverkefnið
+Í :ref:`sýnidæmi <syfallsjadarskilyrdiibadumendapunktum>` sáum við að eigingildisverkefnið
 
 .. math:: -u{{^{\prime\prime}}}={\lambda}u, \qquad u(0)=u(L)=0,
 
 hefur eigingildin :math:`{\lambda}_n=(n{\pi}/L)^2`,
 :math:`n=1,2,3,\dots`, og tilsvarandi eiginföll eru margfeldi af
 :math:`u_n(x)=\sin(n{\pi}x/L)`. Með því að velja
-:math:`p(x)={\varrho}(x)=2/L`, þá fáum við að (:ref:`Link title <9.2.5>`) er uppfyllt
+:math:`p(x)={\varrho}(x)=2/L`, þá fáum við að 
+
+.. math:: {{\langle u_j,u_k\rangle}}=\begin{cases} 1, &j=k,\\0, &j\neq k,\end{cases}
+
+er uppfyllt
 og :math:`c_n(u)` eru ekkert annað en Fourier–sínus–stuðlar fallsins
 :math:`u`.
 
@@ -1038,9 +1094,8 @@ og að hægri hlið jöfnunnar og upphafsgildin hafi hliðstæða liðun
   f(x,t)=\sum\limits_{n=1}^{\infty} f_n(t)u_n(x), \qquad
    \varphi(x)=\sum\limits_{n=1}^{\infty} \varphi_nu_n(x).
 
-Greinilegt er að jaðarskilyrðin eru uppfyllt, því allir liðir í summunni
-(:ref:`Link title <9.2.16>`) uppfylla þau. Við stingum röðinni (:ref:`Link title <9.2.16>`) inn í
-jöfnuna (:ref:`Link title <9.2.15>`) og notum upphafsskilyrðin og jöfnuna
+Greinilegt er að jaðarskilyrðin eru uppfyllt, því allir liðir í eiginfallaröðinni uppfylla þau. Við stingum eiginfallaröðinni inn í
+hlutafleiðujöfnuna og notum upphafsskilyrðin og jöfnuna
 :math:`-{\kappa}u_n{{^{\prime\prime}}}={\lambda}_nu`
 
 .. math::
@@ -1074,8 +1129,7 @@ Látum nú :math:`P(x,D)` vera línulegan afleiðuvirkja af gerðinni
 með :math:`a_0,\dots,a_m\in C[a,b]` og :math:`a_m(x)\neq 0` fyrir öll
 :math:`x\in [a,b]`. Við athugum að það er alltaf hægt að stækka skilgreiningarsvæði
 fallanna :math:`a_0,\dots,a_m, f\in C[a,b]` þannig að þau verði samfelld
-á opnu bili :math:`I` sem inniheldur :math:`[a,b]` og :math:`a_m(x)\neq 0` fyrir öll :math:`x\in I`. Þá gefa setningar 1.7.7 og 2.1.4 okkur að
-sérhver lausn á :math:`P(x,D)u=f` á opna bilinu :math:`]a,b[` er í raun
+á opnu bili :math:`I` sem inniheldur :math:`[a,b]` og :math:`a_m(x)\neq 0` fyrir öll :math:`x\in I`. Sérhver lausn á :math:`P(x,D)u=f` á opna bilinu :math:`]a,b[` er 
 tvisvar samfellt deildanleg á grennd um lokaða bilið :math:`[a,b]` og
 þar með eru gildin :math:`u(a)`,
 :math:`u{{^{\prime}}}(a),\dots,u^{(m-1)}(a)`, :math:`u(b)`,
@@ -1097,16 +1151,14 @@ Við gerum ráð fyrir því að fyrir sérhvert :math:`j` sé að minnsta kosti
 ein talnanna :math:`\alpha_{jl}`, :math:`\beta_{jl}`,
 :math:`l=1,\dots,m` frábrugðin :math:`0`. Við látum :math:`C^m_B[a,b]`
 tákna rúm allra :math:`u\in C^m[a,b]` sem uppfylla óhliðruðu
-jaðarskilyrðin :math:`Bu=0`. Í setningu 2.1.6 gáfum við fullkomna
+jaðarskilyrðin :math:`Bu=0`. Við höfum séð fullkomna
 lýsingu á því hvenær jaðargildisverkefnið :math:`P(x,D)u=f`,
 :math:`Bu=c` hefur ótvírætt ákvarðaða lausn fyrir sérhvert
-:math:`f\in C[a,b]` og sérhvert :math:`c\in {{\mathbb  C}}`. Athugið að
-skilyrðið (ii) í setningu 2.1.6 segir að :math:`{\lambda}=0` sé ekki
-eigingildi virkjans :math:`P(x,D)` á rúminu :math:`C^m_B[a,b]`.
+:math:`f\in C[a,b]` og sérhvert :math:`c\in {{\mathbb  C}}`.
 
 Nú ætlum við að ákvarða lausnarformúlu fyrir lausn :math:`P(x,D)u=f` með
 óhliðruðum jaðarskilyrðum :math:`Bu=0`. Við beitum hliðstæðum aðferðum
-og í greinum 2.5 og 2.6, þegar við reiknuðum út lausnarformúluna fyrir
+og þegar við reiknuðum út lausnarformúluna fyrir
 lausn upphafsgildisverkefnisins :math:`P(x,D)u=f`,
 :math:`u(a)=u{{^{\prime}}}(a)=\cdots=u^{(m-1)}(a)=0`. Við byrjum á
 tveimur léttum sýnidæmum:
@@ -1172,7 +1224,8 @@ formúlunni
    \end{cases}
 
 Fallið :math:`G_B` kallast *Green-fallið fyrir jaðargildisverkefnið*
-(:ref:`Link title <2.7.3>`).
+
+.. math:: -u{{^{\prime\prime}}}=f(x), \qquad B_1u=u(0)=B_2u=u(1)=0.
 
 .. end-toggle::
 
@@ -1202,7 +1255,7 @@ Green-fall virkjans er
    \right| =\sin{\omega}.
 
 Við fáum ótvírætt ákvarðaða lausn þá og því aðeins að :math:`{\omega}`
-sé ekki heiltölumargfeldi af :math:`{\pi}`. Lausn á (:ref:`Link title <2.7.4>`) er
+sé ekki heiltölumargfeldi af :math:`{\pi}`. Lausn á eigingildisverkefninu er
 því af gerðinni
 
 .. math::
@@ -1267,14 +1320,15 @@ formúlunni
    \end{cases}
 
 Fallið :math:`G_B` kallast *Green-fallið fyrir jaðargildisverkefnið*
-(:ref:`Link title <2.7.4>`).
+
+.. math:: -u{{^{\prime\prime}}}-{\omega}^2u=f(x), \qquad B_1u=u(0)=B_2u=u(1)=0.
 
 .. end-toggle::
 
 Nú skulum við gera ráð fyir því að :math:`{\lambda}=0` sé ekki
-eigingildi virkjans :math:`P(x,D)` á :math:`C_B[a,b]`. Þá gefur setning
-2.1.6 að jaðargildisverkefnið :math:`P(x,D)u=f`, :math:`Bu=0` hefur
-ótvírætt ákvarðaða lausn. Samkvæmt setningu 2.5.2 getum við skrifað hana
+eigingildi virkjans :math:`P(x,D)` á :math:`C_B[a,b]`. Samkvæmt tilvistarsetningu fyrir línulegar afleiðujöfnur hefur
+jaðargildisverkefnið :math:`P(x,D)u=f`, :math:`Bu=0`
+ótvírætt ákvarðaða lausn. Við getum við skrifað hana
 á forminu
 
 .. math::
@@ -1283,8 +1337,7 @@ eigingildi virkjans :math:`P(x,D)` á :math:`C_B[a,b]`. Þá gefur setning
    \int_a^x G(x,{\xi})f({\xi})\, d{\xi},
 
 þar sem :math:`u_1,\dots,u_m` er grunnur í :math:`{\cal N}(P(x,D))` og
-:math:`G` táknar Green-fall virkjans. Útreikningar okkar fyrir framan
-setningu 2.5.2 gefa
+:math:`G` táknar Green-fall virkjans. Aleiðan af stigi :math:`k` er
 
 .. math::
 
@@ -1314,7 +1367,14 @@ Nú er hyggilegt að innleiða fallið
     Mynd: :math:`F(x,\xi)`
 
 Þá er greinilegt að :math:`{\partial}_x^{l-1}F(a,{\xi})=0` fyrir öll
-:math:`l=1,\dots,m` og :math:`{\xi}\in ]a,b[`, svo (:ref:`Link title <2.7.7>`)
+:math:`l=1,\dots,m` og :math:`{\xi}\in ]a,b[`, svo 
+
+.. math::
+
+  B_ju=c_1B_ju_1+\cdots+c_mB_ju_m +
+   \int_a^b \sum\limits_{l=1}^m \beta_{jl}{\partial_x^{l-1}}
+   G(b,{\xi})f({\xi})\, d{\xi}=0
+
 jafngildir jöfnuhneppinu
 
 .. math::
@@ -1323,13 +1383,19 @@ jafngildir jöfnuhneppinu
    -\int_a^b B_jF(\cdot,{\xi})f({\xi}) \, d{\xi},
 
 þar sem :math:`B_jF(\cdot,{\xi})` táknar að :math:`B_j` verki á fallið
-:math:`F` með tilliti til fyrri breytistærðarinnar. Af setningu 2.5.2
-leiðir nú:
+:math:`F` með tilliti til fyrri breytistærðarinnar. Við fáum nú:
 
 Hjálparsetning
 ^^^^^^^^^^^^^^
 
-Fallið :math:`F` sem skilgreint er með (:ref:`Link title <2.7.8>`) uppfyllir:
+Fallið :math:`F` sem skilgreint er með 
+
+.. math::
+
+  F(x,{\xi}) = \begin{cases} G(x,{\xi}), &a\leq{\xi}\leq x\leq b,\\
+   0, &a\leq x\leq{\xi} \leq b.\end{cases}
+
+uppfyllir:
 
 \(i) Hlutafleiðurnar :math:`{\partial}_x^kF(x,{\xi})`,
 :math:`k=0,\dots,m-2` eru til í sérhverjum punkti á
@@ -1350,7 +1416,7 @@ punktum á línunni :math:`x={\xi}` tekur afleiðan stökkið
 
 --------------
 
-Samkvæmt setningu 2.1.6 hefur jöfnuhneppið
+Jöfnuhneppið
 
 .. math::
 
@@ -1370,7 +1436,7 @@ Samkvæmt setningu 2.1.6 hefur jöfnuhneppið
    -B_mF(\cdot,{\xi}) \\
    \end{matrix}\right]
 
-ótvírætt ákvarðaða lausn :math:`d({\xi})=(d_1({\xi}),\dots,d_m({\xi}))`.
+hefur ótvírætt ákvarðaða lausn :math:`d({\xi})=(d_1({\xi}),\dots,d_m({\xi}))`.
 Hún er samfellt fall af :math:`{\xi}` á :math:`[a,b]`, því
 
 .. math::
@@ -1432,10 +1498,20 @@ Sönnun
 .. begin-toggle:: :label: Sýna sönnun
 
 Í útreikningum okkar hér að framan sýndum við fram á að fallið
-:math:`G_B` sem gefið er með (:ref:`Link title <2.7.13>`) gefi okkur lausn á
-verkefninu (:ref:`Link title <2.7.14>`) með formúlunni (:ref:`Link title <2.7.15>`) og að (iv) sé
-uppfyllt. Skilyrðin (i)-(iii) leiða nú beint af hjálparsetningu
-:ref:`Link title <hs2.7.3>`.
+:math:`G_B` sem gefið er með 
+
+.. math::
+
+  G_B(x,{\xi}) = u_1(x)d_1({\xi})+\cdots+u_m(x)d_m({\xi})+
+   F(x,{\xi}).
+
+gefi okkur lausn á
+jaðargildisverkefninu með formúlunni 
+
+.. math:: u(x) = \int_a^b G_B(x,{\xi})f({\xi})\, d{\xi}
+
+og að (iv) sé
+uppfyllt. Skilyrðin (i)-(iii) leiða nú beint af hjálparsetningunni.
 
 Til þess að sanna að :math:`G_B` sé ótvírætt ákvarðað, þá látum við
 :math:`G^1_B` og :math:`G^2_B` vera tvö föll sem uppfylla (i)-(iv),
@@ -1469,7 +1545,7 @@ ef :math:`x\neq {\xi}`. Í hægri hliðinni stendur fall, sem er samfellt
 :math:`{\partial}_x^mH(x,{\xi})` er til í öllum punktum í
 :math:`[a,b]\times [a,b]` og er samfellt þar. Þar með er
 :math:`P(x,D_x)H(x,{\xi})=0` og :math:`BH(\cdot,{\xi})=0` fyrir öll
-:math:`{\xi}\in ]a,b[` og setning 2.1.6 gefur að :math:`H(x,{\xi})=0` fyrir öll
+:math:`{\xi}\in ]a,b[`. Þetta gefur að :math:`H(x,{\xi})=0` fyrir öll
 :math:`x\in [a,b]` og öll :math:`{\xi}\in]a,b[`. Fyrst :math:`H` er samfellt, þá
 fáum við einnig :math:`H(x,a)=H(x,b)=0`.
 
@@ -1480,7 +1556,8 @@ Sýnidæmi
 
 .. begin-toggle:: :label: Sýna dæmi
 
-Nú skulum við líta aftur á sýnidæmi 2.7.2 og reikna út Green-fallið með
+Nú skulum við líta aftur á 
+seinasta sýnidæmi og reikna út Green-fallið með
 því að beita skilyrðunum (i)-(iv), sem einkenna það. Við byrjum á því að
 finna tvær lausnir sem uppfylla jaðarskilyrðin í sitt hvorum endapunkti.
 Þær eru :math:`\sin{\omega} x` og :math:`\sin {\omega}(1-x)`. Þá gefa skilyrðin (iii) og (iv)
@@ -1626,7 +1703,7 @@ Eiginfallaliðun og Green–föll
 Eiginfallaliðun og Green–föll
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Í setningu 9.2.4 sáum við að eiginfallaröð fallsins :math:`f` er
+Í greininni um eigingildisverkefni af Sturm-Liouville gerð sáum við að eiginfallaröð fallsins :math:`f` er
 samleitin í jöfnum mæli á :math:`[a,b]` ef :math:`f\in C^2_B[a,b]`. Við
 höfum einnig andhverfuformúlu fyrir eiginfallaraðir af föllum sem eru
 samfellt deildanleg á köflum:
@@ -1673,7 +1750,7 @@ samleitnar í sömu punktum og í sérhverjum samleitnipunkti eru markgildi
 --------------
 
 Það er mjög erfitt að sanna þessa setningu og við getum ekki fengist við
-það hér. Lesandanum er bent á hina sígildu bók Ince [21].
+það hér.
 
 Lítum nú aftur á jaðargildisverkefnið
 
@@ -1697,7 +1774,7 @@ ef þessi röð er nógu hratt samleitin til þess að við megum láta virkjann
 
 Í því tilfelli að :math:`{\lambda}_n=0` fyrir eitthvert :math:`n`, þá
 setjum við inn :math:`0` í stað :math:`c_n(f)/{\lambda}_n` í
-(:ref:`Link title <9.3.4>`). Nú stingum við inn formúlunni fyrir stuðlana
+formúlunni fyrir :math:`u(x)`. Nú stingum við inn formúlunni fyrir stuðlana
 :math:`c_n(f)` og skiptum á óendanlegu summunni og heildinu
 
 .. math::
@@ -1709,7 +1786,7 @@ setjum við inn :math:`0` í stað :math:`c_n(f)/{\lambda}_n` í
    &=\int_a^b{\varrho}({\xi})\bigg(\sum\limits_{n=0}^{\infty} \dfrac{u_n(x)u_n({\xi})} 
    {\lambda_n}\bigg) f({\xi})\, d{\xi}.\nonumber\end{aligned}
 
-Við vitum að Green–fallið fyrir randgildisverkefnið (:ref:`Link title <9.3.3>`) er
+Við vitum að Green–fallið fyrir jaðargildisverkefnið er
 ótvírætt ákvarðað, svo við höfum
 
 .. math::

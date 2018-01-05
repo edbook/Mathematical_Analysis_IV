@@ -15,7 +15,7 @@ raðarinnar ákvarðast af hlutafleiðujöfnunni og einhverjum
 hliðarskilyrðum, sem ýmist eru upphafs- eða jaðarskilyrði.
 
 Hugmyndin að baki þessara lausnaraðferða hefur þegar komið fram í
-nokkrum sýnidæmum í kafla 13. Í sýnidæmi 13.8.5 fjölluðum við um
+nokkrum sýnidæmum í kaflanum um Fourier-raðir. Í :ref:`sýnidæmi <sysveiflandistrengurframhald>` fjölluðum við um
 sveiflur strengs, þar sem frávikið frá jafnvægisstöðu :math:`u(x,t)`
 uppfyllir bylgjujöfnuna,
 
@@ -40,12 +40,12 @@ sem eru háðir tíma,
    u_n(t)= \dfrac 2L\int_0^L u(x,t)\sin(n{\pi}x/L)\, dx.
 
 Með því að láta bylgjuvirkjann :math:`{\partial}_t^2-c^2{\partial}_x^2`
-verka lið fyrir lið summunni (:ref:`Link title <13.1.3>`) og setja ákveðin
+verka lið fyrir lið summunni og setja ákveðin
 upphafsskilyrði um stöðu og hraða strengsins við tímann :math:`t=0`,
 sáum við að Fourier-stuðullinn :math:`u_n(t)` væri lausn á ákveðnu
 upphafsgildisverkefni sem auðvelt var að leysa.
 
-Í sýnidæmi 13.8.7 fjölluðum við um hitastig :math:`u(x,t)` í stöng af
+Í :ref:`sýnidæmi <syvarmaleidnistangar>` fjölluðum við um hitastig :math:`u(x,t)` í stöng af
 lengd :math:`L`, þar sem varmamyndun á massa- og lengdareiningu er
 :math:`f(x,t)`, en :math:`u(x,t)` uppfyllir þá varmaleiðnijöfnuna
 
@@ -70,7 +70,7 @@ og gefa sér að Fourier-kósínusstuðlar fallsins :math:`f` séu þekktir
 
 Með því að beita varmaleiðnivirkjanum
 :math:`{\partial}_t-{\kappa}{\partial}_x^2` lið fyrir lið í summunni
-(:ref:`Link title <13.1.6>`), þá fengum við að :math:`u_n` verður að uppfylla jöfnuna
+fyrir :math:`u(x,t)`, þá fengum við að :math:`u_n` verður að uppfylla jöfnuna
 :math:`u_n{{^{\prime}}}(t)+{\kappa}(n{\pi}/L)^2u_n(t)=f_n(t)` og út
 frá henni ákvarðast :math:`u_n(t)`.
 
@@ -82,7 +82,7 @@ hliðarskilyrðum.
 Laplace-virkinn í rétthyrndum hnitum
 ------------------------------------
 
-Í grein 12.3 nefndum við að *Dirichlet-verkefni* fyrir Laplace-virkjann
+*Dirichlet-verkefni* fyrir Laplace-virkjann
 í plani er:
 
 .. math::
@@ -147,7 +147,7 @@ Við skiptum verkefninu í fjóra hluta
 Ef við getum sýnt fram á að lausnirnar :math:`u_1`, :math:`u_2`,
 :math:`u_3` og :math:`u_4` á þessum verkefnunum eru til og leitt út
 formúlur fyrir þeim, þá segir samlagningarlögmálið að lausnin :math:`u`
-á (:ref:`Link title <13.2.2>`) sé :math:`u(x,y)=u_1(x,y)+u_2(x,y)+u_3(x,y)+u_4(x,y)`.
+á Dirichlet-verkefninu á ferhyrningi sé :math:`u(x,y)=u_1(x,y)+u_2(x,y)+u_3(x,y)+u_4(x,y)`.
 
 Nú snúum við okkur að verkefnunum fjórum. Skilyrðin
 :math:`u_1(0,y)=u_1(L,y)=0` segja okkur að eðlilegt sé að ganga út frá
@@ -288,7 +288,7 @@ er leidd út formúla fyrir Laplace-virkjann í pólhnitum,
    \bigg(r\dfrac{\partial }{\partial r}\bigg)
    +\dfrac 1{r^2}\dfrac{\partial^2 }{\partial\theta^2},
 
-svo verkefnið (:ref:`Link title <13.3.1>`) verður
+svo verkefnið verður
 
 .. math::
 
@@ -339,7 +339,7 @@ vera lausn á jaðargildisverkefninu
    v_n(a)={\psi}_n, \quad v_n(r) \text{ takmarkað ef } r\to 0.
    \end{cases}
 
-Þetta er Euler-jafna, sem við fjölluðum um í grein 7.3, og því leitum
+Þetta er Euler-jafna og því leitum
 við að lausn af gerðinni :math:`v_n(r)=r^\alpha` og sjáum að
 :math:`\alpha` verður þá að uppfylla
 
@@ -348,8 +348,8 @@ við að lausn af gerðinni :math:`v_n(r)=r^\alpha` og sjáum að
   r\dfrac d{dr}\bigg( r\dfrac d{dr}r^\alpha\bigg)=\alpha^2r^\alpha=
    n^2r^\alpha.
 
-Þetta segir okkur að :math:`\alpha=\pm n` og að almenn lausn á
-(:ref:`Link title <13.3.3>`) sé
+Þetta segir okkur að :math:`\alpha=\pm n` og að almenn lausn
+afleiðujöfnunar sé
 
 .. math::
 
@@ -505,7 +505,7 @@ Sýnidæmi
 
 .. begin-toggle:: :label: Sýna dæmi: Strengur; framhald
 
-Í sýnidæmi 13.8.5 leiddum við út formúlu fyrir sveiflandi streng en
+Í :ref:`sýnidæmi <sysveiflandistrengurframhald>` leiddum við út formúlu fyrir sveiflandi streng en
 frávik hans :math:`u(x,t)` frá jafnvægisstöðu uppfyllir bylgjujöfnuna
 
 .. math::
@@ -521,7 +521,7 @@ festur niður í báðum endapunktum, þá fáum við náttúruleg jaðarskilyr�
 
 Þegar *aðskilnaði breytistærða* er beitt, er byrjað á að ákvarða allar
 lausnir á jöfnunni af gerðinni :math:`v(x,t)=T(t)X(x)`. Við stingum
-þessu falli inn í jöfnuna (:ref:`Link title <13.5.1>`) og fáum
+þessu falli inn í bylgjujöfnuna og fáum
 
 .. math::
 
@@ -537,24 +537,31 @@ við að hún jafngildir
 Vinstra megin jafnaðarmerkisins stendur fall, sem er aðeins háð
 :math:`t`, en hægra megin stendur fall, sem er aðeins háð :math:`x`.
 Þessi stærð hlýtur því að vera fasti. Við skulum tákna hann með
-:math:`-{\lambda}`. Nú segir jaðarskilyrðið (:ref:`Link title <13.5.2>`) að
+:math:`-{\lambda}`. Nú segir jaðarskilyrðið að
 :math:`X(0)=X(L)=0` verði að gilda. Þar með verður :math:`X` að vera
 lausn á eigingildisverkefninu
 
 .. math:: -X{{^{\prime\prime}}}={\lambda} X, \qquad X(0)=X(L)=0.
 
-Við fundum lausnina á þessu verkefni í sýnidæmi 1.6.2. Eigingildin eru
+Við fundum lausnina á þessu verkefni í :ref:`sýnidæmi <syfallsjadarskilyrdiibadumendapunktum>`. Eigingildin eru
 :math:`{\lambda}_n=\big(n{\pi}/L\big)^2` og tilsvarandi eiginföll má
 taka :math:`X_n(x)=\sin\big(n{\pi}x/L\big)`, :math:`n=1,2,3,\dots`.
-Víkjum nú aftur að (:ref:`Link title <13.5.3>`) til þess að ákvarða fallið :math:`T`.
+Víkjum nú aftur að jöfnunni
+
+.. math:: \dfrac{T{{^{\prime\prime}}}(t)}{c^2T(t)} = \dfrac{X{{^{\prime\prime}}}(x)}{X(x)}.
+
+til þess að ákvarða fallið :math:`T`.
 Fyrir hin ólíku eigingildi þarf :math:`T` að uppfylla
 
 .. math:: -T{{^{\prime\prime}}}= c^2{\lambda}_n T.
 
 Almenn lausn þessarar jöfnu er
 :math:`T_n(t)= A_n\cos\big(n{\pi}ct/L\big) + B_n\sin\big(n{\pi}ct/L\big)`. Niðurstaðan er nú að allar lausnir af
-gerðinni :math:`T(t)X(x)` á (:ref:`Link title <13.5.1>`) með jaðarskilyrðinu
-(:ref:`Link title <13.5.2>`) eru
+gerðinni :math:`T(t)X(x)` á bylgjujöfnunni með jaðarskilyrðinu
+
+.. math:: u(0,t)=u(L,t)=0.
+
+eru
 
 .. math::
 
@@ -563,8 +570,8 @@ gerðinni :math:`T(t)X(x)` á (:ref:`Link title <13.5.1>`) með jaðarskilyrðin
    \sin\big(n{\pi}x/L\big), \qquad n=1,2,\dots,
 
 þar sem velja má fastana :math:`A_n` og :math:`B_n` frjálst. Það er
-ljóst að summa endanlega margra lausna á (:ref:`Link title <13.5.1>`) og
-(:ref:`Link title <13.5.2>`) er lausn og sama gildir um hratt samleitnar óendanlegar
+ljóst að summa endanlega margra lausna 
+er lausn og sama gildir um hratt samleitnar óendanlegar
 raðir
 
 .. math::
@@ -574,7 +581,7 @@ raðir
    B_n\sin\big(n{\pi}ct/L\big)\big)
    \sin\big(n{\pi}x/L\big).
 
-Við fáum því Fourier-sínusröð sem við fjölluðum um í kafla 8. Til þess
+Við fáum því Fourier-sínusröð. Til þess
 að ákvarða stuðlana :math:`A_n` og :math:`B_n` þarf að bæta við fleiri
 hliðarskilyrðum. Eðlilegt er að það séu upphafsskilyrði af gerðinni
 
@@ -616,8 +623,7 @@ Lausnin :math:`u(x,t)` er þá fundin
    \dfrac{{\psi}_nL}{n{\pi}c} \sin\big(n{\pi}ct/L\big)\bigg)
    \sin(n{\pi}x/L).
 
-Þetta er að sjálfsögðu sama lausnarformúla og við leiddum út í sýnidæmi
-8.7.5.
+Þetta er að sjálfsögðu sama lausnarformúla og við leiddum út í :ref:`sýnidæmi <sysveiflandistrengurframhald>`.
 
 .. end-toggle::
 
@@ -626,7 +632,7 @@ Sýnidæmi
 
 .. begin-toggle:: :label: Sýna dæmi: Dirichlet-verkefnið á ferhyrningi
 
-Tökum nú aftur fyrir verkefni númer 2 á mynd 13.2(BYRJUN Á 15.2!) og leysum það út frá
+Tökum nú aftur fyrir verkefni númer 2 á fjórskiptu myndinni um liðun á Dirichlet verkefninu í fernt hér að ofan og leysum það út frá
 sjónarhóli aðskilnaðar breytistærða.
 
 .. math::
@@ -663,15 +669,15 @@ og sjáum að :math:`X` verður að vera lausn á eigingildisverkefninu
 
 .. math:: -X{{^{\prime\prime}}}=\lambda X, \qquad X(0)=X(L)=0.
 
-Þetta verkefni leystum við í sýnidæmi 1.6.2 og komumst að þeirri
+Þetta verkefni leystum við í ref:`sýnidæmi <syfallsjadarskilyrdiibadumendapunktum>` og komumst að þeirri
 niðurstöðu að eigingildin eru
 :math:`\lambda=\lambda_n=\big(n\pi/L\big)^2`, :math:`n=1,2,3,\dots`, og
 tilsvarandi eiginföll
 
 .. math:: X_n(x)=C_n \sin\big(n\pi x/L\big), \qquad n=1,2,3,\dots.
 
-Nú snúum við okkur að seinni jöfnunni í (:ref:`Link title <13.5.7>`) og leysum hana
-með seinna jaðarskilyrðinu í (:ref:`Link title <13.5.8>`),
+Nú snúum við okkur að seinni afleiðujöfnunni og leysum hana
+með seinna jaðarskilyrðinu,
 
 .. math:: Y{{^{\prime\prime}}}(y)=\big(n\pi/L\big)^2 Y(y), \qquad Y(0)=0.
 
@@ -679,8 +685,8 @@ með seinna jaðarskilyrðinu í (:ref:`Link title <13.5.8>`),
 
 .. math:: Y_n(y)=D_n \sinh\big(n\pi y/L\big), \qquad n=1,2,3,\dots.
 
-Nú eru allar lausnir á (:ref:`Link title <13.5.6>`) af gerðinni
-:math:`v(x,y)=X(x)Y(y)` með óhliðruðu jaðarskilyrðunum af gerðinni
+Nú eru allar lausnir á Laplace-jöfnunni af gerðinni
+:math:`v(x,y)=X(x)Y(y)` með óhliðruðu jaðarskilyrðunum gefnar með formúlunni
 
 .. math::
 
@@ -696,7 +702,7 @@ línulega samatekt af þessum lausnum
   u(x,y)=\sum\limits_{n=1}^\infty
    C_n\sin\big(n\pi x/L\big)\sinh\big(n\pi y/L\big).
 
-Þetta er fall sem uppfyllir jöfnuna (:ref:`Link title <13.5.6>`) með óhliðruðum
+Þetta er fall sem uppfyllir Laplace-jöfnuna með óhliðruðum
 jaðarskilyrðum. Nú er eitt jaðarskilyrði eftir,
 :math:`u(x,M)=\varphi(x)`. Til þess að það verði uppfyllt þurfum við að
 hafa
@@ -724,7 +730,7 @@ lausnina,
    M/L\big)} \sin\big(n\pi x/L\big).
 
 Athugið að þetta er önnur óendanlega summan í formúlunni
-(:ref:`Link title <13.2.3>`).
+fyrir lausninni á Dirichlet-verkefni á rétthyrningi.
 
 .. end-toggle::
 
@@ -733,7 +739,7 @@ Sýnidæmi
 
 .. begin-toggle:: :label: Sýna dæmi: Dirichlet-verkefnið á hringskífu
 
-Við skulum nú leysa aftur verkefnið sem við tókum fyrir í grein 13.3,
+Við skulum nú leysa aftur Dirichlet-verkefnið á hringskífu,
 
 .. math::
 
@@ -794,11 +800,10 @@ að einu gildin sem :math:`\lambda` getur tekið eru
    A_0, &\lambda=0.
    \end{cases}
 
-Nú ráðumst við á seinni jöfnuna í (:ref:`Link title <13.5.10>`) með
-:math:`\lambda=n^2`. Þetta er Euler-jafna, sem við fjölluðum um í grein
-2.3. Með því að leita að lausn af gerðinni :math:`R(r)=r^\alpha` sjáum
-við að :math:`\alpha=\pm n`. Almenn lausn á seinni jöfnunni í
-(:ref:`Link title <13.5.10>`) með :math:`\lambda=n^2` er því
+Nú ráðumst við á seinni afleiðjujöfnuna fyrir :math:`R(r)` með
+:math:`\lambda=n^2`. Þetta er Euler-jafna. Með því að leita að lausn af gerðinni :math:`R(r)=r^\alpha` sjáum
+við að :math:`\alpha=\pm n`. Almenn lausn á seinni afleiðujöfnunni 
+fyrir :math:`R(r)` með :math:`\lambda=n^2` er því
 
 .. math::
 
@@ -807,7 +812,7 @@ við að :math:`\alpha=\pm n`. Almenn lausn á seinni jöfnunni í
    C_0+D_0\ln r, &n=0.
    \end{cases}
 
-Við erum að leysa (:ref:`Link title <13.5.9>`) og jafnan á að gilda í :math:`r=0`.
+Við erum að leysa Dirichlet-verkefnið á hringskífu og jafnan á að gilda í :math:`r=0`.
 Því verður hún að vera takmörkuð og við ályktum að :math:`D_n=0`,
 :math:`n=0,1,2,\dots`. Þar með er
 
@@ -818,7 +823,7 @@ Við erum að leysa (:ref:`Link title <13.5.9>`) og jafnan á að gilda í :math
    C_0, &n=0.
    \end{cases}
 
-Við erum nú búin að ákvarða allar lausnir á (:ref:`Link title <13.5.9>`) af gerðinni
+Við erum nú búin að ákvarða allar lausnir á verkefninu af gerðinni
 :math:`w(r,\theta)=R(r)\Theta(\theta)` og þær eru
 
 .. math::
@@ -827,8 +832,8 @@ Við erum nú búin að ákvarða allar lausnir á (:ref:`Link title <13.5.9>`) 
    C_nr^n\big(A_ne^{in\theta}+B_ne^{-in\theta}\big), \qquad n=0,1,2,\dots,
 
 þar sem :math:`A_n`, :math:`B_n` og :math:`C_n` eru frjálsir fastar.
-Það er greinilegt að við megum alltaf velja :math:`C_n=1`. Nú er jafnan
-(:ref:`Link title <13.5.9>`) línuleg og óhliðruð, svo línuleg samantekt af lausnum er
+Það er greinilegt að við megum alltaf velja :math:`C_n=1`. Nú er hlutafleiðujafnan
+línuleg og óhliðruð, svo línuleg samantekt af lausnum er
 lausn og sama gildir um hratt samleitnar óendanlegar summur. Ef við
 tökum lausnirnar saman, þá er greinilegt að við getum skrifað
 óendanlegar línulegar samantektir sem
@@ -932,7 +937,7 @@ Við gefum okkur einnig að við þekkjum Fourier-stuðla fallsins :math:`f`,
    f_{n,m} \sin\big(n{\pi}x/L\big)\sin\big(m{\pi}y/M\big).
 
 Nú látum við Laplace-virkjann verka lið fyrir lið í summunni
-(:ref:`Link title <13.6.3>`)
+fyrir :math:`u(x,y)`
 
 .. math::
 
@@ -1063,8 +1068,8 @@ Sýnidæmi
 .. begin-toggle:: :label: Sýna dæmi: Rétthyrnd tromma
 
 Nú hugsum við okkur að himna sé strekkt á rétthyrndan ramma
-:math:`D=\{(x,y); 0<x<L, 0<y<M\}` og að hún sveiflist þar. Í sýnidæmi
-12.2.2 sáum við að færsla efnispunkts :math:`(x,y)` frá jafnvægisstöðu
+:math:`D=\{(x,y); 0<x<L, 0<y<M\}` og að hún sveiflist þar. Í :ref:`sýnidæmi <sytrommabylgjujafnaitveimurrumviddum>`
+sáum við að færsla efnispunkts :math:`(x,y)` frá jafnvægisstöðu
 :math:`u(x,y,t)` uppfyllir tvívíðu bylgjujöfnuna. Ef staða og hraði
 trommunnar er gefinn við tímann :math:`t=0`, þá er :math:`u` lausn
 verkefnisins
@@ -1148,12 +1153,12 @@ að :math:`B=(B_1,B_2)` sé almennur jaðargildisvirki á :math:`[a,b]`,
 
 að :math:`P(x,D_x)` sé samhverfur með tilliti til jaðarskilyrðanna
 :math:`Bv=0` og að :math:`P(x,D_x)` sé reglulegur virki, samkvæmt
-skilgreiningum okkar í kafla 9. Þá segir setning 9.2.4 okkur að
+skilgreiningum okkar í síðasta kafla. Þá hefur
 eigingildisverkefnið
 
 .. math:: P(x,D_x)v=\lambda v, \qquad Bv=0,
 
-hafi óendanlega runu af eigingildum
+óendanlega runu af eigingildum
 
 .. math:: \lambda_0<\lambda_1<\lambda_2\cdots \to +\infty
 
@@ -1282,7 +1287,7 @@ Nú skulum við líta á hliðstætt dæmi fyrir alhæfða bylgjujöfnu
    \end{cases}
 
 Við hugsum okkur nákvæmlega sams konar framsetningu á :math:`u`,
-:math:`f` og :math:`{\varphi}` og í sýnidæmi :ref:`Link title <syn13.7.1>` og bætum
+:math:`f` og :math:`{\varphi}` og í síðasta sýnidæmi og bætum
 við liðun á :math:`{\psi}`,
 
 .. math:: {\psi}(x)=\sum\limits_{n=0}^{\infty}{\psi}_nu_n(x).
@@ -1368,8 +1373,8 @@ að útskýra þetta,
 
 þar sem :math:`B_1` og :math:`B_2` eru almennir jaðargildisvirkjar á
 :math:`[a,b]` og :math:`\varphi` er gefið fall á :math:`[a,b]`. Við
-gefum okkur nú sömu forsendur og rithátt og í sýnidæmum :ref:`Link title <syn13.7.1>`
-og :ref:`Link title <syn13.7.2>` með :math:`P(x,D_x)=-D_x^2` og göngum út frá þeirri
+gefum okkur nú sömu forsendur og rithátt og í síðustu tveimur 
+sýnidæmum með :math:`P(x,D_x)=-D_x^2` og göngum út frá þeirri
 lausnartilgátu að hægt sé að liða lausnina :math:`u(x,y)` í
 eiginfallaröð
 
@@ -1433,7 +1438,7 @@ jaðarskilyrðanna. Lítum síðan á eigingildisverkefnin
 Við táknum eigingildin og eiginföllin úr þeim með
 :math:`({\lambda}_n,u_n)` og :math:`({\mu}_n,v_n)` og gerum ráð fyrir að
 þeir myndi einingarréttan grunn með tilliti til innfeldanna sem
-virkjarnir skilgreina og lýst er í kafla 9. Táknum vægisföllin í þessum
+virkjarnir skilgreina og lýst er í síðasta kafla. Táknum vægisföllin í þessum
 innfeldum með :math:`{\varrho}` og :math:`{\sigma}`. Látum nú
 :math:`{\varphi}` vera tvisvar samfellt deildanlegt á rétthyrningnum
 :math:`D=\{(x,y); a<x<b, c<y<d\}`, samfellt deildanlegt á lokuninni
@@ -1446,8 +1451,8 @@ jaðarskilyrðin
    B_1^1{\varphi}(\cdot,y)=B_2^1{\varphi}(\cdot,y)=0, \qquad y\in [c,d],\\
    B_1^2{\varphi}(x,\cdot)=B_2^2{\varphi}(x,\cdot)=0, \qquad x\in [a,b]. \end{gathered}
 
-Þá gefur setning 9.2.4 og sama röksemdafærsla og við beittum á tvöföldu
-Fourier- raðirnar að hægt er að liða :math:`{\varphi}` í tvöfalda
+Þá gefur sama röksemdafærsla og við beittum á tvöföldu
+Fourier-raðirnar að hægt er að liða :math:`{\varphi}` í tvöfalda
 eiginfallröð
 
 .. math::
@@ -1514,8 +1519,8 @@ Leysið hliðruðu bylgjujöfnuna með óhliðruðum hliðarskilyrðum,
 
 :math:`0<x<L`, :math:`t>0`, með því að liða fallið :math:`f` í
 Fourier-sínusröð með tilliti til :math:`x` og ganga út frá sams konar
-liðun á lausninni :math:`u`. [*Leiðbeining*: Skoðið sýnidæmi 8.7.5 og
-8.7.7.]
+liðun á lausninni :math:`u`. [*Leiðbeining*: Skoðið :ref:`sýnidæmi <sysveiflandistrengurframhald>` og
+:ref:`sýnidæmi <syvarmaleidnistangar>`.]
 
 Dæmi
 ^^^^
@@ -1536,7 +1541,7 @@ tvisvar samfellt deildanleg á :math:`{{\mathbb  R}}_+`. Gangið út frá
 þ.e. \ :math:`w(0,t)=g(t)` og :math:`w(L,t)=h(t)`. Skrifið
 :math:`u(x,t)=w(x,t)+v(x,t)` og sýnið fram á að þá uppfylli :math:`v`
 hliðraða bylgjujöfnu með hliðruðum upphafsskilyrðum, en óhliðruðum
-jaðarskilyrðum. Notið síðan niðurstöðuna úr dæmi 1 og sýnidæmi 8.7.5 til
+jaðarskilyrðum. Notið síðan niðurstöðuna úr dæmi 1 og :ref:`sýnidæmi <sysveiflandistrengurframhald>` til
 þess að skrifa upp lausnarformúlu fyrir :math:`u`.
 
 Dæmi
@@ -1562,7 +1567,7 @@ Leysið verkefnið í dæmi 1 í því sértilfelli að :math:`f` er einungis h�
 lausnina :math:`w` sem uppfyllir
 :math:`-c^2w{{^{\prime\prime}}}(x)=f(x)`, :math:`w(0)=0` og
 :math:`w(L)=0`. Skrifið :math:`u(x,t)=w(x)+v(x,t)` og sýnið að :math:`v`
-sé þá lausn á verkefni, sem leyst var í sýnidæmi 8.7.5. Notið þá
+sé þá lausn á verkefni, sem leyst var í :ref:`sýnidæmi <sysveiflandistrengurframhald>`. Notið þá
 lausnarformúlu til þess að ákvarða :math:`u`.
 
 Dæmi
@@ -1584,7 +1589,7 @@ gefið sé fallið :math:`w(x,t)` sem uppfylli jaðarskilyrðin
 :math:`{\partial}_xw(0,t)=g(t)` og :math:`{\partial}_xw(L,t)=h(t)`.
 Skrifið :math:`u(x,t)=w(x,t)+v(x,t)` og sýnið fram á að :math:`v`
 uppfylli hliðraða varmaleiðnijöfnu með hliðruðum upphafsgildum en
-óhliðruðum jaðargildum. Notið niðurstöðuna úr sýnidæmi 8.7.7 til þess að
+óhliðruðum jaðargildum. Notið niðurstöðuna úr :ref:`sýnidæmi <syvarmaleidnistangar>` til þess að
 skrifa upp lausnarformúlu fyrir :math:`u`.
 
 Dæmi
@@ -1730,7 +1735,18 @@ Látum fallið :math:`f` vera gefið með formúlunni
    \qquad t\in {{\mathbb  R}},
 
 þar sem :math:`{\omega}=2{\pi}/T`, :math:`T_1>T_0`. Reiknið út lausnina
-:math:`u(x,t)` á (:ref:`Link title <13.4.1>`) í þessu tilfelli.
+:math:`u(x,t)` á 
+
+.. math::
+
+  \begin{cases}
+   \dfrac{\partial u}{\partial t}-\kappa
+   \dfrac{\partial^2 u}{\partial x^2}=0, &x>0, \ t\in {{\mathbb  R}},\\
+   u(0,t)=f(t), &t\in {{\mathbb  R}},\\
+   u(x,t) \text{ takmarkað ef } & x\to +\infty.
+   \end{cases}
+
+í þessu tilfelli.
 
 Dæmi
 ^^^^
@@ -1739,7 +1755,7 @@ Látum :math:`f` vera gefið með formúlunni í síðasta dæmi og gefum okkur
 gildin :math:`T=1\text{ár}\approx \,3\cdot 10^7 s`,
 :math:`{\kappa}= 10^6` fyrir klöpp og :math:`{\kappa}= 1.5\cdot 10^6`
 fyrir sand, :math:`T_1=11^\circ C`, :math:`T_0=-1^\circ C`. Teiknið upp
-lausnina :math:`u(x,t)` á verkefninu (:ref:`Link title <13.4.1>`) yfir eina lotu með
+lausnina :math:`u(x,t)` á verkefninu í síðasta dæmi yfir eina lotu með
 tilliti til tíma fyrir nokkur gildi á :math:`x`. Fyrir hvaða gildi á
 :math:`x` er fasahliðrunin :math:`\frac 12` ár? Fyrir hvaða gildi á
 :math:`x` er árssveiflan í hitastiginu orðin :math:`1\%` af
@@ -1787,7 +1803,7 @@ einfaldlega undirstuddum endum, en það er verkefnið
 
 þar sem :math:`0<x<L`, :math:`t>0` og
 :math:`a=\root 4 \of {EI/{\varrho}A}` og stærðirnar eru skilgreindar í
-sýnidæmi 12.2.2. Hver er grunntíðni sveiflunnar?
+:ref:`sýnidæmi <sysveifluribitumbitajafna>`. Hver er grunntíðni sveiflunnar?
 
 Dæmi
 ^^^^

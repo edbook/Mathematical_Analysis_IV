@@ -21,7 +21,7 @@ Byrjum á því að líta enn einu sinni á vandamálið að að finna
 
 .. math:: P(D)u=(a_mD^ m+\cdots+a_1D+a_0)u=f(x).
 
-Við sáum í 13. kafla hvernig hægt er að fá lausn :math:`u(x)` sem gefin
+Við sáum í kaflanum um Fourier-raðir hvernig hægt er að fá lausn :math:`u(x)` sem gefin
 er með Fourier-röð ef fallið :math:`f` er lotubundið og gefið með
 Fourier-röð. Nú ætlum við að gefa okkur að fallið :math:`f` sé gefið með
 heildi,
@@ -84,7 +84,12 @@ er til. Hér höfum við fundið samband milli fallanna :math:`F` og
 
 Viðfangsefni kaflans er að finna samband milli fallanna :math:`f` og
 :math:`F` og jafnframt að kanna skilyrði á :math:`f` sem gefa okkur
-framsetningu af gerðinni (:ref:`Link title <6.1.2>`).
+framsetningu af gerðinni 
+
+.. math::
+
+  f(x)= 
+   \int\limits_{-\infty}^{+\infty} e^{ix\xi}F(\xi) \, d\xi.
 
 Skilgreiningar og nokkrar reiknireglur
 --------------------------------------
@@ -152,6 +157,8 @@ sig á því í hverju munurinn liggur.
 
 Nokkur sýnidæmi
 ~~~~~~~~~~~~~~~
+
+.. _synokkurfouriersynidaemi:
 
 Sýnidæmi
 ^^^^^^^^
@@ -248,13 +255,12 @@ Nú notfærum við okkur að :math:`{{\cal F}}` er línuleg vörpun og fáum
 Fourier-mynd þéttifalls stöðluðu normaldreifingarinnar
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Í grein 8.3 kom :math:`\Gamma`-fallið við sögu hjá okkur og við
-reiknuðum út ákveðið heildi
+Rifjum upp að
 
 .. math::
 
   \int\limits_{-\infty}^{+\infty}
-   e^{-x^ 2}\, dx =\Gamma(1/2)=\sqrt \pi.
+   e^{-x^ 2}\, dx =\sqrt \pi.
 
 Með skipti á breytistærðum :math:`y=\sqrt \alpha x` fáum við síðan að
 
@@ -278,6 +284,8 @@ er þéttifall *stöðluðu normaldreifingarinnar* og
 
 er þéttifall normaldreifingar með *væntigildi* :math:`\mu` og
 *staðalfrávik* :math:`\sigma`.
+
+.. _syfouriermyndthettifallsstodludunormaldreifingarinnar:
 
 Sýnidæmi
 ^^^^^^^^
@@ -342,8 +350,8 @@ tilliti til :math:`y` undir heildið. Þá fæst
 
 .. end-toggle::
 
-Regla (i): Fourier-ummyndun er línuleg vörpun
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Regla (i): Fourier-ummyndun er línuleg vörpun.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Tökum tvö föll :math:`f,g\in L^1({{\mathbb  R}})` og tvær tölur
 :math:`\alpha,\beta\in {{\mathbb  C}}`. Heildun er línuleg aðgerð og því
@@ -369,7 +377,7 @@ frá :math:`L^1({{\mathbb  R}})` með gildi í rúmi allra tvinngildra falla
 á :math:`{{\mathbb  R}}`.
 
 Regla (ii): :math:`{{\cal F}}\{f(\alpha x)\}(\xi)= (1/{|\alpha|}){{\cal F}}\{f\}(\xi/\alpha)`,  :math:`\alpha\in {{\mathbb  R}}`  :math:`\alpha\neq 0`, :math:`\xi\in {{\mathbb  R}}`.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Tökum nú :math:`\alpha\in {{\mathbb  R}}`, :math:`\alpha\neq 0`.
 Breytistærðaskiptin :math:`y=\alpha x` í heildinu fyrir Fourier-mynd
@@ -395,7 +403,7 @@ Sýnidæmi
 
 :math:`{{\cal F}}\{e^{-\varepsilon x^2}\}=\sqrt{\dfrac     \pi \varepsilon} e^{-\xi^2/(4\varepsilon)}`.
 
-*Lausn*:   Í sýnidæmi :ref:`Link title <syn16.2.2a>` reiknuðum við út Fourier-mynd
+*Lausn*:   Í síðasta sýnidæmi reiknuðum við út Fourier-mynd
 þéttifallsins fyrir stöðluðu normaldreifinguna. Af þeirri formúlu leiðir
 nú
 
@@ -411,7 +419,7 @@ nú
 .. end-toggle::
 
 Regla (iii): :math:`{{\cal F}}\{f(x-\alpha)\}(\xi) =e^{-i\alpha\xi}{{\cal F}}\{f\}(\xi)`, :math:`\alpha\in {{\mathbb  R}}`, :math:`\xi\in {{\mathbb  R}}`.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Tökum :math:`\alpha\in {{\mathbb  R}}`, hliðrum fallinu :math:`f` um
 :math:`\alpha` og reiknum síðan út Fourier-mynd,
@@ -443,7 +451,7 @@ Sýnidæmi
    e^{-\frac  12((x-\mu)/\sigma)^2}=
    \dfrac 1\sigma \varphi_{0,1}((x-\mu)/\sigma)
 
-Reiknireglur (ii), (iii) og sýnidæmi :ref:`Link title <syn16.2.2a>` gefa okkur að
+Reiknireglur (ii), (iii) og :ref:`sýnidæmi <syfouriermyndthettifallsstodludunormaldreifingarinnar:>` gefa okkur að
 Fourier-mynd þess er
 
 .. math::
@@ -458,7 +466,7 @@ Fourier-mynd þess er
 .. end-toggle::
 
 Regla (iv): :math:`{{\cal F}}\{e^{i\alpha x}f(x)\}(\xi)={{\cal F}}\{f\}(\xi-\alpha)`, :math:`\alpha\in {{\mathbb  R}}`, :math:`\xi\in {{\mathbb  R}}`.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Tökum :math:`\alpha\in {{\mathbb  R}}` og lítum á Fourier-mynd fallsins
 :math:`e^{i\alpha x}f(x)`,
@@ -471,8 +479,8 @@ Tökum :math:`\alpha\in {{\mathbb  R}}` og lítum á Fourier-mynd fallsins
    =\int_{-\infty}^{+\infty} e^{-ix(\xi-\alpha)}f(x) \, dx
    ={{\cal F}}\{f\}(\xi-\alpha).
 
-Regla (v): :math:`{{\cal F}}\{\overline{f(x)}\}(\xi) =\overline{{{\cal F}}\{f\}(-\xi)}`, :math:`\xi\in {{\mathbb  R}}`
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Regla (v): :math:`{{\cal F}}\{\overline{f(x)}\}(\xi) =\overline{{{\cal F}}\{f\}(-\xi)}`, :math:`\xi\in {{\mathbb  R}}`.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Nú tökum við Fourier-myndina af :math:`\overline {f(x)}`,
 
@@ -497,7 +505,7 @@ Við fáum því sem sértilfelli af reglu (v) að
    \xi\in{{\mathbb  R}}.
 
 Regla (vii): :math:`\displaystyle{{\cal F}}f(\xi) =2\int_0^{+\infty}\cos(x\xi)f(x)\, dx`, :math:`\xi\in {{\mathbb  R}}`, ef :math:`f` er jafnstætt.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Við höfum
 
@@ -519,10 +527,10 @@ yfir :math:`{{\mathbb  R}}` tvöfalt heildið yfir
    =2\int_0^{+\infty}\cos(x\xi)f(x)\, dx, \qquad \xi\in {{\mathbb  R}}.
 
 Regla (viii): :math:`\displaystyle{{\cal F}}f(\xi) =-2i\int_0^{+\infty}\sin(x\xi)f(x)\, dx`, ef :math:`f` er oddstætt.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Ef við gerum ráð fyrir að :math:`f` sé oddstætt og lítum aftur á heildin
-í (:ref:`Link title <eq:16.2.2a>`), þá sjáum við að fyrri heildistofninn er oddstætt
+í reglu (vii), þá sjáum við að fyrri heildistofninn er oddstætt
 fall af :math:`x` en sá seinni jafnstætt fall. Fyrra heildið er því
 :math:`0` og seinna heildið er tvöfalt heildið yfir
 :math:`{{\mathbb  R}}_+`,
@@ -532,8 +540,8 @@ fall af :math:`x` en sá seinni jafnstætt fall. Fyrra heildið er því
   {{\cal F}}f(\xi)
    =-2i\int_0^{+\infty}\sin(x\xi)f(x)\, dx, \qquad \xi\in {{\mathbb  R}}.
 
-Regla (ix): :math:`{{\cal F}}\{f^{(k)}\}(\xi)=(i\xi)^k{{\cal F}}\{f\}(\xi)`
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Regla (ix): :math:`{{\cal F}}\{f^{(k)}\}(\xi)=(i\xi)^k{{\cal F}}\{f\}(\xi)`.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Gerum nú ráð fyrir að :math:`f` sé samfellt deildanlegt og að bæði
 :math:`f` og :math:`f{{^{\prime}}}` séu í :math:`L^1({{\mathbb  R}})`.
@@ -643,7 +651,7 @@ Sýnidæmi
 
 Við skulum nú reikna aftur út Fourier–mynd þéttifallsins fyrir stöðluðu
 normaldreifinguna :math:`f(x)=\tfrac 1{\sqrt{2\pi}}e^{-\frac 12 x^2}`,
-sem við tókum fyrir í sýnidæmi :ref:`Link title <syn16.2.2a>`. Við tökum eftir því að
+sem við tókum fyrir í :ref:`sýnidæmi <syfouriermyndthettifallsstodludunormaldreifingarinnar:>`. Við tökum eftir því að
 :math:`f` uppfyllir fyrsta stigs afleiðujöfnuna
 
 .. math:: f{{^{\prime}}}(x)+x f(x)=0, \qquad x\in {{\mathbb  R}}.
@@ -686,6 +694,7 @@ fallsins :math:`f(x)=x^2e^{-x^2}`, því
 
 .. end-toggle::
 
+.. _syfourierheavysidepowerexp:
 Sýnidæmi
 ^^^^^^^^
 
@@ -693,8 +702,8 @@ Sýnidæmi
 
 \(i) Við skulum reikna út Fourier-mynd
 :math:`f(x)=H(x)x^ke^{{\alpha} x}`,
-:math:`{{\operatorname{Re\, }}}{\alpha}<0`. Samkvæmt sýnidæmi
-:ref:`Link title <syn6.2.1>` (i) og reiknireglu (x) er
+:math:`{{\operatorname{Re\, }}}{\alpha}<0`. Samkvæmt
+:ref:`sýnidæmi <synokkurfouriersynidaemi>` (i) og reiknireglu (x) er
 
 .. math::
 
@@ -821,7 +830,7 @@ höfum beitt. Fyrst skiptum við á röð heildanna og við réttlætum það me
 setningu Fubinis í viðauka C. Í næsta skrefi tökum við eftir því að
 innra heildið er Fourier–mynd. Þar á eftir beitum við reiknireglu (ii)
 og skiptum síðan á breytistærðum. Í síðasta skrefinu notfærum við okkur
-sýnidæmi :ref:`Link title <syn6.2.1>` og tökum markgildi undir heildið. Til þess að
+sýnidæmi hér fyrir framan og tökum markgildi undir heildið. Til þess að
 réttlæta að það megi, þá athugum við að fallið :math:`f` er takmarkað,
 :math:`|f(x)|\leq C`, :math:`x\in {{\mathbb  R}}`. Þar með er
 
@@ -905,8 +914,8 @@ Lítum á heildið
    &=\int_{-\infty}^{+\infty} \dfrac{2\varepsilon}{{\varepsilon}^2+x^2}
    f(x)\, dx\end{aligned}
 
-Hér höfum við notað niðurstöðuna úr sýnidæmi :ref:`Link title <syn6.2.1>` (iii).
-Fyrst fallið :math:`f` takmarkað, segjum :math:`|f(x)|\leq C` fyrir öll
+Hér höfum við notað niðurstöðuna úr :ref:`sýnidæmi <synokkurfouriersynidaemi>` (iii).
+Fyrst fallið :math:`f` er takmarkað, segjum :math:`|f(x)|\leq C` fyrir öll
 :math:`x\in {{\mathbb  R}}`, þá fáum við ójöfnuna
 
 .. math::
@@ -1040,8 +1049,8 @@ Riemann-Lebesgue-hjálparsetning gefur að
    \lim_{x\to 0-}h(x)=\lim_{x\to 0-}(f(x)-\alpha{{\operatorname{sign}}}(x)e^{-|x|})
    =-\alpha+\alpha=0\\\end{gathered}
 
-svo :math:`h` uppfyllir skilyrðin í skrefi (i). Í sýnidæmi
-:ref:`Link title <syn6.2.1>` (iv) sýndum við að
+svo :math:`h` uppfyllir skilyrðin í skrefi (i). Í 
+:ref:`sýnidæmi <synokkurfouriersynidaemi>` (iv) sýndum við að
 
 .. math:: {{\cal F}}\{{{\operatorname{sign}}}(x)e^{-|x|}\}(\xi)=\dfrac{-2i\xi}{1+\xi^2},
 
@@ -1059,8 +1068,8 @@ með er
 
 *Skref (iii):* Gerum ráð fyrir að :math:`x=0` setjum
 :math:`\alpha=\frac 12(f(0+)+f(0-))` og skilgreinum :math:`j(x)=f(x)-\alpha e^{-|x|}`.
-Fallið :math:`j` uppfyllir skilyrðin í skrefi (ii). Samkvæmt sýnidæmi
-:ref:`Link title <syn6.2.1>` er :math:`{{\cal F}}\{e^{-|x|}\}(\xi)=2/(1+\xi^2)` og
+Fallið :math:`j` uppfyllir skilyrðin í skrefi (ii). Samkvæmt 
+:ref:`sýnidæmi <synokkurfouriersynidaemi>` er :math:`{{\cal F}}\{e^{-|x|}\}(\xi)=2/(1+\xi^2)` og
 þar með fáum við
 
 .. math::
@@ -1136,7 +1145,7 @@ takmarkað, þá er földunin skilgreind fyrir öll
    &= \int_{-\infty}^{+\infty}|f(x)| \, dx
    \int_{-\infty}^{+\infty}|g(t)|\, dt<+\infty.\end{aligned}
 
-Lítum nú aftur á formúlu (:ref:`Link title <6.4.1>`) og gerum ráð fyrir að
+Lítum nú aftur á :math:`f \ast g` og gerum ráð fyrir að
 :math:`f\in C^ 1({{\mathbb  R}})` og að bæði :math:`f` og :math:`f{{^{\prime}}}`
 séu takmörkuð föll. Þá megum við deilda undir heildið og fáum að
 :math:`f\ast g\in C^ 1({{\mathbb  R}})` með
@@ -1150,8 +1159,8 @@ föllin :math:`f,f{{^{\prime}}},\dots,f^{(m)}` takmörkuð, er
   (
    f\ast g)^{(k)}(x)=(f^{(k)}\ast g)(x), \qquad x\in {{\mathbb  R}}, \quad k=0,\dots,m.
 
-Regla (xi): :math:`{{\cal F}}\{f\ast g\}(\xi)={{\cal F}}f(\xi){{\cal F}}g(\xi)`, :math:`\xi\in {{\mathbb  R}}`, :math:`f,g\in L^1({{\mathbb  R}})`
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Regla (xi): :math:`{{\cal F}}\{f\ast g\}(\xi)={{\cal F}}f(\xi){{\cal F}}g(\xi)`, :math:`\xi\in {{\mathbb  R}}`, :math:`f,g\in L^1({{\mathbb  R}})`.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Fourier–myndin af :math:`f\ast g` er auðreiknanleg, því setnig Fubinis í
 viðauka C leyfir okkur að skipta á röð heildanna
@@ -1294,8 +1303,8 @@ Fourier–mynd :math:`u` er því
    \dfrac 1\omega {{\cal F}}\{e^{-\omega|x|}\}({\xi})-{{\cal F}}\{e^{-|x|}\}({\xi})
    \bigg).\end{aligned}
 
-Athugið að hér höfum við notað niðurstöðuna úr sýnidæmi :ref:`Link title <syn6.2.1>`
-\(iii) og reiknireglu (ii). Niðurstaðan er því
+Athugið að hér höfum við notað niðurstöðuna úr 
+:ref:`sýnidæmi <synokkurfouriersynidaemi>` (iii) og reiknireglu (ii). Niðurstaðan er því
 
 .. math::
 
@@ -1378,7 +1387,7 @@ Forsendan um núllstöðvar :math:`P(i{\xi})` jafngildir því að
   \dfrac {Q(i{\xi})}{P(i{\xi})} =\sum\limits_{k=1}^\ell
    \sum\limits_{j=1}^{m_k} \dfrac{A_{jk}}{(i{\xi}-{\lambda}_k)^j}.
 
-Samkvæmt sýnidæmi :ref:`Link title <syn16.2.6a>` er
+Samkvæmt :ref:`sýnidæmi <syfourierheavysidepowerexp>` er
 
 .. math::
 
@@ -1390,7 +1399,7 @@ Samkvæmt sýnidæmi :ref:`Link title <syn16.2.6a>` er
    \dfrac {-1}{(i{\xi}-{\lambda}_k)^j}, 
    \qquad {{\operatorname{Re\, }}}{\lambda}_k>0.\end{gathered}
 
-Formúlan (:ref:`Link title <6.5.7>`) leiðir því beint af andhverfuformúlu Fouriers.
+Formúlan fyrir :math:`f(x)` leiðir því beint af andhverfuformúlu Fouriers.
 
 .. end-toggle::
 
@@ -1402,7 +1411,7 @@ Sýnidæmi
 
 .. begin-toggle:: :label: Sýna dæmi: Deyfð sveifla; framhald
 
-Við skulum nú halda áfram með sýnidæmi 7.5.6 um deyfðar sveiflur og
+Við skulum nú halda áfram með sýnidæmi um deyfðar sveiflur og
 reikna út fallið :math:`E` í því tilfelli að
 
 .. math:: P(D)=mD^2+cD+k.
@@ -1420,7 +1429,7 @@ eru báðar neikvæðar. Við höfum stofnbrotaliðunina
    &=\dfrac 1{2m{\omega}}\bigg(\dfrac 1{({\zeta}+c/2m-{\omega})}-
    \dfrac 1{({\zeta}+c/2m+{\omega})}\bigg)\end{aligned}
 
-Nú lesum við út úr jöfnu (:ref:`Link title <6.5.7>`) að
+Nú lesum við út úr jöfnuna fyrir :math:`f(x)` í setningunni hér fyrir framan (fyrir :math:`Q(\zeta)=1`) að
 
 .. math::
 
@@ -1431,7 +1440,7 @@ Nú lesum við út úr jöfnu (:ref:`Link title <6.5.7>`) að
    =H(x)g(x), \qquad x\in {{\mathbb  R}},\end{aligned}
 
 þar sem fallið :math:`g` skilgreinir Green-fall virkjans,
-:math:`G(t,{\tau})=g(t-{\tau})` samkvæmt fylgisetningu 7.5.4.
+:math:`G(t,{\tau})=g(t-{\tau})`.
 
 \(ii) *Markdeyfing*, :math:`c^2-4km=0`. Hér höfum við tvöfalda núllstöð á
 kennimargliðunni :math:`-c/2m`. Stofnbrotaliðun :math:`1/P` er
@@ -1456,7 +1465,7 @@ Plancherel–jafnan
 Nú höldum við áfram að bæta við reiknireglum í safnið okkar:
 
 Regla (xii): :math:`\displaystyle \int\limits_{-\infty}^{+\infty} \widehat f(x) g(x)\, dx = \int\limits_{-\infty}^{+\infty} f(x) \widehat g(x)\, dx`, :math:`f,g\in L^1({{\mathbb  R}})`.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Athugum að Riemann-Lebesgues-hjálparsetning gefur okkur að
 :math:`\widehat f` og :math:`\widehat g` eru samfelld föll sem stefna á
@@ -1473,19 +1482,18 @@ breytistærða
    \, dxd{\xi}
    =\int_{-\infty}^{+\infty} f(x)\widehat g(x)\, dx.
 
-Við sönnuðum reglur Plancherel og Parseval fyrir Fourier-raðir í
-13. kafla og fáum nú hliðstæðar reglur fyrir Fourier-ummyndun. Fyrst
+Við höfum sannað reglur Plancherel og Parseval fyrir Fourier-raðir og fáum nú hliðstæðar reglur fyrir Fourier-ummyndun. Fyrst
 kemur Plancherel-jafna:
 
 Regla (xiii): :math:`\displaystyle\int_{-\infty}^{+\infty} |f(x)|^2\, dx  = \dfrac 1{2{\pi}}\int_{-\infty}^{+\infty} |\widehat f(\xi)|^2 \, d\xi`, :math:`f\in L^1({{\mathbb  R}})`, :math:`|f|\leq C`.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Gerum nú ráð fyrir að :math:`f\in L^1({{\mathbb  R}})` og að :math:`f`
 sé takmarkað. Þá gildir :math:`|f(x)|^2\leq C|f(x)|` fyrir öll
 :math:`x\in {{\mathbb  R}}`, þar sem :math:`C` er fasti og fallið
 :math:`|f|^2` er því heildanlegt Til þess að sýna að jákvæða fallið
 :math:`|\widehat f|^2=\widehat f \overline{\widehat f}` sé heildanlegt,
-þá dugir samkvæmt setningu :ref:`Link title <se:16.3.3a>` að sanna að það sé
+þá dugir að sanna að það sé
 Fourier–myndin af falli :math:`g\in L^1({{\mathbb  R}})` sem er bæði
 samfellt og takmarkað. Við sjáum að
 
@@ -1514,7 +1522,7 @@ Ef við setjum nú :math:`x=0` inn í andhverfuformúluna, þá fæst
 Þetta er Plancherel-jafna.
 
 Regla (xiv) :math:`\displaystyle \int\limits_{-\infty}^{+\infty}  f(x) \overline{g(x)}\, dx =\dfrac 1{2{\pi}} \int\limits_{-\infty}^{+\infty} \widehat f({\xi}) \overline{\widehat g({\xi})}\, d{\xi}`.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 Tökum nú tvö föll :math:`f,g\in L^1({{\mathbb  R}})` og gerum ráð fyrir
@@ -1571,7 +1579,7 @@ Sönnun
 .. begin-toggle:: :label: Sýna sönnun
 
 Samkvæmt reglu (ix) er fallið :math:`i\xi\widehat f(\xi)` Fourier-myndin
-af afleiðunni :math:`f{{^{\prime}}}`. Samkvæmt setningu er
+af afleiðunni :math:`f{{^{\prime}}}`. Samkvæmt reglu (xiii) er
 :math:`|i\xi\widehat f(\xi)|^2=|\xi|^2|\widehat f(\xi)|^2` heildanlegt á
 :math:`{{\mathbb  R}}`. Nú er fallið :math:`|\xi|^{-2}` heildanlegt á
 menginu :math:`\{\xi\in{{\mathbb  R}}; |\xi|\geq 1\}` og ójafnan :math:`ab\leq \tfrac 12 (a^2+b^2)` gefur
@@ -1598,7 +1606,7 @@ Fourier-myndir reiknaðar með leifareikningi.
 
 Hugsum okkur nú að :math:`f\in {{\cal O}}({{\mathbb  C}}\setminus A)`,
 þar sem :math:`A` er dreift mengi og skilgreinum vegina :math:`\gamma_r`
-og :math:`\beta_r` eins og í 4. kafla,
+og :math:`\beta_r` eins og í leifareikningnum,
 :math:`\gamma_r(\theta)=re^{i\theta}`,
 :math:`\beta_r(\theta)=re^{-i\theta}`, :math:`\theta\in [0,\pi]`.
 
@@ -1665,7 +1673,7 @@ Athugum fyrst að :math:`\sin \theta \geq 2\theta/\pi` ef
     :align: center
     :alt:
 
-    Mynd: Vantar titil
+    Mynd: :math:`\sin \theta \geq 2\theta/\pi`
 
 Ef :math:`z=\gamma_r(\theta)=re^{i\theta}`, þá er
 :math:`dz=ire^{i\theta}\, d\theta` og því
@@ -1684,8 +1692,7 @@ Seinni ójafnan er sönnuð á nákvæmlega sama hátt.
 
 .. end-toggle::
 
-Hjálparsetning Jordan og jöfnurnar (:ref:`Link title <16.7.1a>`), (:ref:`Link title <16.7.2a>`),
-(:ref:`Link title <16.7.4a>`) og (:ref:`Link title <16.7.5a>`):
+Hjálparsetning Jordan og jöfnurnar fyrir framan hana gefa:
 
 Setning
 ^^^^^^^
@@ -1960,12 +1967,12 @@ Andhverf Laplace–ummyndun
 Nú skulum við sjá samhengið milli Fourier- og Laplace-ummynda. Látum
 :math:`f` vera fall á
 :math:`{{\mathbb  R}}_+=\{t\in {{\mathbb  R}}; t\geq 0\}` af
-veldisvísisgerð, en samkvæmt skilgreiningu :ref:`Link title <skil10.1.1a>` þýðir það
+veldisvísisgerð, en samkvæmt skilgreiningu þýðir það
 að til eru jákvæðir fastar :math:`M` og :math:`c` þannig að
 
 .. math:: |f(t)|\leq Me^{c t}, \qquad t\in {{\mathbb  R}}_+.
 
-Í setningu :ref:`Link title <se10.1.2a>` sönnuðum við að Laplace–myndin
+Við sönnuðum við að Laplace–myndin
 :math:`{{\cal L}}f({\zeta})` er fágað fall á hálfplaninu
 :math:`\{{\zeta}\in {{\mathbb  C}}; {{\operatorname{Re\, }}}{\zeta}>c\}`.
 Við framlengjum skilgreiningarsvæði fallsins :math:`f` yfir á allan
@@ -2030,25 +2037,30 @@ Sönnun
 
 .. begin-toggle:: :label: Sýna sönnun
 
-Samkvæmt (:ref:`Link title <7.2.1>`) og andhverfuformúlu Fouriers gildir
+Við höfum að
+
+.. math::
+
+   {{\cal L}}f(\zeta) = {{\cal F}}\{e^{-\xi x}f(x)\}(\eta)
+
+og því gefur andhverfuformúla Fouriers að
 
 .. math::
 
   e^{-\xi t}\tfrac 12(f(t+)+f(t-)) = \lim_{R\to +\infty} \dfrac 1{2\pi}
    \int_{-R}^{+R}e^{i\eta t}{{\cal L}}f(\xi+i\eta) \, d\eta,
 
-svo (:ref:`Link title <7.2.2>`) fæst með því að margfalda þessa jöfnu með
+svo andhverfuformúlan fæst með því að margfalda þessa jöfnu með
 :math:`e^{t\xi}`. Ef :math:`{{\cal L}}f(\xi+i\eta)` er í
-:math:`L^ 1({{\mathbb  R}})` sem fall af :math:`\eta`, þá er hægri
-hliðin í (:ref:`Link title <7.2.3>`) er samfellt fall af :math:`t` og þar með einnig
+:math:`L^ 1({{\mathbb  R}})` sem fall af :math:`\eta`, þá er heildið í hægri
+hliðinni samfellt fall af :math:`t` og þar með einnig
 vinstri hliðin. Fyrst :math:`f` er samfellt deildanlegt á köflum, þá
-gefur (:ref:`Link title <7.2.2>`) að :math:`f` er samfellt á
+gefur andhverfuformúlan að :math:`f` er samfellt á
 :math:`{{\mathbb  R}}_+`.
 
 .. end-toggle::
 
-Sem beina afleiðingu af andhverfuformúlunni fáum við nú að setning
-:ref:`Link title <set:10.1.2>` gildir, en hún segir okkur að samfellt fall er
+Sem beina afleiðingu af andhverfuformúlunni fáum við nú að samfellt fall er
 ótvírætt ákvarðað af Laplace–mynd sinni. Við athugum að setningin gildir
 ekki ef sleppt er þeirri forsendu að föllin :math:`f` og :math:`g` séu
 samfelld. Ástæðan er einfaldlega sú að Laplace mynd falls breytist ekki
@@ -2074,8 +2086,8 @@ Sönnun
 .. begin-toggle:: :label: Sýna sönnun
 
 Föllin :math:`{{\cal L}}f` og :math:`{{\cal L}}g` eru fáguð á menginu
-:math:`\{\zeta\in {{\mathbb  C}}; {{\operatorname{Re\, }}}\zeta >c\}` og því segir samsemdarsetningin
-3.7.3 okkur að :math:`{{\cal L}}f(\zeta)={{\cal L}}g(\zeta)` gildi um
+:math:`\{\zeta\in {{\mathbb  C}}; {{\operatorname{Re\, }}}\zeta >c\}` og því segir samsemdarsetning
+okkur að :math:`{{\cal L}}f(\zeta)={{\cal L}}g(\zeta)` gildi um
 alla punkta í þessu mengi. Nú gefur formúla Fourier-Mellin okkur að
 :math:`f(t)=g(t)` fyrir öll :math:`t>0`. Fyrst bæði föllin eru samfelld
 á :math:`{{\mathbb  R}}_+`, þá gildir jafnaðarmerki einnig ef
@@ -2102,8 +2114,7 @@ sérstöðupunktum. Sem dæmi getum við nefnt
 
 en báðar þessar Laplace-myndir eru skilgreindar á
 :math:`{{\mathbb  C}}\setminus\{\pm i\beta\}`. Sjálfsagt er að beita leifareikningi til að reikna út
-andhverfar Laplace–myndir með formúlunum (:ref:`Link title <7.2.2>`) og
-(:ref:`Link title <7.2.3>`). Við skulum nú sjá hvernig þetta er framkvæmt.
+andhverfar Laplace–myndir með andhverfuformúlu Fourier-Mellin. Við skulum nú sjá hvernig þetta er framkvæmt.
 
 .. figure:: ./myndir/fig103.svg
     :align: center
@@ -2171,7 +2182,7 @@ Ef :math:`f` er samfellt í :math:`t`, þá gildir
 
 --------------
 
-Í grein 7.4 sáum við að unnt er að skrifa Green–fallið
+Unnt er að skrifa Green–fallið
 :math:`G(t,\tau)`, til þess að leysa jöfnuna
 
 .. math:: P(D)u=(D^m+a_{m-1}D^{m-1}+\cdots+a_1D+a_0)u=f(t),
@@ -2181,7 +2192,7 @@ Laplace–mynd fallsins :math:`g` er gefin með
 
 .. math:: {{\cal L}}g(\zeta)=\dfrac 1{P(\zeta)}.
 
-Setning :ref:`Link title <set11.5.2>` gefur okkur þá að
+Setning beint fyrir ofan gefur okkur þá að
 
 .. math::
 
@@ -2193,9 +2204,8 @@ Sýnidæmi
 
 .. begin-toggle:: :label: Sýna dæmi
 
-Í sýnidæmi 7.5.9 reiknuðum við út Green–fallið fyrir virkjann
-:math:`P(D)=(D-1)(D-2)(D-3)`. Við skulum nú beita setningu
-:ref:`Link title <set11.5.2>` til þess að framkvæma þetta á nýjan leik. Við höfum
+Reiknum út Green–fallið fyrir virkjann
+:math:`P(D)=(D-1)(D-2)(D-3)` með Fourier-ummyndun.
 
 .. math::
 
@@ -2377,8 +2387,7 @@ Sönnun
 Við framlengjum :math:`f` yfir í jafnstætt fall
 :math:`\tilde f\in L^ 1({{\mathbb  R}})`, en það þýðir að
 :math:`\tilde f(x)=f(-x)` ef :math:`x<0`. Þá er
-:math:`{{\cal F}}\tilde f` jafnstætt fall og þar með gefu gefur setning
-:ref:`Link title <se:16.3.2a>` í fyrra tilfellinu að
+:math:`{{\cal F}}\tilde f` jafnstætt fall og þar með er
 
 .. math::
 
@@ -2391,7 +2400,7 @@ Við framlengjum :math:`f` yfir í jafnstætt fall
    \cos(x\xi){{\cal F}}_cf(\xi) \, d\xi.\end{aligned}
 
 Seinni andhverfuformúlan fyrir :math:`{{\cal F}}_cf` er sönnuð út frá
-setningu :ref:`Link title <se:16.3.4a>`. Formúlurnar fyrir :math:`{{\cal F}}_sf` eru
+andhverfuformúlunni fyrir :math:`\cal F f`. Formúlurnar fyrir :math:`{{\cal F}}_sf` eru
 sannaðar með því að framlengja :math:`f` yfir í oddstætt fall á
 :math:`{{\mathbb  R}}`.
 
@@ -2439,7 +2448,7 @@ Sannið reiknireglur (i)–(vi) og (viii).
 Dæmi
 ^^^^
 
-Notið niðurstöðuna úr dæmi 16.2.1 og andhverfuformúluna til þess að sýna
+Notið niðurstöðuna úr :ref:`sýnidæmi <synokkurfouriersynidaemi>` og andhverfuformúluna til þess að sýna
 að:
 
 a)
@@ -2472,7 +2481,7 @@ d)
 Dæmi
 ^^^^
 
-Notið niðurstöðurnar úr sýnidæmunum í grein 16.2, reiknireglurnar og
+Notið niðurstöðurnar úr sýnidæmunum, reiknireglurnar og
 andhverfuformúluna til þess að reikna út Fourier-myndir fallanna:
 
 +---------------------------------------------------------------------------------------------------------------+--------------------------------------------+
@@ -2668,7 +2677,7 @@ notið hana til þess að ákvarða heildið
 Dæmi
 ^^^^
 
-Notið niðurstöðuna úr dæmi 6.2.1, andhverfuformúlu Fouriers og
+Notið niðurstöðuna úr :ref:`sýnidæmi <synokkurfouriersynidaemi>`, andhverfuformúlu Fouriers og
 Plancherel–jöfnuna til þess sýna að
 
 .. math::

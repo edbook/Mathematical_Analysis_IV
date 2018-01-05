@@ -1704,9 +1704,9 @@ línulegt jöfnuhneppi með mismunaaðferð fyrir gildi lausnarinnar í
 
 .. figure:: ./myndir/fig2204.svg
     :align: center
-    :alt: Blandað jaðarskilyrði á hægri kanti, númering á punktum og skipting í hlutsvæði.
+    :alt: Blandað jaðarskilyrði á hægri kanti, númering á punktum og skipting í hlutsvæði
 
-    Mynd: Blandað jaðarskilyrði á hægri kanti, númering á punktum og skipting í hlutsvæði.
+    Mynd: Blandað jaðarskilyrði á hægri kanti, númering á punktum og skipting í hlutsvæði
 
 *Lausn:*  Hér erum við aðeins að einfalda okkur lífið með því að setja
 :math:`\beta=1` á :math:`\partial_2D`. Við erum með 6 punkta

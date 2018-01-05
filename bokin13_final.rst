@@ -37,7 +37,7 @@ Ef við gerum ráð fyrir að hægt sé að setja fallið :math:`f` fram með
 
 og :math:`P(in\omega)\neq 0` fyrir öll :math:`n=0,\pm 1,\pm 2,\dots`, þá
 getum við tekið sams konar óendanlega línulega samantekt á sérlausnunum
-:math:`u_n` og fengið sérlausn á (:ref:`Link title <8.1.1>`)
+:math:`u_n` og fengið sérlausn
 
 .. math::
 
@@ -55,9 +55,9 @@ Ef þessi röð er það vel samleitin að það megi deilda hana lið fyrir li�
    &= \sum\limits_{n=-\infty}^{+\infty} c_n e^{in\omega x} =
    f(x),\nonumber\end{aligned}
 
-svo (:ref:`Link title <8.1.4>`) er sérlausn á jöfnunni (:ref:`Link title <8.1.1>`). Viðfangsefni
+svo (:math:`u(x)` er sérlausn á jöfnunni. Viðfangsefni
 þessa kafla er að finna skilyrði á lotubundið fall :math:`f` sem tryggir
-að til sé framsetning á :math:`f` af gerðinni (:ref:`Link title <8.1.3>`).
+að til sé framsetning á :math:`f` með röð eins og hér að framan.
 
 Fourier–raðir af :math:`2\pi`-lotubundnum föllum
 ------------------------------------------------
@@ -114,8 +114,8 @@ Athugum nú að
    \left[ \dfrac{e^{i(m-n)x}}{i(m-n)}\right]_{-\pi}^\pi=0, &m\neq n.
    \end{cases}
 
-Ef fallið :math:`f` er gefið með óendanlegum röðum eins og í
-(:ref:`Link title <8.2.1>`) og raðirnar eru samleitnar í jöfnum mæli, þá getum við
+Ef fallið :math:`f` er gefið með óendanlegum röðum eins og hér að framan
+og raðirnar eru samleitnar í jöfnum mæli, þá getum við
 víxlað á heildi og óendanlegri summu, og það gefur okkur
 
 .. math::
@@ -153,7 +153,7 @@ gefa okkur
    m\neq n,\end{cases}, \ \  n,m=1,2,\dots,\\
    \int_{-\pi}^\pi \cos mx \sin nx \, dx = 0, \qquad n,m=1,2,\dots.\end{gathered}
 
-Með því að heilda fyrri röðina í (:ref:`Link title <8.2.1>`) lið fyrir lið og
+Með því að heilda fyrri röðina :math:`\tfrac 12 a_0+\sum\limits_{n=1}^\infty \big( a_n \cos nx + b_n \sin nx\big )` lið fyrir lið og
 notfæra okkur þessar formúlur, þá fáum við að stuðlarnir :math:`a_n` og
 :math:`b_n` eru einnig ótvírætt ákvarðaðir
 
@@ -786,11 +786,11 @@ eru bæði til. Nú er
    \big(c_n(g)-c_{n-1}(g)\big)= c_{N}(g)-c_{-N-1}(g).
 
 Nú segir ójafna Bessels okkur að :math:`c_n(g)\to 0` ef
-:math:`|n|\to +\infty` og þar með gildir (:ref:`Link title <8.4.1>`).
+:math:`|n|\to +\infty` og þar með er markgildið :math:`0`.
 
 *Skref (ii):* Gerum ráð fyrir því að :math:`x=0` og :math:`\frac 12(f(0+)+f(0-))=0`. Við setjum :math:`\alpha=f(0+)` og
 :math:`h(x)=f(x)-\alpha\varphi(x)`, þar sem :math:`\varphi` er
-kassabylgjan í sýnidæmi :ref:`Link title <syn:13.2.3a>`. Þá er
+kassabylgjan í sýnidæminu hér að framan. Þá er
 
 .. math::
 
@@ -840,7 +840,7 @@ gefur því
    &=\lim_{N\to +\infty} \sum_{n=-N}^{N} c_n(k)
    =\lim_{N\to +\infty} \sum_{n=-N}^{N} e^{in\alpha} c_n(f).\end{aligned}
 
-Síðasta staðhæfingin leiðir beint af setningu :ref:`Link title <se:13.3.3a>`.
+Síðasta staðhæfingin leiðir beint af setningunni um samleitni Fourier-raða í jöfnum mæli.
 
 .. end-toggle::
 
@@ -928,8 +928,7 @@ ef :math:`f` er samfellt í :math:`x`, þá er
 
 og fyrir :math:`f\in PC^1({{\mathbb  R}})\cap C({{\mathbb  R}})`, þá
 eru raðirnar samleitnar í jöfnum mæli á :math:`{{\mathbb  R}}`.
-Reiknireglurnar eru nánast eins of fyrir :math:`2{\pi}`–lotubundin föll
-í setningu :ref:`Link title <se:13.2.2a>`. Þær sem breytast eru:
+Reiknireglurnar eru nánast eins of fyrir :math:`2{\pi}`–lotubundin föll. Þær sem breytast eru:
 
 Setning
 ^^^^^^^
@@ -989,7 +988,7 @@ síður geti gilt
   f(x)=\lim_{N\to +\infty}\sum\limits_{n=-N}^{N}c_n(f) e^{in \omega x},
    \qquad \text{ fyrir öll } x\in {{\mathbb  R}}.
 
-Í grein 13.3 skilgreindum við innfeldi og lengd af föllum í
+Hér að framan skilgreindum við innfeldi og lengd af föllum í
 :math:`L^2([-\pi, \pi])` og við sáum að setning Pýþagórasar segir okkur
 að
 
@@ -1028,7 +1027,7 @@ Sönnun
 
 .. begin-toggle:: :label: Sýna sönnun
 
-Við skilgreinum :math:`u_1` með formúlunni (:ref:`Link title <8.5.1>`) og setjum
+Við skilgreinum :math:`u_1` með þessari formúlu og setjum
 :math:`u_2=u-u_1`. Þá er augljóslega :math:`u=u_1+u_2` og
 
 .. math:: {{\langle u_2,e_m\rangle}} = {{\langle u,e_m\rangle}} -\sum\limits_{k\in M}{{\langle u,e_k\rangle}}{{\langle e_k,e_m\rangle}} = {{\langle u,e_m\rangle}}-{{\langle u,e_m\rangle}}=0,
@@ -1065,7 +1064,7 @@ Sönnun
 .. begin-toggle:: :label: Sýna sönnun
 
 Við setjum :math:`v=\sum_{k\in M}a_ke_k` og skrifum :math:`u=u_1+u_2`
-eins og í hjálparsetningu :ref:`Link title <hs8.5.1>`. Þá er :math:`u_2` hornréttur á
+eins og í sönnun á hjálparsetningu hér að framan. Þá er :math:`u_2` hornréttur á
 :math:`u_1-v` og þar með gefur setning Pýþagórasar
 
 .. math::
@@ -1083,7 +1082,7 @@ bilinu :math:`[-\pi,\pi]`, með innfeldið
 
 mengið :math:`M` er valið sem
 :math:`M=\{n\in {{\mathbb  Z}}; -N\leq n\leq N\}` og
-:math:`e_n(x)=e^{inx}`, þá segir hjálparsetning :ref:`Link title <hs8.5.2>`, að
+:math:`e_n(x)=e^{inx}`, þá segir hjálparsetningin að
 heildið
 
 .. math::
@@ -1148,8 +1147,7 @@ Sönnun
 .. begin-toggle:: :label: Sýna sönnun
 
 Það dugir að sanna setninguna fyrir :math:`2\pi`-lotubundin föll. Látum
-:math:`\varepsilon>0` vera gefið og veljum :math:`f_\varepsilon\in PC^1({{\mathbb  R}})\cap C({{\mathbb  R}})` þannig að (:ref:`Link title <8.5.2>`)
-gildi og veljum :math:`N_\varepsilon` það stórt að
+:math:`\varepsilon>0` vera gefið og veljum :math:`f_\varepsilon\in PC^1({{\mathbb  R}})\cap C({{\mathbb  R}})` þannig að næst síðasta hjálparsetning gildi og veljum :math:`N_\varepsilon` það stórt að
 
 .. math::
 
@@ -1157,7 +1155,7 @@ gildi og veljum :math:`N_\varepsilon` það stórt að
    c_n(f_\varepsilon) e^{inx}|^2 \, dx <\varepsilon,
    \qquad N\geq N_{\varepsilon}.
 
-Þá gefur hjálparsetning :ref:`Link title <hs8.5.2>` að
+Þá gefur sama hjálparsetning að
 
 .. math::
 
@@ -1202,15 +1200,13 @@ og setjum :math:`f_J(x)=f_J(x-2nL)` ef :math:`x\in [(2n-1)L,(2n+1)L]`.
 
 .. figure:: ./myndir/fig076.svg
     :align: center
-    :alt: Jafnstæð :math:`2L`-lotubundin framlenging :math:`f`, (i)
-
-    Mynd: Jafnstæð :math:`2L`-lotubundin framlenging :math:`f`, (i)
+    :alt: 
 
 .. figure:: ./myndir/fig076b.svg
     :align: center
-    :alt: Jafnstæð :math:`2L`-lotubundin framlenging :math:`f`, (ii)
+    :alt: Jafnstæð :math:`2L`-lotubundin framlenging :math:`f`.
 
-    Mynd: Jafnstæð :math:`2L`-lotubundin framlenging :math:`f`, (ii)
+    Mynd: Jafnstæð :math:`2L`-lotubundin framlenging :math:`f`.
 
 Fourier-stuðlar :math:`f_J` eru gefnir með
 
@@ -1241,15 +1237,13 @@ og :math:`f_O(x)=f_O(x-2nL)` ef :math:`x\in [(2n-1)L,(2n+1)L]`. Þá er
 
 .. figure:: ./myndir/fig077.svg
     :align: center
-    :alt: Oddstæð :math:`2L`-lotubundin framlenging :math:`f`, (i)
-
-    Mynd: Oddstæð :math:`2L`-lotubundin framlenging :math:`f`, (i)
+    :alt: 
 
 .. figure:: ./myndir/fig077b.svg
     :align: center
-    :alt: Oddstæð :math:`2L`-lotubundin framlenging :math:`f`, (ii)
+    :alt: Oddstæð :math:`2L`-lotubundin framlenging :math:`f`.
 
-    Mynd: Oddstæð :math:`2L`-lotubundin framlenging :math:`f`, (ii)
+    Mynd: Oddstæð :math:`2L`-lotubundin framlenging :math:`f`.
 
 Fourier–stuðlarnir eru
 
@@ -1364,15 +1358,13 @@ Fourier–kósínus–röðin í hægri hlið jöfnunnar stefnir síðan á
 
 .. figure:: ./myndir/fig078.svg
     :align: center
-    :alt: Jafnstæð :math:`2L`-lotubundin framlenging :math:`f`, (i)
-
-    Mynd: Jafnstæð :math:`2L`-lotubundin framlenging :math:`f`, (i)
+    :alt: 
 
 .. figure:: ./myndir/fig078b.svg
     :align: center
-    :alt: Jafnstæð :math:`2L`-lotubundin framlenging :math:`f`, (ii)
+    :alt: Jafnstæð :math:`2L`-lotubundin framlenging :math:`f`.
 
-    Mynd: Jafnstæð :math:`2L`-lotubundin framlenging :math:`f`, (ii)
+    Mynd: Jafnstæð :math:`2L`-lotubundin framlenging :math:`f`.
 
 Lítum nú á sínus–stuðlana
 
@@ -1411,7 +1403,13 @@ Fourier–raðir og afleiðujöfnur
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Nú skulum við líta aftur á verkefnið að finna sérlausn á jöfnunni
-(:ref:`Link title <8.1.1>`), þar sem fallið :math:`f` er :math:`T`–lotubundið. Til
+
+.. math::
+
+  P(D)u=(a_mD^ m+a_{m-1}D^{m-1}+\cdots+a_1 D
+   +a_0)u=f(x),
+
+þar sem fallið :math:`f` er :math:`T`–lotubundið. Til
 einföldunar skulum við setja :math:`\omega=2\pi/T` og jafnframt gera ráð
 fyrir því að í punktum :math:`x` þar sem :math:`f` er ósamfellt gildi
 :math:`f(x)=\tfrac 12(f(x+)+f(x-))`. Ef :math:`f\in PC^1({{\mathbb  R}})`, þá gefur
@@ -1455,7 +1453,8 @@ Fyrst :math:`P` er margliða af stigi :math:`m`, þá er til fasti
 
 .. math:: \dfrac{|c_n(f)|}{|P(in\omega)|} \leq C\dfrac{|c_n(f)|}{|n|^m},
 
-ef :math:`n` er nógu stórt. Samkvæmt (:ref:`Link title <8.3.2>`), þá er
+ef :math:`n` er nógu stórt. Fyrst
+:math:`f\in PC^1({{\mathbb  R}})\cap C({{\mathbb  R}})`, þá er
 :math:`\sum_{n=-\infty}^{+\infty}|c_n(f)|<+\infty` og með því að nota
 Weierstrass–prófið, þá sjáum við að það má taka afleiður af :math:`u`
 upp að stigi :math:`m` með því að deilda röðina lið fyrir lið. Við fáum
@@ -1470,20 +1469,12 @@ upp að stigi :math:`m` með því að deilda röðina lið fyrir lið. Við fá
 
 .. end-toggle::
 
-Við sáum í síðustu setningu að í því tilfelli þegar :math:`f` er
-:math:`T`–lotubundið, samfellt deildanlegt á köflum og samfellt, þá fáum
-við sérlausn á jöfnunni (:ref:`Link title <8.7.1>`) með formúlunni (:ref:`Link title <8.7.2>`).
-Þessi formúla er stundum mikilvæg, þó svo að samleitni Fourier–raðar
-:math:`f` geti verið það hæg að getum ekki tekið afleiður undir summuna
-í (:ref:`Link title <8.7.2>`):
-
 Skilgreining
 ^^^^^^^^^^^^
 
 Látum :math:`f\in L^1([-T/2,T/2])` vera :math:`T`–lotubundið fall og
 setjum :math:`\omega=2\pi/T`. Ef :math:`c_n(f)=0` fyrir öll :math:`n`
-þannig að :math:`P(in\omega)= 0`, þá kallast fallið :math:`u`, sem gefið
-er með formúlunni (:ref:`Link title <8.7.2>`) *formlega lotubundna lausnin á* (:ref:`Link title <8.7.1>`).
+þannig að :math:`P(in\omega)= 0`, þá kallast fallið :math:`u`, í setningunni hér að ofan, *formlega lotubundna lausnin á* afleiðujöfnunni.
 
 Sýnidæmi: Deyfðar sveifur með lotubundnum krafti
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1521,13 +1512,13 @@ og þar með er
    m\big(\omega_0^2-n^2\omega^2+i(c/m)n\omega\big),
 
 þar sem :math:`\omega_0^2=k/m`. Við höfum að :math:`c>0`, svo
-:math:`P(in\omega)\neq 0` fyrir öll :math:`n\in {{\mathbb  Z}}`. Setning :ref:`Link title <set8.7.1>` segir
+:math:`P(in\omega)\neq 0` fyrir öll :math:`n\in {{\mathbb  Z}}`. Setningin hér fyrir framan segir
 okkur að til sé :math:`T`–lotubundin lausn. Nú skulum við gera ráð fyrir
 því að :math:`f` sé jafnstætt fall
 
 .. math:: f(t)= \tfrac 12 a_0 + \sum_{n=1}^\infty a_n \cos\big(n\omega t\big).
 
-Við höfum þá samkvæmt reiknireglu (ii) í setningu :ref:`Link title <se:13.2.2a>` að
+Við höfum þá samkvæmt reiknireglu (ii) um Fourier-stuðla gildir að
 :math:`c_n=c_{-n}=\tfrac 12 a_n` og því er
 
 .. math::
@@ -1568,7 +1559,7 @@ og hún hefur aðeins merkingu ef :math:`a_N(f)=0` þegar
 lausnir á óhliðruðu jöfnunni :math:`P(D)u=0` línulegar samantektir
 fallanna :math:`\cos \omega_0 t` og :math:`\sin \omega_0 t`. Hliðraða
 jafnan :math:`P(D)u=\cos \omega_0 t` getur því ekki haft lausn af
-þessari gerð. Í grein 7.4 sáum við hvernig hægt er að finna sérlausn af
+þessari gerð. Við höfum séð hvernig hægt er að finna sérlausn af
 svona jöfnu þegar :math:`i\omega_0` er núllstöð kennijöfnunnar af fyrsta
 stigi,
 
@@ -1604,7 +1595,7 @@ Lítum nú á jaðargildisverkefnið
 
 .. math:: u{{^{\prime\prime}}}+{\omega}^2 u=f(x), \qquad u(0)=u(1)=0.
 
-Í sýnidæmi 2.1.7 sýndum við fram á að það hafi ótvírætt ákvarðaða lausn
+Það hafur ótvírætt ákvarðaða lausn
 fyrir sérhvert :math:`f` ef og aðeins ef :math:`{\omega}` er ekki
 heiltölumargfeldi af :math:`{\pi}`. Hægt er að setja lausnina fram með
 sínus–röð
@@ -1641,12 +1632,14 @@ verður
 Sveiflandi strengur
 ~~~~~~~~~~~~~~~~~~~
 
+.. _sysveiflandistrengurframhald:
+
 Sýnidæmi
 ^^^^^^^^
 
 .. begin-toggle:: :label: Sýna dæmi: Sveiflandi strengur; framhald
 
-Í sýnidæmi 11.2.1 leiddum við út einvíðu 
+Við leiddum út einvíðu 
 :hover:`bylgjujöfnuna, bylgjujafna`, sem lýsir hreyfingu sveiflandi strengs sem festur
 er niður í báðum endapunktum. Við skulum nú leysa hana með náttúrulegu
 jaðarskilyrðunum
@@ -1679,10 +1672,9 @@ og ganga út frá því að sínus–stuðlar fallanna :math:`\varphi` og
   \varphi(x)=\sum\limits_{n=1}^{\infty} \varphi_n \sin(n{\pi}x/L), \qquad
    {\psi}(x)=\sum\limits_{n=1}^{\infty} {\psi}_n \sin(n{\pi}x/L).
 
-Jaðarskilyrðin í (:ref:`Link title <8.7.3>`) eru greinilega uppfyllt. Til þess að
+Jaðarskilyrðin eru greinilega uppfyllt. Til þess að
 ákvarða óþekktu föllin :math:`u_n(t)`, þá stingum við röðinni
-(:ref:`Link title <8.7.5>`) inn í jöfnuna :ref:`Link title <8.7.3>` og notum upphafsskilyrðin
-(:ref:`Link title <8.7.4>`),
+fyrir :math:`u(x,t)` inn í bylgjujöfnuna og notum upphafsskilyrðin,
 
 .. math::
 
@@ -1741,7 +1733,7 @@ Sýnidæmi
 
 .. begin-toggle:: :label: Sýna dæmi: Festi; framhald
 
-Í sýnidæmi 5.2.5 reiknuðum við út hreyfingu perlufestar með :math:`n`
+Við höfum reiknað út hreyfingu perlufestar með :math:`n`
 perlum í tilfellinu :math:`n=2` og :math:`n=3`. Við sáum þá að sveifla
 festarinnar er samsett úr :math:`n` óháðum liðum sem við nefndum
 sveifluhætti hennar. Tíðnir þessara sveifluhátta 
@@ -1765,7 +1757,9 @@ eru gefnar með formúlunni
    0 & 0  & 0 & \dots & -1 & 2
    \end{matrix}\right].
 
-Við getum einnig túlkað (:ref:`Link title <8.7.8>`) þannig að útslag strengsins
+Við getum einnig túlkað jöfnuna 
+:math:`u(x,t)=\sum\limits_{n=1}^{\infty} C_n\cos\big(n{\pi}ct/L-{\alpha}_n\big) \sin(n{\pi}x/L)`
+þannig að útslag strengsins
 :math:`u(x,t)` samanstandi af óháðum liðum
 :math:`C_j\cos\big(j{\pi}ct/L-{\alpha}_j\big)\sin(j{\pi}x/L)`, sem við
 nefnum *sveifluhætti*. Tíðni sveifluháttarins er :math:`j{\pi}c/L`. Í
@@ -1820,6 +1814,8 @@ Fourier–stuðulinn :math:`b_j(\varphi)=1`.
 Varmaleiðni
 ~~~~~~~~~~~
 
+.. _syvarmaleidnistangar:
+
 Sýnidæmi
 ^^^^^^^^
 
@@ -1842,8 +1838,8 @@ með upphafsskilyrðinu
 
 .. math:: u(x,0)=\varphi(x), \qquad x\in ]0,L[.
 
-Úrlausnaraðferðin sem við beitum er sú sama og í sýnidæmi
-:ref:`Link title <sy:13.8.5a>`, en við liðum :math:`u` nú í kósínus–röð til þess að
+Úrlausnaraðferðin sem við beitum er sú sama og í sýnidæminu fyrir
+sveiflandi streng, en við liðum :math:`u` nú í kósínus–röð til þess að
 rétt jaðarskilyrði verði uppfyllt,
 
 .. math::
@@ -1862,7 +1858,7 @@ og við göngum út frá því að kósínus–raðir fallanna :math:`f` og
    \qquad
    \varphi(x)=\sum\limits_{n=0}^{\infty} \varphi_n\cos(n{\pi}x/L).
 
-Við stingum nú röðinni (:ref:`Link title <8.7.12>`) inn í jöfnuna (:ref:`Link title <8.7.9>`) og
+Við stingum nú röðinni fyrir :math:`u(x,t)` inn í varmaleiðnijöfnuna og
 setjum inn upphafsskilyrðin
 
 .. math::

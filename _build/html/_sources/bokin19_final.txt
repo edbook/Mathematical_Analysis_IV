@@ -33,7 +33,7 @@ að
    =\partial_t \int_{-\infty}^{+\infty}e^{-ix{\xi}}u(x,t)\, dx
    ={\partial}_t\widehat u({\xi},t).
 
-Samkvæmt setningu 6.2.3 (ix) er
+Samkvæmt reiknireglu (ix) í grein 16.2 er
 
 .. math::
 
@@ -57,7 +57,8 @@ Við tökum nú Fourier-mynd af öllum liðunum í (:ref:`Link title <16.1.1>`) 
 
 .. math:: \widehat u({\xi},t)=e^{-{\kappa}t{\xi}^2}\widehat {\varphi}({\xi}).
 
-Í sýnidæmi 6.2.2 sáum við að :math:`{{\cal F}}\{e^{-x^2}\}({\xi})= \sqrt {\pi}e^{-{\xi}^2/4}`. Samkvæmt setningu 6.2.3 (iv) er
+Í sýnidæmi 16.2.2 sáum við að :math:`{{\cal F}}\{e^{-x^2}\}({\xi})= \sqrt {\pi}e^{-{\xi}^2/4}`. 
+Samkvæmt reiknireglu (iv) í grein 16.2 er
 
 .. math::
 
@@ -405,7 +406,7 @@ Við höfum
    \dfrac{e^{-x^2/4\kappa t}}{\sqrt{4\pi\kappa t}}\, dt=
    \dfrac{1}{\sqrt{4\kappa s}}e^{-\sqrt{s/\kappa}\, x}.
 
-Til þess að staðfesta þessa formúlu þá nefnum við fyrst að í grein 16.1
+Til þess að staðfesta þessa formúlu þá nefnum við fyrst að í grein 17.1
 sýndum við fram á að :math:`E` uppfyllir
 
 .. math::
@@ -418,8 +419,8 @@ sýndum við fram á að :math:`E` uppfyllir
    \lim\limits_{x\to +{\infty}}E(x,t)=0, &t>0.
    \end{cases}
 
-Þetta er sértilfelli af (:ref:`Link title <16.3.1>`). Samkvæmt sýnidæmi 6.1.3 og
-formúlu (3.7.6) er
+Þetta er sértilfelli af (:ref:`Link title <16.3.1>`). 
+Samkvæmt sýnidæmi 10.1.3 og formúlu (8.3.6) er
 
 .. math::
 
@@ -602,7 +603,7 @@ Leysið verkefnið
 Dæmi
 ^^^^
 
-Notið niðurstöðuna úr sýnidæmi 16.3.1 til þess að sýna að
+Notið niðurstöðuna úr sýnidæmi 19.3.1 til þess að sýna að
 
 .. math::
 
@@ -646,7 +647,7 @@ fastafallið :math:`1`. Sannið formúlu Duhamels,
    \int_0^t v(x,t-{\tau})f({\tau})\, d{\tau}
    \bigg).
 
-\(iii) Notið niðurstöðuna úr dæmi 2 og sömu tækni og í sýnidæmi 15.8.2
+\(iii) Notið niðurstöðuna úr dæmi 2 og sömu tækni og í sýnidæmi 18.8.2
 til þess að sýna að
 
 .. math::

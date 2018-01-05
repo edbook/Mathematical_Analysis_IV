@@ -45,13 +45,13 @@ Við sjáum nú að sérhvert fall af gerðinni
 
 .. math:: u(x,t)=f(x+ct)+g(x-ct),
 
-þar sem :math:`f,g\in C^2({{\mathbb  R}})` er lausn á bylgjujöfnunni
-(:ref:`Link title <15.2.1>`), því :math:`(\partial_t-c\partial_x)f(x+ct)=0` og
+þar sem :math:`f,g\in C^2({{\mathbb  R}})` er lausn á bylgjujöfnunni, 
+því :math:`(\partial_t-c\partial_x)f(x+ct)=0` og
 :math:`(\partial_t+c\partial_x)g(x-ct)=0`. Til þess að sýna fram á að
-sérhver lausn sé af gerðinni (:ref:`Link title <15.2.3>`), þá skiptum við yfir í
+sérhver lausn sé af þessari gerð, þá skiptum við yfir í
 svokölluð *kennihnit*, en það felst í því að innleiða hnit þannig að
 hnitaásarnir verði kennilínur fyrsta stigs virkjanna í þáttuninni
-(:ref:`Link title <15.2.2>`). Við skilgreinum
+hér að framan. Við skilgreinum
 
 .. math:: \xi=x+ct, \qquad \eta=x-ct,
 
@@ -120,7 +120,7 @@ jafnan :math:`u(x,0)=f_1(x)+g_1(x)=f(x)+g(x)+A+B=f(x)+g(x)` okkur að
 
 .. end-toggle::
 
-Lausnin :math:`u` í :ref:`Link title <set15.2.1>` samanstendur af tveimur bylgjum,
+Lausnin :math:`u` í þessari setningu samanstendur af tveimur bylgjum,
 sem hreyfast eftir :math:`x`-ásnum sem föll af tíma. Graf fallsins
 :math:`x\mapsto f(x+ct)` er hliðrum á grafi fallsins :math:`f` um
 :math:`-ct` og sú færsla með tíma er lýsing á bylgju, sem berst til
@@ -189,7 +189,17 @@ Að lokum fáum við með heildun
 Setning
 ^^^^^^^
 
-Upphafsgildisverkefnið (:ref:`Link title <15.3.1>`) hefur ótvírætt ákvarðaða lausn
+Upphafsgildisverkefnið 
+
+.. math::
+
+  \begin{cases}
+   \dfrac{\partial^2u}{\partial t^2}
+   -c^2\dfrac{\partial^2u}{\partial x^2}=0, &x\in {{\mathbb  R}},\ t>0, \\
+   u(x,0)=\varphi(x), \quad \partial_tu(x,0)=\psi(x), &x\in {{\mathbb  R}}.
+   \end{cases}
+
+hefur ótvírætt ákvarðaða lausn
 
 .. math::
 
@@ -198,10 +208,10 @@ Upphafsgildisverkefnið (:ref:`Link title <15.3.1>`) hefur ótvírætt ákvarða
 
 --------------
 
-Athugum að fyrri liðurinn í (:ref:`Link title <15.3.2>`) er meðaltalið af gildum
+Athugum að fyrri liðurinn í þessari lausnarformúlu er meðaltalið af gildum
 fallsins :math:`{\varphi}` í punktunum :math:`x+ct` og :math:`x-ct` og
 síðari liðurinn er margfeldið af :math:`t` og meðaltalinu af gildum
-:math:`{\psi}` á bilinu :math:`[x-ct,x+ct]`. Heildið í (:ref:`Link title <15.3.2>`)
+:math:`{\psi}` á bilinu :math:`[x-ct,x+ct]`. Heildið í formúlunni
 er unnt að rita sem földun
 
 .. math::
@@ -220,7 +230,7 @@ er unnt að rita sem földun
 tveimur breytistærðum :math:`(x,t)` eða sem fall af einni breytistærð
 :math:`x` fyrir fast :math:`t`. Í fyrra tilfellinu skrifum við
 :math:`E(x,t)`, en í því síðara skrifum við :math:`E_t(x)`. Við sjáum
-einnig að fyrri liðurinn í hægri hlið (:ref:`Link title <15.3.2>`) er
+einnig að fyrri liðurinn í hægri hlið í lausnarformúlunni er
 
 .. math::
 
@@ -229,7 +239,7 @@ einnig að fyrri liðurinn í hægri hlið (:ref:`Link title <15.3.2>`) er
    \dfrac 1{2c}\int_{x-ct}^{x+ct}\varphi(y)\, dy
    \bigg) =\dfrac{\partial}{\partial t} E_t\ast \varphi(x).
 
-Þar með er hægt að umskrifa (:ref:`Link title <15.3.2>`) sem
+Þar með er hægt að umskrifa lausnina í
 
 .. math::
 
@@ -242,8 +252,8 @@ einnig að fyrri liðurinn í hægri hlið (:ref:`Link title <15.3.2>`) er
 
     Mynd: Lausn bylgjujöfnunnar með :math:`{\psi}=0`.
 
-Nú er tilvalið að líta aftur á upphafsgildisverkefnið (:ref:`Link title <15.3.1>`) og
-leiða (:ref:`Link title <15.3.2>`) út með því að beita Fourier-ummyndun. Athugum
+Nú er tilvalið að líta aftur á upphafsgildisverkefnið hér að framan og
+leiða lausnarformúlana út með því að beita Fourier-ummyndun. Athugum
 fyrst að
 
 .. math::
@@ -268,7 +278,7 @@ tákna Fourier-myndina af :math:`u` með tilliti til :math:`x` fyrir fast
    =\partial_t^j\int\limits_{-\infty}^{+\infty}e^{-ix\xi}u(x,t)\, dx
    =\partial_t^j\widehat u(\xi,t).
 
-Reikniregla (ix) í setningu 6.2.3 gefur okkur
+Reikniregla (ix) fyrir Fourier-ummyndun gefur okkur
 
 .. math::
 
@@ -276,7 +286,17 @@ Reikniregla (ix) í setningu 6.2.3 gefur okkur
    =\int\limits_{-\infty}^{+\infty}e^{-ix\xi}\partial_x^2u(x,t)\, dx
    =(i{\xi})^2\widehat u({\xi},t)=-{\xi}^2\widehat u({\xi},t).
 
-Ef vil tökum nú Fourier-mynd af öllum liðunum í (:ref:`Link title <15.3.1>`), þá
+Ef vil tökum nú Fourier-mynd af öllum liðunum í 
+
+.. math::
+
+  \begin{cases}
+   \dfrac{\partial^2u}{\partial t^2}
+   -c^2\dfrac{\partial^2u}{\partial x^2}=0, &x\in {{\mathbb  R}},\ t>0, \\
+   u(x,0)=\varphi(x), \quad \partial_tu(x,0)=\psi(x), &x\in {{\mathbb  R}},
+   \end{cases}
+
+þá
 fáum við að :math:`\widehat u({\xi},t)` verður að uppfylla
 
 .. math::
@@ -301,8 +321,7 @@ fáum við að :math:`\widehat u({\xi},t)` verður að uppfylla
    &=\dfrac{\partial}{\partial t}\widehat E_t({\xi})\widehat\varphi({\xi})
    +\widehat E_t({\xi})\widehat {\psi}({\xi}).\end{aligned}
 
-Nú beitum við andhverfuformúlu Fouriers og földunarreglunni (xi) í
-setningu 6.4.1, og fáum formúluna (:ref:`Link title <15.3.4>`) aftur
+Nú beitum við andhverfuformúlu Fouriers og földunarreglunni (xi), og fáum sömu formúlu aftur
 
 .. math::
 
@@ -336,8 +355,7 @@ upphafsskilyrðum,
    u(x,0)=\partial_tu(x,0)=0, &x\in {{\mathbb  R}},
    \end{cases}
 
-og beita til þess Fourier-ummyndun. Með nákvæmlega sömu rökum og leiddu
-til (:ref:`Link title <15.3.5>`) fáum við nú að
+og beita til þess Fourier-ummyndun. Með nákvæmlega sömu rökum og í greininni hér fyrir framan fáum við nú að
 
 .. math::
 
@@ -349,7 +367,7 @@ til (:ref:`Link title <15.3.5>`) fáum við nú að
 
 Green-fall afleiðuvirkjans :math:`D_t^2+c^2{\xi}^2` er
 :math:`G_{\xi}(t,{\tau})=g({\xi},t-{\tau})`, þar sem
-:math:`g({\xi},t)=\sin(ct{\xi})/c{\xi}=\widehat E_t({\xi})=\widehat E({\xi},t)`. Lausnin á (:ref:`Link title <15.4.2>`) er því
+:math:`g({\xi},t)=\sin(ct{\xi})/c{\xi}=\widehat E_t({\xi})=\widehat E({\xi},t)`. Fourier-myndin er því
 
 .. math::
 
@@ -385,7 +403,7 @@ Nú er :math:`E(x,t)=0` ef :math:`t<0` og ef við skilgreinum
 
 .. math:: u(x,t)= E\ast f(x,t), \qquad x\in {{\mathbb  R}}, \ t>0.
 
-Lítum nú aftur á formúluna (:ref:`Link title <15.4.3>`) og stingum inn
+Lítum nú aftur á tvær síðustu formúlur fyrir :math:`u(x,t)` og stingum inn
 skilgreiningunni á :math:`E`,
 
 .. math::
@@ -444,7 +462,14 @@ upphafsgildisverkefnið
    &=\dfrac{{\partial}}{{\partial} t}\big(E_t\ast {\varphi}\big)(x)+
    E_t\ast {\psi}(x) + E\ast f(x,t),\nonumber\end{aligned}
 
-þar sem fallið :math:`E` er skilgreint í (:ref:`Link title <15.3.3>`) og
+þar sem fallið :math:`E` er skilgreint með
+
+.. math::
+
+  E_t(x)=E(x,t)= \begin{cases} 1/2c, &|x|\leq ct,\\ 0,
+    &|x|>ct\end{cases}
+
+og
 :math:`T(x,t)` táknar þríhyrninginn með hornpunktana :math:`(x,t)`,
 :math:`(x-ct,0)` og :math:`(x+ct,0)`.
 
@@ -454,13 +479,13 @@ Sönnun
 .. begin-toggle:: :label: Sýna sönnun
 
 Við byrjum á ótvíræðninni. Látum :math:`u_1` og :math:`u_2` vera tvær
-lausnir á (:ref:`Link title <15.5.1>`). Þá er mismunurinn :math:`u` lausn á óhliðruðu
-jöfnunni með :math:`{\varphi}={\psi}=0`. Samkvæmt setningu 15.3.1 er
+lausnir á upphafsgildisverkefninu. Þá er mismunurinn :math:`u` lausn á óhliðruðu
+jöfnunni með :math:`{\varphi}={\psi}=0`. Samkvæmt ótvíræðni lausn á bylgjujöfnunni með upphafsskilyrðum er
 :math:`u` núllfallið og þar með er :math:`u_1=u_2`. Þetta segir okkur að
-lausnin á (:ref:`Link title <15.5.1>`) er ótvírætt ákvörðuð ef við getum sýnt fram á
-að fallið sem gefið er með (:ref:`Link title <15.5.2>`) er lausn.
+lausnin á upphafsgildisverkefninu er ótvírætt ákvörðuð ef við getum sýnt fram á
+að fallið :math:`u(x,t)` er lausn.
 
-Setning 15.3.1 segir okkur að summan af tveimur fyrstu liðunum í
+Ótvíræðni lausn á bylgjujöfnunni með upphafsskilyrðum segir okkur að summan af tveimur fyrstu liðunum í
 lausnarformúlunni leysi óhliðruðu jöfnuna með hliðruðum
 upphafsskilyrðum. Við eigum aðeins eftir að staðfesta að tvöfalda
 heildið skilgreini lausn á hliðruðu jöfnunni með óhliðruðum
@@ -648,7 +673,16 @@ hægt að gefa sér að lausnir bylgjujöfnunnar séu góð nálgun á
 yfirborðsbylgjum. Ef steini er kastað í vatn í punktinum :math:`x_0` við
 tímann :math:`t_0`, þá fer yfirborðsbylgja eftir vatninu og við getum
 gert ráð fyrir því að frávik efnispunkts :math:`u(x,t)` í :math:`x` við
-tímann :math:`t` sé gefið sem lausn á (:ref:`Link title <15.5.3>`), þar sem
+tímann :math:`t` sé gefið sem lausn á 
+
+.. math::
+
+  \begin{cases}
+   {\partial^2_tu}-c^2\Delta u=f(x,t), &x\in {{\mathbb  R}}^n, \ t>0,\\
+   u(x,0)=\varphi(x), \quad \partial_tu(x,0)=\psi(x), &x\in {{\mathbb  R}}^n,
+   \end{cases}
+
+þar sem
 :math:`{\varphi}=0`, :math:`{\psi}=0` og :math:`f` er alls staðar
 :math:`0` nema í lítilli grennd um :math:`(x_0,t_0)`. Bylgjan kemur í
 punktinn :math:`x` við tímann :math:`t=|x-x_0|/c`. Poisson-formúlan
@@ -657,7 +691,7 @@ segir nú að áhrif bylgjunnar muni vara áfram í punktinum :math:`x` fyrir
 
 Lítum nú á ljósgjafa í punktinum :math:`x_0\in {{\mathbb  R}}^3` sem
 gefur frá sér merki sem varir örstutta stund við tímann :math:`t_0`.
-Bylgjan :math:`u` sem berst frá honum er lausn á (:ref:`Link title <15.5.3>`) með
+Bylgjan :math:`u` sem berst frá honum er lausin á upphafsgildisverkefninu með
 :math:`{\varphi}=0`, :math:`{\psi}=0` og :math:`f` er alls staðar
 :math:`0` nema í lítilli grennd um :math:`(x_0,t_0)`. Nú sjáum við á
 Kirchhoff-formúlunni að þegar :math:`t` er orðið það stórt að yfirborð
@@ -877,7 +911,7 @@ skrifum :math:`u(x,t)=w(x,t)+v(x,t)`. Hér er einfaldast að setja
    v(0,t)=0, &t>0,
    \end{cases}
 
-en þetta verkefni leystum við í sýnidæmi :ref:`Link title <syn15.7.1>`, með
+en þetta verkefni leystum við í síðasta sýnidæmi, með
 :math:`f(x,t)=-g{{^{\prime\prime}}}(t)`, :math:`{\varphi}(x)=-g(0)` og
 :math:`{\psi}(x)=-g{{^{\prime}}}(0)`. Oddstæðar framlengingar á þessum
 föllum eru
@@ -901,7 +935,8 @@ Sýnidæmi
 
 .. begin-toggle:: :label: Sýna dæmi
 
-Nú skulum við breyta verkefninu :ref:`Link title <syn15.7.1>` og setja inn
+Nú skulum við breyta verkefninu í upphafi þessarrar greinar
+og setja inn
 flæðisskilyrði í stað fallsjaðarskilyrðis,
 
 .. math::
@@ -977,7 +1012,7 @@ hliðruðum jaðarskilyrðum
    {\partial}_xu(0,t)=g(t), &t>0.
    \end{cases}
 
-Alveg eins og í sýnidæmi :ref:`Link title <syn15.7.2>` þá byrjum við á því að finna
+Við byrjum á því að finna
 fall :math:`w` sem uppfyllir hliðraða jaðarskilyrðið. Í þessu tilfelli
 er heppilegt að velja :math:`w(x,t)=xg(t)`. Við ritum síðan lausnina á
 forminu :math:`u(x,t)=w(x,t)+v(x,t)`. Þá verður :math:`v` að vera lausn
@@ -1011,7 +1046,7 @@ Sýnidæmi
 
 .. begin-toggle:: :label: Sýna dæmi: Sveiflandi strengur; framhald
 
-Í sýnidæmi 8.7.5 litum við á einvíðu bylgjujöfnuna og fundum formúlu
+Í kaflanum um Fourier-raðir litum við á einvíðu bylgjujöfnuna og fundum formúlu
 fyrir sveiflur strengs sem festur er niður í báðum endapunktum með
 gefnum upphafsskilyrðum. Útslag strengsins er lausn verkefnisins
 
@@ -1047,7 +1082,7 @@ Niðurstaðan var síðan að
    \dfrac{\psi_n L}{n\pi c}\sin\big(n\pi ct/L\big) \bigg)
    \sin \big(n\pi x/L\big).
 
-Verkefnið (:ref:`Link title <15.7.6>`) er einnig hægt að leysa með speglunaraðferð.
+Upphafsgildisverkefnið er einnig hægt að leysa með speglunaraðferð.
 Það er einfaldlega gert þannig að skilgreiningarsvæði fallanna
 :math:`\phi` og :math:`\psi` er framlengt yfir á allan raunásinn, þannig
 að út komi oddstæð :math:`2L`-lotubundin föll :math:`\varphi_O` og
@@ -1059,9 +1094,9 @@ að út komi oddstæð :math:`2L`-lotubundin föll :math:`\varphi_O` og
    +\dfrac 1{2c}\int_{x-ct}^{x+ct}\psi_O(y)\, dy,
 
 og það er auðvelt að sannfæra sig um að þessi formúla gefi einnig
-lausn. Það er líka auðvelt að sýna fram á að (:ref:`Link title <15.7.9>`) leiði
-beint af (:ref:`Link title <15.7.8>`). Til þess athugum við fyrst að Fourier-raðirnar
-í (:ref:`Link title <15.7.7>`) eru :math:`2L`-lotubundin oddstæð föll á öllu
+lausn. Það er líka auðvelt að sýna fram á að þessi formúla fyrir :math:`u(x,t)` leiði beint af framsetningunni með Fourier-röð.
+Til þess athugum við fyrst að Fourier-raðirnar
+eru :math:`2L`-lotubundin oddstæð föll á öllu
 :math:`{{\mathbb  R}}` og því er
 
 .. math::
@@ -1084,7 +1119,7 @@ Samlagningarformúlurnar fyrir kósínus og sínus gefa okkur
    \cos\big(n\pi(x-ct)/L\big)\big)\\
    &=\dfrac 1{2c}\int_{x-ct}^{x+ct}\sin\big(n\pi y/L\big)\, dy.\end{aligned}
 
-Nú smeygjum við þessum formúlum inn í (:ref:`Link title <15.7.8>`) og fáum
+Nú smeygjum við þessum formúlum inn í Fourier-röðina fyrir :math:`u(x,t)` og fáum
 
 .. math::
 
@@ -1145,7 +1180,7 @@ og :math:`g` með tilliti til :math:`t`,
   U(x,s)=\int_0^{\infty}e^{-st}u(x,t)\, dt, \qquad
    G(s)=\int_0^{\infty}e^{-st}g(t)\, dt.
 
-Samkvæmt reiknireglu (7.3.3) er
+Samkvæmt reiknireglunni um Laplace-myndir af afleiðum er
 
 .. math::
 
@@ -1164,7 +1199,7 @@ Við gerum ráð fyrir að hægt sé að taka afleiður með tilliti til
    \partial_x^2\int_0^{\infty}e^{-st}u(x,t)\, dt=
    \partial_x^2U(x,s).
 
-Eftir Laplace-ummyndun verður því verkefnið (:ref:`Link title <15.8.1>`) að
+Eftir Laplace-ummyndun verður því upphafsgildisverkefnið að
 
 .. math::
 
@@ -1185,7 +1220,7 @@ okkur að :math:`B(s)=0` fyrir öll :math:`s>0`. Skilyrðið
 
 .. math:: U(x,s)=G(s)e^{-(s/c)x}=e^{-(x/c)s}{{\cal L}}\{g\}(s).
 
-Nú gefur reikniregla (ii) í setningu 7.1.5 okkur að
+Nú gefur reikniregla fyrir Laplace-myndir okkur að
 
 .. math:: U(x,s)={{\cal L}}\{H(t-x/c)g(t-x/c)\}(s),
 
@@ -1278,7 +1313,7 @@ Nú athugum við að
   U(x,s)=\sum\limits_{n=0}^\infty 
    \bigg(e^{-s((2n+1)L-x)/c}-e^{-s((2n+1)L+x)/c}\bigg)B(s).
 
-Nú segir regla (ii) í setningu 7.1.3 okkur að
+Nú segir reikniregla um Laplace-myndir okkur að
 :math:`{{\cal L}}\{H(t-\alpha)b(t-\alpha)\}(s)=e^{-s\alpha}B(s)`. Við
 beitum þessari reglu á sérhvern lið í summunni og fáum formúlu fyrir
 lausnina
@@ -1420,7 +1455,17 @@ Dæmi
 ^^^^
 
 Skrifið upp lausnarformúluna fyrir kúlubylgjur, með því að leysa
-verkefnið (:ref:`Link title <15.6.3>`).
+verkefnið 
+
+.. math::
+
+  \begin{cases}
+   \dfrac{{\partial}^2u}{{\partial}t^2} -
+   c^2\bigg(\dfrac{{\partial}^2u}{{\partial}r^2}+\dfrac
+   2r\dfrac{{\partial}u}{{\partial}r}\bigg)=f(r,t), 
+   &r>0, \ t>0,\\
+   u(r,0)={\varphi}(r), \quad {\partial}_tu(r,0)={\psi}(r),  &r>0.
+   \end{cases}
 
 Dæmi
 ^^^^

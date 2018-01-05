@@ -10,7 +10,7 @@ fyrsta stigs jöfnum. Kennilínuaðferðin byggir á þeirri staðreynd að
 lausnir á jöfnum af gerðinni
 :math:`a(x,y){\partial}_xu+b(x,y){\partial}_yu=0` taka fast gildi á
 ákveðnum ferlum, sem nefndir eru kennilínur og ákvarðast af stuðlunum
-:math:`a` og :math:`b`. Í kafla 7 sáum við hvernig hægt er að beita
+:math:`a` og :math:`b`. Við höfum séð hvernig hægt er að beita
 Laplace-ummyndun til þess að finna lausnir á venjulegum afleiðujöfnum og
 afleiðujöfnuhneppum. Hún kemur oft að góðu gangi við úrlausn á tímaháðum
 hlutafleiðujöfnum með upphafsskilyrðum, þar sem hægt er að taka
@@ -119,13 +119,13 @@ segir okkur að stefnuafleiðan af :math:`u` í stefnu vigursins
 :math:`u` við sérhverja línu með stefnuvigurinn :math:`(a,b)` fastafall.
 Slík lína hefur jöfnuna :math:`bx-ay=c` og því er :math:`u` einungis háð
 breytunni :math:`c` á þessari línu. Þar með er til fall :math:`f` á
-:math:`{{\mathbb  R}}` þannig að :math:`u(x,y)=f(c)` og þar með gildir
-(:ref:`Link title <14.2.3>`). Með því að setja :math:`y=0`, eða :math:`x=0` í
-tilfellinu :math:`b=0`, inn í (:ref:`Link title <14.2.3>`), þá sjáum við að
+:math:`{{\mathbb  R}}` þannig að :math:`u(x,y)=f(c)` og þar með er
+:math:`u(x,y)=f(bx-ay)`. Með því að setja :math:`y=0`, eða :math:`x=0` í
+tilfellinu :math:`b=0`, inn í þessa jöfnu, þá sjáum við að
 :math:`f\in C^1({{\mathbb  R}})`.
 
-Ef :math:`f\in C^1({{\mathbb  R}})` og við skilgreinum :math:`u` með
-(:ref:`Link title <14.2.3>`), þá leiðir (:ref:`Link title <14.2.2>`) beint af keðjureglunni.
+Ef :math:`f\in C^1({{\mathbb  R}})` og við skilgreinum :math:`u(x,y)=f(bx-ay)`,
+þá fæst hlutafleiðujafnan beint af keðjureglunni.
 
 .. end-toggle::
 
@@ -133,8 +133,8 @@ Lítum nú á tilfellið :math:`b\neq 0` og tökum punkt :math:`(x,y)` í
 :math:`(\xi,\eta)`-plani. Línan gegnum punktinn :math:`(x,y)` með
 stefnuvigurinn :math:`(a,b)` hefur jöfnuna :math:`b\xi-a\eta=bx-ay`.
 Skurðpunktur hennar við :math:`\xi`-ásinn er :math:`(x-ay/b,0)`. Nú
-vitum við að gildi lausnarinnar :math:`u` á afleiðujöfunni
-(:ref:`Link title <14.2.2>`) er það sama í öllum punktunum á þessari línu og þar með
+vitum við að gildi lausnarinnar :math:`u`
+er það sama í öllum punktunum á þessari línu og þar með
 gildir:
 
 Setning
@@ -188,7 +188,7 @@ nefnist *kenniferill* eða *kennilína* afleiðuvirkjans
 
 --------------
 
-Gerum nú ráð fyrir að :math:`u` sé lausn á (:ref:`Link title <14.2.6>`) og að
+Gerum nú ráð fyrir að :math:`u` sé lausn og að
 :math:`t\mapsto (\xi(t),\eta(t))` sé kenniferill. Þá gefur keðjureglan
 
 .. math::
@@ -318,7 +318,7 @@ Hugsum okkur að :math:`u(x,t)` sé fall af tveimur breytistærðum og látum
 
 .. math:: U(x,s)={{\cal L}}\{u(x,\cdot)\}(s)=\int_0^\infty e^{-st} u(x,t)\, dt.
 
-Reiknireglan (:ref:`Link title <7.3.3>`) gefur okkur að
+Reiknireglan fyrir Laplace-mynd af afleiðum gefur okkur að
 
 .. math::
 
@@ -389,7 +389,7 @@ Við heildum og fáum
   U(x,s)=x^{-1} \int_0^x x^{-s}{\xi}^sF({\xi},s)\, d{\xi}
    =x^{-1} \int_0^x  e^{-s\ln(x/{\xi})} F({\xi},s)\, d{\xi}.
 
-Reiknireglan í setningu 7.1.5 segir okkur nú að
+Reikniregla fyrir Laplace-myndir segir okkur nú að
 
 .. math::
 
