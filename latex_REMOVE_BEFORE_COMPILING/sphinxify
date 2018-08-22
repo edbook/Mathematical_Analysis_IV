@@ -1,7 +1,0 @@
-# Code to automate taking "fyrirlestrar**", and generate a completely converted "chapter**" for manual inspection/work
-# To run, use (for example) "bash sphinxify fyrirlestrar01.tex", without the quotes.
-cat fuppsetning.tex $1 > ${1%.tex}_ready.tex
-python3 clean_tex.py ${1%.tex}_ready.tex ${1%.tex}_clean.tex
-pandoc -t rst ${1%.tex}_clean.tex -o ${1%.tex}_clean.rst
-#python3 clean_rst.py ${1%.tex}_clean.rst chapter${1#fyrirlestrar%.tex}.rst
-python3 clean_rst.py ${1%.tex}_clean.rst ${1%.tex}_final.rst
