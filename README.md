@@ -13,24 +13,70 @@ sudo apt-get install git
 sudo apt-get install pandoc
 git clone https://github.com/edbook/template
 ```
-There should now be a template folder in /home/user. The following folders are in the template folder: 
+There should now be a template folder in /home/user.
+
+For Windows users the packages from above can be downloaded using [pip](https://pypi.org/project/pip/)
+
+Navigate to the template folder.
+The following folders are in the template folder: 
 
 * sagecell-extension
 * toggleblock-extension
 * ggbextension
-* SphinxScrolldepth
+* google-analytics
 * hoverrole
+* katex-extension
+* panoptoextension
+* datacamp-extension
 
-In each of these folders run the following commands: 
+In each of these folders run the following commands:
+
+Mac/Linux: 
 ```bash
 python3 setup.py build
 sudo python3 setup.py install
 ```
-Finally, go to the template folder and run the command:
+
+Alternatively you can run the following to install every extension in one go, list of extensions can be found and modified in the file `extension_names`:
+```bash
+make extensioninstall
+```
+
+Or for each one
+```bash
+make singleinstall EX=name_of_extension
+```
+
+Windows:
+```bash
+python setup.py build
+python setup.py install
+```
+
+Alternatively you can run the following to install every extension in one go, list of extensions can be found and modified in the file `extension_names`
+```bash
+make extensioninstall
+```
+
+Or for each one
+```bash
+make extensioninstall name_of_extension
+```
+
+Finally you should be able to run the command:
 ```bash
 make html
 ```
+You should be able to produce the html files according to the .rst documents.
+
+If you get: `WARNING: extension 'sagecell.sagecell' has no setup() function; is it really a Sphinx extension module?`, go to sagecell-extension and run: 
+```
+sudo python3 setup.py install --user
+```
+
 You can now edit the template in /template/chapter01.rst and compile the html file with the make html command. The html pages are in /template/_build/html.
+
+Once you have edited your content run `make clean` before you build again with `make html`
 
 Sphinx
 ======
@@ -38,7 +84,7 @@ Information on how to install sphinx can be found here: http://sphinx-doc.org/la
 
 Instructions for getting started with sphinx are here: http://sphinx-doc.org/latest/tutorial.html
 
-This template comes with a source directory, conf.py file with the values set as we found convenient for Mathematical Analysis I (the aprropriate project title and author name need to be inserted in certain places in the file), makefile, and a slightly modified version of the Read the Docs theme (https://docs.readthedocs.org/en/latest/theme.html) with Icelandic language settings and the Univeristy of Iceland and Raunvísindadeils logos. It is therefore not necessary to run sphinx-quickstart to set up the project.
+This template comes with a source directory, `conf.py` file with the values set as we found convenient for Mathematical Analysis I (the aprropriate project title and author name need to be inserted in certain places in the file), makefile, and a slightly modified version of the Read the Docs theme (https://docs.readthedocs.org/en/latest/theme.html) with Icelandic language settings and the Univeristy of Iceland and Raunvísindadeilds logos. It is therefore not necessary to run sphinx-quickstart to set up the project.
 
 
 Pandoc
@@ -65,5 +111,5 @@ Sphinx extensions
 Many extensions have been written to add features and modifications to sphinx projects. 
 Several extensions come bundled with sphinx: http://sphinx-doc.org/extensions.html
 
-Three custom extensions come with this framework (ggbextension to embed geogebra applets, toggleblock-extension for toggleable text sections and sagecell-extension to embed sage cells. See README files in the extension folders.)
+For the custom extensions see README in each folder.
 
