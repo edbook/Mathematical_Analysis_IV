@@ -1,9 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# NAME documentation build configuration file, created by
-# sphinx-quickstart on Thu Aug 13 10:33:18 2015.
-#
 # This file is execfile()d with the current directory set to its
 # containing dir.
 #
@@ -35,11 +32,11 @@ extensions = [
     'sphinx.ext.ifconfig',
     'sphinx.ext.intersphinx',
     'sphinx.ext.todo',
-    #'sphinx.ext.mathjax',
+    'sphinx.ext.mathjax',
 
     # Katex is a substitute for mathjax, renders math much faster
     # Note: katex extension must come before sagecell to work properly
-    'katex.katex',
+    #'katex.katex',
 
     # hieroglyph is used to generate html slides, needs to be installed for use,
     # see https://github.com/nyergler/hieroglyph
@@ -62,19 +59,19 @@ extensions = [
     'hoverrole.hoverrole',
 
     # Extension for embedding tracking code from google-analytics and custom scroll depth measurement
-    'analytics.analytics',
+    #'analytics.analytics',
 
     # Extension for embedding datacamp-light which enables constructing simple programming exercises
     # in R and python, with much greater package support than sagecell in R
-    'datacamp.datacamp',
+    #'datacamp.datacamp',
 
     # Extension that allows embedding panopto videos from rec.hi.is
-    'panoptoextension.panopto'
+    #'panoptoextension.panopto'
 ]
 
 # -- Custom extension options and paths --------------------------------------
 
-#mathjax_path = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+mathjax_path = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
 
 katex_path = 'https://cdn.jsdelivr.net/npm/katex@0.10.0-rc/dist/katex.min.js'
 katex_render = 'https://cdn.jsdelivr.net/npm/katex@0.10.0-rc/dist/contrib/auto-render.min.js'
@@ -90,7 +87,7 @@ sage_path = 'http://sagecell.sagemath.org/static/embedded_sagecell.js'
 custom_sage_path = 'custom_sage.js'
 
 # Google Analytics ID, enable_custom_scrolldepth default value is False if not set
-ga_id = 'UA-78633732-7'
+ga_id = 'UA-78633732-5'
 enable_custom_scrolldepth = True
 
 # -- Build options ----------------------------------------------------
@@ -112,8 +109,8 @@ master_doc = 'index'
 # General information about the project.
 # SET PROJECT INFO HERE
 project = 'Stærðfræðigreining IV'
-copyright = '2019, Ragnar Sigurðsson'
-author = 'Ragnar Sigurðsson'
+copyright = '2019, Sigurður Örn Stefánsson og Valentina Giangreco M Puletti'
+author = 'Sigurður Örn Stefánsson og Valentina Giangreco M Puletti'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -223,7 +220,7 @@ html_static_path = ['_static']
 # typographically correct entities.
 #html_use_smartypants = True
 
-html_add_permalinks = True
+#html_add_permalinks = True
 # Custom sidebar templates, maps document names to template names.
 #html_sidebars = {}
 
@@ -286,7 +283,6 @@ latex_elements = {
 
 # Additional stuff for the LaTeX preamble.
 'preamble': '''
-
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{hyperref}
@@ -306,8 +302,8 @@ latex_elements = {
 # SET DOCUMENT TITLE AND AUTHOR FOR LATEX OUTPUT HERE
 
 latex_documents = [
-  (master_doc, 'staeIV.tex', 'Stærðfræðigreining IV',
-   'Ragnar Sigurðsson', 'manual'),
+  (master_doc, 'NAME.tex', 'NAME Documentation',
+   'AUTHOR', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -330,6 +326,8 @@ latex_logo  = '_static/hi_horiz_raunvisindadeild.png'
 
 # If false, no module index is generated.
 #latex_domain_indices = True
+
+
 
 
 # -- Options for manual page output ---------------------------------------
